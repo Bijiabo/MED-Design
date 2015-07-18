@@ -1,0 +1,1071 @@
+
+
+
+
+
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=2.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	
+
+
+	
+	
+		<title>数量单位的问题个、十、百、千、万，每升一级– 手机爱问</title>
+		<meta  name="description" content="数量单位的问题个、十、百、千、万，每升一级就用一个不同的计量单位，而再往上却是十万、百万、千万这样的"/>
+		<meta name="keywords" content="理工学科,新浪爱问知识人"/>	
+	
+	
+
+<link rel="stylesheet" href="http://static.wenwo.com/m-v20150316_1/css/iask.min.css" type="text/css" />
+<script type="text/javascript" src="http://static.wenwo.com/m-v20150316_1/js/common/m_common.min.js"></script>
+<script type='text/javascript' src='http://static.wenwo.com/m-v20150316_1/js/common/zepto.min.js'></script>
+<script type='text/javascript' src='http://static.wenwo.com/m-v20150316_1/js/common/zepto.scroll.min.js'></script>
+<script type="text/javascript" src="http://static.wenwo.com/m-v20150316_1/js/common/common_stat.min.js"></script>
+<script type="text/javascript" src="http://static.wenwo.com/m-v20150316_1/js/common/adAudit.min.js"></script>
+<link rel="stylesheet" href="http://static.wenwo.com/m-v20150316_1/css/ad.min.css" type="text/css" />
+<script type="text/javascript" src="http://static.wenwo.com/m-v20150316_1/js/common/TouchSlide.1.1.min.js"></script>
+</head>
+<body id="qs_detail">
+<script type="text/javascript" src="http://static.wenwo.com/m-v20150316_1/js/common/common_header_stat.min.js"></script>
+<!--# head #-->
+<div class="top_adv" id="m_q_detail_top_3"></div>
+<div id="m_detail_focus" class="focus"></div>
+<header id="wb2_hd">
+    <a href="javascript:history.go(-1);" class="back-btn"></a>
+	<h2>
+		
+			
+				数量单位的问题个、十......
+			
+			
+		
+	</h2>
+    <a href="/" class="home-btn"></a>
+</header>
+<!--# head End #-->
+
+
+
+
+	
+		<div class="breadcast">
+		<a href="/" class="home">首页</a> <span>></span>   
+			
+				<a href="javascript:void(0);" class="sub1">教育/科学</a>
+				
+					<div class="mask" style="display: none;">
+						<div class="arrow_close"></div>
+						<ul class="">
+							<li>
+								<dl>
+									<dt><a href="/k/83.html">教育/科学</a></dt>
+									<dd class="current"><a href="/k/202.html">理工学科</a><em class="selected"></em></dd>
+									
+										<dd><a href="/k/197.html">学习帮助</a><em class="selected"></em></dd>
+									
+										<dd><a href="/k/192.html">院校信息</a><em class="selected"></em></dd>
+									
+										<dd><a href="/k/187.html">外语学习</a><em class="selected"></em></dd>
+									
+										<dd><a href="/k/1093.html">职业教育</a><em class="selected"></em></dd>
+									
+										<dd><a href="/k/189.html">出国/留学</a><em class="selected"></em></dd>
+									
+										<dd><a href="/k/1223.html">人文学科</a><em class="selected"></em></dd>
+									
+										<dd><a href="/k/1092.html">升学入学</a><em class="selected"></em></dd>
+									
+								</dl>
+							</li>
+						</ul>
+					</div>
+				
+				<span>></span>
+			
+				<a href="javascript:void(0);" class="sub1">理工学科</a>
+				
+					<div class="mask" style="display: none;">
+						<div class="arrow_close"></div>
+						<ul class="">
+							<li>
+								<dl>
+									<dt><a href="/k/202.html">理工学科</a></dt>
+									<dd class="current"><a href="/k/202.html">理工学科</a><em class="selected"></em></dd>
+									
+										<dd><a href="/k/983.html">数学</a><em class="selected"></em></dd>
+									
+										<dd><a href="/k/203.html">工程技术科学</a><em class="selected"></em></dd>
+									
+										<dd><a href="/k/986.html">生物学</a><em class="selected"></em></dd>
+									
+										<dd><a href="/k/985.html">化学</a><em class="selected"></em></dd>
+									
+										<dd><a href="/k/984.html">物理学</a><em class="selected"></em></dd>
+									
+										<dd><a href="/k/988.html">心理学</a><em class="selected"></em></dd>
+									
+										<dd><a href="/k/989.html">地球科学</a><em class="selected"></em></dd>
+									
+										<dd><a href="/k/993.html">建筑学</a><em class="selected"></em></dd>
+									
+										<dd><a href="/k/990.html">农业科学</a><em class="selected"></em></dd>
+									
+										<dd><a href="/k/987.html">天文学</a><em class="selected"></em></dd>
+									
+										<dd><a href="/k/991.html">环境学</a><em class="selected"></em></dd>
+									
+										<dd><a href="/k/992.html">生态学</a><em class="selected"></em></dd>
+									
+								</dl>
+							</li>
+						</ul>
+					</div>
+				
+				
+			
+		</div>
+	
+		
+	
+<script type="text/javascript">
+		$('.sub2').click(function(){
+			window.location.href="/c/202.html";
+		});
+
+		$(function(){
+			$('.sub1').each(function(){
+				$(this).bind('click',function(){
+					var self = $(this).next();
+					if($(self).html() == null  || $(self).html()==""){
+						return;
+					}
+					var windowHeight =$(window).height();
+					    height = $(document).height(),
+						width=$(self).children('ul').width()+45,
+						node = $('<div id="wmask" style="position:absolute;top:0;left:0;width:100%; min-height:100%; height:'+ height +'px;opacity:0.5;z-index:20;background:#000;"></div>');
+					$(self).children('ul').css('max-height',windowHeight);
+					$('body').append(node);
+					$(self).css({"display":"block"});
+					var dHeight = $(self).children('ul').children('li').height();										
+					if(dHeight>=windowHeight){
+						$(self).css({"height":windowHeight});
+					}else{
+						$(self).css({"height":dHeight});
+					}
+					$(self).animate({translate3D:'0, 0, 0'}, 200);
+					$('#wmask').click(function(){
+						$(this).remove();
+						$(self).animate({translate3D:width+'px, 0 ,0'}, 200);
+						$(self).css("display","none");
+					});
+					$(self).children('.mask-close,.arrow_close').click(function(){
+						$('#wmask').trigger('click');
+					});
+				});
+			});
+		});
+</script>
+
+<!--# main #-->
+<div id="wb2_wrap">
+	<!--同义词弹出层start 如果有title取title，没有title取content -->
+	
+	<!--同义词弹出层end -->
+	<!-- 问题start -->
+    
+
+
+
+
+
+ 
+	<div class="wb2_qs">
+   		
+			
+       			
+	       			
+	       				<p class="qs_title">数量单位的问题</p>
+			        	<div class="qs_cont">个、十、百、千、万，每升一级就用一个不同的计量单位，而再往上却是十万、百万、千万这样的复合表示单位，原因是什么呢？</div>
+				        
+		       		
+       			
+       			<div class="qs_bar">
+       				
+       					
+       					
+       						<a href="/user/profile/53b4c6ec11e0ee09645e6943" class="qs_autor_pic"><img src="http://static.wenwo.com/m-v20150316_1/images/unknow_header.jpg" alt="" /></a>
+       					
+       					
+       				
+		        	
+						
+						
+						
+							<a href="/user/profile/53b4c6ec11e0ee09645e6943" class="qs_autor tiao">肥猫历险记</a>
+						
+					
+					<span>07-02-22</span>
+					
+						
+							<a href="javascript:void(0);" type="question" typeId="8211142" class="reportBtn"><em></em>举报</a>
+						
+						
+						
+					
+				</div>
+			
+			
+		
+    </div>
+
+	<div class="wb2_ad ad_bk">
+		<div class="wb2_ad01" id="m_q_detail_top_1"></div>
+		<div class="wb2_ad02" id="m_q_detail_top_2"></div>
+	</div>
+	<!-- 问题end -->
+	<!--没有回答-->
+	
+	    
+    <!--没有回答 end -->
+	<!-- 回答者的回答框start -->
+	
+	<!-- 回答者的回答框end -->
+	<!-- 答案start -->
+	
+	
+		<!-- 好评答案 -->
+		
+
+
+
+
+
+ 
+<dl class="wb2_good_answer">
+<dt class="wb2_tt">好评回答</dt>
+
+	
+	
+	<dd class="first">
+	
+		
+	
+		<div class="answer_lit">
+			<pre>这与各民族在文字形成期对常用数量的认知和数学概念的形成有密切关系，个、十、百、千、万，每升一级是相加的关系，而十万、百万、千万，每升一级是相乘的关系；可以推测，汉族在文字形成期的常用数量在10000以内，待文字形成后，再大的数量就用十万、百万、千万来表示了；而英语系民族在文字形成期的常用数量在1000以内，待文字形成后，再大的数量就用十千、百千和千千来表示。</pre>
+		</div>
+		<div class="answer_all">
+			<pre>这与各民族在文字形成期对常用数量的认知和数学概念的形成有密切关系，个、十、百、千、万，每升一级是相加的关系，而十万、百万、千万，每升一级是相乘的关系；可以推测，汉族在文字形成期的常用数量在10000以内，待文字形成后，再大的数量就用十万、百万、千万来表示了；而英语系民族在文字形成期的常用数量在1000以内，待文字形成后，再大的数量就用十千、百千和千千来表示。<a href="javascript:void(0)" answerId="53a85f3811e0ee163991c129" class="more_less">[收起]<em></em></a></pre>
+		</div>
+		<div class="qs_bar">
+			
+				
+				
+				
+					<a href="/user/profile/53b4e7da11e0ee18d30532d3" class="qs_autor_pic"><img src="http://tp1.sinaimg.cn/1157631372/50/5609626406/1" alt="" /></a>
+				
+			
+			
+				
+				
+				
+					<a href="/user/profile/53b4e7da11e0ee18d30532d3" class="qs_autor tiao">小樽浪人</a>
+				
+			
+			<span>07-02-25</span>
+			<a href="javascript:void(0);" onclick="detail.doPraised('53a85f3811e0ee163991c129',this,false,false);" class="good_poit"><em></em>0</a>
+			
+		</div>       
+	</dd>
+
+</dl>
+
+	    <div class="wb2_ad">
+			<div class="wb2_ad01" id="m_q_detail_good_1"></div>
+			<div class="wb2_ad02" id="m_q_detail_good_2"></div>
+		</div>
+		<!-- 类似问题 -->
+		
+		<!-- 其他答案 -->
+		
+    
+    
+    
+	<!-- 答案end -->
+	
+    <!-- 推荐阅读 ----start-->
+	<dl id="recommend_focus" class="wb2_pic_list"></dl>
+	
+	<div class="wb2_ad">
+		<!-- <div class="wb2_ad01" id="m_q_detail_recommend_1"></div> -->
+		<!-- 原生态广告 -->
+		<div class="wb2_ad02" id="m_q_detail_recommend_2"><script type="text/javascript" src="http://static.wenwo.com/adjs/fix/question_detail_mid_02.js"></script></div>
+	</div>
+	
+	
+    <!-- 推荐阅读 ----end-->
+	<!-- 今日焦点 ---start-->	
+	<dl id="today_focus" class="wb2_pic_list"></dl>	
+	<div class="wb2_ad">
+		<!-- <div class="wb2_ad01" id="m_q_detail_focus_1"></div> -->
+		<!-- 原生态广告 -->
+		<div class="wb2_ad02" id="m_q_detail_focus_2"><script type="text/javascript" src="http://static.wenwo.com/adjs/fix/question_detail_mid_03.js"></script></div>
+	</div>
+	<!-- 今日焦点 ---end-->	
+	
+	<!-- 大家都关注start ----如果有title取title，没有title取content -->
+	
+	
+
+
+
+
+
+ 
+<dl class="wb2_look">
+	<dt class="wb2_tt">大家都关注</dt>
+	 
+		<dd><a class="list_tt" href="/b/LgAAk1ctJ.html"><em></em>
+		
+		
+		
+			周末想和孩子一起做一些科...
+		
+		
+		</a><div class="anwer_count"><span>1</span>回答</div></dd>
+	 
+		<dd><a class="list_tt" href="/b/42BXdzCfM.html"><em></em>
+		
+		
+		
+			后卸式斜井箕斗矿车轮轴断...
+		
+		
+		</a><div class="anwer_count"><span>1</span>回答</div></dd>
+	 
+		<dd><a class="list_tt" href="/b/3e0GCKEkGD.html"><em></em>
+		
+		
+		
+			谁能告诉我，光电信息科学...
+		
+		
+		</a><div class="anwer_count"><span>1</span>回答</div></dd>
+	 
+		<dd><a class="list_tt" href="/b/QA3GaBUwuH.html"><em></em>
+		
+		
+		
+			科学家和医学家有什么区别...
+		
+		
+		</a><div class="anwer_count"><span>2</span>回答</div></dd>
+	 
+		<dd><a class="list_tt" href="/b/599sxdQ616d.html"><em></em>
+		
+		
+		
+			我是辽宁省理科学生，我是...
+		
+		
+		</a><div class="anwer_count"><span>1</span>回答</div></dd>
+	
+</dl>
+ 
+	<div class="wb2_ad">
+		<div class="wb2_ad01" id="m_q_detail_attention_1"></div>
+		<div class="wb2_ad02" id="m_q_detail_attention_2"></div>
+	</div>
+		
+	<!-- 大家都关注end -->
+	<div class="wb2_ad03_wrap">
+		<div class="wb2_ad03">
+			<div id="m_q_detail_footer_1"></div>
+			<div id="m_q_detail_footer_2"></div>	
+		</div>
+		<div class="wb2_ad03">
+			<div id="m_q_detail_footer_3"></div>
+			<div id="m_q_detail_footer_4"></div>		
+		</div>	
+	</div>
+	
+
+
+
+
+
+
+
+<dl class="wb2_look health_hot clearfix">
+    <dt class="wb2_tt">热点搜索</dt>
+    <dd>
+    
+	    
+		    
+	        	<a href="/key/551cd9835f1dd8c4a3fca137.html"><em></em>土壤相对含水量</a>
+	        	
+	        
+	        	<a href="/key/551cd9fc5f1d0ecfb94251e3.html"><em></em>土壤容重测定</a>
+	        	</dd><dd>
+	        
+	        	<a href="/key/551cd9835f1dd8c4a3fca0f0.html"><em></em>光的反射</a>
+	        	
+	        
+	        	<a href="/key/551cda015f1d0ecfb942595f.html"><em></em>浙大生理科学实验</a>
+	        	</dd><dd>
+	        
+	        	<a href="/key/551cda175f1d0ecfb9427680.html"><em></em>核反应堆技术人员</a>
+	        	
+	        
+	        <a href="/k/202.html" class="more_ht">更多》</a>
+	    
+	    
+    
+    </dd>
+</dl>
+
+
+</div>
+<!--# main End #-->
+<!-- 悬浮广告 -->
+<div id="m_q_detail_hover"></div>
+<!--# footer #-->
+
+
+
+
+
+
+
+<!--个人账户菜单 begin--> 
+<div class="personal_list person_box display_none">
+    <span></span>
+    <ul>
+        <li><a href="/msg/index"><em class="msg_ico"></em>消息中心
+	        	
+        	</a>
+        </li>
+        <li><a href="/task/index"><em class="task_ico"></em>任务中心</a></li>
+        <li><a href="/user/profile"><em class="grow_ico"></em>成长中心</a></li>
+        <li><a href="/logout"><em class="quick_ico"></em>退出</a></li>
+    </ul>
+</div>
+<footer>
+    <div class="copyright">
+        <p class="copyright_link">
+	        <a href="/incentive/help">帮助</a>
+	        <a href="/dynamicInfo/suggest">意见反馈 </a>
+	        <a href="/download">客户端</a>
+	        <a href="/links.html">友链</a>
+	        <a id="logout" href="javascript:void(0);">退出</a>
+        </p>
+        <p>有问题 @爱问</p>
+        <p class="power">Powered by iask.sina.com.cn</p>
+    </div>
+</footer>
+<script>
+//验证登录
+var logins = new Object();
+logins.callBackFunction = checkLogin;
+logins.url ="/checkLogin";
+logins.methodtype="POST";
+post_ajax_request(logins);
+var logout = $("#logout");
+var index_login = $("#index_login");
+var thisHref=window.location.href;
+var name=null;
+//满足可以搜索时的回调方法
+function checkLogin(data){
+	if(data=="null"){
+		logout.attr("href","/login?source=" + thisHref);
+		index_login.attr("href","/login?source=" + thisHref);
+		logout.html("登录");
+	}else{
+		logout.attr("href","/logout");
+		logout.html("退出");
+		index_login.attr("href","javascript:void(0);");
+		if(!(/.*m.iask.sina.com.cn\/[a-zA-Z0-9-]+/i.test(thisHref))){
+			var user = eval('(' + data + ')');
+			index_login.addClass("login_on");
+			name = user.nickname;
+			if($base.getLength(name)>4){
+				name = name.substr(0,3)+"....";
+			}
+		}
+		//验证登录
+		var settings = new Object();
+		settings.callBackFunction = setCount;
+		settings.url ="/msg/gurmc";
+		settings.methodtype="POST";
+		post_ajax_request(settings);
+		
+	}
+}
+//设置用户信息框
+function setCount(text){
+	var msg = eval('(' + text + ')');
+	if(msg.jsonData.count>0){
+		name = name+"<span>"+msg.jsonData.count+"</span>";
+	}
+	index_login.html(name);
+}
+</script>
+
+<!--# footer End #-->
+<!-- 举报 begin -->
+<div class="repor_main">
+    <div class="reportWrap">
+        <h3><em></em>举报</h3>
+        <h4>举报原因(必选)：</h4>
+        <ul class="reportList" id="reportList">
+            <li><span class="fakeCheck"><input type="checkbox" id="" value="广告或垃圾信息" /></span><p>广告或垃圾信息</p></li>
+            <li><span class="fakeCheck"><input type="checkbox" id="" value="不雅词句或人身攻击" /></span><p>不雅词句或人身攻击</p></li>
+            <li><span class="fakeCheck"><input type="checkbox" id="" value="色情淫秽" /></span><p>色情淫秽</p></li>
+            <li><span class="fakeCheck"><input type="checkbox" id="" value="诈骗" /></span><p>诈骗</p></li>
+            <li><span class="fakeCheck"><input type="checkbox" id="" value="激进时政或意识形态话题" /></span><p>激进时政或意识形态话题</p></li>
+            <li><span class="fakeCheck"><input type="checkbox" id="" value="侵犯他人隐私"/></span><p>侵犯他人隐私</p></li>
+            <li><span class="fakeCheck"><input type="checkbox" id="" value="其它违法和不良信息"/></span><p>其它违法和不良信息</p></li>
+        </ul>
+    </div>
+    <div class="choiseResonBtns"><a href="javascript:void(0)" class="reback">取消</a><a href="#;" class="sureReport" onclick="detail.report();">确定举报</a></div>
+</div>
+<!-- 举报 end -->
+<!-- 回顶部 begin -->
+<div class="gotop" id="gotop">回顶部</div>
+<!-- 回顶部 end -->
+<!-- 顶部提问 begin -->
+<!-- <div id="ask_box_wrap">
+	<div class="ask_box_wrap">
+	<div class="ask_box" >
+		<input id="searchInput" type="text" placeholder="请输入您的问题……" ><a class="ask_btn"></a>
+	</div>
+	</div>
+</div> -->
+<input type="hidden" value="202" id="moreCid" />
+<input type="hidden" id="qid" value="8211142">
+<!-- 顶部提问 end -->
+<!-- <script type='text/javascript' src='http://static.wenwo.com/m-v20150316_1/js/common/question_detail.min.js'></script> -->
+<script type="text/javascript">
+	var moreCid = $("#moreCid").val();
+	$("#recommend_focus").load("/s/rf?moreCid=" + moreCid+"&newfcus=1",function(){autoPic();});
+	$("#today_focus").load("/t/df?moreCid=" + moreCid+"&newfcus=1",function(){autoPic();});
+    //隐藏浏览器地址栏
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+    function hideURLbar(){
+    window.scrollTo(0,1);
+    }	
+    type="";
+    typeId="";
+    //选择举报原因
+    (function () {
+    	var wrap = document.getElementById('reportList'),
+   		items = wrap.querySelectorAll('li');
+   		for (var i = 0 , len=items.length; i < len ; i++) {
+   			(function (m) {
+   				items[m].onclick=function () {
+   					var _this = this;
+   					var fakeCheck = _this.querySelector('span'),
+   					checkBox = _this.querySelector('input');
+   					if (checkBox.checked) {
+   						fakeCheck.className='fakeCheck';
+   						checkBox.checked=false;
+   					}else {
+   						fakeCheck.className='fakeChecked';
+   						checkBox.checked=true;
+   					}
+   				};
+   			})(i);
+   		};
+    })();
+    
+    //搜索框
+   	$(".ask_btn").click(function(){
+		var content=$("#searchInput").val();
+    	if(content.trim().length<2) {
+    		alert("关键字必须大于等于2个字!");
+    		return false;
+    	}
+    	var settings = new Object();
+		settings.callBackFunction = canSubmit;
+    	settings.url ="/search/limitVisit";
+    	settings.methodtype="POST";
+		post_ajax_request(settings);
+    	});
+    //满足可以搜索时的回调方法
+    function canSubmit(data){
+		 var obj=eval('(' + data + ')');
+        	if(obj.desc==1||obj.desc=="1"){
+        		var content=$("#searchInput").val();
+                var SearchForm = document.createElement("FORM");  
+                   document.body.appendChild(SearchForm);  
+                   SearchForm.method = "POST";  
+                   var input = document.createElement("input");  
+                   input.setAttribute("name", "content");  
+                   input.setAttribute("type", "hidden");  
+                   SearchForm.appendChild(input);  
+                   input.value = content;  
+                   SearchForm.action = "/search/1.html";  
+                   SearchForm.submit();
+        	}else{
+	            alert("您搜索过于频繁，请稍后再试！");
+	            return false;
+        	}
+	    }
+    
+    //展开，收起
+    $(document).ready(function(){
+        var $clickBtn = $(".more_less");
+        $clickBtn.click(function(){
+            var $that = $(this);
+            var val = $that.text();
+            if(val=="[展开]"){
+                $that.parents(".answer_lit").hide()
+                .siblings(".answer_all").show();               
+            }else{
+                $that.parents(".answer_all").hide()
+                .siblings(".answer_lit").show();
+            }
+        });
+    });
+  //问题分类链接
+	$(function(){
+		var $relaBtn = $(".rela_btn");
+		$relaBtn.click(function(){
+			var $that = $(this);
+			var $close = $(".close_bar");
+			var top = $that.position().top; 
+			var left = $that.position().left; 
+			var width = $that.width();
+			var height = $that.height();
+			$that.parents().find(".rela_box").show(100).css("top",(top+height+2+"px")).find(".topsg").css("left",(left+width/2-10+"px"));
+			$close.click(function(){
+				$(this).parents(".rela_box").hide(200);
+			});
+		});
+	});
+	//回到顶部和搜索框
+/*     $(function(){
+        var $relaBtn = $(".rela_btn");
+            $(window).scroll(function(){
+                var top = $(window).scrollTop();
+                var windowHeight = $(window).height()+$("#ask_box_wrap").height()+8;
+                if(top>windowHeight){
+                    $("#ask_box_wrap").css("display","block");
+                    $(".gotop").show();
+                    $(".gotop").css("opacity","0.8");
+                }else{
+                    $("#ask_box_wrap").css("display","none");
+                    $(".gotop").hide();
+                }
+            });
+    }); */
+    $('#gotop').on('click', function(e) {
+	  $.scrollTo({
+	    endY: 0, // position to scroll to
+	    duration: 300, // duration of animation. 0 for no animation
+	    callback: function() { // optional callback to be executed at the end of animation.
+	    	$('#gotop').hide();
+	    }
+	  });
+	});  
+    //举报
+    $(function(){
+        var $reportBtn = $(".report_btn,.reportBtn");
+        $reportBtn.click(function(){
+        	type=$(this).attr("type");
+        	typeId=$(this).attr("typeId");
+            var $that = $(this);
+            var height = $(document).height();
+            var $close = $(".reback");
+            var html = $('<div id="wmask" style="position:absolute;top:0;left:0;width:100%; min-height:100%; height:'+ height +'px;opacity:0.5;z-index:20;background:#000;"></div>');
+            $("body").append(html);
+            $(".repor_main").show(200);
+            var wrap = document.getElementById('reportList'),
+       		items = wrap.querySelectorAll('li');
+        	for (var i = 0 , len=items.length; i < len ; i++) {
+        		(function (m) {
+        			var _this = items[m];
+    				var fakeCheck = _this.querySelector('span'),
+    					checkBox = _this.querySelector('input');
+    				fakeCheck.className='fakeCheck';
+    				checkBox.checked=false;
+        		})(i);
+        	}
+            $close.click(function(){
+                $(this).parents(".repor_main").hide(200);
+                html.remove();
+                return false;
+            });
+        });
+    });
+    
+
+    //苹果position:fixed兼容问题
+    if (/ipad|iphone|mac/i.test(navigator.userAgent)){  
+    	$('input').focus(function(){
+    	        var $_this = $(this).parents("#ask_box_wrap");
+    	        //无键盘时输入框到浏览器窗口顶部距离
+    	        var noInputViewHeight = $(window).height() - $_this.height();
+    	        //网页正文内容高度
+    	        var contentHeight = $(document).height() - $_this.height();
+    	        //控制正文内容高度大于一屏，保证输入框固定底部
+    	        contentHeight = contentHeight > noInputViewHeight ? contentHeight : noInputViewHeight;
+    	        //因为弹出输入法需要时间，需延时处理
+    	        setTimeout(function(){
+    	                //弹出输入法时滚动条的起始滚动距离
+    	                var startScrollY = $(window).scrollTop();
+    	                //弹出输入法时输入框到窗口顶部的距离，即到软键盘顶部的起始距离
+    	                var inputTopHeight = $_this.offset().top - startScrollY;
+    	                //弹出输入法时输入框预期位置，即紧贴软键盘时的位置。因输入框此时处于居中状态，所以其到窗口顶部距离即为需往下移动的距离。
+    	                var inputTopPos = $_this.offset().top + inputTopHeight;
+    	                //控制div不超出正文范围
+    	                inputTopPos = inputTopPos > contentHeight ? contentHeight : inputTopPos;
+    	                //设置输入框位置使其紧贴输入框
+    	                $_this.css({'position':'absolute', 'top':inputTopPos });
+    	                //给窗口对象绑定滚动事件，保证页面滚动时div能吸附软键盘
+    	                $(window).bind('scroll', function(){
+    	                        //表示此时有软键盘存在，输入框浮在页面上了
+    	                        if (inputTopHeight != noInputViewHeight) {
+    	                                //页面滑动后，输入框需跟随移动的距离
+    	                                var offset = $_this.scrollTop() - startScrollY;
+    	                                //输入框移动后位置
+    	                                afterScrollTopPos = inputTopPos + offset;
+    	                                //设置输入框位置使其紧贴输入框
+    	                                $_this.css({'position':'absolute', 'top':afterScrollTopPos });
+    	                        }
+    	                });
+    	        }, 100);
+    	}).blur(function(){//输入框失焦后还原初始状态
+    	        $("#ask_box_wrap").removeAttr('style');
+    	        $(window).unbind('scroll');
+    	});
+    }
+  
+    var isBusy = false; 
+    var detail = {
+       	addClass: function (elements,value){   //addClass(元素，样式值)
+   	        if(!elements.className)
+   	        {
+   	            elements.className=value;
+   	        }
+   	        else
+   	        {
+   	            var newClass=elements.className;
+   	            newClass+=" ";
+   	            newClass+=value;
+   	            elements.className=newClass;
+   	        }
+       	},
+
+       	getXmlHttpObject :function(){
+   			  var xmlHttp=null;
+   			  try{
+   			    // Firefox, Opera 8.0+, Safari
+   			    xmlHttp=new XMLHttpRequest();
+   			  } catch (e){
+   			    // Internet Explorer
+   			    try {
+   			      xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+   			    }catch (e){
+   			      xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+   			    }
+   			  }
+   			  return xmlHttp;
+       	},
+       	
+       	report:function(){
+       		var xmlhttp =  detail.getXmlHttpObject();
+       		var checkLoginUrl='/checkLogin';
+       		xmlhttp.open("POST",checkLoginUrl,false);
+       		xmlhttp.onreadystatechange=function(){
+       			if(xmlhttp.readyState==4){
+                       if(xmlhttp.status==200){
+                       	if(xmlhttp.responseText=='null'){
+                       		thisHref=window.location.href;
+                       		window.location.href="/login?source=" + thisHref;
+                       		return;
+                       	}else{
+                       		var questionId= document.getElementById("qid").value;
+	            			var arr = document.getElementsByTagName("input");
+	            			var reportList ="";
+	            			for(var i=0;i<arr.length;i++){
+	            			   if(arr[i].type == "checkbox" && arr[i].checked){
+	            				   reportList += arr[i].value + "-";
+	            			    }
+	            			}
+	            			if(reportList == ""){
+	            				alert("请选择举报原因！");
+	            				return;
+	            			}
+	            			var settings=new Object();
+	            			settings.callBackFunction = detail.reportCallBack;
+	            			settings.url ="/question/reportnew";
+	            			settings.methodtype="POST";
+	            			settings.submit_param={"reportList":reportList,"questionId":questionId,"type":type,"typeId":typeId};
+	            			post_ajax_request(settings);
+	            			$(".repor_main").hide(200);
+	                        $("#wmask").remove();
+                       	}
+                       }
+                    }
+       		};
+       		xmlhttp.send(); 
+       	},
+     reportCallBack : function(data){
+    	var obj=eval('(' + data + ')');
+ 		alert(obj.desc);
+    	},
+    	
+       	//设置好、中、差评
+       	setAppraise : function(aid,btn_a,type){
+       		if(isBusy)return;
+       		isBusy = true;
+   			var url = "/answer/sappraise?aid="+aid+"&type="+type;
+   			var xmlhttp =  detail.getXmlHttpObject();
+   			if(xmlhttp){
+       			xmlhttp.open("POST",url,false);
+       		}
+       		xmlhttp.onreadystatechange=function(){   
+                 if(xmlhttp.readyState==4){
+                    if(xmlhttp.status==200){
+	                  	btn_a.parentNode.style.display="none";//隐藏好、中、差评的div
+	                  	//显示苹果的a标签
+	                  	var showAppleico=document.getElementById(aid);
+	                  	switch (type){
+	                  	case 1:showAppleico.className="comment_ico";showAppleico.style.display="block";break;
+	                  	case 0:showAppleico.className="comment_ico normal_ico";showAppleico.style.display="block";break;
+	                  	case -1:showAppleico.className="comment_ico bad_ico";showAppleico.style.display="block";break;
+	                  	}
+                     	var objData = eval("("+xmlhttp.responseText+")");
+                     	//如果未送出悬赏，提示用户是否付出悬赏
+                     	if(objData.succ == "Y"){
+                     		if(type==1 && objData.jsonData){
+                     			top.location.href = "/answer/prebest?aid="+aid+"&qid="+$base.$id("qid").value;
+                     		}
+                     	}else{
+                     		alert("操作失败");
+                     	}
+                     	isBusy = false;
+                     }      
+                   } 
+                 };
+           xmlhttp.send();
+           return;
+       	},
+       	
+       	//点赞
+       	doPraised:function(id,that,isPraised,isMine){
+       		if(isMine){
+       			alert("自己的回答不能赞！");
+       			return false;
+       		}
+       		//已经赞过
+       		if(isPraised){
+	        		alert("已赞");
+       			return false;
+       		}
+       		var xmlhttp =  detail.getXmlHttpObject();
+       		var checkLoginUrl='/checkLogin';
+       		xmlhttp.open("POST",checkLoginUrl,false);
+       		xmlhttp.onreadystatechange=function(){
+       			if(xmlhttp.readyState==4){
+                       if(xmlhttp.status==200){
+                       	if(xmlhttp.responseText=='null'){
+                       		thisHref=window.location.href;
+                       		window.location.href="/login?source=" + thisHref;
+                       		return;
+                       	}else{
+   			         		var url = "/answer/praised?answerId="+id;
+                       		var xhr = detail.getXmlHttpObject();
+                       		xhr.open("POST",url,false);
+                       		xhr.onreadystatechange=(function(that,target){
+                   				return function(){
+               		                if(xhr.readyState==4){
+               		                    if(xhr.status==200){
+               		                    	var rspText=xhr.responseText;
+               		                    	var obj = eval('('+rspText+')');
+               		                    	if(obj && obj.succ == 'Y' && obj.jsonData>0){
+               		                    		target.removeAttribute("onclick");
+               		                    		target.innerHTML = '<em></em>'+obj.jsonData;
+               		                    	}else{
+               		                    		alert("不能赞自己的回答!");
+               		                    	}
+               		                    }
+               		                 }
+               		            };
+                               })(this,that);
+                       		xhr.send();
+                       	}
+                       }
+                    }
+       		};
+       		xmlhttp.send(); 
+       		return ;
+       	},
+
+       	toQuestionPic:function(qid){
+       		window.location.href = "/question/sqp?questionId="+qid;
+       	}
+       };
+   
+</script>
+<script>
+	//图片自适应
+function autoPic(){
+  	var $imgTs = $(".rb_list_02"),
+      	$imgTs2 = $(".rb_list_01"),
+      	$item = $imgTs.find(".read_ls_item"),
+      	img = $item.find("img"),
+      	img2 = $imgTs2.find("img"),
+      	img3 = $(".wb2_ad03_wrap").find("img"),
+      	topimg = $(".top_adv").find("img");
+      	var width = (window.innerWidth > 0) ? window.innerWidth : screen.width,
+      		img2W = width-20,
+      		img2H = img2W/600*260,
+       		imgW = (width-30)/2,
+      		imgH = imgW/290*126,
+      		topimgH = width/640*110;
+      		img2.css({"width":img2W,"height":img2H});
+      		img.css({"width":imgW,"height":imgH});
+      		img3.css({"width":imgW,"height":imgH});
+      		$item.css("width",imgW);
+      		topimg.css({"width":width,"height":topimgH});
+}; 
+
+</script>
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="http://static.wenwo.com/adjs/M/21_0.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+<img src="http://c.cnzz.com/wapstat.php?siteid=1252916334&r=&rnd=1831085016" width="0" height="0"  />
+ 
+<img src="http://c.cnzz.com/wapstat.php?siteid=5776372&r=&rnd=980436079" width="0" height="0" alt=""/>
+<!-- baidu stat -->
+
+
+
+
+<img src="http://hm.baidu.com/hm.gif?si=f31e8902a511ac8a3d295b3e9710b8e9&amp;et=0&amp;nv=1&amp;st=1&amp;v=wap-2-0.3&amp;rnd=1360977637" width="0" height="0"  />
+
+<div>
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			 
+			<img src="http://c.cnzz.com/wapstat.php?siteid=1254087449&r=&rnd=1713856617" width="0" height="0"  />
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+								
+ 	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+<img src="http://c.cnzz.com/wapstat.php?siteid=1252916334&r=&rnd=69397011" width="0" height="0"  />
+ 
+<img src="http://c.cnzz.com/wapstat.php?siteid=5776372&r=&rnd=1414744764" width="0" height="0" alt=""/>
+<!-- baidu stat -->
+
+
+
+
+<img src="http://hm.baidu.com/hm.gif?si=f31e8902a511ac8a3d295b3e9710b8e9&amp;et=0&amp;nv=1&amp;st=1&amp;v=wap-2-0.3&amp;rnd=1526341692" width="0" height="0"  />
+
+<div>
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
+			<img src="http://c.cnzz.com/wapstat.php?siteid=1253640330&r=&rnd=1460378169" width="0" height="0" /> 
+		
+		
+		
+		
+		
+		
+	
+</div>
+
+<script type="text/javascript" src="http://static.wenwo.com/m-v20150316_1/js/common/common_footer_stat.min.js"></script>
+</body>
+</html>

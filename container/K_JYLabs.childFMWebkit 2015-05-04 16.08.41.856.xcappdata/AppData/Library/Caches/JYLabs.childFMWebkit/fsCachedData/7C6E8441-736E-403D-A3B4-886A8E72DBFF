@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>小说 -  水墨书香网 - </title>
+
+<meta name="keywords" content="小说" />
+<meta name="description" content="小说模块 ,水墨书香网" />
+<meta name="generator" content="Discuz! X3" />
+<meta name="author" content="my3gbook! Team and my3gbook UI Team" />
+<meta name="copyright" content="2001-2013 my3gbook Inc." />
+<meta name="MSSmartTagsPreventParsing" content="True" />
+<meta http-equiv="MSThemeCompatible" content="Yes" />
+<base href="http://www.my3gbook.com/" /><link rel="stylesheet" type="text/css" href="data/cache/style_1_common.css?J42" /><link rel="stylesheet" id="css_extstyle" type="text/css" href="./template/default/style/t5/style.css" />
+
+<meta name="application-name" content="水墨书香网" />
+<meta name="msapplication-tooltip" content="水墨书香网" />
+<meta name="msapplication-task" content="name=门户;action-uri=http://www.my3gbook.com/portal.php;icon-uri=http://www.my3gbook.com/static/image/common/portal.ico" /><meta name="msapplication-task" content="name=论坛;action-uri=http://www.my3gbook.com/forum.php;icon-uri=http://www.my3gbook.com/static/image/common/bbs.ico" />
+</head>
+
+<body id="nv_pdnovel" class="pg_cat" onkeydown="if(event.keyCode==27) return false;">
+<div id="append_parent"></div><div id="ajaxwaitid"></div>
+<div id="toptb" class="cl">
+<!--幻谷网络插件 huangu_pwr www.52hg.net  -->
+  
+
+            
+<div class="wp">
+                    <!--鐧诲綍娉ㄥ唽-->
+<div class="fastlg cl-">
+<span id="return_ls" style="display:none"></span>
+<div class="y pns">
+                    &nbsp;<a href="member.php?mod=regU" class="xi2 xw1">立即注册</a>
+                    &nbsp;<a href="/member.php?mod=logging&amp;action=login" class="xi2 xw1">登录</a>
+  </div>
+
+<div class="fastlg_fm y" style="margin-right: 10px; padding-right: 10px">
+<p><a href="http://www.my3gbook.com/connect.php?mod=login&op=init&referer=pdnovel.php&statfrom=login_simple"><img src="static/image/common/qq_login.gif" class="vm" alt="QQ登录" /></a></p>
+</div>
+</div>
+
+
+<div class="y">
+<a id="switchblind" href="javascript:;" onClick="toggleBlind(this)" title="开启辅助访问" class="switchblind">开启辅助访问</a>
+</div>
+</div>
+</div>
+
+<div id="hd">
+<div class="wp">
+<div class="hdc cl"><h2><a href="./" title="水墨书香网"><img src="static/image/common/logo.png" alt="水墨书香网" border="0" /></a></h2>
+                    
+<!--logo youce 右侧-->
+                   <!--[diy=diylogoright]--><div id="diylogoright" class="area" style=" overflow:hidden;z-index:0;float:right;">
+                   <img src="http://my3gbook.com/data/attachment/common/cf/142639sz2szmfo7offsnal.jpg" height="66px" width="763px" >
+                   </div><!--[/diy]-->
+</div>
+
+
+                <!--大菜单-->
+<div id="nv"><div id="scbar" class="cl" style=" margin-top:-6px; ">
+  <form id="scbar_form" method="post" autocomplete="off" onsubmit="searchFocus($('scbar_txt'))" action="pdnovel.php?searchsubmit=yes" target="_blank">
+<input type="hidden" name="mod" id="scbar_mod" value="search" />
+<input type="hidden" name="formhash" value="316ed9b4" />
+<input type="hidden" name="srchtype" value="title" />
+<input type="hidden" name="srhfid" value="0" />
+<input type="hidden" name="srhlocality" value="pdnovel::cat" />
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="scbar_icon_td"></td>
+<td class="scbar_txt_td"><input type="text" name="srchtxt" id="scbar_txt" value="请输入搜索内容" autocomplete="off" x-webkit-speech speech /></td>
+<td class="scbar_type_td"><a href="javascript:;" id="scbar_type" class="xg1" onclick="showMenu(this.id)" hidefocus="true">小说</a></td>
+<td class="scbar_btn_td"><button type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn pnc" value="true"><strong class="xi2">搜索</strong></button></td>
+<td class="scbar_hot_td">
+<div id="scbar_hot">
+</div>
+</td>
+</tr>
+</table>
+</form>
+</div>
+<ul id="scbar_type_menu" class="p_pop" style="display: none;"></ul>
+
+                    <!--<a href="javascript:;" id="qmenu" onMouseOver="delayShow(this, function () {showMenu({'ctrlid':'qmenu','pos':'34!','ctrlclass':'a','duration':2});showForummenu(0);})">快捷导航</a>-->
+<ul>                        
+                        
+                            <li class="a"   id="mn_N1398" onmouseover="navShow('N1398')"><a href="pdnovel.php" hidefocus="true"  >首页</a></li>
+                            
+                                                    
+                            <li   id="mn_Ncbe4" ><a href="pdnovel.php?mod=list" hidefocus="true"  >最新更新</a></li>
+                            
+                                                    
+                            <li   id="mn_Ne008" ><a href="search.php" hidefocus="true"  >搜书</a></li>
+                            
+                                                    
+                            <li   id="mn_N9a76" ><a href="pdnovel.php?mod=list&orderby=4" hidefocus="true"  >排行榜</a></li>
+                            
+                                                    
+                            <li   id="mn_forum" ><a href="forum.php" hidefocus="true" title="BBS"  >论坛<span>BBS</span></a></li>
+                            
+                                                    
+                            <li   id="mn_Nca3e" ><a href="home.php?mod=spacecp&ac=credit&op=buy" hidefocus="true"  >充值</a></li>
+                            
+                                                    
+                        
+                        
+                        
+</ul>
+</div>
+
+                <!--小菜单-->
+<div class="p_pop h_pop" id="mn_userapp_menu" style="display: none"></div><div id="mu" class="cl">
+<ul class="cl current" id="snav_mn_N1398" style="display:">
+<!--<li style="width:5.0%"><a href="pdnovel.php" hidefocus="true" >首页</a></li><li style="width:5.0%"><a href="pdnovel.php?mod=list" hidefocus="true" >书库</a></li><li style="width:5.0%"><a href="pdnovel.php?mod=list&catid=1" hidefocus="true" >玄幻</a></li><li style="width:5.0%"><a href="pdnovel.php?mod=list&catid=2" hidefocus="true" >奇幻</a></li><li style="width:5.0%"><a href="pdnovel.php?mod=list&catid=3" hidefocus="true" >武侠</a></li><li style="width:5.0%"><a href="pdnovel.php?mod=list&catid=4" hidefocus="true" >仙侠</a></li><li style="width:5.0%"><a href="pdnovel.php?mod=list&catid=5" hidefocus="true" >都市</a></li><li style="width:5.0%"><a href="pdnovel.php?mod=list&catid=6" hidefocus="true" >历史</a></li><li style="width:5.0%"><a href="pdnovel.php?mod=list&catid=7" hidefocus="true" >军事</a></li><li style="width:5.0%"><a href="pdnovel.php?mod=list&catid=8" hidefocus="true" >游戏</a></li><li style="width:5.0%"><a href="pdnovel.php?mod=list&catid=9" hidefocus="true" >竞技</a></li><li style="width:5.0%"><a href="pdnovel.php?mod=list&catid=10" hidefocus="true" >科幻</a></li><li style="width:5.0%"><a href="pdnovel.php?mod=list&catid=11" hidefocus="true" >灵异</a></li><li style="width:5.0%"><a href="pdnovel.php?mod=list&catid=12" hidefocus="true" >同人</a></li><li style="width:5.0%"><a href="pdnovel.php?mod=list&catid=13" hidefocus="true" >图文</a></li><li style="width:5.0%"><a href="pdnovel.php?mod=list&catid=14" hidefocus="true" >图书</a></li><li style="width:5.0%"><a href="pdnovel.php?mod=list&catid=15" hidefocus="true" >文学</a></li><li style="width:5.0%"><a href="pdnovel.php?mod=list&catid=16" hidefocus="true" >女生</a></li><li style="width:5.0%"><a href="pdnovel.php?mod=list&full=1" hidefocus="true" >全本</a></li><li style="width:5.0%"><a href="pdnovel.php?mod=list&orderby=4" hidefocus="true" >精品</a></li>-->
+</ul>
+                
+                <div class="p_pop h_pop" id="mn_userapp_menu" style="display: none"></div><div id="mu" class="cl">
+<ul class="cl current" id="snav_mn_N1398" style="display:">
+<li style="width:5.0%"><a href="pdnovel.php?mod=list" hidefocus="true" >书库</a></li>
+<li style="width:5.0%"><a href="pdnovel.php?mod=list&amp;catid=1" hidefocus="true" >玄幻</a></li>
+<li style="width:5.0%"><a href="pdnovel.php?mod=list&amp;catid=2" hidefocus="true" >奇幻</a></li>
+<li style="width:5.0%"><a href="pdnovel.php?mod=list&amp;catid=3" hidefocus="true" >武侠</a></li>
+<li style="width:5.0%"><a href="pdnovel.php?mod=list&amp;catid=4" hidefocus="true" >仙侠</a></li>
+<li style="width:5.0%"><a href="pdnovel.php?mod=list&amp;catid=5" hidefocus="true" >都市</a></li>
+<li style="width:5.0%"><a href="pdnovel.php?mod=list&amp;catid=6" hidefocus="true" >历史</a></li>
+<li style="width:5.0%"><a href="pdnovel.php?mod=list&amp;catid=7" hidefocus="true" >军事</a></li>
+<li style="width:5.0%"><a href="pdnovel.php?mod=list&amp;catid=8" hidefocus="true" >游戏</a></li>
+<li style="width:5.0%"><a href="pdnovel.php?mod=list&amp;catid=9" hidefocus="true" >竞技</a></li>
+<li style="width:5.0%"><a href="pdnovel.php?mod=list&amp;catid=10" hidefocus="true" >科幻</a></li>
+<li style="width:5.0%"><a href="pdnovel.php?mod=list&amp;catid=11" hidefocus="true" >灵异</a></li>
+<li style="width:5.0%"><a href="pdnovel.php?mod=list&amp;catid=12" hidefocus="true" >同人</a></li>
+<li style="width:5.0%"><a href="pdnovel.php?mod=list&amp;catid=13" hidefocus="true" >图文</a></li>
+<li style="width:5.0%"><a href="pdnovel.php?mod=list&amp;catid=14" hidefocus="true" >图书</a></li>
+<li style="width:5.0%"><a href="pdnovel.php?mod=list&amp;catid=15" hidefocus="true" >文学</a></li>
+<li style="width:5.0%"><a href="pdnovel.php?mod=list&amp;catid=16" hidefocus="true" >女生</a></li>
+<li style="width:5.0%"><a href="pdnovel.php?mod=list&amp;full=1" hidefocus="true" >全本</a></li>
+<li style="width:5.0%"><a href="pdnovel.php?mod=list&amp;orderby=4" hidefocus="true" >精品</a></li>
+</ul>
+</div></div>
+</div>
+
+                
+                
+</div>
+                
+                
+                                
+                
+                
+                
+
+</div>
+</div>
+
+
+<div id="wp" class="wp">
+<style id="diy_style" type="text/css">#frameM40Yyy { background-image:none !important;background-color:#ffffff !important;}#portal_block_70 { background-image:none !important;background-color:#ffffff !important;}#portal_block_69 { background-image:none !important;background-color:#ffffff !important;}#portal_block_68 { background-image:none !important;background-color:#ffffff !important;}#tabl0Zk43 { background-image:none !important;background-color:#ffffff !important;}#frameq8nQqn { background-image:none !important;background-color:#ffffff !important;}#portal_block_63 { background-image:none !important;background-color:#ffffff !important;}#portal_block_64 { background-image:none !important;background-color:#ffffff !important;}#frameV62kK6 { background-image:none !important;background-color:#ffffff !important;}#frameCC7rgf { background-image:none !important;background-color:#ffffff !important;}#framek252tT { background-image:none !important;background-color:#ffffff !important;}#frameOHyT5x { background-image:none !important;background-color:#ffffff !important;}</style>
+
+
+
+
+
+<div class="wp">
+<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
+</div>
+
+<link rel="stylesheet" type="text/css" href="template/default/pdnovel/css/view.css" />
+<div id="pdmodule"><div class="mb hm"><a href="#" target="_blank"><img src="http://my3gbook.com/data/attachment/common/cf/142639sz2szmfo7offsnal.jpg" height="256" width="960" alt="#" border="0"></a></div><div class="pdbox">
+<div class="pdmaincont"><div class="catmainxstj">
+<div class="eyebox"><!--[diy=diypdeyebox]--><div id="diypdeyebox" class="area"><div id="frameM40Yyy" class=" frame move-span cl frame-1"><div id="frameM40Yyy_left" class="column frame-1-c"><div id="frameM40Yyy_left_temp" class="move-span temp"></div><div id="portal_block_94" class="block move-span"><div id="portal_block_94_content" class="dxb_bc">
+
+
+
+<link rel="stylesheet" type="text/css" href="source/plugin/fotoslider_7ree/css/slider_style_8ree.css" />
+
+
+
+
+
+<div id="main_gride_7ree" class="main_gride_7ree clear" style=" display:none;">
+
+<div class="slider-wrap" >
+<div id="main-photo-slider" class="csw">
+<div class="panelContainer"><div class="panel" title="经验与教训：中国历史人物的成败">
+<div class="wrapper">
+<a href="pdnovel.php?mod=view&novelid=162" target="_blank"><img src="data/attachment/pdnovel/cover/0/162-200.jpg" alt="经验与教训：中国历史人物的成败" height="390" width="530"/></a>
+<div class="photo-meta-data line_7ree">
+<h2>经验与教训：中国历史</h2>
+<span>历史是一本鲜活的教科书，为你的生活做出历史性的参考</span>
+</div>
+</div>
+</div><div class="panel" title="船 船长 船员：如何造就优秀的企业和员工">
+<div class="wrapper">
+<a href="pdnovel.php?mod=view&novelid=161" target="_blank"><img src="data/attachment/pdnovel/cover/0/161-170.jpg" alt="船 船长 船员：如何造就优秀的企业和员工" height="390" width="530"/></a>
+<div class="photo-meta-data line_7ree">
+<h2>船 船长 船员：如何造</h2>
+<span>如果把船的企业文化深入到企业的各个层面，那么无论是</span>
+</div>
+</div>
+</div><div class="panel" title="UFO档案">
+<div class="wrapper">
+<a href="pdnovel.php?mod=view&novelid=160" target="_blank"><img src="data/attachment/pdnovel/cover/0/160-104.jpg" alt="UFO档案" height="390" width="530"/></a>
+<div class="photo-meta-data line_7ree">
+<h2>UFO档案</h2>
+<span>早在人类历史有文字记载之前，就有不明飞行物存在的证</span>
+</div>
+</div>
+</div></div>
+</div>
+
+<div class="thumb_7ree_2 clear">
+<div id="movers-row"><div><a href="#1" class="cross-link active-thumb" title="经验与教训：中国历史人物的成败"><img src="data/attachment/pdnovel/cover/0/162-200.jpg" class="nav-thumb" alt="temp-thumb" /></a></div><div><a href="#2" class="cross-link active-thumb" title="船 船长 船员：如何造就优秀的企业和员工"><img src="data/attachment/pdnovel/cover/0/161-170.jpg" class="nav-thumb" alt="temp-thumb" /></a></div><div><a href="#3" class="cross-link active-thumb" title="UFO档案"><img src="data/attachment/pdnovel/cover/0/160-104.jpg" class="nav-thumb" alt="temp-thumb" /></a></div></div>						
+</div>
+
+  </div>
+</div>
+<!---------------------------------></div></div><div id="frameV62kK6" class=" frame move-span cl frame-1"><div id="frameV62kK6_left" class="column frame-1-c"><div id="frameV62kK6_left_temp" class="move-span temp"></div></div></div></div></div></div><!--[/diy]--></div>			
+<div class="txtbox">
+<div class="title">
+<div class="left"><b>小说频道</b></div>
+<div class="right"><a href="member.php?mod=register" target="_blank">[注册会员]</a></div></div>
+<div class="list"><!--[diy=diytxtbox1]--><div id="diytxtbox1" class="area"><div id="frameCC7rgf" class=" frame move-span cl frame-1"><div id="frameCC7rgf_left" class="column frame-1-c"><div id="frameCC7rgf_left_temp" class="move-span temp"></div><div id="portal_block_63" class="block move-span"><div id="portal_block_63_content" class="dxb_bc"><ul><div class="txt"><h3><a href="pdnovel.php?mod=view&novelid=2" title=" 旧年桃花之几时 "  target="_blank"> 旧年桃花之几时 </a></h3></div><li class="listrow2"><a href="pdnovel.php?mod=list&catid=1" class="gray" title="一级分类:玄幻" target="_blank">[玄幻]</a> <a href="pdnovel.php?mod=view&novelid=4" title="书名:傲世斩神" target="_blank">傲世斩神:mingwang</a></li><li class="listrow3"><a href="pdnovel.php?mod=list&catid=5" class="gray" title="一级分类:都市" target="_blank">[都市]</a> <a href="pdnovel.php?mod=view&novelid=3" title="书名:妃你莫属：倾世舞妃" target="_blank">妃你莫属：倾世舞妃:mingwang</a></li><li class="listrow4"><a href="pdnovel.php?mod=list&catid=1" class="gray" title="一级分类:玄幻" target="_blank">[玄幻]</a> <a href="pdnovel.php?mod=view&novelid=5" title="书名:药舞乾坤" target="_blank">药舞乾坤:mingwang</a></li><li class="listrow5"><a href="pdnovel.php?mod=list&catid=5" class="gray" title="一级分类:都市" target="_blank">[都市]</a> <a href="pdnovel.php?mod=view&novelid=6" title="书名:缠爱：瑾色绝恋" target="_blank">缠爱：瑾色绝恋:mingwang</a></li></ul></div></div></div></div></div><!--[/diy]--></div>
+<div class="title"><b>小说新书推荐</b></div>
+<div class="list"><!--[diy=diytxtbox2]--><div id="diytxtbox2" class="area"><div id="framepIP44T" class="frame move-span cl frame-1"><div id="framepIP44T_left" class="column frame-1-c"><div id="framepIP44T_left_temp" class="move-span temp"></div><div id="portal_block_64" class="block move-span"><div id="portal_block_64_content" class="dxb_bc"><ul><li><a href="pdnovel.php?mod=list&catid=14" class="gray" title="一级分类:图书" target="_blank">[图书]</a> <a href="pdnovel.php?mod=view&novelid=162" title="书名:经验与教训：中国历史" target="_blank">经验与教训：中国历史:wat</a></li><li><a href="pdnovel.php?mod=list&catid=14" class="gray" title="一级分类:图书" target="_blank">[图书]</a> <a href="pdnovel.php?mod=view&novelid=161" title="书名:船 船长 船员：如何造" target="_blank">船 船长 船员：如何造:wat</a></li><li><a href="pdnovel.php?mod=list&catid=14" class="gray" title="一级分类:图书" target="_blank">[图书]</a> <a href="pdnovel.php?mod=view&novelid=160" title="书名:UFO档案" target="_blank">UFO档案:wat</a></li><li><a href="pdnovel.php?mod=list&catid=14" class="gray" title="一级分类:图书" target="_blank">[图书]</a> <a href="pdnovel.php?mod=view&novelid=159" title="书名:慢板生活" target="_blank">慢板生活:wat</a></li><li><a href="pdnovel.php?mod=list&catid=14" class="gray" title="一级分类:图书" target="_blank">[图书]</a> <a href="pdnovel.php?mod=view&novelid=158" title="书名:狙击手：世界著名狙击" target="_blank">狙击手：世界著名狙击:wat</a></li><li><a href="pdnovel.php?mod=list&catid=14" class="gray" title="一级分类:图书" target="_blank">[图书]</a> <a href="pdnovel.php?mod=view&novelid=157" title="书名:青少年演讲口才课" target="_blank">青少年演讲口才课:wat</a></li></ul></div></div></div></div></div><!--[/diy]--></div>
+</div>
+</div><!--[diy=diypdmain]--><div id="diypdmain" class="area"><div id="frameOHyT5x" class="pdmain1 frame move-span cl frame-1"><div id="frameOHyT5x_left" class="column frame-1-c"><div id="frameOHyT5x_left_temp" class="move-span temp"></div><div id="portal_block_65" class="block move-span"><div class="blocktitle title"><span style="float:;margin-left:px;font-size:;color:;" class="titletext">封面展示</span></div><div id="portal_block_65_content" class="dxb_bc"><div class="catmainfmzs">
+<div class="piclist"><div class="box">
+<div class="pic"><a href="pdnovel.php?mod=view&novelid=2" target="_blank" title=" 旧年桃花之几时 "><img src="data/attachment/pdnovel/cover/0/2-609.jpg" width="100" height="125" alt=" 旧年桃花之几时 "></a></div>
+<div class="txt"><h3><a href="pdnovel.php?mod=view&novelid=2" title=" 旧年桃花之几时 " target="_blank"> 旧年桃花之几</a></h3><p><a href="pdnovel.php?mod=search&ac=author&srchtxt=mingwang" target="_blank">mingwang</a> 著<br><a href="pdnovel.php?mod=view&novelid=2" class="gray" title=" 旧年桃花之几时 " target="_blank">她与他的婚姻本是一场交易，却又是谁在这场交易中沦陷了一颗心？当那颗满是疮痍的心爱</a></p></div>
+</div><div class="box">
+<div class="pic"><a href="pdnovel.php?mod=view&novelid=4" target="_blank" title="傲世斩神"><img src="data/attachment/pdnovel/cover/0/4-100.jpg" width="100" height="125" alt="傲世斩神"></a></div>
+<div class="txt"><h3><a href="pdnovel.php?mod=view&novelid=4" title="傲世斩神" target="_blank">傲世斩神</a></h3><p><a href="pdnovel.php?mod=search&ac=author&srchtxt=mingwang" target="_blank">mingwang</a> 著<br><a href="pdnovel.php?mod=view&novelid=4" class="gray" title="傲世斩神" target="_blank">夏源本是一个一无所有的穷小子，没料到机缘巧合，采矿时忽然得到一只石虫，并发现自己</a></p></div>
+</div><div class="box">
+<div class="pic"><a href="pdnovel.php?mod=view&novelid=3" target="_blank" title="妃你莫属：倾世舞妃"><img src="data/attachment/pdnovel/cover/0/3-549.jpg" width="100" height="125" alt="妃你莫属：倾世舞妃"></a></div>
+<div class="txt"><h3><a href="pdnovel.php?mod=view&novelid=3" title="妃你莫属：倾世舞妃" target="_blank">妃你莫属：倾世</a></h3><p><a href="pdnovel.php?mod=search&ac=author&srchtxt=mingwang" target="_blank">mingwang</a> 著<br><a href="pdnovel.php?mod=view&novelid=3" class="gray" title="妃你莫属：倾世舞妃" target="_blank">她昨天刚答应了异世的痴情皇子求婚，今天却和另外一个身份不明的邪魅公子相会。她在彷</a></p></div>
+</div><div class="box">
+<div class="pic"><a href="pdnovel.php?mod=view&novelid=5" target="_blank" title="药舞乾坤"><img src="data/attachment/pdnovel/cover/0/5-453.jpg" width="100" height="125" alt="药舞乾坤"></a></div>
+<div class="txt"><h3><a href="pdnovel.php?mod=view&novelid=5" title="药舞乾坤" target="_blank">药舞乾坤</a></h3><p><a href="pdnovel.php?mod=search&ac=author&srchtxt=mingwang" target="_blank">mingwang</a> 著<br><a href="pdnovel.php?mod=view&novelid=5" class="gray" title="药舞乾坤" target="_blank">郑东鹤，只是隆川门一名低贱的仆从，虽为武痴，却无缘得窥门径。没料到机缘巧合之下，</a></p></div>
+</div><div class="box">
+<div class="pic"><a href="pdnovel.php?mod=view&novelid=7" target="_blank" title="绝色萌妃"><img src="data/attachment/pdnovel/cover/0/7-260.jpg" width="100" height="125" alt="绝色萌妃"></a></div>
+<div class="txt"><h3><a href="pdnovel.php?mod=view&novelid=7" title="绝色萌妃" target="_blank">绝色萌妃</a></h3><p><a href="pdnovel.php?mod=search&ac=author&srchtxt=mingwang" target="_blank">mingwang</a> 著<br><a href="pdnovel.php?mod=view&novelid=7" class="gray" title="绝色萌妃" target="_blank">她穿越而来，成为玉脂国娇俏可人的公主。保母后，斗恶妃，她用现代人的机智和勇敢在后</a></p></div>
+</div><div class="box">
+<div class="pic"><a href="pdnovel.php?mod=view&novelid=8" target="_blank" title="阿甘佐的回忆录"><img src="data/attachment/pdnovel/cover/0/8-868.jpg" width="100" height="125" alt="阿甘佐的回忆录"></a></div>
+<div class="txt"><h3><a href="pdnovel.php?mod=view&novelid=8" title="阿甘佐的回忆录" target="_blank">阿甘佐的回忆录</a></h3><p><a href="pdnovel.php?mod=search&ac=author&srchtxt=mingwang" target="_blank">mingwang</a> 著<br><a href="pdnovel.php?mod=view&novelid=8" class="gray" title="阿甘佐的回忆录" target="_blank">这是一场惊心动魄的较量，主人公阿甘佐游走于人界、天界，以及与鬼神之间的恩怨情仇。</a></p></div>
+</div></div>
+</div></div></div></div></div><div id="framek252tT" class="pdmain1 frame move-span cl frame-1"><div id="framek252tT_left" class="column frame-1-c"><div id="framek252tT_left_temp" class="move-span temp"></div><div id="portal_block_67" class="block move-span"><div class="blocktitle title"><span style="float:;margin-left:px;font-size:;color:;" class="titletext">小说更新列表</span></div><div id="portal_block_67_content" class="dxb_bc"><div class="catmainxsgx">
+<table width="100%" cellspacing="0" cellpadding="0">
+<thead><tr><td align="center">类别</td><td>小说书名/小说章节</td><td align="left">作者</td><td align="left">总字数</td><td align="left">更新时间</td></tr></thead>
+<tbody><tr class="row1"><td height="28" align="center"><a href="pdnovel.php?mod=list&catid=14" class="type" target="_blank">[图书]</a></td><td align="left"><a href="pdnovel.php?mod=view&novelid=162" title="经验与教训：中国历史人物的成败" class="name" target="_blank">经验与教训：中国历史</a> <a href="pdnovel.php?mod=read&novelid=162&chapterid=2503" title="第三章 进退" class="part" target="_blank">第三章 进退</a> </td><td><a href="pdnovel.php?mod=search&ac=author&srchtxt=wat" title="wat" target="_blank">wat</a></td><td>59685</td><td>2013-08-21</td></tr><tr class="row0"><td height="28" align="center"><a href="pdnovel.php?mod=list&catid=14" class="type" target="_blank">[图书]</a></td><td align="left"><a href="pdnovel.php?mod=view&novelid=161" title="船 船长 船员：如何造就优秀的企业和员工" class="name" target="_blank">船 船长 船员：如何造</a> <a href="pdnovel.php?mod=read&novelid=161&chapterid=2499" title="第1章 船长：做一个称职的管理者" class="part" target="_blank">第1章 船长：做一个称职的管理者</a> </td><td><a href="pdnovel.php?mod=search&ac=author&srchtxt=wat" title="wat" target="_blank">wat</a></td><td>24844</td><td>2013-08-14</td></tr><tr class="row1"><td height="28" align="center"><a href="pdnovel.php?mod=list&catid=14" class="type" target="_blank">[图书]</a></td><td align="left"><a href="pdnovel.php?mod=view&novelid=160" title="UFO档案" class="name" target="_blank">UFO档案</a> <a href="pdnovel.php?mod=read&novelid=160&chapterid=2495" title="第一章 神秘的访客" class="part" target="_blank">第一章 神秘的访客</a> </td><td><a href="pdnovel.php?mod=search&ac=author&srchtxt=wat" title="wat" target="_blank">wat</a></td><td>52944</td><td>2013-08-07</td></tr><tr class="row0"><td height="28" align="center"><a href="pdnovel.php?mod=list&catid=14" class="type" target="_blank">[图书]</a></td><td align="left"><a href="pdnovel.php?mod=view&novelid=159" title="慢板生活" class="name" target="_blank">慢板生活</a> <a href="pdnovel.php?mod=read&novelid=159&chapterid=2493" title="6.重返少年游" class="part" target="_blank">6.重返少年游</a> </td><td><a href="pdnovel.php?mod=search&ac=author&srchtxt=wat" title="wat" target="_blank">wat</a></td><td>31572</td><td>2013-07-30</td></tr><tr class="row1"><td height="28" align="center"><a href="pdnovel.php?mod=list&catid=14" class="type" target="_blank">[图书]</a></td><td align="left"><a href="pdnovel.php?mod=view&novelid=158" title="狙击手：世界著名狙击手全记录（军事系列图书）" class="name" target="_blank">狙击手：世界著名狙击</a> <a href="pdnovel.php?mod=read&novelid=158&chapterid=2477" title="4.像幽灵一样战斗——狙击作战要领（二）" class="part" target="_blank">4.像幽灵一样战斗——狙击作战要领（二）</a> </td><td><a href="pdnovel.php?mod=search&ac=author&srchtxt=wat" title="wat" target="_blank">wat</a></td><td>42277</td><td>2013-07-23</td></tr><tr class="row0"><td height="28" align="center"><a href="pdnovel.php?mod=list&catid=14" class="type" target="_blank">[图书]</a></td><td align="left"><a href="pdnovel.php?mod=view&novelid=157" title="青少年演讲口才课" class="name" target="_blank">青少年演讲口才课</a> <a href="pdnovel.php?mod=read&novelid=157&chapterid=2472" title="第3章 让你的朗诵更具魅力" class="part" target="_blank">第3章 让你的朗诵更具魅力</a> </td><td><a href="pdnovel.php?mod=search&ac=author&srchtxt=wat" title="wat" target="_blank">wat</a></td><td>56295</td><td>2013-07-18</td></tr><tr class="row1"><td height="28" align="center"><a href="pdnovel.php?mod=list&catid=14" class="type" target="_blank">[图书]</a></td><td align="left"><a href="pdnovel.php?mod=view&novelid=156" title="青少年最受启发的210个智力游戏" class="name" target="_blank">青少年最受启发的210</a> <a href="pdnovel.php?mod=read&novelid=156&chapterid=2467" title="73. 猜奇偶数" class="part" target="_blank">73. 猜奇偶数</a> </td><td><a href="pdnovel.php?mod=search&ac=author&srchtxt=wat" title="wat" target="_blank">wat</a></td><td>15340</td><td>2013-07-17</td></tr><tr class="row0"><td height="28" align="center"><a href="pdnovel.php?mod=list&catid=14" class="type" target="_blank">[图书]</a></td><td align="left"><a href="pdnovel.php?mod=view&novelid=155" title="青年少最想知道的100个历史谜案" class="name" target="_blank">青年少最想知道的100</a> <a href="pdnovel.php?mod=read&novelid=155&chapterid=2394" title="第三章" class="part" target="_blank">第三章</a> </td><td><a href="pdnovel.php?mod=search&ac=author&srchtxt=wat" title="wat" target="_blank">wat</a></td><td>44488</td><td>2013-07-16</td></tr><tr class="row1"><td height="28" align="center"><a href="pdnovel.php?mod=list&catid=14" class="type" target="_blank">[图书]</a></td><td align="left"><a href="pdnovel.php?mod=view&novelid=154" title="青少年最应该懂得的100个社交礼仪" class="name" target="_blank">青少年最应该懂得的10</a> <a href="pdnovel.php?mod=read&novelid=154&chapterid=2390" title="15.在学校里不要搞“怪”" class="part" target="_blank">15.在学校里不要搞“怪”</a> </td><td><a href="pdnovel.php?mod=search&ac=author&srchtxt=wat" title="wat" target="_blank">wat</a></td><td>42052</td><td>2013-07-16</td></tr><tr class="row0"><td height="28" align="center"><a href="pdnovel.php?mod=list&catid=14" class="type" target="_blank">[图书]</a></td><td align="left"><a href="pdnovel.php?mod=view&novelid=153" title="青少年最想知道的100个重大事件" class="name" target="_blank">青少年最想知道的100</a> <a href="pdnovel.php?mod=read&novelid=153&chapterid=2357" title="35.莱克星顿的枪声" class="part" target="_blank">35.莱克星顿的枪声</a> </td><td><a href="pdnovel.php?mod=search&ac=author&srchtxt=wat" title="wat" target="_blank">wat</a></td><td>58033</td><td>2013-07-16</td></tr><tr class="row1"><td height="28" align="center"><a href="pdnovel.php?mod=list&catid=14" class="type" target="_blank">[图书]</a></td><td align="left"><a href="pdnovel.php?mod=view&novelid=152" title="现代女性应该注意的100个生活细节" class="name" target="_blank">现代女性应该注意的10</a> <a href="pdnovel.php?mod=read&novelid=152&chapterid=2320" title="2.美丽细节" class="part" target="_blank">2.美丽细节</a> </td><td><a href="pdnovel.php?mod=search&ac=author&srchtxt=wat" title="wat" target="_blank">wat</a></td><td>42849</td><td>2013-07-15</td></tr><tr class="row0"><td height="28" align="center"><a href="pdnovel.php?mod=list&catid=14" class="type" target="_blank">[图书]</a></td><td align="left"><a href="pdnovel.php?mod=view&novelid=151" title="炫女人" class="name" target="_blank">炫女人</a> <a href="pdnovel.php?mod=read&novelid=151&chapterid=2317" title="1.了解男人的构造" class="part" target="_blank">1.了解男人的构造</a> </td><td><a href="pdnovel.php?mod=search&ac=author&srchtxt=wat" title="wat" target="_blank">wat</a></td><td>57438</td><td>2013-07-11</td></tr><tr class="row1"><td height="28" align="center"><a href="pdnovel.php?mod=list&catid=14" class="type" target="_blank">[图书]</a></td><td align="left"><a href="pdnovel.php?mod=view&novelid=150" title="犹太人的幽默与智慧" class="name" target="_blank">犹太人的幽默与智慧</a> <a href="pdnovel.php?mod=read&novelid=150&chapterid=2308" title="3.谈判智慧" class="part" target="_blank">3.谈判智慧</a> </td><td><a href="pdnovel.php?mod=search&ac=author&srchtxt=wat" title="wat" target="_blank">wat</a></td><td>28501</td><td>2013-07-11</td></tr><tr class="row0"><td height="28" align="center"><a href="pdnovel.php?mod=list&catid=14" class="type" target="_blank">[图书]</a></td><td align="left"><a href="pdnovel.php?mod=view&novelid=149" title="智囊一日一思" class="name" target="_blank">智囊一日一思</a> <a href="pdnovel.php?mod=read&novelid=149&chapterid=2304" title="第18篇 迂回的表达艺术" class="part" target="_blank">第18篇 迂回的表达艺术</a> </td><td><a href="pdnovel.php?mod=search&ac=author&srchtxt=wat" title="wat" target="_blank">wat</a></td><td>61300</td><td>2013-07-10</td></tr><tr class="row1"><td height="28" align="center"><a href="pdnovel.php?mod=list&catid=14" class="type" target="_blank">[图书]</a></td><td align="left"><a href="pdnovel.php?mod=view&novelid=148" title="智者与愚人的50个思维差异" class="name" target="_blank">智者与愚人的50个思维</a> <a href="pdnovel.php?mod=read&novelid=148&chapterid=2285" title="第二章 智者思维灵活，愚人头脑僵化" class="part" target="_blank">第二章 智者思维灵活，愚人头脑僵化</a> </td><td><a href="pdnovel.php?mod=search&ac=author&srchtxt=wat" title="wat" target="_blank">wat</a></td><td>32652</td><td>2013-07-10</td></tr><tr class="row0"><td height="28" align="center"><a href="pdnovel.php?mod=list&catid=14" class="type" target="_blank">[图书]</a></td><td align="left"><a href="pdnovel.php?mod=view&novelid=147" title="孟子一日一谈" class="name" target="_blank">孟子一日一谈</a> <a href="pdnovel.php?mod=read&novelid=147&chapterid=2282" title="第14篇 乘势待时" class="part" target="_blank">第14篇 乘势待时</a> </td><td><a href="pdnovel.php?mod=search&ac=author&srchtxt=wat" title="wat" target="_blank">wat</a></td><td>46772</td><td>2013-07-09</td></tr><tr class="row1"><td height="28" align="center"><a href="pdnovel.php?mod=list&catid=14" class="type" target="_blank">[图书]</a></td><td align="left"><a href="pdnovel.php?mod=view&novelid=146" title="历史上最有争议的女人" class="name" target="_blank">历史上最有争议的女人</a> <a href="pdnovel.php?mod=read&novelid=146&chapterid=2267" title="3.第三章" class="part" target="_blank">3.第三章</a> </td><td><a href="pdnovel.php?mod=search&ac=author&srchtxt=wat" title="wat" target="_blank">wat</a></td><td>60745</td><td>2013-07-09</td></tr><tr class="row0"><td height="28" align="center"><a href="pdnovel.php?mod=list&catid=6" class="type" target="_blank">[历史]</a></td><td align="left"><a href="pdnovel.php?mod=view&novelid=145" title="二战十大著名战役" class="name" target="_blank">二战十大著名战役</a> <a href="pdnovel.php?mod=read&novelid=145&chapterid=2263" title="战役简介" class="part" target="_blank">战役简介</a> </td><td><a href="pdnovel.php?mod=search&ac=author&srchtxt=wat" title="wat" target="_blank">wat</a></td><td>77697</td><td>2013-07-08</td></tr><tr class="row1"><td height="28" align="center"><a href="pdnovel.php?mod=list&catid=6" class="type" target="_blank">[历史]</a></td><td align="left"><a href="pdnovel.php?mod=view&novelid=144" title="二十五史一日一鉴" class="name" target="_blank">二十五史一日一鉴</a> <a href="pdnovel.php?mod=read&novelid=144&chapterid=2233" title="第十五篇 羊祜以情胜敌" class="part" target="_blank">第十五篇 羊祜以情胜敌</a> </td><td><a href="pdnovel.php?mod=search&ac=author&srchtxt=wat" title="wat" target="_blank">wat</a></td><td>53560</td><td>2013-07-08</td></tr><tr class="row0"><td height="28" align="center"><a href="pdnovel.php?mod=list&catid=14" class="type" target="_blank">[图书]</a></td><td align="left"><a href="pdnovel.php?mod=view&novelid=143" title="青少年心理健康课" class="name" target="_blank">青少年心理健康课</a> <a href="pdnovel.php?mod=read&novelid=143&chapterid=2217" title="3.合理看待自己和世界" class="part" target="_blank">3.合理看待自己和世界</a> </td><td><a href="pdnovel.php?mod=search&ac=author&srchtxt=wat" title="wat" target="_blank">wat</a></td><td>45275</td><td>2013-07-02</td></tr></tbody>
+</table>
+<div class="more"><a target="_blank" href="pdnovel.php?mod=list">更多>></a></div>
+</div></div></div></div></div></div><!--[/diy]--></div>
+<div class="pdsidecont"><!--[diy=diypdside]--><div id="diypdside" class="area"><div id="tabl0Zk43" class="pdsidetab2 frame-tab move-span cl"><div id="tabl0Zk43_title" class="tab-title title column cl" switchtype="click"><div id="portal_block_68" class="block move-span"><div class="blocktitle title"><span style="float:;margin-left:px;font-size:;color:;" class="titletext">本周推荐</span></div><div id="portal_block_68_content" class="dxb_bc"><ul style="margin-left:10px;"><li class="liststyle"><a href="pdnovel.php?mod=list&catid=5" class="gray" target="_blank">[都市]</a> <a href="pdnovel.php?mod=view&novelid=2" title=" 旧年桃花之几时 " target="_blank"> 旧年桃花之几时 </a></li><li class="liststyle"><a href="pdnovel.php?mod=list&catid=1" class="gray" target="_blank">[玄幻]</a> <a href="pdnovel.php?mod=view&novelid=4" title="傲世斩神" target="_blank">傲世斩神</a></li><li class="liststyle"><a href="pdnovel.php?mod=list&catid=5" class="gray" target="_blank">[都市]</a> <a href="pdnovel.php?mod=view&novelid=3" title="妃你莫属：倾世舞妃" target="_blank">妃你莫属：倾世舞妃</a></li><li class="liststyle"><a href="pdnovel.php?mod=list&catid=1" class="gray" target="_blank">[玄幻]</a> <a href="pdnovel.php?mod=view&novelid=5" title="药舞乾坤" target="_blank">药舞乾坤</a></li><li class="liststyle"><a href="pdnovel.php?mod=list&catid=5" class="gray" target="_blank">[都市]</a> <a href="pdnovel.php?mod=view&novelid=6" title="缠爱：瑾色绝恋" target="_blank">缠爱：瑾色绝恋</a></li><li class="liststyle"><a href="pdnovel.php?mod=list&catid=5" class="gray" target="_blank">[都市]</a> <a href="pdnovel.php?mod=view&novelid=7" title="绝色萌妃" target="_blank">绝色萌妃</a></li><li class="liststyle"><a href="pdnovel.php?mod=list&catid=1" class="gray" target="_blank">[玄幻]</a> <a href="pdnovel.php?mod=view&novelid=8" title="阿甘佐的回忆录" target="_blank">阿甘佐的回忆录</a></li><li class="liststyle"><a href="pdnovel.php?mod=list&catid=5" class="gray" target="_blank">[都市]</a> <a href="pdnovel.php?mod=view&novelid=9" title="十年思量" target="_blank">十年思量</a></li><li class="liststyle"><a href="pdnovel.php?mod=list&catid=4" class="gray" target="_blank">[仙侠]</a> <a href="pdnovel.php?mod=view&novelid=10" title="神刀英雄传" target="_blank">神刀英雄传</a></li><li class="liststyle"><a href="pdnovel.php?mod=list&catid=5" class="gray" target="_blank">[都市]</a> <a href="pdnovel.php?mod=view&novelid=11" title="爱未完成时" target="_blank">爱未完成时</a></li><li class="liststyle"><a href="pdnovel.php?mod=list&catid=4" class="gray" target="_blank">[仙侠]</a> <a href="pdnovel.php?mod=view&novelid=12" title="至尊一剑" target="_blank">至尊一剑</a></li><li class="liststyle"><a href="pdnovel.php?mod=list&catid=5" class="gray" target="_blank">[都市]</a> <a href="pdnovel.php?mod=view&novelid=13" title="媚佳人：帝宫乱" target="_blank">媚佳人：帝宫乱</a></li><li class="liststyle"><a href="pdnovel.php?mod=list&catid=5" class="gray" target="_blank">[都市]</a> <a href="pdnovel.php?mod=view&novelid=14" title="倾世王妃" target="_blank">倾世王妃</a></li><li class="liststyle"><a href="pdnovel.php?mod=list&catid=5" class="gray" target="_blank">[都市]</a> <a href="pdnovel.php?mod=view&novelid=15" title="富家公子偷心妻" target="_blank">富家公子偷心妻</a></li><li class="liststyle"><a href="pdnovel.php?mod=list&catid=5" class="gray" target="_blank">[都市]</a> <a href="pdnovel.php?mod=view&novelid=16" title="姻缘天注定" target="_blank">姻缘天注定</a></li><li class="listmore"><a href="pdnovel.php?mod=list" target="_blank">更多>></a></li>
+</ul></div></div><div id="portal_block_66" class="block move-span"><div class="blocktitle title"><span style="float:;margin-left:px;font-size:;color:;" class="titletext">上周推荐</span></div><div id="portal_block_66_content" class="dxb_bc"><ul><li class="liststyle"><a href="pdnovel.php?mod=list&catid=5" class="gray" target="_blank">[都市]</a> <a href="pdnovel.php?mod=view&novelid=2" title=" 旧年桃花之几时 " target="_blank"> 旧年桃花之几时 </a></li><li class="liststyle"><a href="pdnovel.php?mod=list&catid=1" class="gray" target="_blank">[玄幻]</a> <a href="pdnovel.php?mod=view&novelid=4" title="傲世斩神" target="_blank">傲世斩神</a></li><li class="liststyle"><a href="pdnovel.php?mod=list&catid=5" class="gray" target="_blank">[都市]</a> <a href="pdnovel.php?mod=view&novelid=3" title="妃你莫属：倾世舞妃" target="_blank">妃你莫属：倾世舞妃</a></li><li class="liststyle"><a href="pdnovel.php?mod=list&catid=1" class="gray" target="_blank">[玄幻]</a> <a href="pdnovel.php?mod=view&novelid=5" title="药舞乾坤" target="_blank">药舞乾坤</a></li><li class="liststyle"><a href="pdnovel.php?mod=list&catid=5" class="gray" target="_blank">[都市]</a> <a href="pdnovel.php?mod=view&novelid=6" title="缠爱：瑾色绝恋" target="_blank">缠爱：瑾色绝恋</a></li><li class="liststyle"><a href="pdnovel.php?mod=list&catid=5" class="gray" target="_blank">[都市]</a> <a href="pdnovel.php?mod=view&novelid=7" title="绝色萌妃" target="_blank">绝色萌妃</a></li><li class="liststyle"><a href="pdnovel.php?mod=list&catid=1" class="gray" target="_blank">[玄幻]</a> <a href="pdnovel.php?mod=view&novelid=8" title="阿甘佐的回忆录" target="_blank">阿甘佐的回忆录</a></li><li class="liststyle"><a href="pdnovel.php?mod=list&catid=5" class="gray" target="_blank">[都市]</a> <a href="pdnovel.php?mod=view&novelid=9" title="十年思量" target="_blank">十年思量</a></li><li class="liststyle"><a href="pdnovel.php?mod=list&catid=4" class="gray" target="_blank">[仙侠]</a> <a href="pdnovel.php?mod=view&novelid=10" title="神刀英雄传" target="_blank">神刀英雄传</a></li><li class="liststyle"><a href="pdnovel.php?mod=list&catid=5" class="gray" target="_blank">[都市]</a> <a href="pdnovel.php?mod=view&novelid=11" title="爱未完成时" target="_blank">爱未完成时</a></li><li class="liststyle"><a href="pdnovel.php?mod=list&catid=4" class="gray" target="_blank">[仙侠]</a> <a href="pdnovel.php?mod=view&novelid=12" title="至尊一剑" target="_blank">至尊一剑</a></li><li class="liststyle"><a href="pdnovel.php?mod=list&catid=5" class="gray" target="_blank">[都市]</a> <a href="pdnovel.php?mod=view&novelid=13" title="媚佳人：帝宫乱" target="_blank">媚佳人：帝宫乱</a></li><li class="liststyle"><a href="pdnovel.php?mod=list&catid=5" class="gray" target="_blank">[都市]</a> <a href="pdnovel.php?mod=view&novelid=14" title="倾世王妃" target="_blank">倾世王妃</a></li><li class="liststyle"><a href="pdnovel.php?mod=list&catid=5" class="gray" target="_blank">[都市]</a> <a href="pdnovel.php?mod=view&novelid=15" title="富家公子偷心妻" target="_blank">富家公子偷心妻</a></li><li class="liststyle"><a href="pdnovel.php?mod=list&catid=5" class="gray" target="_blank">[都市]</a> <a href="pdnovel.php?mod=view&novelid=16" title="姻缘天注定" target="_blank">姻缘天注定</a></li><li class="listmore"><a href="pdnovel.php?mod=list" target="_blank">更多>></a></li>
+</ul></div></div></div><div id="tabl0Zk43_content" class="tb-c"></div></div><div id="framel37ZES" class="pdside1 frame move-span cl frame-1"><div id="framel37ZES_left" class="column frame-1-c"><div id="framel37ZES_left_temp" class="move-span temp"></div><div id="portal_block_69" class="block move-span"><div class="blocktitle title"><span style="float:;margin-left:px;font-size:;color:;" class="titletext">小说字数排行榜</span></div><div id="portal_block_69_content" class="dxb_bc"><ul style="margin-left:10px;"><li class="liststyle">&nbsp;<span class="left"><a href="pdnovel.php?mod=view&novelid=108" title="伟人与名人的少年时代" target="_blank">伟人与名人的少年时代</a></span><span class="right">96208</span></li><li class="liststyle">&nbsp;<span class="left"><a href="pdnovel.php?mod=view&novelid=99" title="管理是金：有效管理全书" target="_blank">管理是金：有效管理全</a></span><span class="right">87508</span></li><li class="liststyle">&nbsp;<span class="left"><a href="pdnovel.php?mod=view&novelid=122" title="古寺之谜：探秘中国二十座著名古寺" target="_blank">古寺之谜：探秘中国二</a></span><span class="right">80389</span></li><li class="liststyle">&nbsp;<span class="left"><a href="pdnovel.php?mod=view&novelid=121" title="中外55位名作家的成长历程" target="_blank">中外55位名作家的成长</a></span><span class="right">79325</span></li><li class="liststyle">&nbsp;<span class="left"><a href="pdnovel.php?mod=view&novelid=145" title="二战十大著名战役" target="_blank">二战十大著名战役</a></span><span class="right">77697</span></li><li class="liststyle">&nbsp;<span class="left"><a href="pdnovel.php?mod=view&novelid=114" title="养生的智慧" target="_blank">养生的智慧</a></span><span class="right">75482</span></li><li class="liststyle">&nbsp;<span class="left"><a href="pdnovel.php?mod=view&novelid=116" title="易经一日一解" target="_blank">易经一日一解</a></span><span class="right">71567</span></li><li class="liststyle">&nbsp;<span class="left"><a href="pdnovel.php?mod=view&novelid=131" title="征服世界英雄的女人们" target="_blank">征服世界英雄的女人们</a></span><span class="right">71053</span></li><li class="liststyle">&nbsp;<span class="left"><a href="pdnovel.php?mod=view&novelid=29" title="提升运气的吉祥植物" target="_blank">提升运气的吉祥植物</a></span><span class="right">70235</span></li><li class="liststyle">&nbsp;<span class="left"><a href="pdnovel.php?mod=view&novelid=119" title="红色经典：智读毛泽东诗词" target="_blank">红色经典：智读毛泽东</a></span><span class="right">68974</span></li><li class="liststyle">&nbsp;<span class="left"><a href="pdnovel.php?mod=view&novelid=104" title="明朝十讲" target="_blank">明朝十讲</a></span><span class="right">68534</span></li><li class="liststyle">&nbsp;<span class="left"><a href="pdnovel.php?mod=view&novelid=115" title="一生的财富运算" target="_blank">一生的财富运算</a></span><span class="right">68180</span></li><li class="liststyle">&nbsp;<span class="left"><a href="pdnovel.php?mod=view&novelid=140" title="史记一日一得" target="_blank">史记一日一得</a></span><span class="right">64321</span></li><li class="liststyle">&nbsp;<span class="left"><a href="pdnovel.php?mod=view&novelid=136" title="中国历史上的“坏”女人" target="_blank">中国历史上的“坏”女</a></span><span class="right">63916</span></li><li class="listmore"><a href="pdnovel.php?mod=list&orderby=9" target="_blank">更多>></a></li>
+</ul></div></div></div></div><div id="frameRt02QQ" class="pdside1 frame move-span cl frame-1"><div id="frameRt02QQ_left" class="column frame-1-c"><div id="frameRt02QQ_left_temp" class="move-span temp"></div><div id="portal_block_70" class="block move-span"><div class="blocktitle title"><span style="float:;margin-left:px;font-size:;color:;" class="titletext">小说收藏排行榜</span></div><div id="portal_block_70_content" class="dxb_bc"><ul style="margin-left:10px;"><li class="liststyle"><span class="left"><a href="pdnovel.php?mod=view&novelid=2" title=" 旧年桃花之几时 " target="_blank"> 旧年桃花之几时 </a></span><span class="right">2</span></li><li class="liststyle"><span class="left"><a href="pdnovel.php?mod=view&novelid=5" title="药舞乾坤" target="_blank">药舞乾坤</a></span><span class="right">2</span></li><li class="liststyle"><span class="left"><a href="pdnovel.php?mod=view&novelid=4" title="傲世斩神" target="_blank">傲世斩神</a></span><span class="right">1</span></li><li class="liststyle"><span class="left"><a href="pdnovel.php?mod=view&novelid=3" title="妃你莫属：倾世舞妃" target="_blank">妃你莫属：倾世舞妃</a></span><span class="right">0</span></li><li class="liststyle"><span class="left"><a href="pdnovel.php?mod=view&novelid=6" title="缠爱：瑾色绝恋" target="_blank">缠爱：瑾色绝恋</a></span><span class="right">0</span></li><li class="liststyle"><span class="left"><a href="pdnovel.php?mod=view&novelid=7" title="绝色萌妃" target="_blank">绝色萌妃</a></span><span class="right">0</span></li><li class="liststyle"><span class="left"><a href="pdnovel.php?mod=view&novelid=8" title="阿甘佐的回忆录" target="_blank">阿甘佐的回忆录</a></span><span class="right">0</span></li><li class="liststyle"><span class="left"><a href="pdnovel.php?mod=view&novelid=9" title="十年思量" target="_blank">十年思量</a></span><span class="right">0</span></li><li class="liststyle"><span class="left"><a href="pdnovel.php?mod=view&novelid=10" title="神刀英雄传" target="_blank">神刀英雄传</a></span><span class="right">0</span></li><li class="liststyle"><span class="left"><a href="pdnovel.php?mod=view&novelid=11" title="爱未完成时" target="_blank">爱未完成时</a></span><span class="right">0</span></li><li class="liststyle"><span class="left"><a href="pdnovel.php?mod=view&novelid=12" title="至尊一剑" target="_blank">至尊一剑</a></span><span class="right">0</span></li><li class="liststyle"><span class="left"><a href="pdnovel.php?mod=view&novelid=13" title="媚佳人：帝宫乱" target="_blank">媚佳人：帝宫乱</a></span><span class="right">0</span></li><li class="liststyle"><span class="left"><a href="pdnovel.php?mod=view&novelid=14" title="倾世王妃" target="_blank">倾世王妃</a></span><span class="right">0</span></li><li class="liststyle"><span class="left"><a href="pdnovel.php?mod=view&novelid=15" title="富家公子偷心妻" target="_blank">富家公子偷心妻</a></span><span class="right">0</span></li><li class="liststyle"><span class="left"><a href="pdnovel.php?mod=view&novelid=16" title="姻缘天注定" target="_blank">姻缘天注定</a></span><span class="right">0</span></li><li class="liststyle"><span class="left"><a href="pdnovel.php?mod=view&novelid=17" title="情迷冰山恶少" target="_blank">情迷冰山恶少</a></span><span class="right">0</span></li><li class="liststyle"><span class="left"><a href="pdnovel.php?mod=view&novelid=18" title="豪门老公，请克制" target="_blank">豪门老公，请克制</a></span><span class="right">0</span></li><li class="liststyle"><span class="left"><a href="pdnovel.php?mod=view&novelid=19" title="王者大陆" target="_blank">王者大陆</a></span><span class="right">0</span></li><li class="liststyle"><span class="left"><a href="pdnovel.php?mod=view&novelid=20" title="把健康带回家的保健植物" target="_blank">把健康带回家的保健植</a></span><span class="right">0</span></li><li class="liststyle"><span class="left"><a href="pdnovel.php?mod=view&novelid=21" title="成语接龙：漫画版（全面成才听读故事）" target="_blank">成语接龙：漫画版（全</a></span><span class="right">0</span></li><li class="liststyle"><span class="left"><a href="pdnovel.php?mod=view&novelid=22" title="成语接龙：卡通版（全面成才听读故事）" target="_blank">成语接龙：卡通版（全</a></span><span class="right">0</span></li><li class="liststyle"><span class="left"><a href="pdnovel.php?mod=view&novelid=23" title="读故事找不同.天才侦探（全面成才听读故事）" target="_blank">读故事找不同.天才侦</a></span><span class="right">0</span></li><li class="listmore"><a href="pdnovel.php?mod=list&orderby=10" target="_blank">更多>></a></li>
+</ul></div></div></div></div></div><!--[/diy]--></div>
+</div><div class="pdbox" style="margin-top:0">
+<!--[diy=diypdall]--><div id="diypdall" class="area"><div id="frameq8nQqn" class="pdall1 frame move-span cl frame-1"><div id="frameq8nQqn_left" class="column frame-1-c"><div id="frameq8nQqn_left_temp" class="move-span temp"></div><div id="portal_block_71" class="block move-span"><div class="blocktitle title"><span style="float:;margin-left:px;font-size:;color:;" class="titletext">经典典藏</span></div><div id="portal_block_71_content" class="dxb_bc"><div class="catalldclb">
+<ul><li><a href="pdnovel.php?mod=view&novelid=2" title=" 旧年桃花之几时 " target="_blank"><img src="data/attachment/pdnovel/cover/0/2-609.jpg" width="80" height="100" alt=" 旧年桃花之几时 "> 旧年桃花之几时 </a></li><li><a href="pdnovel.php?mod=view&novelid=5" title="药舞乾坤" target="_blank"><img src="data/attachment/pdnovel/cover/0/5-453.jpg" width="80" height="100" alt="药舞乾坤">药舞乾坤</a></li><li><a href="pdnovel.php?mod=view&novelid=4" title="傲世斩神" target="_blank"><img src="data/attachment/pdnovel/cover/0/4-100.jpg" width="80" height="100" alt="傲世斩神">傲世斩神</a></li><li><a href="pdnovel.php?mod=view&novelid=3" title="妃你莫属：倾世舞妃" target="_blank"><img src="data/attachment/pdnovel/cover/0/3-549.jpg" width="80" height="100" alt="妃你莫属：倾世舞妃">妃你莫属：倾世舞妃</a></li><li><a href="pdnovel.php?mod=view&novelid=7" title="绝色萌妃" target="_blank"><img src="data/attachment/pdnovel/cover/0/7-260.jpg" width="80" height="100" alt="绝色萌妃">绝色萌妃</a></li><li><a href="pdnovel.php?mod=view&novelid=8" title="阿甘佐的回忆录" target="_blank"><img src="data/attachment/pdnovel/cover/0/8-868.jpg" width="80" height="100" alt="阿甘佐的回忆录">阿甘佐的回忆录</a></li><li><a href="pdnovel.php?mod=view&novelid=9" title="十年思量" target="_blank"><img src="data/attachment/pdnovel/cover/0/9-126.jpg" width="80" height="100" alt="十年思量">十年思量</a></li><li><a href="pdnovel.php?mod=view&novelid=10" title="神刀英雄传" target="_blank"><img src="data/attachment/pdnovel/cover/0/10-691.jpg" width="80" height="100" alt="神刀英雄传">神刀英雄传</a></li></ul>
+</div></div></div></div></div></div><!--[/diy]-->
+</div></div>
+<div class="wp">
+<!--[diy=diy2]--><div id="di2" class="area"></div><!--[/diy]-->
+</div>
+	</div>
+
+
+<div id="ft" class="wp cl">
+<div id="flk-" class="y-" align="center">
+<p>
+<a href="forum.php?mod=misc&action=showdarkroom" >小黑屋</a><span class="pipe">|</span><strong><a href="http://my3gbook.com/" target="_blank">水墨书香网</a></strong>
+( <a href="http://www.miitbeian.gov.cn/" target="_blank">黑ICP备11005808号-3</a> )&nbsp;<a href="http://discuz.qq.com/service/security" target="_blank" title="防水墙保卫网站远离侵害"><img src="static/image/common/security.png"></a>&nbsp;&nbsp;<span id="tcss"></span></p>
+<p class="xs0">
+GMT+8, 2014-11-9 02:29<span id="debuginfo">
+, Processed in 0.270602 second(s), 16 queries
+, Gzip On.
+</span>
+</p>
+</div>        <div id="icp" align="center" style=" margin-top:10px;">
+        <a href="http://www.sznet110.gov.cn/" target="_blank">
+        <img src="static/image/common/icp/footer_img1.png?v=1378127539" width="122" height="52"></a>
+        <a href="http://www.sznet110.gov.cn/" target="_blank">
+        <img src="static/image/common/icp/footer_img2.png?v=1378127539" width="122" height="52"></a>
+        <a href="http://www.hd315.gov.cn/" target="_blank">
+        <img src="static/image/common/icp/footer_img3.png?v=1378127539" width="122" height="52"></a>
+        <a href="http://net.china.com.cn/" target="_blank">
+        <img src="static/image/common/icp/footer_img4.png?v=1378127539" width="122" height="52"></a>
+        <a href="http://www.wenming.cn/" target="_blank">
+        <img src="static/image/common/icp/footer_img5.png?v=1378127539" width="122" height="52"></a>
+        </div>
+
+    </div>
+
+<div id="scrolltop">
+<span hidefocus="true"><a title="返回顶部" onclick="window.scrollTo('0','0')" class="scrolltopa" ><b>返回顶部</b></a></span>
+</div>
+
+			<div id="discuz_tips" style="display:none;"></div>
+			
+
+
+</div>

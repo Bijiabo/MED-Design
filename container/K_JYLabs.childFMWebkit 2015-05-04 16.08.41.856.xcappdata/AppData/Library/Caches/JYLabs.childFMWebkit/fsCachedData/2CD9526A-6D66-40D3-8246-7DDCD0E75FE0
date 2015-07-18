@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    ﻿<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>黑龙江龙华数字出版有限公司 </title>
+<meta content="龙华,数字出版,黑龙江龙华数字出版有限公司,冰火游戏网,黑龙江冰火游戏网,龙华在线教育,龙华数字教育,水墨书香" name="Keywords"/>
+<meta content="黑龙江龙华数字出版有限公司,龙华数字出版的产品线涵盖在线教育、数字教育解决方案、教育游戏、数字阅读、软件开发、平台建设、网络运营、系统集成与服务等领域。目前龙华数字的各类产品与解决方案已经通过不同运营渠道逐步推向全国。" name="Description"/>
+<link href="../StyleCss/lhstyle.css" rel="stylesheet" type="text/css"/>
+<link type="image/x-icon" href="/LOGO.ico" rel="shortcut icon"/>
+<link type="image/gif" href="/LOGO.gif" rel="icon"/>
+<link rel="shortcut icon" href="/LOGO.ico" type="image/x-icon" />
+<script src="../Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
+<script src="../Scripts/scrollpic.js" type="text/javascript"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?63f9f2d16a84468334b83062ef47f9aa";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+﻿<!-- TOP By.XFL STRAT-->
+<div class="header" style="margin: 0 auto;">
+    <div class="header_con">
+        <div class="logo" >
+   <a href="http://www.lhszcb.com">
+                    <img height="60px"  src="../images/logo.jpg" title="黑龙江龙华数字出版有限公司"/></a>
+      </div>
+        <div class="top_menu">
+<a href="http://www.lhszcb.com/q/wb.htm" title="关注微博"  target="_blank"><img src="/lh_upfiles/image/weibo.png"/></a>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+</div>
+<div class="clear">
+</div>
+<!-- TOP By.XFL END--><!-- Home_Navigation  By.XFL STRAT-->
+<div class="nav" style="margin: 0 auto;">
+    <div class="nav_menu">
+        <ul>
+            <li><a href="/">
+                首页</a>
+            </li>
+            <li><a href="/lh_business/LHgame.html">
+                业务体系</a>
+
+                <div class="show_box">
+                    <div class="show_top">
+                    </div>
+                    <div class="show_mid">
+                        <ul>
+                            <li><a href="/lh_business/LHgame.html">
+                                手机游戏</a></li>
+                            <li><a href="/lh_business/DigitalProject.html">
+                                手机阅读</a></li>
+                            <li><a href="/lh_business/LHedu.html">
+                                在线教育</a></li>
+                        </ul>
+                    </div>
+                    <div class="show_fot">
+                    </div>
+                </div>
+            </li>
+            <li><a href="/lh_job/job.html">
+                加入龙华</a>
+
+                <div class="show_box">
+                    <div class="show_top">
+                    </div>
+                    <div class="show_mid">
+                        <ul>
+                            <li><a href="/lh_job/job.html">
+                                招聘信息</a></li>
+                        </ul>
+                    </div>
+                    <div class="show_fot">
+                    </div>
+                </div>
+            </li>
+            <li><a href="/lh_about/LHprofile.html">
+                关于龙华</a>
+
+                <div class="show_box">
+                    <div class="show_top">
+                    </div>
+                    <div class="show_mid">
+                        <ul>
+                            <li><a href="/lh_about/LHprofile.html">
+                                公司介绍</a></li>
+                        </ul>
+                    </div>
+                    <div class="show_fot">
+                    </div>
+                </div>
+            </li>
+
+            <li><a href="/lh_contact">
+                联系我们</a>
+
+                <div class="show_box">
+                    <div class="show_top">
+                    </div>
+                    <div class="show_mid">
+                        <ul>
+                            <li><a href="/lh_contact/Contact.html">
+                                联系方式</a></li>
+                        </ul>
+                    </div>
+                    <div class="show_fot">
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="date" id="showtime">
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+</div>
+
+<!-- Home_Navigation  By.XFL END--><div class="main">
+    <div class="slides">
+        <ul class="slide-pic">
+            <li class="cur">
+                <div style="height: 334px; background-image: url('../lh_upfiles/image/lhedu.jpg');">
+ 
+                </div>
+            </li>
+            <li>
+                <div style="height: 334px; background-image: url('../lh_upfiles/image/ibinghuo.jpg');">
+                 
+                </div>
+            </li>
+            <li>
+                <div style="height: 334px; background-image: url('../lh_upfiles/image/1St5avX6X0.jpg');">
+                 
+                </div>
+            </li>
+            <li>
+                <div style="height: 334px; background-image: url('../lh_upfiles/image/1St5avX6X2.jpg');">
+                 
+                </div>
+            </li>
+
+        </ul>
+        <ul class="slide-li op">
+            <li class="cur"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+
+        </ul>
+        <ul class="slide-li slide-txt">
+            <li class="cur" style="margin-left: 45%; display: inline;">
+<a href="http://www.lhszcb.com/lh_business/?BMultimedia&0.6967564984224737" title="在线教育"
+                   target="_blank"></a>
+            </li>
+            <li><a href="http://www.ibinghuo.com" title="冰火游戏网" target="_blank"></a></li>
+            <li><a href="http://www.lhszcb.com" title="黑龙江龙华数字出版有限公司" target="_blank"></a></li>
+            <li><a href="http://www.lhszcb.com/lh_job/index.html?0.8416383063886315" title="龙华招聘" target="_blank"></a>
+            </li>
+        </ul>
+    </div>
+
+
+</div>
+<script src="../Scripts/IndexScrollPic.js" type="text/javascript"></script>
+<div class="clear">
+</div>
+
+<!-- Content By.XFL STRAT--> 
+<div class="content">
+
+    <div class="about_lh">
+        <div class="more_ico">
+            <a href="/lh_about/LHprofile.html" title="更多" alt="更多"></a>
+        </div>
+        <div class="clear">
+        </div>
+        <div id="get_aboutlh_text" class="about_text">
+作为自2011年起从哈尔滨出版社独立出来的数字出版企业，我们的团队文化底蕴深厚、人才资源充足。我们运用传统出版与信息化技术的相关经验，在深化改革、转型升级方面勇于创新。在公司发展、管理、服务方面创出了许多新思路、新经验、新模式，为全国同行作出了良好示范。被评为全国新闻出版企业升级转型示范单位之一。
+        </div>
+
+    </div>
+    <div class="business_lh">
+        <div class="more_ico">
+            <a href="/lh_business/" title="更多" alt="更多"></a>
+        </div>
+        <div class="bank10">
+        </div>
+        <ul class="mission"><li>.</li>
+            <li class="about_text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司以数字教育为主题，辅以数字阅读、教育游戏、多媒体等衍生产品，全面拓展以数字教育为主营业务的数字出版业务。</li>
+        </ul>
+    </div>
+    <div class="address_lh">
+        <div class="more_ico">
+            <a href="/lh_contact/Contact.html" title="更多" alt="更多"></a>
+        </div>
+        <div class="bank10">
+        </div>
+        <div id="address_list" class="address_box">
+            电话：0451-87900228
+        </div>
+        <div id="Div1" class="address_box">
+            传真：0451-87900275
+        </div>
+        <div id="Div2" class="address_box">
+            邮箱：lhszcb@lhszcb.com
+        </div>
+        <div id="Div3" class="address_box">
+            求职：job@lhszcb.com
+        </div>
+        <div id="Div4" class="address_box">
+            地址：哈尔滨市松北区科技一街349号3号楼E座
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+
+
+</div>
+<!-- Content By.XFL END-->
+
+
+<!-- footer By.XFL STRAT-->
+﻿<!-- Links By.XFL STRAT-->
+
+<!-- Links By.XFL END-->
+<!-- Home_Footer  By.XFL STRAT-->
+
+<div class="footer">
+ <p>
+        友情链接：
+        <a href="http://www.ibinghuo.com" title="冰火游戏网" target="_blank">
+            冰火游戏网</a> |
+        <a href="http://www.my3gbook.com" title="水墨书香网" target="_blank">
+            水墨书香</a> |
+        <a href="http://www.hrbszjy.com" title="龙华数字教育网" target="_blank">
+            龙华数字教育网</a> |			
+        <a href="http://www.eecjy.com" title="EEC教育" target="_blank">
+            EEC教育网</a> |
+    </p>
+    <a href="/lh_business">
+        业务体系</a> |
+    <a href="/lh_job">
+        加入龙华</a> |
+    <a href="/lh_about">
+        关于龙华</a> |
+    <a href="/lh_contact">
+        联系我们</a> |
+    <a href="/">网站地图</a>
+    <br/>
+    Copyright &copy; 2011-2015 黑龙江龙华数字出版有限公司, All Rights Reserved 黑ICP备11005808
+</div>
+<script type="text/javascript">
+    rand = Math.random();
+    $("a").each(function () {
+        href = $(this).attr("href");
+        if (href.length == 0 || href.indexOf("javascript") > -1) return;
+        else if (href.indexOf("?") > -1) {
+            $(this).attr("href", href + "&" + rand);
+        }
+        else {
+            $(this).attr("href", href + "?" + rand);
+        }
+    });
+</script>
+<!-- Home_Footer By.XFL END--><!-- footer By.XFL END-->
+</body>
+</html>

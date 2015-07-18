@@ -1,0 +1,133 @@
+.page_container{
+    overflow: hidden;
+}
+
+.onepage-pagination{
+    display: none;
+}
+
+#welcome_container .welcome_item{
+    background-position: center center;
+    background-size:  cover;
+    background-repeat: no-repeat;
+}
+
+.width100{
+    width: 100%;
+}
+#child_info{
+    width: 100%;
+    clear: both;
+}
+#grown_data{
+    text-align: center;
+}
+#playlist{
+    position: relative;
+}
+#playlist>img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.corona{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.corona>div{
+    position: absolute;
+}
+.corona .oval{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -1000px;
+    width: 2000px;
+    height: 2000px;
+    border-radius: 50%;
+    background-color: #cccccc;
+    overflow: hidden;
+}
+
+.corona .oval>div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+}
+
+.corona .oval .white{
+    background-color: #ffffff;
+    width: 1400px;
+    height: 1400px;
+    margin-left: -700px;
+    margin-top: -700px;
+    background-image: url("../image/main/ageScale.png");
+    background-size: cover;
+}
+.corona .oval .wall{
+    background-color: #F5F7FA;
+    width: 2000px;
+    height: 2000px;
+    margin-left: -1000px;
+    margin-top: -1000px;
+}
+.corona .oval .floor{
+    background-color: #F5A623;
+    width: 1600px;
+    height: 1600px;
+    margin-left: -800px;
+    margin-top: -800px;
+}
+.corona .oval .scene{
+    background: none;
+    width: 2000px;
+    height: 2000px;
+    margin-left: -1000px;
+    margin-top: -1000px;
+}
+.corona .oval .scene .scene-item{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2000px;
+    height: 2000px;
+    margin-left: -1000px;
+    margin-top: -1000px;
+}
+
+.corona .protagonist{
+    border-radius: 0;
+    width: 60px;
+    height: 160px;
+    top:100px;
+    left: 100px;
+    z-index:999;
+}
+.corona .protagonist img{
+    height: 100%;
+}
+
+#corona_demo{
+    height: 343px;
+    position: absolute;
+    top: 104px;
+    left: 0;
+}
+#corona_demo .oval{
+
+}
+
+#main_child_info{
+    position: relative;
+    /*width: 2000px;*/
+    overflow: hidden;
+}
+#main_child_info .page_container{
+    position: absolute;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}

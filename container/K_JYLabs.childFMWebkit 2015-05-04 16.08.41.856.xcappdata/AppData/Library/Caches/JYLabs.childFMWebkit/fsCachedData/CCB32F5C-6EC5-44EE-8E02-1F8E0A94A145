@@ -1,0 +1,608 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>冰火游戏网-最好玩的手机游戏网站</title>
+    <meta name="keywords" content="冰火,游戏,冰火游戏,冰火游戏网,黑龙江冰火游戏网,哈尔滨冰火游戏网,黑龙江手机游戏,教育游戏,休闲游戏,手机游戏网" />
+    <meta name="description"  content="冰火游戏网（www.ibinghuo.com）汇集最新最全最好玩的手机游戏、手游资讯、手游攻略等信息，提供苹果手机游戏、安卓手机游戏、WP手机游戏免费下载服务,是国内最大的手机游戏门户..." />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta name="Author" content="http://weibo.com/u/2287509643 , 2014, http://www.lhszcb.com/" />
+    <meta name="robots" content="index,follow" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="build" content="2015-01-01" />
+    <meta name="coprright" content="冰火游戏网 游戏事业部 http://www.ibinghuo.com" />
+    <link href="/SysSource/WebStyle/default/index.css" rel="stylesheet" type="text/css" />
+    <link href="/SysSource/WebStyle/default/top.css" rel="stylesheet" type="text/css" />
+    <link href="/SysSource/WebStyle/default/android.css" rel="stylesheet" type="text/css" />
+    <script src="/SysSource/WebJScript/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="/SysSource/WebJScript/SlideMouse.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?43248085996241b626d33853864d288d";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script type="text/javascript">
+        var cpro_id = "u1926006";
+    </script>
+    <script src="http://cpro.baidustatic.com/cpro/ui/f.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="top" class="top">
+        <!-- top start -->
+        
+<table width="1000" height="34" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td width="23" align="left">
+            <img src="/SysSource/WebImages/top_sinawb.png" width="20" height="34" />
+        </td>
+        <td width="70" align="left">
+            <a href="#" target="_blank" class="topyin">新浪微博</a>
+        </td>
+        <td width="23" align="left">
+            <img src="/SysSource/WebImages/top_qqwb.png" width="20" height="34" />
+        </td>
+        <td width="70" align="left">
+            <a href="#" target="_blank" class="topyin">腾讯微博</a>
+        </td>
+        <td width="21" align="left">
+            <img src="/SysSource/WebImages/top_mobileApp.png" width="20" height="34" />
+        </td>
+        <td width="188" align="left">
+            <a href="#" target="_blank" class="topyin">手机端</a>
+        </td>
+        <td width="80" align="center" bgcolor="#d93637">
+            <a href="dl.html" target="_blank" class="topyjdl">一键登录</a>
+        </td>
+        <td width="16" align="left">
+        </td>
+        <td width="24" align="left">
+            <img src="/SysSource/WebImages/top_qqLogin.png" width="20" height="34" />
+        </td>
+        <td width="350" align="left">
+            <a href="#" target="_blank" class="topqq">用QQ账号登录</a> <span class="topyin2">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+            <a href="" target="_blank" class="topyin">立即注册</a>
+        </td>
+        <td width="135" align="center">
+            <a class="topyin" href="javascript:window.external.addFavorite('http://www.ibinghuo.com','冰火游戏网');">
+                加入收藏</a> <span class="topyin2">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span><a href="#"
+                    class="topyin" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.ibinghuo.com');">
+                    设为首页</a>
+        </td>
+    </tr>
+</table>
+<table width="1000" height="110" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td width="226" align="center" valign="top">
+            <a href="http://www.ibinghuo.com" target="_blank">
+                <img src="/weblogo.png" width="223" height="99" alt="冰火游戏网Logo" border="0" /></a>
+        </td>
+        <td width="460" align="center">
+            <div class="search-box fr">
+                <script type="text/javascript">                    document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E%3Cscript charset="utf-8" src="http://znsv.baidu.com/customer_search/api/js?sid=8649590181196775011') + '&plate_url=' + (encodeURIComponent(window.location.href)) + '&t=' + (Math.ceil(new Date() / 3600000)) + unescape('"%3E%3C/script%3E'));</script>
+            </div>
+        </td>
+        <td width="220" align="center">
+            <table width="220" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="73" height="30" align="center">
+                        <img alt="" src="/SysSource/WebImages/top_Leadaccount.png" width="40" height="30" />
+                    </td>
+                    <td width="64" height="30" align="center">
+                        <img alt="" src="/SysSource/WebImages/top_testgame.png" width="40" height="30" />
+                    </td>
+                    <td width="83" height="30" align="center">
+                        <img alt="" src="/SysSource/WebImages/top_developer.png" width="40" height="30" />
+                    </td>
+                </tr>
+                <tr>
+                    <td height="26" colspan="3" align="center">
+                        <a href="#" target="_blank" class="hui121">领账号</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a
+                            href="#" target="_blank" class="hui122">开测表</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a
+                                href="#" target="_blank" class="hui123">开发者社区</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td width="94" align="center">
+            <img src="/SysSource/WebImages/top_ibinghuoQR.png" width="80" height="80" />
+        </td>
+    </tr>
+</table>
+<table width="1000" height="130" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td width="200" height="58">
+            <a href="/Android" target="_blank" onmouseover="MM_swapImage('top_class_android','','/SysSource/WebImages/top_class_android_1.png',1)"
+                onmouseout="MM_swapImgRestore()">
+                <img src="/SysSource/WebImages/top_class_android.png" name="top_class_android" width="200"
+                    height="58" border="0" id="top_class_android" /></a>
+        </td>
+        <td width="200">
+            <a href="/IOS" target="_blank" onmouseover="MM_swapImage('top_class_ios','','/SysSource/WebImages/top_class_ios_1.png',1)"
+                onmouseout="MM_swapImgRestore()">
+                <img src="/SysSource/WebImages/top_class_ios.png" name="top_class_ios" width="200"
+                    height="58" border="0" id="top_class_ios" /></a>
+        </td>
+        <td width="200">
+            <a href="/WP" target="_blank" onmouseover="MM_swapImage('top_class_wp','','/SysSource/WebImages/top_class_wp_1.png',1)"
+                onmouseout="MM_swapImgRestore()">
+                <img src="/SysSource/WebImages/top_class_wp.png" name="top_class_wp" width="200"
+                    height="58" border="0" id="top_class_wp" /></a>
+        </td>
+        <td width="200">
+            <a href="/News" target="_blank" onmouseover="MM_swapImage('top_class_gamenews','','/SysSource/WebImages/top_class_gamenews_1.png',1)"
+                onmouseout="MM_swapImgRestore()">
+                <img src="/SysSource/WebImages/top_class_gamenews.png" name="top_class_gamenews"
+                    width="200" height="58" border="0" id="top_class_gamenews" /></a>
+        </td>
+        <td width="200" align="left">
+            <a href="/GL" target="_blank" onmouseover="MM_swapImage('top_class_Strategy','','/SysSource/WebImages/top_class_strategy_1.png',1)"
+                onmouseout="MM_swapImgRestore()">
+                <img src="/SysSource/WebImages/top_class_Strategy.png" name="top_class_Strategy"
+                    width="199" height="58" border="0" id="top_class_Strategy" /></a>
+        </td>
+    </tr>
+    <tr>
+        <td height="57" colspan="5" background="/SysSource/WebImages/top_line_1.png">
+            <table width="1000" height="57" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="200">
+                        <div id="rd1" class="rd2">
+                            <!-- 安卓分类  Top6 -->
+                            <ul>
+                                <li><a href="#" target="_blank" class="hui124">教育游戏</a></li>
+                                <li><a href="#" target="_blank" class="hui124">单机游戏</a></li>
+                                <li><a href="#" target="_blank" class="hui124">网络游戏</a></li>
+                                <li><a href="#" target="_blank" class="hui124">家庭游戏</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td width="200">
+                        <div id="rd2" class="rd2">
+                            <!-- IOS分类  Top6 -->
+                            <ul>
+                                <li><a href="#" target="_blank" class="hui124">教育游戏</a></li>
+                                <li><a href="#" target="_blank" class="hui124">单机游戏</a></li>
+                                <li><a href="#" target="_blank" class="hui124">网络游戏</a></li>
+                                <li><a href="#" target="_blank" class="hui124">家庭游戏</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td width="200">
+                        <div id="rd3" class="rd2">
+                            <!-- WP分类  Top6 -->
+                            <ul>
+                                <li><a href="#" target="_blank" class="hui124">教育游戏</a></li>
+                                <li><a href="#" target="_blank" class="hui124">单机游戏</a></li>
+                                <li><a href="#" target="_blank" class="hui124">网络游戏</a></li>
+                                <li><a href="#" target="_blank" class="hui124">家庭游戏</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td width="200">
+                        <div id="rd4" class="rd">
+                            <!-- 资讯分类  Top6 -->
+                            <ul>
+                                <li><a href="zx_more.html" target="_blank" class="hui124">安卓</a></li>
+                                <li><a href="zx_more.html" target="_blank" class="hui124">IOS</a></li>
+                                <li><a href="zx_more.html" target="_blank" class="hui124">WP</a></li>
+                                <li><a href="zx_more.html" target="_blank" class="hui124">独家</a></li>
+                                <li><a href="zx_sp.html" target="_blank" class="hui124">视频</a></li>
+                                <li><a href="zx_tp.html" target="_blank" class="hui124">图片</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td width="200">
+                        <div id="rd5" class="rd2">
+                            <!-- 攻略分类  Top4 -->
+                            <ul>
+                                <li><a href="gl.html" target="_blank" class="hui124">安卓攻略</a></li>
+                                <li><a href="gl_1.html" target="_blank" class="hui124">IOS攻略</a></li>
+                                <li><a href="gl_2.html" target="_blank" class="hui124">WP攻略</a></li>
+                                <li><a href="gl_3.html" target="_blank" class="hui124">视频攻略</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td height="8" colspan="5" background="/SysSource/WebImages/top_line_2.png">
+        </td>
+    </tr>
+    <tr>
+        <td height="7" colspan="5">
+        </td>
+    </tr>
+</table>
+
+        <!-- top end -->
+    </div>
+    <table width="1000" height="110" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td align="center" valign="top">
+                <!-- ADNROID TOP AD S -->
+                <img src="http://pic2.ibinghuo.com/ad/guanggao_1.png" width="1000" height="94" />
+                <!-- ADNROID TOP AD E -->
+            </td>
+        </tr>
+    </table>
+    <!--000000000-->
+    <table width="1000" height="460" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td width="760" align="left" valign="top">
+                <table width="745" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td width="20" height="47" bgcolor="#249CD8">
+                        </td>
+                        <td width="725" bgcolor="#249CD8" class="nwbai">
+                            您当前位置 &gt;&gt; <a href="index.html" target="_blank" class="nwbai15">首页</a> &gt;
+                            <a href="msg.html" target="_blank" class="nwbai15">消息中心</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="1" colspan="2">
+                        </td>
+                    </tr>
+                </table>
+                <div id="nw">
+                    <table width="690" border="0" align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td height="50" align="left" valign="bottom" class="nwlv18">
+                                
+                                <p>
+                                    抱歉，访问资源不错在。</p>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top" class="nw14">
+                                <p>
+                                    若有业务办理，商务合作请致电洽谈：<br />
+                                    86 0451-87900207 商务部
+                                    <br />
+                                    E-mail: ibinghuo@lhszcb.com 游戏事业部<br />
+                                    通信地址：黑龙江省 哈尔滨市 松北区 科技创新城 3号楼E座
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+            <td width="240" align="left" valign="top">
+                <table width="240" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td height="47" align="center" bgcolor="#249CD8">
+                            <span class="indexzuo1">安卓</span><span class="indexzuo2">游戏下载排行</span><span class="indexzuo3">
+                                TOP10</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="398" align="left" valign="top" bgcolor="#EBEBEB">
+                            <div id="android_upload" class="indexzuo">
+                                <!-- 安卓游戏下载排行 Top 10 -->
+                                <ul>
+                                    
+                                            <li>
+                                                <table width="240" height="36" border="0" cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                        <td width="44" align="center">
+                                                            <img src="/SysSource/WebImages/rank_1.png" width="17"
+                                                                height="17" />
+                                                        </td>
+                                                        <td width="38" align="left">
+                                                            <img src="http://pic1.ibinghuo.com/images/11/ICON/201504/AAAPX.jpg" width="25" height="25" />
+                                                        </td>
+                                                        <td width="100" align="left">
+                                                            民族之花
+                                                        </td>
+                                                        <td width="58" align="left">
+                                                            <a href="/game/563.html" target="_blank" onmouseout="MM_swapImgRestore()"
+                                                                onmouseover="MM_swapImage('img_dl563','','/SysSource/WebImages/dl_1.png',1)">
+                                                                <img src="/SysSource/WebImages/dl.png" name="img_dl563" width="42"
+                                                                    height="20" border="0" id="img_dl563" /></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </li>
+                                        
+                                            <li>
+                                                <table width="240" height="36" border="0" cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                        <td width="44" align="center">
+                                                            <img src="/SysSource/WebImages/rank_2.png" width="17"
+                                                                height="17" />
+                                                        </td>
+                                                        <td width="38" align="left">
+                                                            <img src="http://pic1.ibinghuo.com/images/11/ICON/201504/AAARL.jpg" width="25" height="25" />
+                                                        </td>
+                                                        <td width="100" align="left">
+                                                            黑白连珠乐
+                                                        </td>
+                                                        <td width="58" align="left">
+                                                            <a href="/game/623.html" target="_blank" onmouseout="MM_swapImgRestore()"
+                                                                onmouseover="MM_swapImage('img_dl623','','/SysSource/WebImages/dl_1.png',1)">
+                                                                <img src="/SysSource/WebImages/dl.png" name="img_dl623" width="42"
+                                                                    height="20" border="0" id="img_dl623" /></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </li>
+                                        
+                                            <li>
+                                                <table width="240" height="36" border="0" cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                        <td width="44" align="center">
+                                                            <img src="/SysSource/WebImages/rank_3.png" width="17"
+                                                                height="17" />
+                                                        </td>
+                                                        <td width="38" align="left">
+                                                            <img src="http://pic1.ibinghuo.com/images/11/ICON/201504/AAAPG.png" width="25" height="25" />
+                                                        </td>
+                                                        <td width="100" align="left">
+                                                            全民格斗
+                                                        </td>
+                                                        <td width="58" align="left">
+                                                            <a href="/game/546.html" target="_blank" onmouseout="MM_swapImgRestore()"
+                                                                onmouseover="MM_swapImage('img_dl546','','/SysSource/WebImages/dl_1.png',1)">
+                                                                <img src="/SysSource/WebImages/dl.png" name="img_dl546" width="42"
+                                                                    height="20" border="0" id="img_dl546" /></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </li>
+                                        
+                                            <li>
+                                                <table width="240" height="36" border="0" cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                        <td width="44" align="center">
+                                                            <img src="/SysSource/WebImages/rank_4.png" width="17"
+                                                                height="17" />
+                                                        </td>
+                                                        <td width="38" align="left">
+                                                            <img src="http://pic1.ibinghuo.com/images/11/ICON/201504/AAAQ8.png" width="25" height="25" />
+                                                        </td>
+                                                        <td width="100" align="left">
+                                                            街机捕鱼3D..
+                                                        </td>
+                                                        <td width="58" align="left">
+                                                            <a href="/game/610.html" target="_blank" onmouseout="MM_swapImgRestore()"
+                                                                onmouseover="MM_swapImage('img_dl610','','/SysSource/WebImages/dl_1.png',1)">
+                                                                <img src="/SysSource/WebImages/dl.png" name="img_dl610" width="42"
+                                                                    height="20" border="0" id="img_dl610" /></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </li>
+                                        
+                                            <li>
+                                                <table width="240" height="36" border="0" cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                        <td width="44" align="center">
+                                                            <img src="/SysSource/WebImages/rank_5.png" width="17"
+                                                                height="17" />
+                                                        </td>
+                                                        <td width="38" align="left">
+                                                            <img src="http://pic1.ibinghuo.com/images/11/ICON/201504/AAAQ9.jpg" width="25" height="25" />
+                                                        </td>
+                                                        <td width="100" align="left">
+                                                            全民1945
+                                                        </td>
+                                                        <td width="58" align="left">
+                                                            <a href="/game/611.html" target="_blank" onmouseout="MM_swapImgRestore()"
+                                                                onmouseover="MM_swapImage('img_dl611','','/SysSource/WebImages/dl_1.png',1)">
+                                                                <img src="/SysSource/WebImages/dl.png" name="img_dl611" width="42"
+                                                                    height="20" border="0" id="img_dl611" /></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </li>
+                                        
+                                            <li>
+                                                <table width="240" height="36" border="0" cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                        <td width="44" align="center">
+                                                            <img src="/SysSource/WebImages/rank_6.png" width="17"
+                                                                height="17" />
+                                                        </td>
+                                                        <td width="38" align="left">
+                                                            <img src="http://pic1.ibinghuo.com/images/11/ICON/201504/AAARB.png" width="25" height="25" />
+                                                        </td>
+                                                        <td width="100" align="left">
+                                                            天天酷跑V2..
+                                                        </td>
+                                                        <td width="58" align="left">
+                                                            <a href="/game/613.html" target="_blank" onmouseout="MM_swapImgRestore()"
+                                                                onmouseover="MM_swapImage('img_dl613','','/SysSource/WebImages/dl_1.png',1)">
+                                                                <img src="/SysSource/WebImages/dl.png" name="img_dl613" width="42"
+                                                                    height="20" border="0" id="img_dl613" /></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </li>
+                                        
+                                            <li>
+                                                <table width="240" height="36" border="0" cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                        <td width="44" align="center">
+                                                            <img src="/SysSource/WebImages/rank_7.png" width="17"
+                                                                height="17" />
+                                                        </td>
+                                                        <td width="38" align="left">
+                                                            <img src="http://pic1.ibinghuo.com/images/11/ICON/201504/AAARC.png" width="25" height="25" />
+                                                        </td>
+                                                        <td width="100" align="left">
+                                                            消灭星星3..
+                                                        </td>
+                                                        <td width="58" align="left">
+                                                            <a href="/game/614.html" target="_blank" onmouseout="MM_swapImgRestore()"
+                                                                onmouseover="MM_swapImage('img_dl614','','/SysSource/WebImages/dl_1.png',1)">
+                                                                <img src="/SysSource/WebImages/dl.png" name="img_dl614" width="42"
+                                                                    height="20" border="0" id="img_dl614" /></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </li>
+                                        
+                                            <li>
+                                                <table width="240" height="36" border="0" cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                        <td width="44" align="center">
+                                                            <img src="/SysSource/WebImages/rank_8.png" width="17"
+                                                                height="17" />
+                                                        </td>
+                                                        <td width="38" align="left">
+                                                            <img src="http://pic1.ibinghuo.com/images/11/ICON/201504/AAARA.png" width="25" height="25" />
+                                                        </td>
+                                                        <td width="100" align="left">
+                                                            僵尸世界大..
+                                                        </td>
+                                                        <td width="58" align="left">
+                                                            <a href="/game/612.html" target="_blank" onmouseout="MM_swapImgRestore()"
+                                                                onmouseover="MM_swapImage('img_dl612','','/SysSource/WebImages/dl_1.png',1)">
+                                                                <img src="/SysSource/WebImages/dl.png" name="img_dl612" width="42"
+                                                                    height="20" border="0" id="img_dl612" /></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </li>
+                                        
+                                            <li>
+                                                <table width="240" height="36" border="0" cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                        <td width="44" align="center">
+                                                            <img src="/SysSource/WebImages/rank_9.png" width="17"
+                                                                height="17" />
+                                                        </td>
+                                                        <td width="38" align="left">
+                                                            <img src="http://pic1.ibinghuo.com/images/11/ICON/201504/AAAPW.jpg" width="25" height="25" />
+                                                        </td>
+                                                        <td width="100" align="left">
+                                                            酷鼠军团
+                                                        </td>
+                                                        <td width="58" align="left">
+                                                            <a href="/game/562.html" target="_blank" onmouseout="MM_swapImgRestore()"
+                                                                onmouseover="MM_swapImage('img_dl562','','/SysSource/WebImages/dl_1.png',1)">
+                                                                <img src="/SysSource/WebImages/dl.png" name="img_dl562" width="42"
+                                                                    height="20" border="0" id="img_dl562" /></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </li>
+                                        
+                                            <li>
+                                                <table width="240" height="36" border="0" cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                        <td width="44" align="center">
+                                                            <img src="/SysSource/WebImages/rank_10.png" width="17"
+                                                                height="17" />
+                                                        </td>
+                                                        <td width="38" align="left">
+                                                            <img src="http://pic1.ibinghuo.com/images/11/ICON/201504/AAARK.png" width="25" height="25" />
+                                                        </td>
+                                                        <td width="100" align="left">
+                                                            大亨德州扑..
+                                                        </td>
+                                                        <td width="58" align="left">
+                                                            <a href="/game/622.html" target="_blank" onmouseout="MM_swapImgRestore()"
+                                                                onmouseover="MM_swapImage('img_dl622','','/SysSource/WebImages/dl_1.png',1)">
+                                                                <img src="/SysSource/WebImages/dl.png" name="img_dl622" width="42"
+                                                                    height="20" border="0" id="img_dl622" /></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </li>
+                                        
+                                </ul>
+                                <!-- 安卓游戏下载排行 Top 10 End -->
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table width="240" height="240" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td align="center" valign="bottom">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!--000000000-->
+    <!-- 二级分类下的 ad E -->
+    <div class="xian">
+    </div>
+    <div id="end" class="end">
+        <!-- Bottom start -->
+        
+<table width="832" height="90" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td align="center">
+            <a href="http://www.cyberpolice.cn/wfjb/" target="_blank">
+                <img src="/SysSource/WebImages/bottom_1.png" width="122" height="52" border="0" /></a>
+        </td>
+        <td align="center">
+            <a href="http://www.xinnet.com/domain/cert.do?method=listCert&amp;enDomainName=ibinghuo.com"
+                target="_blank">
+                <img src="/SysSource/WebImages/bottom_6.jpg" width="120" height="50" border="0" /></a>
+        </td>
+        <td align="center">
+            <a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action" target="_blank">
+                <img src="/SysSource/WebImages/bottom_3.png" width="122" height="52" border="0" /></a>
+        </td>
+        <td align="center">
+            <a href="http://www.wenming.cn/" target="_blank">
+                <img src="/SysSource/WebImages/bottom_5.png" width="122" height="52" border="0" /></a>
+        </td>
+        <td align="center">
+            <a>
+                <img src="/SysSource/WebImages/bottom_2.png" width="140" height="52" border="0" /></a>
+        </td>
+    </tr>
+</table>
+<table width="100%" height="100" border="0" cellpadding="0" cellspacing="0" bgcolor="#393939">
+    <tr>
+        <td align="center">
+            <table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td height="35" align="center" valign="bottom" id="td_text">
+                        <a href="#" target="_blank" class="end1">关于我们</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a
+                            href="#" target="_blank" class="end1"> 家长监护</a></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a
+                                href="#" target="_blank" class="end1">免责声明</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a
+                                    href="#" target="_blank" class="end1">诚聘英才</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a
+                                        href="#" target="_blank" class="end1">版权声明</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a
+                                            href="#" target="_blank" class="end1">广告服务</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a
+                                                href="#" target="_blank" class="end1">市场合作</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a
+                                                    href="#" target="_blank" class="end1">联系我们</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="25">
+                        <img src="/SysSource/WebImages/bottom_line.png" width="795" height="13" />
+                    </td>
+                </tr>
+                <tr>
+                    <td height="120" align="center" valign="top" class="end2">
+                        网站备案号：黑ICP备11005808-5 | 网站许可证：黑B2-20130033 | 网络文化经营许可证：黑网文许字[2014]1324-003号<br />
+                        商务合作 E-mail：ibinghuo@lhszcb.com Tel：0451-87900207 0451-87900307<br />
+                        &copy;2015 <a href="http://www.lhszcb.com" target="_blank" class="end2">黑龙江龙华数字出版有限公司</a>
+                        游戏事业部 All Rights Reserved
+                        <br />
+                        健康游戏公告：抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+        <!-- Bottom end -->
+    </div>
+</body>
+</html>

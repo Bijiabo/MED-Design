@@ -1,0 +1,76 @@
+<!DOCTYPE html><html>   <head>  <title>拉勾网</title>  <meta http-equiv=Content-Type content="text/html; charset=utf-8">  <meta content="拉勾网是3W旗下的互联网领域垂直招聘网站" name=description>  <meta name=viewport content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"><link href="/css/mobile/dep/normalize.css-3.0.2/normalize.css?v=1.0.5" rel=stylesheet /> <link href="/css/mobile/asset/custom/list/css/list.css?v=1.0.5" rel="stylesheet"/> </head> <body ontouchstart=""> <header id="header"></header> <a href="/april/index.html" target="_blank"> <img src="/images/mobile/asset/common/img/square.jpg" width="100%"/> </a> <div id="content"> <div class="custom-info none"> <span class="info"> 10秒钟定制职位 </span> <a class="go" href="/frontLogin.do" target="_self"> <em class="icon"></em> <em class="text">去登录</em> </a> </div> <ul class="list"></ul> <div id="copyright"></div> </div> <footer id="footer"></footer> <script src="/js/mobile/dep/zepto-1.1.4/zepto.min.js?v=1.0.5"></script> <script src="/js/mobile/dep/jquery-placeholder-2.0.8/jquery.placeholder.js?v=1.0.5"></script> <script src="/js/mobile/dep/artTemplate-3.0.1/template.min.js?v=1.0.5"></script> <script src="/js/mobile/dep/esl-1.8.8/asset/esl.js?v=1.0.5"></script> <script src="http://passport.lagou.com/static/js/passport_mobile.js"></script> <script src="/js/mobile/dep/analytics.js?v=1.0.5"></script> <script>
+    require.config({
+        'baseUrl': '/js/mobile/asset',
+        'urlArgs': 'v=1.0.5',
+        'packages': [
+            {
+                'name': 'emitter',
+                'location': '/js/mobile/dep/saber-emitter-1.0.0/asset',
+                'main': 'emitter'
+            },
+            {
+                'name': 'storage',
+                'location': '/js/mobile/dep/saber-storage-1.0.0/asset',
+                'main': 'storage'
+            },
+            {
+                'name': 'cookies',
+                'location': '/js/mobile/dep/cookies-1.1.0/asset',
+                'main': 'cookies'
+            },
+            {
+                'name': 'hammer',
+                'location': '/js/mobile/dep/hammer.js-2.0.4',
+                'main': 'hammer'
+            }
+        ]
+    });
+    $( document ).ready( function( ) {
+        $( 'body' ).on( 'touchstart touchend', '.activeable, button', function( e ) {
+            $( this ).toggleClass( 'hover_effect' );
+        } );
+    } );
+
+    // 登录注册的地址
+    var FRONT_LOGIN  = "/frontLogin.do";
+    var FRONT_LOGOUT = "/frontLogout.do";
+    var FRONT_REGIST = "/frontRegister.do";
+
+    // 监听自动登录
+    PASSPORT.on( 'autologin:succ', function ( data ) {
+        // alert( 'autologin:succ ' + data );
+        window.location.reload();
+    } );
+    PASSPORT.on( 'autologin:fail', function ( data ) {
+        
+    } );
+            PASSPORT.auto();
+        </script> <script id="tpl-list" type="text/html">
+    {{each list as item i}}
+        <li class="activeable list-item" 
+            data-positionId="{{item.positionId}}" data-companyId="{{item.companyId}}">
+            <img src="{{item.companyLogo | appendHost}}" class="item-logo" />
+            <div class="item-desc">
+                <h2 class="item-title">{{item.companyName}}</h2>
+                <p class="item-info">
+                    <span class="item-pos">
+                        {{item.positionName}} [ {{item.city}} ]
+                    </span>
+                    <span class="item-salary">{{item.salary}}</span>
+                </p>
+                <p class="item-time">{{item.createTime}}</p>
+            </div>
+        </li>
+    {{/each}}
+    </script> <script>
+        var global = { };
+        try {
+            global.custom = '';
+            global.isLogin = false;
+            global.page = {"pageSize":15,"start":0,"result":[{"positionId":606103,"positionName":"产品运营（大连锁商家）","city":"北京","createTime":"今天 19:34","salary":"10k-18k","companyId":50702,"companyLogo":"image1/M00/00/85/Cgo8PFTUXeeAEH9nAACa9TE9QOc377.jpg","companyName":"美团网","positionFirstType":"运营"},{"positionId":606131,"positionName":"美团外卖-数据运营poi","city":"北京","createTime":"今天 19:34","salary":"10k-20k","companyId":50702,"companyLogo":"image1/M00/00/85/Cgo8PFTUXeeAEH9nAACa9TE9QOc377.jpg","companyName":"美团网","positionFirstType":"运营"},{"positionId":425769,"positionName":"客户经理","city":"上海","createTime":"今天 19:20","salary":"5k-8k","companyId":147,"companyLogo":"image1/M00/00/02/CgYXBlTUV_WADVuQAACQ_wjVBgI966.png","companyName":"拉勾网","positionFirstType":"市场与销售"},{"positionId":606065,"positionName":"ASO","city":"北京","createTime":"今天 18:57","salary":"10k-20k","companyId":4510,"companyLogo":"image1/M00/1E/04/Cgo8PFUs3LCARcWeAABmhIkpGWI283.png","companyName":"春雨移动健康","positionFirstType":"运营"},{"positionId":393960,"positionName":"高级 Android 开发工程师","city":"广州","createTime":"今天 19:37","salary":"10k-20k","companyId":25626,"companyLogo":"image1/M00/00/35/CgYXBlTUXJeADlVmAABf1RRJPIg112.png","companyName":"每日Q","positionFirstType":"技术"},{"positionId":552899,"positionName":"Android工程师-你将成为安卓界的大牛","city":"广州","createTime":"今天 19:37","salary":"6k-11k","companyId":25626,"companyLogo":"image1/M00/00/35/CgYXBlTUXJeADlVmAABf1RRJPIg112.png","companyName":"每日Q","positionFirstType":"技术"},{"positionId":399388,"positionName":"国际机票运营经理","city":"北京","createTime":"今天 19:34","salary":"15k-25k","companyId":1970,"companyLogo":"image1/M00/00/06/CgYXBlTUWAeANQBuAABHTL1SBa8889.jpg","companyName":"去哪儿网","positionFirstType":"运营"},{"positionId":444381,"positionName":"技术总监","city":"北京","createTime":"今天 19:34","salary":"25k-50k","companyId":1970,"companyLogo":"image1/M00/00/06/CgYXBlTUWAeANQBuAABHTL1SBa8889.jpg","companyName":"去哪儿网","positionFirstType":"技术"},{"positionId":574978,"positionName":"市场策划","city":"深圳","createTime":"今天 19:22","salary":"12k-20k","companyId":451,"companyLogo":"image1/M00/00/03/CgYXBlTUV_qALGv0AABEuOJDipU378.jpg","companyName":"腾讯","positionFirstType":"市场与销售"},{"positionId":527299,"positionName":"产品经理","city":"深圳","createTime":"今天 19:22","salary":"15k-25k","companyId":451,"companyLogo":"image1/M00/00/03/CgYXBlTUV_qALGv0AABEuOJDipU378.jpg","companyName":"腾讯","positionFirstType":"产品"},{"positionId":498673,"positionName":"测试工程师","city":"广州","createTime":"今天 19:27","salary":"3k-5k","companyId":26024,"companyLogo":"image1/M00/1A/C2/CgYXBlUdGWeAcgvyAABreX1kbuQ368.png","companyName":"魔豹技术","positionFirstType":"技术"},{"positionId":287460,"positionName":"营销策划实习生","city":"北京","createTime":"今天 19:05","salary":"2k-3k","companyId":33299,"companyLogo":"image1/M00/00/4D/Cgo8PFTUXP2ACwYHAAAbgsWJ0vQ892.jpg","companyName":"面面","positionFirstType":"市场与销售"},{"positionId":453083,"positionName":"技术总监","city":"上海","createTime":"今天 18:49","salary":"25k-40k","companyId":52862,"companyLogo":"image1/M00/0A/08/CgYXBlTtlGeAUtMwAACbCDzH5qY025.png","companyName":"暖游天下","positionFirstType":"技术"},{"positionId":464176,"positionName":"产品运营","city":"上海","createTime":"今天 18:48","salary":"4k-8k","companyId":52862,"companyLogo":"image1/M00/0A/08/CgYXBlTtlGeAUtMwAACbCDzH5qY025.png","companyName":"暖游天下","positionFirstType":"运营"},{"positionId":606128,"positionName":"IOS开发工程师","city":"北京","createTime":"今天 19:31","salary":"10k-15k","companyId":34451,"companyLogo":"image1/M00/00/51/Cgo8PFTUXQ2AMfLdAADQWpoA0Do924.jpg","companyName":"美丫妈妈","positionFirstType":"技术"}],"totalCount":450,"pageNo":1};
+        } 
+        catch ( e ) {
+            throw 'params error!';
+        }
+        require( [ 'custom/list/main' ] );
+    </script> </body> </html>

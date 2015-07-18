@@ -1,0 +1,166 @@
+{
+  "normal" : {
+    "title" : "日常",
+    "playList" : [
+      {
+        "Title": "Let It Go23333",
+        "Description": "《Let It Go》是华特迪士尼动画工作室的2013年动画作品《冰雪奇缘》当中的主题曲，翻唱版由Alex Boye、Lexi walker（11岁）和美国儿童合唱团联合演绎。",
+        "Url": "Let It Go.mp3",
+        "PlayCount": 1
+      },
+      {
+        "Title": "The Music Room",
+        "Description": "一首关于钢琴的英文儿歌，旋律动听，歌词简单，易于学唱。",
+        "Url": "The Music Room.mp3",
+        "PlayCount": 1
+      },
+      {
+        "Title": "Colour Song",
+        "Description": "这是一首关于颜色的儿歌，通过重复的旋律和内容让小朋友记住不同颜色的英文名称。",
+        "Url": "Colour Song.mp3",
+        "PlayCount": 2
+      },
+      {
+        "Title": "Let It Go23333",
+        "Description": "《Let It Go》是华特迪士尼动画工作室的2013年动画作品《冰雪奇缘》当中的主题曲，翻唱版由Alex Boye、Lexi walker（11岁）和美国儿童合唱团联合演绎。",
+        "Url": "Let It Go.mp3",
+        "PlayCount": 3
+      },
+      {
+        "Title": "The Music Room",
+        "Description": "一首关于钢琴的英文儿歌，旋律动听，歌词简单，易于学唱。",
+        "Url": "The Music Room.mp3",
+        "PlayCount": 1
+      },
+      {
+        "Title": "Colour Song",
+        "Description": "这是一首关于颜色的儿歌，通过重复的旋律和内容让小朋友记住不同颜色的英文名称。",
+        "Url": "Colour Song.mp3",
+        "PlayCount": 2
+      }
+    ]
+  },
+  "sleep" : {
+    "title" : "睡前",
+    "playList" : [
+      {
+        "Title": "Just for you",
+        "Description": "",
+        "Url": "Just for you.mp3",
+        "PlayCount": 3
+      },
+      {
+        "Title": "Classical Baby",
+        "Description": "",
+        "Url": "Classical Baby.mp3",
+        "PlayCount": 3
+      },
+      {
+        "Title": "Always With Me",
+        "Description": "",
+        "Url": "Always With Me.mp3",
+        "PlayCount": 3
+      },
+      {
+        "Title": "夜莺",
+        "Description": "",
+        "Url": "夜莺.mp3",
+        "PlayCount": 3
+      },
+      {
+        "Title": "梁祝-化蝶",
+        "Description": "",
+        "Url": "梁祝-化蝶.mp3",
+        "PlayCount": 3
+      },
+      {
+        "Title": "晚安晚安",
+        "Description": "",
+        "Url": "晚安晚安.mp3",
+        "PlayCount": 3
+      }
+    ]
+  },
+  "getup" : {
+    "title" : "起床",
+    "playList" : [
+      {
+        "Title": "里姆斯基·科萨科夫-野蜂飞舞",
+        "Description": "",
+        "Url": "里姆斯基·科萨科夫-野蜂飞舞.mp3",
+        "PlayCount": 3
+      },
+      {
+        "Title": "德语圣诞歌 - Schnuffels Weihnachtslied",
+        "Description": "",
+        "Url": "德语圣诞歌 - Schnuffels Weihnachtslied.mp3",
+        "PlayCount": 3
+      },
+      {
+        "Title": "斯美塔那-伏尔塔瓦河",
+        "Description": "",
+        "Url": "斯美塔那-伏尔塔瓦河.mp3",
+        "PlayCount": 3
+      },
+      {
+        "Title": "渔舟唱晚",
+        "Description": "",
+        "Url": "渔舟唱晚.mp3",
+        "PlayCount": 3
+      },
+      {
+        "Title": "小狗合唱团",
+        "Description": "",
+        "Url": "小狗合唱团.mp3",
+        "PlayCount": 3
+      },
+      {
+        "Title": "牛车上的阳光",
+        "Description": "",
+        "Url": "牛车上的阳光.mp3",
+        "PlayCount": 3
+      }
+    ]
+  },
+  "test" : {
+    "title" : "测试",
+    "playList" : [
+      {
+        "Title": "里姆斯基·科萨科夫-野蜂飞舞testing...",
+        "Description": "",
+        "Url": "里姆斯基·科萨科夫-野蜂飞舞.mp3",
+        "PlayCount": 3
+      },
+      {
+        "Title": "德语圣诞歌 - Schnuffels Weihnachtslied",
+        "Description": "",
+        "Url": "德语圣诞歌 - Schnuffels Weihnachtslied.mp3",
+        "PlayCount": 3
+      },
+      {
+        "Title": "斯美塔那-伏尔塔瓦河",
+        "Description": "",
+        "Url": "斯美塔那-伏尔塔瓦河.mp3",
+        "PlayCount": 3
+      },
+      {
+        "Title": "渔舟唱晚",
+        "Description": "",
+        "Url": "渔舟唱晚.mp3",
+        "PlayCount": 3
+      },
+      {
+        "Title": "小狗合唱团",
+        "Description": "",
+        "Url": "小狗合唱团.mp3",
+        "PlayCount": 3
+      },
+      {
+        "Title": "牛车上的阳光",
+        "Description": "",
+        "Url": "牛车上的阳光.mp3",
+        "PlayCount": 3
+      }
+    ]
+  }
+}
