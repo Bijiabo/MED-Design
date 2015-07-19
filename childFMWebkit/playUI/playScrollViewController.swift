@@ -1,4 +1,11 @@
 //
+//  playScrollViewController.swift
+//  childFMWebkit
+//
+//  Created by bijiabo on 15/7/18.
+//  Copyright (c) 2015年 JYLabs. All rights reserved.
+//
+//
 //  UGC_iTunesGuide.swift
 //  childFMWebkit
 //
@@ -9,16 +16,14 @@
 import Foundation
 import UIKit
 
-class UGC_iTunesGuideViewController: UIViewController , UIScrollViewDelegate , Module
+class playScrollViewController: UIViewController , UIScrollViewDelegate , Module
 {
     //枚举类型:标识不同ios设备
     enum VJDeviceEnum{
-        
         case VJDeviceEnum_iphone
         case VJDeviceEnum_iphoneRetina
         case VJDeviceEnum_ihphone6plus
-        case VJDEviceEnum_unknow
-        
+        case VJDEviceEnum_unknow 
     }
     
     var moduleLoader : ModuleLader?
@@ -26,7 +31,6 @@ class UGC_iTunesGuideViewController: UIViewController , UIScrollViewDelegate , M
     let imageDirectoryName : String = "iTunesGuide"
     
     @IBOutlet var scrollVIew1: UIScrollView!
-    
     
     @IBOutlet var pageControl: UIPageControl!
     //获取设备宽高
@@ -49,7 +53,7 @@ class UGC_iTunesGuideViewController: UIViewController , UIScrollViewDelegate , M
         
         // scrollVIew1.backgroundColor=UIColor.grayColor()
         //给页码数赋值
-        self.setPageNum()
+        //self.setPageNum()
         
         //初始化scrollView
         self.initScrollView()
@@ -122,6 +126,7 @@ class UGC_iTunesGuideViewController: UIViewController , UIScrollViewDelegate , M
         println("imageFlag:-->\(imageFlag)")
         return imageFlag
     }
+    
     //初始化scrollView的方法
     func initScrollView(){
         
@@ -139,36 +144,32 @@ class UGC_iTunesGuideViewController: UIViewController , UIScrollViewDelegate , M
         
         for tempI in 0..<pages{
             
-            let viewFrame : CGRect = CGRect(x: devWidth*CGFloat(tempI) + (devWidth - devWidth / scaleRate )/2, y: (devHeight - devHeight / scaleRate)/2, width: devWidth/scaleRate, height: devHeight/scaleRate)
+            let playUIVC : UIViewController = self.storyboard?.instantiateViewControllerWithIdentifier("playUI") as! UIViewController
             
-            let containerView : UIView = UIView(frame: viewFrame)
+            playUIVC.view.frame = CGRectMake(self.view.frame.size.width * CGFloat(tempI) , 0, self.view.frame.size.width, self.view.frame.size.height)
             
-            let imageView = UIImageView(frame: CGRectMake(0, 0, viewFrame.size.width, viewFrame.size.height))
-            
-            containerView.addSubview(imageView)
-            
-            //设置imageView的内容填充模式
-            imageView.contentMode = UIViewContentMode.ScaleToFill
-            
-            //imageView.backgroundColor = UIColor.blackColor()
-            
-            //得到图片的URL
-            var imageURL : NSURL = NSBundle.mainBundle().resourceURL!.URLByAppendingPathComponent("\(imageDirectoryName)/\(tempI)" + currentDeviceImageSubFix)
-            
-            println(imageURL)
-            
-            var isNotDir : ObjCBool = false
-            
-            if NSFileManager.defaultManager().fileExistsAtPath(imageURL.relativePath!, isDirectory: &isNotDir){
+            if let PlayUIvc : PlayUI =  playUIVC as? PlayUI
+            {
+                var playUIVC : PlayUI = playUIVC as! PlayUI
                 
-                imageView.image=UIImage(contentsOfFile: imageURL.relativePath!)
+                switch tempI
+                {
+                case 0:
+                    playUIVC.VideoFileName = "airplane.mp4"
+                case 1:
+                    playUIVC.VideoFileName = "pirate.mp4"
+                case 2:
+                    playUIVC.VideoFileName = "town.mp4"
+                default:
+                    break
+                }
                 
-                // println("\(scrollVIew1.contentOffset)")
             }
             
-            scrollVIew1.addSubview(containerView)
+            self.addChildViewController( playUIVC )
+            playUIVC.view.clipsToBounds = true
             
-            //println("loop --> \(tempI)")
+            scrollVIew1.addSubview( playUIVC.view )
         }
     }
     
@@ -260,4 +261,3 @@ class UGC_iTunesGuideViewController: UIViewController , UIScrollViewDelegate , M
     }
     
 }
-

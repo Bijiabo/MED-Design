@@ -41,6 +41,7 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
         
         //webView.scrollView.bounces = false
         webView.scrollView.delegate = self
+        webView.scrollView.pagingEnabled = true
         
         let baseURL: NSURL = NSURL(fileURLWithPath: NSBundle.mainBundle().bundlePath)!
         var localUrl : NSURL! = baseURL.URLByAppendingPathComponent("web/main.html")//NSURL(string:"/web/main.html")
@@ -87,6 +88,8 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
         scrollBeginY = webView.scrollView.contentOffset.y
     }
     
+    /*
+    //MARK: 按照网页提供的pageHeightArray来搞定page垂直翻页
     func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>)
     {
         
@@ -118,7 +121,7 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
         }
         
     }
-    
+    */
     
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         //scrollView减速停止
@@ -179,7 +182,7 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
     func addPlayUI ()
     {
         //加载playUI
-        var playUIVC : UIViewController =  self.storyboard?.instantiateViewControllerWithIdentifier("playUI") as! UIViewController
+        var playUIVC : UIViewController =  self.storyboard?.instantiateViewControllerWithIdentifier("playScrollViewController") as! UIViewController
         
         if let pageHeightArray : [Int] = getPageHeightArray()
         {

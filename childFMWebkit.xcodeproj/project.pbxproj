@@ -56,6 +56,8 @@
 		A1BA8B2C1B55461400F5A57F /* notificationCenterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BA8B2B1B55461400F5A57F /* notificationCenterTableViewController.swift */; };
 		A1FB09381B5A3961001EAF27 /* iTunesGuide in Resources */ = {isa = PBXBuildFile; fileRef = A1FB09371B5A3961001EAF27 /* iTunesGuide */; };
 		A1FB096C1B5A86DB001EAF27 /* shopDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FB096B1B5A86DB001EAF27 /* shopDetailViewController.swift */; };
+		A1FB096E1B5A8FEC001EAF27 /* playScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FB096D1B5A8FEC001EAF27 /* playScrollViewController.swift */; };
+		A1FB09701B5A9D64001EAF27 /* playUIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FB096F1B5A9D64001EAF27 /* playUIProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +151,8 @@
 		A1BA8B2B1B55461400F5A57F /* notificationCenterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = notificationCenterTableViewController.swift; path = notificationCenter/notificationCenterTableViewController.swift; sourceTree = "<group>"; };
 		A1FB09371B5A3961001EAF27 /* iTunesGuide */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iTunesGuide; sourceTree = "<group>"; };
 		A1FB096B1B5A86DB001EAF27 /* shopDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = shopDetailViewController.swift; path = playUI/shopDetailViewController.swift; sourceTree = "<group>"; };
+		A1FB096D1B5A8FEC001EAF27 /* playScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = playScrollViewController.swift; path = playUI/playScrollViewController.swift; sourceTree = "<group>"; };
+		A1FB096F1B5A9D64001EAF27 /* playUIProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = playUIProtocol.swift; sourceTree = "<group>"; };
 		E870A93267C5594ED9A78901 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -303,6 +307,8 @@
 				A1BA8B221B54F7C700F5A57F /* playlistTableViewController.swift */,
 				A110706C1B5799BD001E3B84 /* playViewController.swift */,
 				A1FB096B1B5A86DB001EAF27 /* shopDetailViewController.swift */,
+				A1FB096D1B5A8FEC001EAF27 /* playScrollViewController.swift */,
+				A1FB096F1B5A9D64001EAF27 /* playUIProtocol.swift */,
 			);
 			name = playUI;
 			sourceTree = "<group>";
@@ -519,6 +525,7 @@
 				A1B598D91B543C9200257DDB /* NowPlayingInfoCenter.swift in Sources */,
 				A1B598DA1B543C9200257DDB /* Operation.swift in Sources */,
 				A1BA8B2A1B55446100F5A57F /* notificationListTableViewCell.swift in Sources */,
+				A1FB09701B5A9D64001EAF27 /* playUIProtocol.swift in Sources */,
 				A1B598DB1B543C9200257DDB /* Player.swift in Sources */,
 				A1B598DC1B543C9200257DDB /* Server.swift in Sources */,
 				A1B598DD1B543C9200257DDB /* Status.swift in Sources */,
@@ -546,6 +553,7 @@
 				A12E9A8A1AD69410009B2D60 /* SwiftyJSON.swift in Sources */,
 				A1B77F3B1B5675A100CE2E73 /* ScrollViewController.swift in Sources */,
 				A1A510EE1AD4513E00AD37B4 /* mvpViewController.swift in Sources */,
+				A1FB096E1B5A8FEC001EAF27 /* playScrollViewController.swift in Sources */,
 				A1A510F61AD4D5DB00AD37B4 /* json.swift in Sources */,
 				A1BA8B201B54F63500F5A57F /* NavigationProtocol.swift in Sources */,
 			);

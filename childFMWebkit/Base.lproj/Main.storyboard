@@ -216,7 +216,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play Room" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lq5-pP-YzO">
-                                <rect key="frame" x="30" y="467" width="179.5" height="48.5"/>
+                                <rect key="frame" x="30" y="467" width="180" height="49"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -224,7 +224,7 @@
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English Song" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ZF-pv-2OK">
-                                <rect key="frame" x="30" y="514" width="93" height="21.5"/>
+                                <rect key="frame" x="30" y="514" width="93" height="22"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -245,7 +245,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qpf-Vc-FTw">
-                                <rect key="frame" x="62" y="421" width="10" height="20.5"/>
+                                <rect key="frame" x="62" y="421" width="10" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="0.78000000000000003" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -683,7 +683,7 @@
         <!--漫画详情页面-->
         <scene sceneID="8fx-lQ-KX1">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="EcB-5A-e4m" userLabel="漫画详情页面" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="playScrollViewController" automaticallyAdjustsScrollViewInsets="NO" id="EcB-5A-e4m" userLabel="漫画详情页面" customClass="playScrollViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kJR-Ub-aOO"/>
                         <viewControllerLayoutGuide type="bottom" id="ntM-Qw-HwD"/>
@@ -704,12 +704,24 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="u2Q-Rb-ixf" firstAttribute="top" secondItem="V33-jO-o51" secondAttribute="topMargin" id="04s-sk-jmt"/>
+                            <constraint firstItem="u2Q-Rb-ixf" firstAttribute="top" secondItem="V33-jO-o51" secondAttribute="top" id="0q8-Hw-Eis"/>
+                            <constraint firstItem="ntM-Qw-HwD" firstAttribute="top" secondItem="u2Q-Rb-ixf" secondAttribute="bottom" id="7qs-1t-e8W"/>
+                            <constraint firstAttribute="trailing" secondItem="u2Q-Rb-ixf" secondAttribute="trailing" id="FGH-Wr-M0l"/>
                             <constraint firstItem="ntM-Qw-HwD" firstAttribute="top" secondItem="pwx-7b-piH" secondAttribute="bottom" constant="10" id="Qxp-Vn-KiM"/>
+                            <constraint firstItem="u2Q-Rb-ixf" firstAttribute="leading" secondItem="V33-jO-o51" secondAttribute="leading" id="iKh-L4-yl7"/>
                             <constraint firstItem="ntM-Qw-HwD" firstAttribute="top" secondItem="u2Q-Rb-ixf" secondAttribute="bottom" id="jKG-Id-8H1"/>
                             <constraint firstItem="u2Q-Rb-ixf" firstAttribute="leading" secondItem="V33-jO-o51" secondAttribute="leadingMargin" constant="-16" id="kRc-JM-A8B"/>
                             <constraint firstAttribute="centerX" secondItem="pwx-7b-piH" secondAttribute="centerX" id="yh3-FF-ZBK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="u2Q-Rb-ixf" secondAttribute="trailing" constant="-16" id="z2v-ap-IJJ"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="04s-sk-jmt"/>
+                                <exclude reference="kRc-JM-A8B"/>
+                                <exclude reference="z2v-ap-IJJ"/>
+                                <exclude reference="jKG-Id-8H1"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="pageControl" destination="pwx-7b-piH" id="8jh-P9-eji"/>
