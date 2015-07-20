@@ -120,10 +120,16 @@ class cartoonListTableViewController: UITableViewController {
         
         if let cell : cartoonListTableViewCell = sender as? cartoonListTableViewCell
         {
+            //目前漫画数量，用余数来循环显示
+            let currentCartoonCount : Int = 3
+            
+            let index : Int = tableView.indexPathForCell(cell)!.row % currentCartoonCount
+            
             var cartoonDetailVC : cartoonDetailViewController = segue.destinationViewController as! cartoonDetailViewController
             
             cartoonDetailVC.cartoonTitle = cell.title.text!
 
+            cartoonDetailVC.imageDirectoryPath = "cartoonImage/\(index)"
         }
         
     }

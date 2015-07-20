@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDelegate , Module , NavigationProtocol
+class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDelegate , Module , NavigationProtocol , GrownView
 {
     var moduleLoader : ModuleLader?
     
@@ -55,6 +55,8 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
         
         self.view = webView
         webView.navigationDelegate = self
+        webView.scrollView.showsHorizontalScrollIndicator = false
+        webView.scrollView.showsVerticalScrollIndicator = false
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("webServerStarted:"), name: "webServerStarted", object: nil)
         
@@ -117,7 +119,7 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
                     }
                 }
             }
-            
+   
         }
         
     }
@@ -127,18 +129,20 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
         //scrollView减速停止
         let offsetY : CGFloat = scrollView.contentOffset.y
         
+        /*
         //若滚动到顶部，则为引导界面，禁止滚动。
         if offsetY == 0.0
         {
             scrollView.scrollEnabled = false
         }
+        */
     }
     
     func webView(webView: WKWebView, didFinishNavigation navigation: WKNavigation!) {
         //通知页面已加载完成，执行js->swift数据等。
         webView.evaluateJavaScript("didFinishNavigation()", completionHandler: nil)
         
-        webView.scrollView.scrollEnabled = false
+        //webView.scrollView.scrollEnabled = false
     }
     
     func setCache(#key:String, value:AnyObject)->Void{
@@ -179,8 +183,56 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    func addPlayUI ()
+    //MARK: 加载原生UI view
+    func addNativeUI ()
     {
+        //加载引导漫画scroll view
+        var CartoonDetailViewController : cartoonDetailViewController = self.storyboard?.instantiateViewControllerWithIdentifier("cartoonDetail") as! cartoonDetailViewController
+        CartoonDetailViewController.imageDirectoryPath = "cartoonImage/0"
+        CartoonDetailViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)
+        
+        self.addChildViewController( CartoonDetailViewController )
+        self.webView.scrollView.addSubview( CartoonDetailViewController.view )
+        
+        //加载漫画列表头部标题
+        var CartoonNavigationBar : UINavigationBar = UINavigationBar(frame: CGRectMake(0, 0, self.view.frame.size.width, 44.0))
+//        CartoonNavigationBar.alpha = 0.5
+//        var CartoonNavigationBarTitle : UIBarItem = UIBarItem()
+//        CartoonNavigationBarTitle.title = "不要哑巴英语"
+        self.webView.scrollView.addSubview(CartoonNavigationBar)
+        ///*
+        var CartoonTitle : UILabel = UILabel(frame: CGRectMake(0, 0, self.view.frame.size.width, 44.0))
+        CartoonTitle.textAlignment = NSTextAlignment.Center
+        CartoonTitle.text = "不要哑巴英语"
+        
+        self.webView.scrollView.addSubview(CartoonTitle)
+        //*/
+        
+        //加载漫画列表按钮
+        let CartoonListButtonSize : (width : CGFloat , height : CGFloat) = (width : 70 , height : 70)
+        
+        var buttonForCartoonList : UIButton = UIButton(frame: CGRectMake(self.view.frame.size.width - 16.0 - CartoonListButtonSize.width , 30.0, CartoonListButtonSize.width, CartoonListButtonSize.height) )
+        //buttonForCartoonList.setTitle("cartoonlist", forState: UIControlState.Normal)
+        //buttonForCartoonList.backgroundColor = UIColor.blackColor()
+        buttonForCartoonList.setImage(UIImage(named: "cartoonlist"), forState: UIControlState.Normal)
+        buttonForCartoonList.addTarget(self, action: Selector("showCartoonList"), forControlEvents: UIControlEvents.TouchUpInside)
+        
+        self.webView.scrollView.addSubview(buttonForCartoonList)
+        
+        
+        //加载成长年轮scroll view
+        var grownScrollView : GrownScrollViewController = self.storyboard?.instantiateViewControllerWithIdentifier("grownScrollView") as! GrownScrollViewController
+        
+        grownScrollView.view.frame = CGRectMake(0, self.view.frame.size.height, self.view.frame.size.width, self.view.frame.size.height)
+        
+        grownScrollView.InitScrollView()
+
+        grownScrollView.grownView = self
+        
+        self.addChildViewController(grownScrollView)
+        
+        self.webView.scrollView.addSubview(grownScrollView.view)
+        
         //加载playUI
         var playUIVC : UIViewController =  self.storyboard?.instantiateViewControllerWithIdentifier("playScrollViewController") as! UIViewController
         
@@ -202,8 +254,8 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
             self.webView.scrollView.addSubview( playUIVC.view )
         }
         
-        
-        
+        //
+        self.webView.scrollView.contentSize.height = self.view.frame.size.height * 3.0
     }
     
     func getPageHeightArray () -> [Int]?
@@ -222,7 +274,16 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
         return nil
     }
     
+    //显示漫画列表
+    func showCartoonList ()
+    {
+        loadModuleToNavigation("Main", storyboardIdentifier: "cartoonList")
+    }
     
+    func rotate(angle: Float)
+    {
+        webView.evaluateJavaScript("window.mainUserInfo.rotate(-\(angle))", completionHandler: nil)
+    }
     
 }
 
@@ -247,7 +308,7 @@ class webkitNotificationScriptMessageHandler: NSObject, WKScriptMessageHandler
                 
                 vc.setCache(key: "pageHeightArray", value: message)
                 
-                vc.addPlayUI()
+                vc.addNativeUI()
                 
             case "popNavigationItemAnimated":
                 println("")

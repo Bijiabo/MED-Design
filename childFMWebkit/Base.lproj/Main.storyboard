@@ -135,7 +135,7 @@
         <!--漫画详情页面-->
         <scene sceneID="LZK-J1-ndE">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="ej2-lM-TVy" userLabel="漫画详情页面" customClass="cartoonDetailViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="cartoonDetail" automaticallyAdjustsScrollViewInsets="NO" id="ej2-lM-TVy" userLabel="漫画详情页面" customClass="cartoonDetailViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9ie-xX-7Vn"/>
                         <viewControllerLayoutGuide type="bottom" id="B1v-Ea-KCi"/>
@@ -144,7 +144,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" directionalLockEnabled="YES" bounces="NO" alwaysBounceVertical="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhF-Au-Pyc">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" directionalLockEnabled="YES" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhF-Au-Pyc">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="vlg-Qx-igp">
@@ -156,13 +156,26 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="B1v-Ea-KCi" firstAttribute="top" secondItem="GhF-Au-Pyc" secondAttribute="bottom" id="3Ju-cH-F7R"/>
+                            <constraint firstItem="GhF-Au-Pyc" firstAttribute="leading" secondItem="qGf-5U-oNQ" secondAttribute="leading" id="72G-CA-ZxD"/>
                             <constraint firstItem="B1v-Ea-KCi" firstAttribute="top" secondItem="vlg-Qx-igp" secondAttribute="bottom" constant="10" id="Ljo-aQ-ATb"/>
                             <constraint firstAttribute="centerX" secondItem="vlg-Qx-igp" secondAttribute="centerX" id="NbC-jv-0WX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GhF-Au-Pyc" secondAttribute="trailing" constant="-16" id="Nuk-8S-DqJ"/>
+                            <constraint firstAttribute="trailing" secondItem="GhF-Au-Pyc" secondAttribute="trailing" id="QgM-QK-ZQK"/>
                             <constraint firstItem="GhF-Au-Pyc" firstAttribute="top" secondItem="qGf-5U-oNQ" secondAttribute="topMargin" id="WRn-HX-q6j"/>
+                            <constraint firstItem="B1v-Ea-KCi" firstAttribute="top" secondItem="GhF-Au-Pyc" secondAttribute="bottom" id="gl4-yB-Odd"/>
                             <constraint firstItem="GhF-Au-Pyc" firstAttribute="leading" secondItem="qGf-5U-oNQ" secondAttribute="leadingMargin" constant="-16" id="j8Z-nX-1PE"/>
+                            <constraint firstItem="GhF-Au-Pyc" firstAttribute="top" secondItem="qGf-5U-oNQ" secondAttribute="top" id="oSt-ya-vQm"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Nuk-8S-DqJ"/>
+                                <exclude reference="WRn-HX-q6j"/>
+                                <exclude reference="j8Z-nX-1PE"/>
+                                <exclude reference="3Ju-cH-F7R"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <connections>
                         <outlet property="pageControl" destination="vlg-Qx-igp" id="HA5-Qv-GGT"/>
                         <outlet property="scrollVIew1" destination="GhF-Au-Pyc" id="n5S-yg-kRF"/>
@@ -216,7 +229,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play Room" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lq5-pP-YzO">
-                                <rect key="frame" x="30" y="467" width="180" height="49"/>
+                                <rect key="frame" x="30" y="467" width="179.5" height="48.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -224,7 +237,7 @@
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English Song" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ZF-pv-2OK">
-                                <rect key="frame" x="30" y="514" width="93" height="22"/>
+                                <rect key="frame" x="30" y="514" width="93" height="21.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="0.75" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -245,14 +258,42 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qpf-Vc-FTw">
-                                <rect key="frame" x="62" y="421" width="10" height="21"/>
+                                <rect key="frame" x="62" y="421" width="10" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="0.78000000000000003" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syk-Ka-rFH">
+                                <rect key="frame" x="554" y="550" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Yq2-yU-2pv"/>
+                                    <constraint firstAttribute="width" constant="30" id="pmu-JJ-PHS"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="ChildDisLike">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapChildDislikeButton:" destination="b7X-16-tzD" eventType="touchUpInside" id="Sh0-GI-B4p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONK-DL-dvf">
+                                <rect key="frame" x="512" y="550" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Qz3-gR-ul6"/>
+                                    <constraint firstAttribute="height" constant="30" id="ZOc-BC-rzp"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="ChildLike">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapChildLikeButton:" destination="b7X-16-tzD" eventType="touchUpInside" id="4P2-r2-Pum"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Syk-Ka-rFH" firstAttribute="leading" secondItem="ONK-DL-dvf" secondAttribute="trailing" constant="12" id="0vv-UQ-uSG"/>
+                            <constraint firstAttribute="trailing" secondItem="Syk-Ka-rFH" secondAttribute="trailing" constant="16" id="54B-nQ-fog"/>
                             <constraint firstItem="ccR-H3-Lar" firstAttribute="leading" secondItem="f6z-8k-0xn" secondAttribute="leading" constant="30" id="5AJ-d4-wsL"/>
                             <constraint firstItem="Qpf-Vc-FTw" firstAttribute="leading" secondItem="ccR-H3-Lar" secondAttribute="trailing" constant="2" id="8Vn-i5-Xcg"/>
                             <constraint firstItem="ke6-C1-qCG" firstAttribute="top" secondItem="Yi7-02-zAA" secondAttribute="bottom" constant="20" id="9wo-PH-SBR"/>
@@ -272,6 +313,8 @@
                             <constraint firstItem="4ZF-pv-2OK" firstAttribute="top" secondItem="lq5-pP-YzO" secondAttribute="bottom" constant="-1" id="iui-f1-Q5A"/>
                             <constraint firstAttribute="trailing" secondItem="Qyn-N5-9rh" secondAttribute="trailing" id="maT-1o-chm"/>
                             <constraint firstItem="VuF-LX-yiY" firstAttribute="top" secondItem="ee9-y5-EsN" secondAttribute="bottom" id="nZF-7K-Dbj"/>
+                            <constraint firstItem="VuF-LX-yiY" firstAttribute="top" secondItem="ONK-DL-dvf" secondAttribute="bottom" constant="20" id="shv-fv-iZT"/>
+                            <constraint firstItem="VuF-LX-yiY" firstAttribute="top" secondItem="Syk-Ka-rFH" secondAttribute="bottom" constant="20" id="slb-Ud-p4t"/>
                             <constraint firstItem="ee9-y5-EsN" firstAttribute="leading" secondItem="f6z-8k-0xn" secondAttribute="leading" id="w5m-jN-HfD"/>
                             <constraint firstItem="Qyn-N5-9rh" firstAttribute="leading" secondItem="f6z-8k-0xn" secondAttribute="leading" id="weV-S0-kfc"/>
                             <constraint firstAttribute="trailing" secondItem="ke6-C1-qCG" secondAttribute="trailing" id="wj9-lF-Afw"/>
@@ -283,8 +326,13 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="AudioName" destination="lq5-pP-YzO" id="g8H-Ef-iZb"/>
+                        <outlet property="AudioTag" destination="4ZF-pv-2OK" id="yOk-ax-8U0"/>
                         <outlet property="FakeNavigationBar" destination="ke6-C1-qCG" id="f7o-5a-wre"/>
                         <outlet property="FakeNavigationBarTitle" destination="ddX-Jv-skS" id="Pbq-20-DQh"/>
+                        <outlet property="GiftTipCount" destination="Qpf-Vc-FTw" id="J0L-gL-SbF"/>
+                        <outlet property="childDislikeButton" destination="Syk-Ka-rFH" id="RgX-5P-wHr"/>
+                        <outlet property="childLikeButton" destination="ONK-DL-dvf" id="0bg-ZS-MXY"/>
                         <outlet property="container" destination="Qyn-N5-9rh" id="c09-Mp-BcA"/>
                     </connections>
                 </viewController>
@@ -692,7 +740,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" directionalLockEnabled="YES" bounces="NO" alwaysBounceVertical="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2Q-Rb-ixf">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2Q-Rb-ixf">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="pwx-7b-piH">
@@ -732,11 +780,149 @@
             </objects>
             <point key="canvasLocation" x="321" y="2405"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="qay-IB-qA7">
+            <objects>
+                <viewController id="FOf-38-cg4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bi8-Cc-ufU"/>
+                        <viewControllerLayoutGuide type="bottom" id="tx7-g3-T7D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y96-Y1-0pu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="成长年轮" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1On-VU-Jnb">
+                                <rect key="frame" x="117" y="204" width="365" height="269"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="365" id="FgN-Ap-s36"/>
+                                    <constraint firstAttribute="height" constant="268.5" id="ruv-7u-Na5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="1On-VU-Jnb" secondAttribute="centerX" id="MLG-Wc-ZmU"/>
+                            <constraint firstAttribute="centerY" secondItem="1On-VU-Jnb" secondAttribute="centerY" constant="-38.25" id="xxs-cc-569"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yXS-nl-slO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="326" y="4689"/>
+        </scene>
+        <!--成长年轮主界面-->
+        <scene sceneID="Lmp-Pd-Wiz">
+            <objects>
+                <viewController storyboardIdentifier="grownScrollView" id="Z8c-LP-JnY" userLabel="成长年轮主界面" customClass="GrownScrollViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eeV-81-QOC"/>
+                        <viewControllerLayoutGuide type="bottom" id="tr4-J8-FxF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ViM-Uh-VuC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9p-lq-GT0">
+                                <rect key="frame" x="0.0" y="130" width="600" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="GsY-OI-CbX"/>
+                                </constraints>
+                            </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userInfo" translatesAutoresizingMaskIntoConstraints="NO" id="Zd4-s7-6YL">
+                                <rect key="frame" x="16" y="66" width="136" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="Twl-GM-I34"/>
+                                    <constraint firstAttribute="width" constant="136" id="ZR1-7r-nwU"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message" translatesAutoresizingMaskIntoConstraints="NO" id="WPe-Fw-afA">
+                                <rect key="frame" x="554" y="66" width="30" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="VYk-xo-cgZ"/>
+                                    <constraint firstAttribute="width" constant="30" id="y1S-8I-CJ6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2岁宝宝语言发展再上新台阶，词汇量又一次爆炸式增长，宝宝用语言表达需求的能力更强了。宝宝对语言表现出浓厚的兴趣，愿意使用新词和妈妈对话。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSd-hv-qyN">
+                                <rect key="frame" x="23" y="516" width="561" height="63"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KSd-hv-qyN" firstAttribute="top" secondItem="W9p-lq-GT0" secondAttribute="bottom" constant="36" id="32d-Gi-PsG"/>
+                            <constraint firstItem="Zd4-s7-6YL" firstAttribute="leading" secondItem="ViM-Uh-VuC" secondAttribute="leading" constant="16" id="34H-MK-M4s"/>
+                            <constraint firstAttribute="trailing" secondItem="WPe-Fw-afA" secondAttribute="trailing" constant="16" id="BEq-FW-fHz"/>
+                            <constraint firstItem="Zd4-s7-6YL" firstAttribute="top" secondItem="eeV-81-QOC" secondAttribute="bottom" constant="46" id="Klf-jZ-ThA"/>
+                            <constraint firstItem="WPe-Fw-afA" firstAttribute="top" secondItem="eeV-81-QOC" secondAttribute="bottom" constant="46" id="NXb-XP-igW"/>
+                            <constraint firstItem="W9p-lq-GT0" firstAttribute="leading" secondItem="ViM-Uh-VuC" secondAttribute="leading" id="VJr-b6-axc"/>
+                            <constraint firstAttribute="trailing" secondItem="W9p-lq-GT0" secondAttribute="trailing" id="gJN-t9-MT3"/>
+                            <constraint firstItem="tr4-J8-FxF" firstAttribute="top" secondItem="W9p-lq-GT0" secondAttribute="bottom" id="hg8-21-Iu8"/>
+                            <constraint firstItem="W9p-lq-GT0" firstAttribute="top" secondItem="ViM-Uh-VuC" secondAttribute="top" constant="130" id="let-bd-vfm"/>
+                            <constraint firstAttribute="trailing" secondItem="KSd-hv-qyN" secondAttribute="trailing" constant="16" id="qci-PL-HKA"/>
+                            <constraint firstItem="KSd-hv-qyN" firstAttribute="leading" secondItem="ViM-Uh-VuC" secondAttribute="leading" constant="23" id="zHy-X0-5hq"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hg8-21-Iu8"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="explainTextLabel" destination="KSd-hv-qyN" id="FCJ-vy-th8"/>
+                        <outlet property="scrollView" destination="W9p-lq-GT0" id="eyJ-D6-2WZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QEg-4f-Cbl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1101" y="4689"/>
+        </scene>
+        <!--成长年轮下方滚动-->
+        <scene sceneID="nio-S6-GIG">
+            <objects>
+                <viewController id="cx1-73-lOQ" userLabel="成长年轮下方滚动" customClass="GrownBottomScrollViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LqX-tz-02K"/>
+                        <viewControllerLayoutGuide type="bottom" id="NVs-Uz-ytJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iQb-nq-TWY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xCc-BN-TvI">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NVs-Uz-ytJ" firstAttribute="top" secondItem="xCc-BN-TvI" secondAttribute="bottom" id="Zrh-KD-sRq"/>
+                            <constraint firstItem="xCc-BN-TvI" firstAttribute="leading" secondItem="iQb-nq-TWY" secondAttribute="leading" id="c2M-yZ-Lbq"/>
+                            <constraint firstAttribute="trailing" secondItem="xCc-BN-TvI" secondAttribute="trailing" id="gtG-Qt-pQk"/>
+                            <constraint firstItem="xCc-BN-TvI" firstAttribute="top" secondItem="iQb-nq-TWY" secondAttribute="top" id="xgv-4I-2rC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="xCc-BN-TvI" id="Thx-Xh-1mk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rSb-Ok-HkB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1922" y="4689"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="ChildDisLike" width="30" height="30"/>
+        <image name="ChildLike" width="30" height="30"/>
         <image name="bottomLineGradualBackground" width="20" height="100"/>
         <image name="gift" width="50" height="50"/>
         <image name="listButton" width="22" height="22"/>
+        <image name="message" width="36" height="30"/>
         <image name="topLineGradualBackground" width="20" height="100"/>
+        <image name="userInfo" width="161" height="65"/>
     </resources>
 </document>

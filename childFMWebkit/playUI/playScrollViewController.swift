@@ -26,6 +26,34 @@ class playScrollViewController: UIViewController , UIScrollViewDelegate , Module
         case VJDEviceEnum_unknow 
     }
     
+    var data : [Dictionary<String, String>] = [
+        [
+            "AudioName" : "Down in the Valley",
+            "AudioTag" : "Children's Song",
+            "Scene" : "玩耍磨耳朵",
+            "GiftTipCount" : "3"
+        ],
+        [
+            "AudioName" : "Let It Go",
+            "AudioTag" : "Cartoon Song",
+            "Scene" : "午后磨耳朵",
+            "GiftTipCount" : "2"
+        ],
+        [
+            "AudioName" : "Cradle Hymn",
+            "AudioTag" : "Music",
+            "Scene" : "睡前磨耳朵",
+            "GiftTipCount" : "5"
+        ],
+        [
+            "AudioName" : "Little Plane",
+            "AudioTag" : "Story",
+            "Scene" : "起床磨耳朵",
+            "GiftTipCount" : "7"
+        ]
+        
+    ]
+    
     var moduleLoader : ModuleLader?
     
     let imageDirectoryName : String = "iTunesGuide"
@@ -38,7 +66,7 @@ class playScrollViewController: UIViewController , UIScrollViewDelegate , Module
     let devHeight: CGFloat = UIScreen.mainScreen().bounds.height
     
     //定义变量,页码数
-    var pages : Int = 3
+    var pages : Int = 4
     
     var currentPix : CGFloat = 0
     
@@ -123,12 +151,14 @@ class playScrollViewController: UIViewController , UIScrollViewDelegate , Module
             imageFlag += subFix
         }
         
-        println("imageFlag:-->\(imageFlag)")
+        //println("imageFlag:-->\(imageFlag)")
         return imageFlag
     }
     
     //初始化scrollView的方法
     func initScrollView(){
+        
+        self.scrollVIew1.backgroundColor = UIColor(red:0.42, green:0.46, blue:0.52, alpha:1)
         
         //缩放系数
         let scaleRate: CGFloat = 1
@@ -138,8 +168,6 @@ class playScrollViewController: UIViewController , UIScrollViewDelegate , Module
         //初始化后的scrollView ->contentOffSet
         currentPix = scrollVIew1.contentOffset.x
         
-        println("currentPix \(currentPix)")
-        
         //println("scrollView(width,height)->\(scrollVIew1.contentSize)")
         
         for tempI in 0..<pages{
@@ -148,9 +176,9 @@ class playScrollViewController: UIViewController , UIScrollViewDelegate , Module
             
             playUIVC.view.frame = CGRectMake(self.view.frame.size.width * CGFloat(tempI) , 0, self.view.frame.size.width, self.view.frame.size.height)
             
-            if let PlayUIvc : PlayUI =  playUIVC as? PlayUI
+            if let PlayUIvc : playViewController =  playUIVC as? playViewController
             {
-                var playUIVC : PlayUI = playUIVC as! PlayUI
+                var playUIVC : playViewController = playUIVC as! playViewController
                 
                 switch tempI
                 {
@@ -160,9 +188,16 @@ class playScrollViewController: UIViewController , UIScrollViewDelegate , Module
                     playUIVC.VideoFileName = "pirate.mp4"
                 case 2:
                     playUIVC.VideoFileName = "town.mp4"
+                case 3:
+                    playUIVC.VideoFileName = "fisherPrice.mp4"
                 default:
                     break
                 }
+                
+                playUIVC.AudioName.text = data[tempI]["AudioName"]
+                playUIVC.AudioTag.text = data[tempI]["AudioTag"]
+                playUIVC.FakeNavigationBarTitle.title = data[tempI]["Scene"]
+                playUIVC.GiftTipCount.text = data[tempI]["GiftTipCount"]
                 
             }
             

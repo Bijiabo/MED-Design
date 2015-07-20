@@ -13,7 +13,7 @@ import AVFoundation
 import AVKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader //, Operations , UIAlertViewDelegate ,
+class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOperation //, Operations , UIAlertViewDelegate ,
 {
     //模拟蜂窝网络网络调试，设为`true`时，会识别网络为蜂窝网络。正式上线和测试产品时应为false。
     let isCellPhoneDebug : Bool = true
@@ -21,7 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader //, Operatio
     var window: UIWindow?
     
     var webServer : GCDWebServer!
-    
     
     var model : ModelManager!
     
@@ -89,6 +88,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader //, Operatio
         NSNotificationCenter.defaultCenter().postNotificationName("webServerStarted", object: nil)
         
         sleep(1)
+        
+        //init player
+        let playerSource : NSURL = NSBundle.mainBundle().resourceURL!.URLByAppendingPathComponent("media/YouAreMySunShine.m4a")
+        player = Player(source: playerSource)
+        player.play()
+        player.delegate = self
+        
+        AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, error: nil)
+        AVAudioSession.sharedInstance().setActive(true, error: nil)
         
         return true
     }
@@ -211,7 +219,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader //, Operatio
     
     func playerDidFinishPlaying()
     {
-        playNext()
+        //playNext()
+        player.play()
     }
     
     //MARK:
@@ -575,5 +584,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader //, Operatio
     */
     
 
+    
 }
 

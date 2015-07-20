@@ -19,14 +19,14 @@ var updateElementsSize = function(){
 
 
     var grown_data_height = $(window).height() - Math.round($(window).width()/750*1027);
-    $("#grown_data").css({
-        "width":grown_data_height/366*704+"px",
-        "height":grown_data_height
-    });
+    //$("#grown_data").css({
+    //    "width":grown_data_height/366*704+"px",
+    //    "height":grown_data_height
+    //});
 
     $("#playlist").css({
         "width":$(window).width()+"px",
-        "height":($(window).height()-grown_data_height)+"px"
+        "height":  $(window).height() + "px" //($(window).height()-grown_data_height)+"px"
     });
 };
 

@@ -17,7 +17,13 @@ corona.prototype.init = function(){
         <div class="scene"></div>\
         <div class="white"></div>');
     */
-    this.oval.get(0).style.webkitTransform = "rotate(0deg)";
+    //this.oval.get(0).style.webkitTransform = "rotate(60deg)";
+    this.rotate(60);
+};
+
+corona.prototype.rotate = function(r){
+
+    this.oval.get(0).style.webkitTransform = "rotate("+r+"deg)";
 };
 
 corona.prototype.bindDOM = function(){
@@ -36,8 +42,8 @@ corona.prototype.bindDOM = function(){
 
         self.originalAngle = Number(self.oval.get(0).style.webkitTransform.match(/\-?\d+\.?[\d]*/g)[0]);
 
-        console.log("startAngle : " + self.startAngle);
-        console.log("originalAngle : " + self.originalAngle);
+        //console.log("startAngle : " + self.startAngle);
+        //console.log("originalAngle : " + self.originalAngle);
     };
 
     //手指移动的处理事件
@@ -53,9 +59,10 @@ corona.prototype.bindDOM = function(){
 
         var angleDifference = moveAngle - self.startAngle;
         var ovalAngle = self.originalAngle + angleDifference;
-        console.log("angleDifference : " + angleDifference);
+        //console.log("angleDifference : " + angleDifference);
 
-        self.oval.get(0).style.webkitTransform = "rotate("+ovalAngle+"deg)";
+        //self.oval.get(0).style.webkitTransform = "rotate("+ovalAngle+"deg)";
+        self.rotate(ovalAngle);
 
     };
 
@@ -99,10 +106,14 @@ corona.prototype.bindDOM = function(){
     $(document).on("touchstart",self.containerSelectString,self.startHandler);
     $(document).on("touchmove",self.containerSelectString,self.moveHandler);
     //$(document).on("touchend",self.listener,self.endHandler);
+
+
 };
 
+var mainUserInfo;
+
 $(function(){
-    var mainUserInfo = new corona({
+    window.mainUserInfo = new corona({
         container : "corona_demo"
     });
 });

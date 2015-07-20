@@ -85,11 +85,11 @@
     margin-top: -1000px;
 }
 .corona .oval .floor{
-    background-color: #F5A623;
-    width: 1600px;
-    height: 1600px;
-    margin-left: -800px;
-    margin-top: -800px;
+    background-color: #fad161;
+    width: 1500px;
+    height: 1500px;
+    margin-left: -750px;
+    margin-top: -750px;
 }
 .corona .oval .scene{
     background: none;
@@ -97,6 +97,13 @@
     height: 2000px;
     margin-left: -1000px;
     margin-top: -1000px;
+}
+.corona .oval .growprogress{
+    background: none;
+    width: 1410px;
+    height: 1410px;
+    margin-left: -705px;
+    margin-top: -705px;
 }
 .corona .oval .scene .scene-item{
     position: absolute;
@@ -119,11 +126,22 @@
 .corona .protagonist img{
     height: 100%;
 }
+.corona .oval .scene .age-container
+{
+    position: absolute;
+    top: 316px;
+    left: 50%;
+    font-size: 20px;
+    z-index: 999;
+    width: 100px;
+    text-align: center;
+    margin-left: -50px;
+}
 
 #corona_demo{
-    height: 343px;
+    height: 500px;
     position: absolute;
-    top: 104px;
+    top: 140px;
     left: 0;
 }
 #corona_demo .oval{
@@ -140,4 +158,10 @@
     display: -webkit-box;
     -webkit-box-pack: center;
     -webkit-box-align: center;
+}
+
+.user-information{
+    position: absolute;
+    top: 0;
+    left: 0;
 }

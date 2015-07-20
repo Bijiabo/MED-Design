@@ -27,15 +27,14 @@ class cartoonDetailViewController: UIViewController , UIScrollViewDelegate , Mod
     
     var moduleLoader : ModuleLader?
     
-    let imageDirectoryName : String = "cartoonImage"
+    var imageDirectoryPath : String = "cartoonImage"
     
     @IBOutlet var scrollVIew1: UIScrollView!
     
-    
     @IBOutlet var pageControl: UIPageControl!
     //获取设备宽高
-    let devWidth: CGFloat = UIScreen.mainScreen().bounds.width
-    let devHeight: CGFloat = UIScreen.mainScreen().bounds.height
+    var devWidth: CGFloat!
+    var devHeight: CGFloat!
     
     //定义变量,页码数
     var pages : Int = 7
@@ -47,7 +46,10 @@ class cartoonDetailViewController: UIViewController , UIScrollViewDelegate , Mod
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        currentDeviceImageSubFix = getCurrentDiveceImageFlag("png")
+        devWidth = self.view.frame.size.width
+        devHeight = self.view.frame.size.height
+        
+        currentDeviceImageSubFix = getCurrentDiveceImageFlag("jpg")
         //设置delegate属性，否则拓展拖动之后事件无法使用
         scrollVIew1.delegate = self
         
@@ -90,7 +92,7 @@ class cartoonDetailViewController: UIViewController , UIScrollViewDelegate , Mod
         let bundleURL : NSURL = NSBundle.mainBundle().resourceURL!
         println("\(bundleURL)")
         //在基础URL上新增URL路径
-        let imageDirectoryURL : NSURL = bundleURL.URLByAppendingPathComponent( imageDirectoryName )
+        let imageDirectoryURL : NSURL = bundleURL.URLByAppendingPathComponent( imageDirectoryPath )
         
         
         var error : NSError?
@@ -98,10 +100,10 @@ class cartoonDetailViewController: UIViewController , UIScrollViewDelegate , Mod
         let fileList = NSFileManager.defaultManager().contentsOfDirectoryAtURL(imageDirectoryURL, includingPropertiesForKeys: nil, options: nil, error: &error)
         
         if error == nil{
-            
             pages = fileList!.count / 3
-
-        }else{
+        }
+        else
+        {
             println("setPageNum error!!!")
         }
         
@@ -131,9 +133,9 @@ class cartoonDetailViewController: UIViewController , UIScrollViewDelegate , Mod
     func initScrollView(){
         
         //缩放系数
-        let scaleRate: CGFloat = 1.2
+        let scaleRate: CGFloat = 1.0
         //设置宽高
-        scrollVIew1.contentSize = CGSize(width: devWidth*CGFloat(pages), height: devHeight)
+        scrollVIew1.contentSize = CGSize(width: self.view.frame.size.width * CGFloat(pages), height: scrollVIew1.frame.size.height)
         
         //初始化后的scrollView ->contentOffSet
         currentPix = scrollVIew1.contentOffset.x
@@ -158,7 +160,7 @@ class cartoonDetailViewController: UIViewController , UIScrollViewDelegate , Mod
             //imageView.backgroundColor = UIColor.blackColor()
             
             //得到图片的URL
-            var imageURL : NSURL = NSBundle.mainBundle().resourceURL!.URLByAppendingPathComponent("\(imageDirectoryName)/\(tempI)" + currentDeviceImageSubFix)
+            var imageURL : NSURL = NSBundle.mainBundle().resourceURL!.URLByAppendingPathComponent("\(imageDirectoryPath)/\(tempI)" + currentDeviceImageSubFix)
             
             println(imageURL)
             

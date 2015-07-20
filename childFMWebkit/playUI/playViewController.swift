@@ -33,6 +33,12 @@ class playViewController: UIViewController , DemoModule , PlayUI
     @IBOutlet var container: UIView!
     @IBOutlet var FakeNavigationBar: UINavigationBar!
     @IBOutlet var FakeNavigationBarTitle: UINavigationItem!
+    @IBOutlet var AudioName: UILabel!
+    @IBOutlet var AudioTag: UILabel!
+    @IBOutlet var GiftTipCount: UILabel!
+    @IBOutlet var childLikeButton: UIButton!
+    @IBOutlet var childDislikeButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -110,6 +116,35 @@ class playViewController: UIViewController , DemoModule , PlayUI
         FakeNavigationBar.shadowImage = UIImage()
 
     }
+    
+    // MARK: user tap button
+    @IBAction func tapChildLikeButton(sender: AnyObject) {
+        
+        if childLikeButton.alpha != 1.0
+        {
+            childLikeButton.alpha = 1.0
+            childDislikeButton.alpha = 0.5
+        }
+        else
+        {
+            childLikeButton.alpha = 0.5
+            childDislikeButton.alpha = 0.5
+        }
+    }
+    
+    @IBAction func tapChildDislikeButton(sender: AnyObject) {
+        if childDislikeButton.alpha != 1.0
+        {
+            childLikeButton.alpha = 0.5
+            childDislikeButton.alpha = 1.0
+        }
+        else
+        {
+            childLikeButton.alpha = 0.5
+            childDislikeButton.alpha = 0.5
+        }
+    }
+
 
 
 }

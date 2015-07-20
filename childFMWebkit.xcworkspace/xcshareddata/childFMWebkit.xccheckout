@@ -10,26 +10,26 @@
 	<string>childFMWebkit</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>3AE8ED2E684071AF4FB151FA51BF266B82FF45BD</key>
-		<string>https://github.com/stephencelis/SQLite.swift.git</string>
+		<key>08AE58717C4C9870BD072FDBE069A1F5E3B392F2</key>
+		<string>https://github.com/Bijiabo/MED-Design.git</string>
 		<key>5A37E4E31FA1EFAC4DCDD9AA665FC668803AAFFC</key>
 		<string>https://github.com/Bijiabo/JYLabsDesign.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>childFM/iOS/childFMWebkit/childFMWebkit.xcworkspace</string>
+	<string>childFMWebkit.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>3AE8ED2E684071AF4FB151FA51BF266B82FF45BD</key>
-		<string>../../../../childFM/iOS/childFMWebkit/SQLite.swift</string>
+		<key>08AE58717C4C9870BD072FDBE069A1F5E3B392F2</key>
+		<string>..</string>
 		<key>5A37E4E31FA1EFAC4DCDD9AA665FC668803AAFFC</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/Bijiabo/JYLabsDesign.git</string>
+	<string>https://github.com/Bijiabo/MED-Design.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>5A37E4E31FA1EFAC4DCDD9AA665FC668803AAFFC</string>
+	<string>08AE58717C4C9870BD072FDBE069A1F5E3B392F2</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -38,15 +38,15 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>5A37E4E31FA1EFAC4DCDD9AA665FC668803AAFFC</string>
 			<key>IDESourceControlWCCName</key>
-			<string>childFM</string>
+			<string>..</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>3AE8ED2E684071AF4FB151FA51BF266B82FF45BD</string>
+			<string>08AE58717C4C9870BD072FDBE069A1F5E3B392F2</string>
 			<key>IDESourceControlWCCName</key>
-			<string>SQLite.swift</string>
+			<string>childFMWebkit</string>
 		</dict>
 	</array>
 </dict>
