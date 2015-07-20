@@ -183,7 +183,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dy1-3X-cvS" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1922" y="1657"/>
+            <point key="canvasLocation" x="1802" y="1657"/>
         </scene>
         <!--播放界面-->
         <scene sceneID="QjE-xK-vha">
@@ -340,10 +340,82 @@
             </objects>
             <point key="canvasLocation" x="1101" y="2391"/>
         </scene>
-        <!--Shop Detail View Controller-->
+        <!--AV Player View Controller-->
+        <scene sceneID="AiD-Ih-igf">
+            <objects>
+                <avPlayerViewController showsPlaybackControls="NO" videoGravity="AVLayerVideoGravityResizeAspect" id="zRr-sw-rVo" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ioz-Ia-8VY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1802" y="3103"/>
+        </scene>
+        <!--Shop Detail Content View Controller-->
+        <scene sceneID="SgS-kj-mJs">
+            <objects>
+                <viewController storyboardIdentifier="shopDetailContentVC" id="vYw-Cl-pbm" customClass="shopDetailContentViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fAR-go-xdz"/>
+                        <viewControllerLayoutGuide type="bottom" id="xdC-YQ-NXZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9mS-Ko-hej">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TE0-PV-G3N" userLabel="半透明黑色遮罩">
+                                <rect key="frame" x="0.0" y="200" width="600" height="400"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottomLineGradualBackground" translatesAutoresizingMaskIntoConstraints="NO" id="CIL-nA-Hhb">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="g6g-24-6ni"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEGO CITY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaL-Nk-08h" userLabel="标题">
+                                <rect key="frame" x="16" y="49" width="192.5" height="48.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hB6-tB-NTf">
+                                <rect key="frame" x="16" y="124.5" width="568" height="116.5"/>
+                                <string key="text">妈妈在毛豆豆很小的时候就带着他玩颜色鲜艳的积木，现在毛豆豆对色彩和空间很熟悉，十几层的“大楼”一会儿就盖好了！这就是我们所说的针对宝宝感官敏感期进行刺激活动，从而帮助宝宝感官发展。感官为宝宝提供大量来自外界的信息。在这些信息的刺激下，宝宝的大脑发育开始完善。0-3岁是宝宝的感官敏感期，如果我们能在此时给予适当的感官刺激，那将对宝宝大脑的发育以及未来的探索世界有着非凡的意义。
+</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hB6-tB-NTf" firstAttribute="leading" secondItem="9mS-Ko-hej" secondAttribute="leading" constant="16" id="3O2-8V-1Uo"/>
+                            <constraint firstAttribute="trailing" secondItem="TE0-PV-G3N" secondAttribute="trailing" id="79V-uD-g6K"/>
+                            <constraint firstItem="CIL-nA-Hhb" firstAttribute="leading" secondItem="9mS-Ko-hej" secondAttribute="leading" id="Hh4-9m-Llr"/>
+                            <constraint firstItem="TE0-PV-G3N" firstAttribute="top" secondItem="CIL-nA-Hhb" secondAttribute="bottom" id="I24-I0-rev"/>
+                            <constraint firstItem="CIL-nA-Hhb" firstAttribute="top" secondItem="9mS-Ko-hej" secondAttribute="top" id="JdW-nU-F3T"/>
+                            <constraint firstAttribute="trailing" secondItem="hB6-tB-NTf" secondAttribute="trailing" constant="16" id="dVl-5I-tvc"/>
+                            <constraint firstItem="TE0-PV-G3N" firstAttribute="leading" secondItem="9mS-Ko-hej" secondAttribute="leading" id="eQd-zb-lPu"/>
+                            <constraint firstAttribute="trailing" secondItem="CIL-nA-Hhb" secondAttribute="trailing" id="hNv-sQ-pwU"/>
+                            <constraint firstItem="oaL-Nk-08h" firstAttribute="leading" secondItem="9mS-Ko-hej" secondAttribute="leading" constant="16" id="iV0-oS-DgX"/>
+                            <constraint firstItem="hB6-tB-NTf" firstAttribute="top" secondItem="oaL-Nk-08h" secondAttribute="bottom" constant="27" id="m5s-Ir-K5f"/>
+                            <constraint firstItem="oaL-Nk-08h" firstAttribute="top" secondItem="fAR-go-xdz" secondAttribute="bottom" constant="29" id="nw4-o3-9Xx"/>
+                            <constraint firstItem="xdC-YQ-NXZ" firstAttribute="top" secondItem="TE0-PV-G3N" secondAttribute="bottom" id="xgg-TX-5kN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ContentLabel" destination="hB6-tB-NTf" id="rsM-3Y-lSd"/>
+                        <outlet property="GoodTitle" destination="oaL-Nk-08h" id="Xui-p2-5a8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="urI-vr-QY5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2520" y="3103"/>
+        </scene>
+        <!--商品展示界面-->
         <scene sceneID="niJ-PY-K6f">
             <objects>
-                <viewController id="0oe-No-yao" customClass="shopDetailViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0oe-No-yao" userLabel="商品展示界面" customClass="shopDetailViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KGs-Sg-NLx"/>
                         <viewControllerLayoutGuide type="bottom" id="OfK-8A-CFM"/>
@@ -352,7 +424,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FnB-72-tu3">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nsk-zf-84h">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <segue destination="zRr-sw-rVo" kind="embed" identifier="containerToAVPlayer" id="6XX-xU-yqu"/>
+                                </connections>
+                            </containerView>
+                            <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRd-ot-Zx3">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FnB-72-tu3" userLabel="关闭按钮">
                                 <rect key="frame" x="16" y="11" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -360,9 +441,21 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Nsk-zf-84h" secondAttribute="trailing" id="3EM-Sm-uBA"/>
+                            <constraint firstAttribute="trailing" secondItem="FRd-ot-Zx3" secondAttribute="trailing" id="60v-Rm-x0S"/>
+                            <constraint firstItem="OfK-8A-CFM" firstAttribute="top" secondItem="Nsk-zf-84h" secondAttribute="bottom" id="8jZ-B6-ken"/>
+                            <constraint firstItem="Nsk-zf-84h" firstAttribute="leading" secondItem="gHM-fk-NjQ" secondAttribute="leading" id="OOk-D7-9fc"/>
+                            <constraint firstItem="FRd-ot-Zx3" firstAttribute="leading" secondItem="gHM-fk-NjQ" secondAttribute="leading" id="V4H-Au-Lhb"/>
+                            <constraint firstItem="OfK-8A-CFM" firstAttribute="top" secondItem="FRd-ot-Zx3" secondAttribute="bottom" id="nry-wE-97t"/>
+                            <constraint firstItem="FRd-ot-Zx3" firstAttribute="top" secondItem="gHM-fk-NjQ" secondAttribute="top" id="trg-Hk-OCZ"/>
+                            <constraint firstItem="Nsk-zf-84h" firstAttribute="top" secondItem="gHM-fk-NjQ" secondAttribute="top" id="uWD-aZ-93q"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="Container" destination="Nsk-zf-84h" id="H1d-zk-ucw"/>
                         <outlet property="backButton" destination="FnB-72-tu3" id="DcY-GF-szZ"/>
+                        <outlet property="scrollView" destination="FRd-ot-Zx3" id="dg7-X9-Vxr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQz-Eb-1Gf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -422,7 +515,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5HN-LV-TSN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1922" y="3887"/>
+            <point key="canvasLocation" x="1802" y="3887"/>
         </scene>
         <!--场景下的播放列表-->
         <scene sceneID="Wpm-0h-neh">
@@ -474,7 +567,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gue-xW-GkH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1922" y="2391"/>
+            <point key="canvasLocation" x="1802" y="2391"/>
         </scene>
         <!--UGC进入页面-->
         <scene sceneID="qpg-mh-FNI">
@@ -700,7 +793,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8In-h0-jGf" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3537" y="2096"/>
+            <point key="canvasLocation" x="3489" y="1612"/>
         </scene>
         <!--在线资源浏览器-->
         <scene sceneID="bcH-1q-VXu">
@@ -718,7 +811,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9GO-2n-WER" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3537" y="2796"/>
+            <point key="canvasLocation" x="4215" y="1992"/>
         </scene>
         <!--AV Player View Controller-->
         <scene sceneID="Vgl-eF-gQf">
@@ -726,7 +819,7 @@
                 <avPlayerViewController showsPlaybackControls="NO" videoGravity="AVLayerVideoGravityResize" id="rSi-Gj-lu1" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oc5-AN-9U3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1922" y="3103"/>
+            <point key="canvasLocation" x="3788" y="2561"/>
         </scene>
         <!--漫画详情页面-->
         <scene sceneID="8fx-lQ-KX1">
@@ -846,26 +939,24 @@
                                     <constraint firstAttribute="width" constant="30" id="y1S-8I-CJ6"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2岁宝宝语言发展再上新台阶，词汇量又一次爆炸式增长，宝宝用语言表达需求的能力更强了。宝宝对语言表现出浓厚的兴趣，愿意使用新词和妈妈对话。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSd-hv-qyN">
-                                <rect key="frame" x="23" y="516" width="561" height="63"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ecl-RQ-NMX">
+                                <rect key="frame" x="0.0" y="488" width="600" height="112"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="KSd-hv-qyN" firstAttribute="top" secondItem="W9p-lq-GT0" secondAttribute="bottom" constant="36" id="32d-Gi-PsG"/>
                             <constraint firstItem="Zd4-s7-6YL" firstAttribute="leading" secondItem="ViM-Uh-VuC" secondAttribute="leading" constant="16" id="34H-MK-M4s"/>
                             <constraint firstAttribute="trailing" secondItem="WPe-Fw-afA" secondAttribute="trailing" constant="16" id="BEq-FW-fHz"/>
                             <constraint firstItem="Zd4-s7-6YL" firstAttribute="top" secondItem="eeV-81-QOC" secondAttribute="bottom" constant="46" id="Klf-jZ-ThA"/>
                             <constraint firstItem="WPe-Fw-afA" firstAttribute="top" secondItem="eeV-81-QOC" secondAttribute="bottom" constant="46" id="NXb-XP-igW"/>
+                            <constraint firstItem="tr4-J8-FxF" firstAttribute="top" secondItem="ecl-RQ-NMX" secondAttribute="bottom" id="QTm-KM-BFc"/>
+                            <constraint firstItem="ecl-RQ-NMX" firstAttribute="leading" secondItem="ViM-Uh-VuC" secondAttribute="leading" id="Sdo-P9-ymu"/>
                             <constraint firstItem="W9p-lq-GT0" firstAttribute="leading" secondItem="ViM-Uh-VuC" secondAttribute="leading" id="VJr-b6-axc"/>
                             <constraint firstAttribute="trailing" secondItem="W9p-lq-GT0" secondAttribute="trailing" id="gJN-t9-MT3"/>
                             <constraint firstItem="tr4-J8-FxF" firstAttribute="top" secondItem="W9p-lq-GT0" secondAttribute="bottom" id="hg8-21-Iu8"/>
                             <constraint firstItem="W9p-lq-GT0" firstAttribute="top" secondItem="ViM-Uh-VuC" secondAttribute="top" constant="130" id="let-bd-vfm"/>
-                            <constraint firstAttribute="trailing" secondItem="KSd-hv-qyN" secondAttribute="trailing" constant="16" id="qci-PL-HKA"/>
-                            <constraint firstItem="KSd-hv-qyN" firstAttribute="leading" secondItem="ViM-Uh-VuC" secondAttribute="leading" constant="23" id="zHy-X0-5hq"/>
+                            <constraint firstAttribute="trailing" secondItem="ecl-RQ-NMX" secondAttribute="trailing" id="oP1-mL-l97"/>
+                            <constraint firstItem="ecl-RQ-NMX" firstAttribute="top" secondItem="W9p-lq-GT0" secondAttribute="bottom" constant="8" id="qFj-wV-b5g"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -874,7 +965,7 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="explainTextLabel" destination="KSd-hv-qyN" id="FCJ-vy-th8"/>
+                        <outlet property="BottomScrollView" destination="ecl-RQ-NMX" id="u4q-Hf-nKd"/>
                         <outlet property="scrollView" destination="W9p-lq-GT0" id="eyJ-D6-2WZ"/>
                     </connections>
                 </viewController>
@@ -882,10 +973,10 @@
             </objects>
             <point key="canvasLocation" x="1101" y="4689"/>
         </scene>
-        <!--成长年轮下方滚动-->
+        <!--成长年轮下方文字-->
         <scene sceneID="nio-S6-GIG">
             <objects>
-                <viewController id="cx1-73-lOQ" userLabel="成长年轮下方滚动" customClass="GrownBottomScrollViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GrownBottomTextVC" id="cx1-73-lOQ" userLabel="成长年轮下方文字" customClass="GrownBottomTextViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LqX-tz-02K"/>
                         <viewControllerLayoutGuide type="bottom" id="NVs-Uz-ytJ"/>
@@ -894,25 +985,109 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xCc-BN-TvI">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2岁宝宝语言发展再上新台阶，词汇量又一次爆炸式增长，宝宝用语言表达需求的能力更强了。宝宝对语言表现出浓厚的兴趣，愿意使用新词和妈妈对话。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1h-u2-38W">
+                                <rect key="frame" x="16" y="268.5" width="568" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="Qjs-NO-sIY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="NVs-Uz-ytJ" firstAttribute="top" secondItem="xCc-BN-TvI" secondAttribute="bottom" id="Zrh-KD-sRq"/>
-                            <constraint firstItem="xCc-BN-TvI" firstAttribute="leading" secondItem="iQb-nq-TWY" secondAttribute="leading" id="c2M-yZ-Lbq"/>
-                            <constraint firstAttribute="trailing" secondItem="xCc-BN-TvI" secondAttribute="trailing" id="gtG-Qt-pQk"/>
-                            <constraint firstItem="xCc-BN-TvI" firstAttribute="top" secondItem="iQb-nq-TWY" secondAttribute="top" id="xgv-4I-2rC"/>
+                            <constraint firstAttribute="centerY" secondItem="S1h-u2-38W" secondAttribute="centerY" id="M9a-PP-7QM"/>
+                            <constraint firstAttribute="trailing" secondItem="S1h-u2-38W" secondAttribute="trailing" constant="16" id="Ulc-l4-xRU"/>
+                            <constraint firstAttribute="centerX" secondItem="S1h-u2-38W" secondAttribute="centerX" id="bJ2-7f-Jzk"/>
+                            <constraint firstItem="S1h-u2-38W" firstAttribute="leading" secondItem="iQb-nq-TWY" secondAttribute="leading" constant="16" id="yXp-oa-BBx"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="scrollView" destination="xCc-BN-TvI" id="Thx-Xh-1mk"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rSb-Ok-HkB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1922" y="4689"/>
+        </scene>
+        <!--成长年轮下方记录按钮组-->
+        <scene sceneID="EEb-SD-9aN">
+            <objects>
+                <viewController storyboardIdentifier="GrownBottomRecordVC" id="mq3-0H-VLK" userLabel="成长年轮下方记录按钮组" customClass="GrownBottomLogViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IFM-4L-6Vu"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Bb-TL-obp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XNP-UJ-GGg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="GE4-ZH-dWe">
+                                <rect key="frame" x="240" y="240" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="QvH-Ym-s4R"/>
+                                    <constraint firstAttribute="height" constant="120" id="zDb-7r-JWN"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="qi4-tl-7PE">
+                                <rect key="frame" x="410" y="250" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="A18-mb-oMz"/>
+                                    <constraint firstAttribute="width" constant="100" id="am6-n6-z65"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork@2x" translatesAutoresizingMaskIntoConstraints="NO" id="X3e-mR-Ntt">
+                                <rect key="frame" x="90" y="250" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="C6P-4d-fHD"/>
+                                    <constraint firstAttribute="width" constant="100" id="b8M-pD-UE1"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="X3e-mR-Ntt" secondAttribute="centerY" id="Dxx-GU-ubh"/>
+                            <constraint firstAttribute="centerX" secondItem="GE4-ZH-dWe" secondAttribute="centerX" id="Eif-OD-PHF"/>
+                            <constraint firstItem="GE4-ZH-dWe" firstAttribute="leading" secondItem="X3e-mR-Ntt" secondAttribute="trailing" constant="50" id="TBE-wb-1OD"/>
+                            <constraint firstItem="qi4-tl-7PE" firstAttribute="leading" secondItem="GE4-ZH-dWe" secondAttribute="trailing" constant="50" id="Yv6-Rd-AUb"/>
+                            <constraint firstAttribute="centerY" secondItem="qi4-tl-7PE" secondAttribute="centerY" id="piS-XO-79K"/>
+                            <constraint firstAttribute="centerY" secondItem="GE4-ZH-dWe" secondAttribute="centerY" id="tHE-lP-XAV"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="13p-GL-UbA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2704" y="4689"/>
+        </scene>
+        <!--成长年轮下方统计-->
+        <scene sceneID="4rV-6m-Rhb">
+            <objects>
+                <viewController storyboardIdentifier="GrownBottomStatisticsVC" id="5Cp-hF-9gV" userLabel="成长年轮下方统计" customClass="GrownBottomStatisticsViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mX8-6r-yib"/>
+                        <viewControllerLayoutGuide type="bottom" id="23e-r0-v4o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6kE-pk-hkc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="c0A-kV-eO0">
+                                <rect key="frame" x="0.0" y="200" width="600" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="2AW-Rd-eWD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c0A-kV-eO0" firstAttribute="leading" secondItem="6kE-pk-hkc" secondAttribute="leading" id="R2U-t8-JLH"/>
+                            <constraint firstAttribute="centerY" secondItem="c0A-kV-eO0" secondAttribute="centerY" id="cAA-Mi-Axx"/>
+                            <constraint firstAttribute="trailing" secondItem="c0A-kV-eO0" secondAttribute="trailing" id="iCu-HT-z94"/>
+                            <constraint firstAttribute="centerX" secondItem="c0A-kV-eO0" secondAttribute="centerX" id="mwR-h3-211"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HBE-K2-PW6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3506" y="4689"/>
         </scene>
     </scenes>
     <resources>
@@ -920,6 +1095,8 @@
         <image name="ChildLike" width="30" height="30"/>
         <image name="bottomLineGradualBackground" width="20" height="100"/>
         <image name="gift" width="50" height="50"/>
+        <image name="iTunesArtwork" width="512" height="512"/>
+        <image name="iTunesArtwork@2x" width="1024" height="1024"/>
         <image name="listButton" width="22" height="22"/>
         <image name="message" width="36" height="30"/>
         <image name="topLineGradualBackground" width="20" height="100"/>

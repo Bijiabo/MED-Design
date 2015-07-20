@@ -12,7 +12,7 @@ class GrownScrollViewController: UIViewController , UIScrollViewDelegate
 {
 
     @IBOutlet var scrollView: UIScrollView!
-    @IBOutlet var explainTextLabel: UILabel!
+    @IBOutlet var BottomScrollView: UIScrollView!
     
     let pageCount : Int = 12
     let defaultPageIndex :Int = 10
@@ -25,6 +25,7 @@ class GrownScrollViewController: UIViewController , UIScrollViewDelegate
         view.backgroundColor = UIColor.clearColor()
         
         //InitScrollView()
+        InitBottomScrollView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,6 +69,70 @@ class GrownScrollViewController: UIViewController , UIScrollViewDelegate
         }
         
         scrollView.setContentOffset(CGPointMake(self.view.frame.size.width * CGFloat(defaultPageIndex), 0), animated: true)
+    }
+    
+    //MARK: 初始化下方scrollView
+    var recordViewController : GrownBottomLogViewController!
+    var TipViewController : GrownBottomTextViewController!
+    var StatisticsViewController : GrownBottomStatisticsViewController!
+    
+    func InitBottomScrollView ()
+    {
+        println("self.view.frame.size.width = \(self.view.frame.size.width)")
+        println("BottomScrollView.frame.size.height = \(BottomScrollView.frame.size.height)")
+
+        let height : CGFloat = BottomScrollView.frame.size.height
+        
+        BottomScrollView.contentSize = CGSizeMake( self.view.frame.size.width * 3.0, height)
+        BottomScrollView.pagingEnabled = true
+        
+        BottomScrollView.backgroundColor = UIColor(red:0.65, green:0.93, blue:0.52, alpha:0.4)
+        
+        for i in 0..<3
+        {
+            let vc : UIView = UIView(frame: CGRectMake(self.view.frame.size.width * CGFloat(i), 0, self.view.frame.size.width, height))
+            if i % 2 == 0
+            {
+                vc.backgroundColor = UIColor(red:0.29, green:0.71, blue:0.97, alpha:0.5)
+            }
+            else
+            {
+                vc.backgroundColor = UIColor(red:0.91, green:0.32, blue:0.28, alpha:0.5)
+            }
+            
+            switch i
+            {
+            case 0:
+                //加载按钮组
+                recordViewController = self.storyboard?.instantiateViewControllerWithIdentifier("GrownBottomRecordVC") as! GrownBottomLogViewController
+                recordViewController.view.frame = CGRectMake(0, 0, vc.frame.size.width, vc.frame.size.height)
+                self.addChildViewController( recordViewController )
+                vc.addSubview( recordViewController.view )
+                
+            case 1:
+                //加载文字提示
+                TipViewController = self.storyboard?.instantiateViewControllerWithIdentifier("GrownBottomTextVC") as! GrownBottomTextViewController
+                TipViewController.view.frame = CGRectMake(0, 0, vc.frame.size.width, vc.frame.size.height)
+                self.addChildViewController( TipViewController )
+                vc.addSubview( TipViewController.view )
+                
+            case 2:
+                //加载统计数据
+                StatisticsViewController = self.storyboard?.instantiateViewControllerWithIdentifier("GrownBottomStatisticsVC") as! GrownBottomStatisticsViewController
+                StatisticsViewController.view.frame = CGRectMake(0, 0, vc.frame.size.width, vc.frame.size.height)
+                self.addChildViewController( StatisticsViewController )
+                vc.addSubview( StatisticsViewController.view )
+
+                
+            default:
+                break
+            }
+            
+            
+            BottomScrollView.addSubview(vc)
+        }
+        
+        BottomScrollView.setContentOffset( CGPointMake(self.view.frame.size.width, 0.0) , animated: false)
     }
     
     //MARK: scrollView delegate

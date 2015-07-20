@@ -15,8 +15,6 @@ class playViewController: UIViewController , DemoModule , PlayUI
     var VideoFileName : String = "pirate.mp4"
     {
         didSet{
-            println( VideoFileName )
-            
             let VideoURL : NSURL = NSBundle.mainBundle().resourceURL!.URLByAppendingPathComponent("video/\(VideoFileName)")
             PlayerViewController.player = AVPlayer(URL: VideoURL)
             
@@ -79,8 +77,6 @@ class playViewController: UIViewController , DemoModule , PlayUI
     
     func avplayerDidFinishPlay()
     {
-        println("avplayerDidFinishPlay...")
-        
         PlayerViewController.player.seekToTime(CMTimeMake(0, 1000))
         
         PlayerViewController.player.play()
