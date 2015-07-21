@@ -190,7 +190,7 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
     {
         //加载引导漫画scroll view
         var CartoonDetailViewController : cartoonDetailViewController = self.storyboard?.instantiateViewControllerWithIdentifier("cartoonDetail") as! cartoonDetailViewController
-        CartoonDetailViewController.imageDirectoryPath = "cartoonImage/0"
+        CartoonDetailViewController.imageDirectoryPath = "cartoonImage/3"
         CartoonDetailViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)
         
         self.addChildViewController( CartoonDetailViewController )
@@ -201,13 +201,14 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
 //        CartoonNavigationBar.alpha = 0.5
 //        var CartoonNavigationBarTitle : UIBarItem = UIBarItem()
 //        CartoonNavigationBarTitle.title = "不要哑巴英语"
-        self.webView.scrollView.addSubview(CartoonNavigationBar)
+        
+        //self.webView.scrollView.addSubview(CartoonNavigationBar)
         ///*
         var CartoonTitle : UILabel = UILabel(frame: CGRectMake(0, 0, self.view.frame.size.width, 44.0))
         CartoonTitle.textAlignment = NSTextAlignment.Center
         CartoonTitle.text = "不要哑巴英语"
         
-        self.webView.scrollView.addSubview(CartoonTitle)
+        //self.webView.scrollView.addSubview(CartoonTitle)
         //*/
         
         //加载漫画列表按钮

@@ -134,7 +134,7 @@ class cartoonDetailViewController: UIViewController , UIScrollViewDelegate , Mod
         //缩放系数
         let scaleRate: CGFloat = 1.0
         //设置宽高
-        scrollVIew1.contentSize = CGSize(width: self.view.frame.size.width * CGFloat(pages), height: scrollVIew1.frame.size.height)
+        scrollVIew1.contentSize = CGSize(width: self.view.frame.size.width * CGFloat(pages), height: self.view.frame.size.height - 20.0)
         
         //初始化后的scrollView ->contentOffSet
         currentPix = scrollVIew1.contentOffset.x
