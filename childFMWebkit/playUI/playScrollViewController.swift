@@ -28,26 +28,26 @@ class playScrollViewController: UIViewController , UIScrollViewDelegate , Module
     
     var data : [Dictionary<String, String>] = [
         [
-            "AudioName" : "Down in the Valley",
+            "AudioName" : "You Are My Shunshine",
             "AudioTag" : "Children's Song",
             "Scene" : "玩耍磨耳朵",
             "GiftTipCount" : "3"
         ],
         [
-            "AudioName" : "Let It Go",
+            "AudioName" : "Babs Seed",
             "AudioTag" : "Cartoon Song",
             "Scene" : "午后磨耳朵",
             "GiftTipCount" : "2"
         ],
         [
-            "AudioName" : "Cradle Hymn",
+            "AudioName" : "Always With Me",
             "AudioTag" : "Music",
             "Scene" : "睡前磨耳朵",
             "GiftTipCount" : "5"
         ],
         [
-            "AudioName" : "Little Plane",
-            "AudioTag" : "Story",
+            "AudioName" : "Baby toys meet melody",
+            "AudioTag" : "Music",
             "Scene" : "起床磨耳朵",
             "GiftTipCount" : "7"
         ]
@@ -182,7 +182,7 @@ class playScrollViewController: UIViewController , UIScrollViewDelegate , Module
             {
                 var playUIVC : playViewController = playUIVC as! playViewController
                 
-                playUIVC.playPauseSwitchButton.setBackgroundImage(UIImage(named: "playButton"), forState: UIControlState.Normal)
+                playUIVC.playPauseSwitchButton.setBackgroundImage(UIImage(named: "switchButton_left"), forState: UIControlState.Normal)
                 
                 playUIVC.view.tag = tempI //标记Play view controll 序号
                 playUIVC.playPauseSwitchButton.tag = 2 //0 = playButton , 1 = pauseButton , 2 = switch
@@ -343,7 +343,9 @@ class playScrollViewController: UIViewController , UIScrollViewDelegate , Module
                 }
                 else
                 {
-                    childVC.playPauseSwitchButton.setBackgroundImage(UIImage(named: "playButton"), forState: UIControlState.Normal)
+                    let ButtonImageName : String = childVC.view.tag < ActiveIndex ? "switchButton_right" : "switchButton_left"
+                    
+                    childVC.playPauseSwitchButton.setBackgroundImage(UIImage(named: ButtonImageName), forState: UIControlState.Normal)
                     
                     childVC.playPauseSwitchButton.tag = 2
                 }

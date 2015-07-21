@@ -30,6 +30,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
     
     var cacheRootURL : NSURL!
     
+    //演示用播放数据
+    let PlayerResources : [String] = [
+        "YouAreMySunShine.m4a", //玩耍
+        "irmujeho.4va.mp3", //午后
+        "rmei52zo.sjq.mp3", //睡前
+        "33nerci4.fz0.mp3" //起床
+    ]
+    
     //MARK:
     //MARK: Network Operation
     
@@ -90,7 +98,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
         sleep(1)
         
         //init player
-        let playerSource : NSURL = NSBundle.mainBundle().resourceURL!.URLByAppendingPathComponent("media/YouAreMySunShine.m4a")
+        let playerSource : NSURL = NSBundle.mainBundle().resourceURL!.URLByAppendingPathComponent("media/\(PlayerResources[0])")
         player = Player(source: playerSource)
         player.play()
         player.delegate = self
@@ -98,7 +106,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
         AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, error: nil)
         AVAudioSession.sharedInstance().setActive(true, error: nil)
         
-        
+        addPlayStatusObserver()
         
         return true
     }
@@ -586,6 +594,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
     */
     
 
+    // MARK: 演示用播放暂停操作
+    
+    func addPlayStatusObserver ()
+    {
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("PlayUIVC_Play:"), name: "PlayUIVC_Play", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("PlayUIVC_Pause:"), name: "PlayUIVC_Pause", object: nil)
+    }
+    
+    func PlayUIVC_Play (notification : NSNotification)
+    {
+        let ActiveIndex : Int = notification.object as! Int
+        
+        let playerSource : NSURL = NSBundle.mainBundle().resourceURL!.URLByAppendingPathComponent("media/\(PlayerResources[ActiveIndex])")
+        player = Player(source: playerSource)
+        player.play()
+        player.delegate = self
+    }
+    
+    func PlayUIVC_Pause (notification : NSNotification)
+    {
+        let ActiveIndex : Int = notification.object as! Int
+        
+        player.pause()
+    }
     
 }
 
