@@ -61,6 +61,8 @@
 		A1D468921B5CE6B70097358D /* GrownBottomLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D468911B5CE6B70097358D /* GrownBottomLogViewController.swift */; };
 		A1D468941B5CE6E20097358D /* GrownBottomStatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D468931B5CE6E20097358D /* GrownBottomStatisticsViewController.swift */; };
 		A1D468961B5D1EF20097358D /* shopDetailContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D468951B5D1EF20097358D /* shopDetailContentViewController.swift */; };
+		A1D4689C1B5ECE840097358D /* NotificationCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D4689B1B5ECE840097358D /* NotificationCenterViewController.swift */; };
+		A1D4689E1B5ED35F0097358D /* shopDetailStaticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D4689D1B5ED35F0097358D /* shopDetailStaticViewController.swift */; };
 		A1FB09381B5A3961001EAF27 /* iTunesGuide in Resources */ = {isa = PBXBuildFile; fileRef = A1FB09371B5A3961001EAF27 /* iTunesGuide */; };
 		A1FB096C1B5A86DB001EAF27 /* shopDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FB096B1B5A86DB001EAF27 /* shopDetailViewController.swift */; };
 		A1FB096E1B5A8FEC001EAF27 /* playScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FB096D1B5A8FEC001EAF27 /* playScrollViewController.swift */; };
@@ -163,6 +165,8 @@
 		A1D468911B5CE6B70097358D /* GrownBottomLogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GrownBottomLogViewController.swift; path = Grown/GrownBottomLogViewController.swift; sourceTree = "<group>"; };
 		A1D468931B5CE6E20097358D /* GrownBottomStatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GrownBottomStatisticsViewController.swift; path = Grown/GrownBottomStatisticsViewController.swift; sourceTree = "<group>"; };
 		A1D468951B5D1EF20097358D /* shopDetailContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = shopDetailContentViewController.swift; path = playUI/shopDetailContentViewController.swift; sourceTree = "<group>"; };
+		A1D4689B1B5ECE840097358D /* NotificationCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationCenterViewController.swift; path = notificationCenter/NotificationCenterViewController.swift; sourceTree = "<group>"; };
+		A1D4689D1B5ED35F0097358D /* shopDetailStaticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = shopDetailStaticViewController.swift; path = playUI/shopDetailStaticViewController.swift; sourceTree = "<group>"; };
 		A1FB09371B5A3961001EAF27 /* iTunesGuide */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iTunesGuide; sourceTree = "<group>"; };
 		A1FB096B1B5A86DB001EAF27 /* shopDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = shopDetailViewController.swift; path = playUI/shopDetailViewController.swift; sourceTree = "<group>"; };
 		A1FB096D1B5A8FEC001EAF27 /* playScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = playScrollViewController.swift; path = playUI/playScrollViewController.swift; sourceTree = "<group>"; };
@@ -326,6 +330,7 @@
 				A1FB096D1B5A8FEC001EAF27 /* playScrollViewController.swift */,
 				A1FB096F1B5A9D64001EAF27 /* playUIProtocol.swift */,
 				A1D468951B5D1EF20097358D /* shopDetailContentViewController.swift */,
+				A1D4689D1B5ED35F0097358D /* shopDetailStaticViewController.swift */,
 			);
 			name = playUI;
 			sourceTree = "<group>";
@@ -344,6 +349,7 @@
 			isa = PBXGroup;
 			children = (
 				A1BA8B2B1B55461400F5A57F /* notificationCenterTableViewController.swift */,
+				A1D4689B1B5ECE840097358D /* NotificationCenterViewController.swift */,
 			);
 			name = Notification;
 			sourceTree = "<group>";
@@ -565,6 +571,7 @@
 				A1D468871B5BDA920097358D /* GrownProtocol.swift in Sources */,
 				A1B598DA1B543C9200257DDB /* Operation.swift in Sources */,
 				A1BA8B2A1B55446100F5A57F /* notificationListTableViewCell.swift in Sources */,
+				A1D4689E1B5ED35F0097358D /* shopDetailStaticViewController.swift in Sources */,
 				A1FB09701B5A9D64001EAF27 /* playUIProtocol.swift in Sources */,
 				A1B598DB1B543C9200257DDB /* Player.swift in Sources */,
 				A1D468921B5CE6B70097358D /* GrownBottomLogViewController.swift in Sources */,
@@ -579,6 +586,7 @@
 				A1BA8B251B54FA0C00F5A57F /* playlistTableViewCell.swift in Sources */,
 				A1BA8B2C1B55461400F5A57F /* notificationCenterTableViewController.swift in Sources */,
 				A1B598D21B543BC300257DDB /* ViewManager.swift in Sources */,
+				A1D4689C1B5ECE840097358D /* NotificationCenterViewController.swift in Sources */,
 				A1D468941B5CE6E20097358D /* GrownBottomStatisticsViewController.swift in Sources */,
 				A1BA8B281B54FEC900F5A57F /* UGCHomeViewController.swift in Sources */,
 				A1BA8B231B54F7C700F5A57F /* playlistTableViewController.swift in Sources */,

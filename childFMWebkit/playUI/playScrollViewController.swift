@@ -28,7 +28,7 @@ class playScrollViewController: UIViewController , UIScrollViewDelegate , Module
     
     var data : [Dictionary<String, String>] = [
         [
-            "AudioName" : "You Are My Shunshine",
+            "AudioName" : "My Shunshine",
             "AudioTag" : "Children's Song",
             "Scene" : "玩耍磨耳朵",
             "GiftTipCount" : "3"
@@ -46,7 +46,7 @@ class playScrollViewController: UIViewController , UIScrollViewDelegate , Module
             "GiftTipCount" : "5"
         ],
         [
-            "AudioName" : "Baby toys meet melody",
+            "AudioName" : "Baby Toys",
             "AudioTag" : "Music",
             "Scene" : "起床磨耳朵",
             "GiftTipCount" : "7"

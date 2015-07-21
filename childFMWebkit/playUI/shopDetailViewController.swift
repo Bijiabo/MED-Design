@@ -33,7 +33,7 @@ class shopDetailViewController: UIViewController , UIScrollViewDelegate
         
         PlayerViewController.player.volume = 0.0
         
-        PlayerViewController.player.play()
+        //PlayerViewController.player.play()
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("avplayerDidFinishPlay"), name: AVPlayerItemDidPlayToEndTimeNotification, object: nil)
     }
@@ -75,7 +75,7 @@ class shopDetailViewController: UIViewController , UIScrollViewDelegate
     {
         //PlayerViewController.player.seekToTime(CMTimeMake(0, 1000))
         
-        PlayerViewController.player.play()
+        //PlayerViewController.player.play()
     }
 
     // MARK: - Navigation
