@@ -10,6 +10,8 @@ import UIKit
 
 class GlobalNavigationController: UINavigationController {
 
+    var operation : Operations?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,7 +20,8 @@ class GlobalNavigationController: UINavigationController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
+    }
+    
+    
 }

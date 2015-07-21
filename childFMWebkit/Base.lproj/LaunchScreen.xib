@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -10,31 +10,55 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="wGN-bY-INN">
-                    <rect key="frame" x="-16" y="0.0" width="512" height="480"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="wGN-bY-INN">
+                    <rect key="frame" x="140" y="110" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="dKr-DI-NyN"/>
+                        <constraint firstAttribute="height" constant="200" id="dl6-WW-MWx"/>
+                    </constraints>
                 </imageView>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="  Copyright (c) 2015年 JYLabs. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
-                    <rect key="frame" x="49" y="451" width="382" height="21"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2015年 JYLabs. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
+                    <rect key="frame" x="101" y="458" width="278" height="15"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.66000000000000003" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   MED™" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODo-Eb-13h">
+                    <rect key="frame" x="16" y="279" width="448" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="wGN-bY-INN" secondAttribute="trailing" constant="-16" id="Dib-E7-cQy"/>
+                <constraint firstAttribute="centerY" secondItem="wGN-bY-INN" secondAttribute="centerY" constant="30" id="EER-DD-A6Q"/>
                 <constraint firstAttribute="bottom" secondItem="wGN-bY-INN" secondAttribute="bottom" id="Q0l-Dh-VA7"/>
+                <constraint firstItem="ODo-Eb-13h" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="R2Q-AY-9jp"/>
+                <constraint firstAttribute="trailing" secondItem="ODo-Eb-13h" secondAttribute="trailing" constant="16" id="djW-q1-bxB"/>
                 <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="8" id="fWc-Gg-Lyi"/>
+                <constraint firstAttribute="centerX" secondItem="wGN-bY-INN" secondAttribute="centerX" id="gZP-ro-3w8"/>
                 <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="gZe-YL-ehp"/>
+                <constraint firstAttribute="centerX" secondItem="ODo-Eb-13h" secondAttribute="centerX" id="goK-l1-QvO"/>
                 <constraint firstItem="wGN-bY-INN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ilt-f3-Xir"/>
                 <constraint firstItem="wGN-bY-INN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-16" id="jv5-Qi-2yy"/>
+                <constraint firstItem="ODo-Eb-13h" firstAttribute="top" secondItem="wGN-bY-INN" secondAttribute="bottom" constant="-31" id="pwo-7c-ijh"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Dib-E7-cQy"/>
+                    <exclude reference="Q0l-Dh-VA7"/>
+                    <exclude reference="ilt-f3-Xir"/>
+                    <exclude reference="jv5-Qi-2yy"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="548" y="455"/>
         </view>
     </objects>
     <resources>
-        <image name="launchScreen" width="750" height="1334"/>
+        <image name="iTunesArtwork" width="512" height="512"/>
     </resources>
 </document>

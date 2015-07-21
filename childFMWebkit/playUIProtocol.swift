@@ -11,4 +11,6 @@ import Foundation
 protocol PlayUI
 {
     var VideoFileName : String {get set}
+    
+    var operation : Operations? {get set}
 }

@@ -12,6 +12,8 @@ import AVKit
 
 class playViewController: UIViewController , DemoModule , PlayUI
 {
+    var operation : Operations?
+    
     var VideoFileName : String = "pirate.mp4"
     {
         didSet{
@@ -36,6 +38,7 @@ class playViewController: UIViewController , DemoModule , PlayUI
     @IBOutlet var GiftTipCount: UILabel!
     @IBOutlet var childLikeButton: UIButton!
     @IBOutlet var childDislikeButton: UIButton!
+    @IBOutlet var playPauseSwitchButton: UIButton!
     
     
     override func viewDidLoad() {
@@ -141,6 +144,18 @@ class playViewController: UIViewController , DemoModule , PlayUI
         }
     }
 
+    @IBAction func tapPlayPauseSwitchButton(sender: AnyObject) {
+        
+        if playPauseSwitchButton.tag != 1
+        {
+            NSNotificationCenter.defaultCenter().postNotificationName("PlayUIVC_Play", object: self.view.tag)
+        }
+        else
+        {
+            NSNotificationCenter.defaultCenter().postNotificationName("PlayUIVC_Pause", object: self.view.tag)
+        }
+        
+    }
 
 
 }

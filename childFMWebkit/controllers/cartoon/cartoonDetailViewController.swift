@@ -125,8 +125,7 @@ class cartoonDetailViewController: UIViewController , UIScrollViewDelegate , Mod
         default:
             imageFlag += subFix
         }
-        
-        println("imageFlag:-->\(imageFlag)")
+
         return imageFlag
     }
     //初始化scrollView的方法
@@ -139,8 +138,6 @@ class cartoonDetailViewController: UIViewController , UIScrollViewDelegate , Mod
         
         //初始化后的scrollView ->contentOffSet
         currentPix = scrollVIew1.contentOffset.x
-        
-        println("currentPix \(currentPix)")
         
         //println("scrollView(width,height)->\(scrollVIew1.contentSize)")
         
@@ -161,8 +158,6 @@ class cartoonDetailViewController: UIViewController , UIScrollViewDelegate , Mod
             
             //得到图片的URL
             var imageURL : NSURL = NSBundle.mainBundle().resourceURL!.URLByAppendingPathComponent("\(imageDirectoryPath)/\(tempI)" + currentDeviceImageSubFix)
-            
-            println(imageURL)
             
             var isNotDir : ObjCBool = false
             

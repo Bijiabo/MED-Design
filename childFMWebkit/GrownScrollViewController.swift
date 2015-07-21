@@ -78,19 +78,19 @@ class GrownScrollViewController: UIViewController , UIScrollViewDelegate
     
     func InitBottomScrollView ()
     {
-        println("self.view.frame.size.width = \(self.view.frame.size.width)")
-        println("BottomScrollView.frame.size.height = \(BottomScrollView.frame.size.height)")
-
-        let height : CGFloat = BottomScrollView.frame.size.height
+        let height : CGFloat = self.view.frame.size.height - BottomScrollView.frame.origin.y
         
         BottomScrollView.contentSize = CGSizeMake( self.view.frame.size.width * 3.0, height)
         BottomScrollView.pagingEnabled = true
+        BottomScrollView.showsHorizontalScrollIndicator = false
+        BottomScrollView.showsVerticalScrollIndicator = false
         
         BottomScrollView.backgroundColor = UIColor(red:0.65, green:0.93, blue:0.52, alpha:0.4)
         
         for i in 0..<3
         {
             let vc : UIView = UIView(frame: CGRectMake(self.view.frame.size.width * CGFloat(i), 0, self.view.frame.size.width, height))
+            
             if i % 2 == 0
             {
                 vc.backgroundColor = UIColor(red:0.29, green:0.71, blue:0.97, alpha:0.5)

@@ -93,7 +93,9 @@ class playScrollViewController: UIViewController , UIScrollViewDelegate , Module
         self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
         self.navigationController?.navigationBar.translucent = true
         
-        self.title = "上传内容"
+        self.title = "主界面"
+        
+        addPlayStatusObserver()
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -180,10 +182,18 @@ class playScrollViewController: UIViewController , UIScrollViewDelegate , Module
             {
                 var playUIVC : playViewController = playUIVC as! playViewController
                 
+                playUIVC.playPauseSwitchButton.setBackgroundImage(UIImage(named: "playButton"), forState: UIControlState.Normal)
+                
+                playUIVC.view.tag = tempI //标记Play view controll 序号
+                playUIVC.playPauseSwitchButton.tag = 2 //0 = playButton , 1 = pauseButton , 2 = switch
+                
                 switch tempI
                 {
                 case 0:
                     playUIVC.VideoFileName = "airplane.mp4"
+                    playUIVC.playPauseSwitchButton.setBackgroundImage(UIImage(named: "pauseButton"), forState: UIControlState.Normal)
+                    playUIVC.playPauseSwitchButton.tag = 1
+                    
                 case 1:
                     playUIVC.VideoFileName = "pirate.mp4"
                 case 2:
@@ -293,6 +303,52 @@ class playScrollViewController: UIViewController , UIScrollViewDelegate , Module
         }
         
         
+    }
+    
+    //播放状态切换
+    func addPlayStatusObserver ()
+    {
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("PlayUIVC_Play:"), name: "PlayUIVC_Play", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("PlayUIVC_Pause:"), name: "PlayUIVC_Pause", object: nil)
+    }
+    
+    func PlayUIVC_Play (notification : NSNotification)
+    {
+        let ActiveIndex : Int = notification.object as! Int
+        
+        changeViewForStatus(ActiveIndex, status: "play")
+    }
+    
+    func PlayUIVC_Pause (notification : NSNotification)
+    {
+        let ActiveIndex : Int = notification.object as! Int
+        
+        changeViewForStatus(ActiveIndex, status: "pause")
+    }
+    
+    //改变状态
+    func changeViewForStatus ( ActiveIndex : Int , status : String )
+    {
+        for childViewController in self.childViewControllers
+        {
+            if let childVC : playViewController = childViewController as? playViewController
+            {
+                if childVC.view.tag == ActiveIndex
+                {
+                    let ButtonImageName : String = status == "play" ? "pauseButton" : "playButton"
+
+                    childVC.playPauseSwitchButton.setBackgroundImage(UIImage(named: ButtonImageName), forState: UIControlState.Normal)
+                    
+                    childVC.playPauseSwitchButton.tag = status == "play" ? 1 : 0
+                }
+                else
+                {
+                    childVC.playPauseSwitchButton.setBackgroundImage(UIImage(named: "playButton"), forState: UIControlState.Normal)
+                    
+                    childVC.playPauseSwitchButton.tag = 2
+                }
+            }
+        }
     }
     
 }

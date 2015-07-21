@@ -13,6 +13,8 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
 {
     var moduleLoader : ModuleLader?
     
+    var operation : Operations?
+    
     var webView : WKWebView!
     var userContentController : WKUserContentController!
     var configuration : WKWebViewConfiguration!
@@ -246,8 +248,16 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
             {
                 var playUIvc : DemoModule = playUIVC as! DemoModule
                 
-                    playUIvc.navigationDelegate = self
+                playUIvc.navigationDelegate = self
             }
+            
+            if let playVC : PlayUI = playUIVC as? PlayUI
+            {
+                var playUIvc : PlayUI = playUIVC as! PlayUI
+                
+                //playUIvc.operation = self.operation
+            }
+            
             
             self.addChildViewController( playUIVC )
             
