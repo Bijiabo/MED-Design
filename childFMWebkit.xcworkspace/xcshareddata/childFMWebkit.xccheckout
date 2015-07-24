@@ -22,7 +22,7 @@
 		<key>08AE58717C4C9870BD072FDBE069A1F5E3B392F2</key>
 		<string>..</string>
 		<key>5A37E4E31FA1EFAC4DCDD9AA665FC668803AAFFC</key>
-		<string>../../../..</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/Bijiabo/MED-Design.git</string>
@@ -38,7 +38,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>5A37E4E31FA1EFAC4DCDD9AA665FC668803AAFFC</string>
 			<key>IDESourceControlWCCName</key>
-			<string>..</string>
+			<string></string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>

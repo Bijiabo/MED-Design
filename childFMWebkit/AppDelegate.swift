@@ -11,10 +11,21 @@ import Foundation
 //import GCDWebServer
 import AVFoundation
 import AVKit
+import CoreLocation
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOperation //, Operations , UIAlertViewDelegate ,
+class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOperation , CLLocationManagerDelegate//, Operations , UIAlertViewDelegate ,
 {
+    //MARK: configue iBeacon
+    var LocationManager : CLLocationManager?
+    
+    var iBeacons : [Dictionary<String, String>] = [
+        [
+            "UUIDString" : "E2C56DB5-DFFB-48D2-B060-D0F5A71096E0",
+            "Identifier" : "JYLabs"
+        ]
+    ]
+    
     //模拟蜂窝网络网络调试，设为`true`时，会识别网络为蜂窝网络。正式上线和测试产品时应为false。
     let isCellPhoneDebug : Bool = true
     
@@ -107,6 +118,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
         AVAudioSession.sharedInstance().setActive(true, error: nil)
         
         addPlayStatusObserver()
+        
+        //MARK: init iBeacon manager
+        LocationManager = CLLocationManager()
+        if LocationManager!.respondsToSelector("requestAlwaysAuthorization") == true
+        {
+            LocationManager!.requestAlwaysAuthorization()
+        }
+        LocationManager!.delegate = self
+        LocationManager!.pausesLocationUpdatesAutomatically = false
+        
+        for iBeacon in iBeacons
+        {
+            let UUIDString : String = iBeacon["UUIDString"]!
+            let BeaconIdentifier : String = iBeacon["Identifier"]!
+            
+            let BeaconUUID : NSUUID = NSUUID(UUIDString: UUIDString)!
+            let BeaconRegion : CLBeaconRegion = CLBeaconRegion(proximityUUID: BeaconUUID, identifier: BeaconIdentifier)
+            
+            LocationManager!.startMonitoringForRegion(BeaconRegion)
+            LocationManager!.startRangingBeaconsInRegion(BeaconRegion)
+        }
+        
+        LocationManager!.startUpdatingLocation()
+        
+        
+        if(application.respondsToSelector("registerUserNotificationSettings:")) {
+            
+            application.registerUserNotificationSettings(
+                UIUserNotificationSettings(
+                    forTypes: UIUserNotificationType.Alert | UIUserNotificationType.Sound,
+                    categories: nil
+                )
+            )
+        }
         
         return true
     }
@@ -619,5 +664,124 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
         player.pause()
     }
     
+    
+    //MARK: ibeacon func
+    var AreaCache : String = String()
+    
+    func updateiBeaconListData (data : [Dictionary<String , String>])
+    {
+        for item in data
+        {
+            let area : String = item["area"]!
+            let rssi : String = item["RSSI"]!
+            
+            NSLog("------")
+            println("\(area) \(rssi)")
+        }
+        
+        if data[0]["area"] == AreaCache {return}
+        
+        if data[0]["area"] == "2AE1"
+        {
+            NSNotificationCenter.defaultCenter().postNotificationName("PlayUIVC_Play", object: 1)
+        }
+        else
+        {
+            NSNotificationCenter.defaultCenter().postNotificationName("PlayUIVC_Play", object: 2)
+        }
+        
+        AreaCache = data[0]["area"]!
+    }
 }
+
+
+extension AppDelegate: CLLocationManagerDelegate {
+    func sendLocalNotificationWithMessage(message: String!) {
+        let notification:UILocalNotification = UILocalNotification()
+        notification.alertBody = message
+        //UIApplication.sharedApplication().scheduleLocalNotification(notification)
+    }
+    
+    func locationManager(manager: CLLocationManager!, didRangeBeacons beacons: [AnyObject]!, inRegion region: CLBeaconRegion!) {
+        //NSLog("didRangeBeacons");
+        var message:String = ""
+        
+        if(beacons.count > 0) {
+            
+            println("beacons count is biger than 0")
+            
+            var data : [Dictionary<String , String>] = [Dictionary<String , String>]()
+            
+            for beacon in (beacons as! [CLBeacon])
+            {
+                //println(region.identifier)
+                //println( beacon.rssi )
+                
+                var dataItem : Dictionary<String , String> = [
+                    "RSSI" : "\(beacon.rssi)",
+                    "Identifier" : region.identifier,
+                    "major" : "\(beacon.major)",
+                    "minor" : "\(beacon.minor)",
+                    "area" : "Unknow",
+                    "distance" : "Unknow"
+                ]
+                
+                switch beacon.major
+                {
+                case 77:
+                    if beacon.minor == 5486
+                    {
+                        dataItem["area"] = "iRobot"
+                        //println("is iRobot")
+                    }
+                case 1000:
+                    if beacon.minor == 1
+                    {
+                        dataItem["area"] = "2AE1"
+                        //println("is 2AE1")
+                    }
+                default:
+                    
+                    println(beacon.major)
+                    
+                    break
+                }
+                
+                switch beacon.proximity {
+                case CLProximity.Far:
+                    dataItem["distance"] = "Far"
+                    message = "You are far away from the beacon"
+                    
+                case CLProximity.Near:
+                    dataItem["distance"] = "Near"
+                    message = "You are near the beacon"
+                    
+                case CLProximity.Immediate:
+                    dataItem["distance"] = "Immediate"
+                    message = "You are in the immediate proximity of the beacon"
+                    
+                case CLProximity.Unknown:
+                    return
+                }
+                
+                data.append( dataItem )
+                
+                //end for loop
+            }
+            
+            //update iBeacon list's data
+            self.updateiBeaconListData( data )
+            
+            
+        } else {
+            message = "No beacons are nearby"
+            
+            println("No beacons are nearby")
+        }
+        
+        //NSLog("%@", message)
+        sendLocalNotificationWithMessage(message)
+    }
+}
+
 

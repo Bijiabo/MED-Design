@@ -63,6 +63,7 @@
 		A1D468961B5D1EF20097358D /* shopDetailContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D468951B5D1EF20097358D /* shopDetailContentViewController.swift */; };
 		A1D4689C1B5ECE840097358D /* NotificationCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D4689B1B5ECE840097358D /* NotificationCenterViewController.swift */; };
 		A1D4689E1B5ED35F0097358D /* shopDetailStaticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D4689D1B5ED35F0097358D /* shopDetailStaticViewController.swift */; };
+		A1D468DD1B60E8B80097358D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D468DC1B60E8B80097358D /* CoreLocation.framework */; };
 		A1FB09381B5A3961001EAF27 /* iTunesGuide in Resources */ = {isa = PBXBuildFile; fileRef = A1FB09371B5A3961001EAF27 /* iTunesGuide */; };
 		A1FB096C1B5A86DB001EAF27 /* shopDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FB096B1B5A86DB001EAF27 /* shopDetailViewController.swift */; };
 		A1FB096E1B5A8FEC001EAF27 /* playScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FB096D1B5A8FEC001EAF27 /* playScrollViewController.swift */; };
@@ -167,6 +168,7 @@
 		A1D468951B5D1EF20097358D /* shopDetailContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = shopDetailContentViewController.swift; path = playUI/shopDetailContentViewController.swift; sourceTree = "<group>"; };
 		A1D4689B1B5ECE840097358D /* NotificationCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationCenterViewController.swift; path = notificationCenter/NotificationCenterViewController.swift; sourceTree = "<group>"; };
 		A1D4689D1B5ED35F0097358D /* shopDetailStaticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = shopDetailStaticViewController.swift; path = playUI/shopDetailStaticViewController.swift; sourceTree = "<group>"; };
+		A1D468DC1B60E8B80097358D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A1FB09371B5A3961001EAF27 /* iTunesGuide */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iTunesGuide; sourceTree = "<group>"; };
 		A1FB096B1B5A86DB001EAF27 /* shopDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = shopDetailViewController.swift; path = playUI/shopDetailViewController.swift; sourceTree = "<group>"; };
 		A1FB096D1B5A8FEC001EAF27 /* playScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = playScrollViewController.swift; path = playUI/playScrollViewController.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1D468DD1B60E8B80097358D /* CoreLocation.framework in Frameworks */,
 				A1BA8B1E1B54BEF900F5A57F /* SystemConfiguration.framework in Frameworks */,
 				33105580A98561FC7BCA8808 /* libPods.a in Frameworks */,
 			);
@@ -403,6 +406,7 @@
 		D82379EE91EAEAE91CBCBE39 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A1D468DC1B60E8B80097358D /* CoreLocation.framework */,
 				A1BA8B1C1B54BE4A00F5A57F /* SystemConfiguration.framework */,
 				A18E8A961AEDD6E700097234 /* libPods.a */,
 				A18E8A921AEDD6D600097234 /* libPods-childFMWebkitTests-GCDWebServer.a */,
