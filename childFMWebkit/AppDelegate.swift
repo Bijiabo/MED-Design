@@ -691,7 +691,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
         
         let RoomIndex : Int = find(Rooms, data[0]["area"]!)!
         
-        NSNotificationCenter.defaultCenter().postNotificationName("PlayUIVC_Play", object: RoomIndex)
+        if player.playing
+        {
+            NSNotificationCenter.defaultCenter().postNotificationName("PlayUIVC_Play", object: RoomIndex)
+        }
         /*
         if data[0]["area"] == "2AE1"
         {
