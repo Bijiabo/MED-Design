@@ -996,9 +996,6 @@
                                 <state key="normal" backgroundImage="message">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="xvW-sJ-9Cs" kind="show" id="Tgq-wd-3Dv"/>
-                                </connections>
                             </button>
                         </subviews>
                         <constraints>

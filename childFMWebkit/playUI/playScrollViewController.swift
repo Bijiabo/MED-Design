@@ -329,6 +329,7 @@ class playScrollViewController: UIViewController , UIScrollViewDelegate , Module
     //改变状态
     func changeViewForStatus ( ActiveIndex : Int , status : String )
     {
+        //改变按钮状态
         for childViewController in self.childViewControllers
         {
             if let childVC : playViewController = childViewController as? playViewController
@@ -351,6 +352,11 @@ class playScrollViewController: UIViewController , UIScrollViewDelegate , Module
                 }
             }
         }
+        
+        //滚动scrollView
+        self.scrollVIew1.scrollRectToVisible(CGRectMake(self.view.frame.size.width * CGFloat(ActiveIndex), 0, self.view.frame.size.width, self.view.frame.size.height), animated: true)
     }
+    
+    
     
 }

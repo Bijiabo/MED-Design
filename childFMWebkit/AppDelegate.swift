@@ -655,6 +655,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
         player = Player(source: playerSource)
         player.play()
         player.delegate = self
+        
+        changeRoom(Rooms[ActiveIndex])
     }
     
     func PlayUIVC_Pause (notification : NSNotification)
@@ -667,6 +669,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
     
     //MARK: ibeacon func
     var AreaCache : String = String()
+    var Rooms : [String] = [
+        "playRoom",
+        "Afternoon",
+        "beforeSleep",
+        "Getup"
+    ]
     
     func updateiBeaconListData (data : [Dictionary<String , String>])
     {
@@ -681,6 +689,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
         
         if data[0]["area"] == AreaCache {return}
         
+        let RoomIndex : Int = find(Rooms, data[0]["area"]!)!
+        
+        NSNotificationCenter.defaultCenter().postNotificationName("PlayUIVC_Play", object: RoomIndex)
+        /*
         if data[0]["area"] == "2AE1"
         {
             NSNotificationCenter.defaultCenter().postNotificationName("PlayUIVC_Play", object: 1)
@@ -689,8 +701,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
         {
             NSNotificationCenter.defaultCenter().postNotificationName("PlayUIVC_Play", object: 2)
         }
+        */
         
-        AreaCache = data[0]["area"]!
+        // AreaCache = data[0]["area"]!
+    }
+    
+    func changeRoom (room : String)
+    {
+        if AreaCache != room
+        {
+            AreaCache = room
+        }
     }
 }
 
@@ -731,13 +752,13 @@ extension AppDelegate: CLLocationManagerDelegate {
                 case 77:
                     if beacon.minor == 5486
                     {
-                        dataItem["area"] = "iRobot"
+                        dataItem["area"] = "beforeSleep"
                         //println("is iRobot")
                     }
                 case 1000:
                     if beacon.minor == 1
                     {
-                        dataItem["area"] = "2AE1"
+                        dataItem["area"] = "playRoom"
                         //println("is 2AE1")
                     }
                 default:

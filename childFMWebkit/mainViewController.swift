@@ -190,7 +190,7 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
     {
         //加载引导漫画scroll view
         var CartoonDetailViewController : cartoonDetailViewController = self.storyboard?.instantiateViewControllerWithIdentifier("cartoonDetail") as! cartoonDetailViewController
-        CartoonDetailViewController.imageDirectoryPath = "cartoonImage/3"
+        CartoonDetailViewController.imageDirectoryPath = "cartoonImage/5"
         CartoonDetailViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)
         
         self.addChildViewController( CartoonDetailViewController )
