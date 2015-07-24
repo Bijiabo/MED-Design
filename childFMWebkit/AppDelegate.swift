@@ -101,6 +101,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
         println(srcWebPath)
         
         webServer = GCDWebServer()
+        
         webServer.addGETHandlerForBasePath("/", directoryPath: srcWebPath, indexFilename: nil, cacheAge: 3600, allowRangeRequests: true)
         webServer.startWithPort(8080, bonjourName: "childFM")
         
@@ -153,6 +154,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
             )
         }
         
+        //MARK:  clear local notification
+        UIApplication.sharedApplication().cancelAllLocalNotifications()
+        
         return true
     }
     
@@ -168,6 +172,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
     
     func applicationWillEnterForeground(application: UIApplication) {
         // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+        
     }
     
     func applicationDidBecomeActive(application: UIApplication) {
@@ -176,6 +181,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
     
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    func application(application: UIApplication, handleActionWithIdentifier identifier: String?, forLocalNotification notification: UILocalNotification, completionHandler: () -> Void) {
+        // Handle notification action *****************************************
+        if notification.category == "COUNTER_CATEGORY" {
+            
+            println( identifier )
+        }
+        
+        completionHandler()
     }
     
     //Module Loader Protocol
@@ -683,8 +698,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
             let area : String = item["area"]!
             let rssi : String = item["RSSI"]!
             
-            NSLog("------")
-            println("\(area) \(rssi)")
+            //NSLog("------")
+            //println("\(area) \(rssi)")
         }
         
         if data[0]["area"] == AreaCache {return}
@@ -694,6 +709,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
         if player.playing
         {
             NSNotificationCenter.defaultCenter().postNotificationName("PlayUIVC_Play", object: RoomIndex)
+            
+            //切换场景
+            var Scenes : [String] = [
+                "玩耍","午后","睡前","起床"
+            ]
+            
+            let NextScene : String = Scenes[RoomIndex]
+            
+            SendAreaChangeNotification( NextScene )
         }
         /*
         if data[0]["area"] == "2AE1"
@@ -723,6 +747,7 @@ extension AppDelegate: CLLocationManagerDelegate {
     func sendLocalNotificationWithMessage(message: String!) {
         let notification:UILocalNotification = UILocalNotification()
         notification.alertBody = message
+        
         //UIApplication.sharedApplication().scheduleLocalNotification(notification)
     }
     
@@ -731,8 +756,6 @@ extension AppDelegate: CLLocationManagerDelegate {
         var message:String = ""
         
         if(beacons.count > 0) {
-            
-            println("beacons count is biger than 0")
             
             var data : [Dictionary<String , String>] = [Dictionary<String , String>]()
             
@@ -804,7 +827,69 @@ extension AppDelegate: CLLocationManagerDelegate {
         }
         
         //NSLog("%@", message)
-        sendLocalNotificationWithMessage(message)
+        //sendLocalNotificationWithMessage(message)
+    }
+}
+
+extension AppDelegate {
+    func SendAreaChangeNotification( SceneName : String)
+    {
+        // 1. Create the actions **************************************************
+        
+        // increment Action
+        let incrementAction = UIMutableUserNotificationAction()
+        incrementAction.identifier = "Switch_Now"
+        incrementAction.title = "立即切换"
+        incrementAction.activationMode = UIUserNotificationActivationMode.Background
+        incrementAction.authenticationRequired = true
+        incrementAction.destructive = false
+        
+        // decrement Action
+        let decrementAction = UIMutableUserNotificationAction()
+        decrementAction.identifier = "Cancel"
+        decrementAction.title = "取消"
+        decrementAction.activationMode = UIUserNotificationActivationMode.Background
+        decrementAction.authenticationRequired = true
+        decrementAction.destructive = false
+        
+        // reset Action
+        let resetAction = UIMutableUserNotificationAction()
+        resetAction.identifier = "Close"
+        resetAction.title = "关闭"
+        resetAction.activationMode = UIUserNotificationActivationMode.Foreground
+        // NOT USED resetAction.authenticationRequired = true
+        resetAction.destructive = true
+        
+        // 2. Create the category ***********************************************
+        
+        // Category
+        let counterCategory = UIMutableUserNotificationCategory()
+        counterCategory.identifier = "COUNTER_CATEGORY"
+        
+        // A. Set actions for the default context
+        counterCategory.setActions([incrementAction, decrementAction, resetAction],
+            forContext: UIUserNotificationActionContext.Default)
+        
+        // B. Set actions for the minimal context
+        counterCategory.setActions([incrementAction, decrementAction],
+            forContext: UIUserNotificationActionContext.Minimal)
+        
+        
+        
+        let types = UIUserNotificationType.Alert | UIUserNotificationType.Sound
+        let settings = UIUserNotificationSettings(forTypes: types, categories: NSSet(object: counterCategory) as Set<NSObject>)
+        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+        
+        
+        let notification = UILocalNotification()
+        notification.alertBody = "30秒后切换到\(SceneName)播放情景"
+        notification.soundName = UILocalNotificationDefaultSoundName
+        notification.fireDate = NSDate()
+        notification.category = "COUNTER_CATEGORY"
+        //notification.repeatInterval = NSCalendarUnit.CalendarUnitMinute
+        
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
     }
 }
 

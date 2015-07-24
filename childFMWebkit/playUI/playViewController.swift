@@ -12,6 +12,8 @@ import AVKit
 
 class playViewController: UIViewController , DemoModule , PlayUI
 {
+    let DebugMode : Bool = true
+    
     var operation : Operations?
     
     var VideoFileName : String = "pirate.mp4"
@@ -62,6 +64,13 @@ class playViewController: UIViewController , DemoModule , PlayUI
         PlayerViewController.player.play()
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("avplayerDidFinishPlay"), name: AVPlayerItemDidPlayToEndTimeNotification, object: nil)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("AppDidBecomeActive:"), name: UIApplicationDidBecomeActiveNotification, object: nil)
+    }
+    
+    func AppDidBecomeActive (notification : NSNotification)
+    {
+        PlayerViewController.player.play()
     }
 
     override func didReceiveMemoryWarning() {
@@ -157,5 +166,88 @@ class playViewController: UIViewController , DemoModule , PlayUI
         
     }
 
+    @IBAction func SendTestNotification(sender: AnyObject) {
+        
+        if DebugMode == false { return }
+        /*
+        let notification:UILocalNotification = UILocalNotification()
+        notification.alertBody = "A test local notification."
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        */
+        //NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: Selector("sendTestNotification"), userInfo: nil, repeats: false)
+        
+        sendTestNotification()
+    }
+    
+    
+    
+    
+    func sendTestNotification()
+    {
+        /*
+        let notification:UILocalNotification = UILocalNotification()
+        notification.alertBody = "A test local notification."
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        */
+        
+        // 1. Create the actions **************************************************
+        
+        // increment Action
+        let incrementAction = UIMutableUserNotificationAction()
+        incrementAction.identifier = "Switch_Now"
+        incrementAction.title = "立即切换"
+        incrementAction.activationMode = UIUserNotificationActivationMode.Background
+        incrementAction.authenticationRequired = true
+        incrementAction.destructive = false
+        
+        // decrement Action
+        let decrementAction = UIMutableUserNotificationAction()
+        decrementAction.identifier = "Cancel"
+        decrementAction.title = "取消"
+        decrementAction.activationMode = UIUserNotificationActivationMode.Background
+        decrementAction.authenticationRequired = true
+        decrementAction.destructive = false
+        
+        // reset Action
+        let resetAction = UIMutableUserNotificationAction()
+        resetAction.identifier = "Close"
+        resetAction.title = "关闭"
+        resetAction.activationMode = UIUserNotificationActivationMode.Foreground
+        // NOT USED resetAction.authenticationRequired = true
+        resetAction.destructive = true
+        
+        // 2. Create the category ***********************************************
+        
+        // Category
+        let counterCategory = UIMutableUserNotificationCategory()
+        counterCategory.identifier = "COUNTER_CATEGORY"
+        
+        // A. Set actions for the default context
+        counterCategory.setActions([incrementAction, decrementAction, resetAction],
+        forContext: UIUserNotificationActionContext.Default)
+        
+        // B. Set actions for the minimal context
+        counterCategory.setActions([incrementAction, decrementAction],
+        forContext: UIUserNotificationActionContext.Minimal)
+        
+        
+        
+        let types = UIUserNotificationType.Alert | UIUserNotificationType.Sound
+        let settings = UIUserNotificationSettings(forTypes: types, categories: NSSet(object: counterCategory) as Set<NSObject>)
+        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+        
+        
+        let notification = UILocalNotification()
+        notification.alertBody = "15秒后切换到睡前播放情景"
+        notification.soundName = UILocalNotificationDefaultSoundName
+        notification.fireDate = NSDate()
+        notification.category = "COUNTER_CATEGORY"
+        notification.repeatInterval = NSCalendarUnit.CalendarUnitMinute
+        
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+    }
 
 }
