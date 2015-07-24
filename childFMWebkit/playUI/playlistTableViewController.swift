@@ -61,34 +61,92 @@ class playlistTableViewController: UITableViewController , DemoModule
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 1
+        return 2
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return data.count
+        return section == 0 ? 1 : data.count
+    }
+    
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        switch section
+        {
+        case 0:
+            return ""
+        case 1:
+            return "即将播放"
+        default:
+            return ""
+        }
     }
 
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell : playlistTableViewCell = tableView.dequeueReusableCellWithIdentifier("playlistCell", forIndexPath: indexPath) as! playlistTableViewCell
         
-        cell.titleLabel.text = data[indexPath.row]
-        cell.tagLabel.text = "为马小明推荐"
+        switch indexPath.section
+        {
+        case 0:
+            let cell : PlaylistStatisticTableViewCell = tableView.dequeueReusableCellWithIdentifier("statisticCell", forIndexPath: indexPath) as! PlaylistStatisticTableViewCell
+            
+            return cell
+            
+        case 1:
+            let cell : playlistTableViewCell = tableView.dequeueReusableCellWithIdentifier("playlistCell", forIndexPath: indexPath) as! playlistTableViewCell
+            
+            cell.titleLabel.text = data[indexPath.row]
+            cell.tagLabel.text = "为马小明推荐"
+            
+            
+            return cell
+            
+        default:
+            let cell : UITableViewCell = UITableViewCell()
+            return cell
+        }
         
-
-        return cell
+        
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        switch indexPath.section
+        {
+        case 0:
+            return 213.0
+            
+        case 1:
+            return 63.0
+            
+        default:
+            return 44.0
+        }
     }
 
+    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        switch section
+        {
+        case 1:
+            return 44.0
+        default:
+            return 0.0
+        }
+    }
 
-    /*
+    
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         // Return NO if you do not want the specified item to be editable.
-        return true
+        
+        switch indexPath.section
+        {
+        case 1:
+            return true
+        default:
+            return false
+        }
     }
-    */
+    
 
     /*
     // Override to support editing the table view.

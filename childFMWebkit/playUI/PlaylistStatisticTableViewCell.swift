@@ -1,28 +1,24 @@
 //
-//  playlistTableViewCell.swift
+//  PlaylistStatisticTableViewCell.swift
 //  childFMWebkit
 //
-//  Created by bijiabo on 15/7/14.
+//  Created by bijiabo on 15/7/25.
 //  Copyright (c) 2015年 JYLabs. All rights reserved.
 //
 
 import UIKit
 
-class playlistTableViewCell: UITableViewCell {
+class PlaylistStatisticTableViewCell: UITableViewCell {
 
-    @IBOutlet var ChildLikeImageView: UIImageView!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
-
+        // Initialization code
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
+        // Configure the view for the selected state
     }
 
-    @IBOutlet var titleLabel: UILabel!
-    @IBOutlet var tagLabel: UILabel!
-    
 }
