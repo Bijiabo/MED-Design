@@ -79,6 +79,27 @@
 			remoteGlobalIDString = A15CD5D51ACE496B0033AB57;
 			remoteInfo = childFMWebkit;
 		};
+		A1D468F31B640DFD0097358D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1D468EE1B640DFD0097358D /* PNChartSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0AADA0D0193E5A320063B15C;
+			remoteInfo = PNChartSwiftTests;
+		};
+		A1D468F51B640DFD0097358D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1D468EE1B640DFD0097358D /* PNChartSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 12E6A9CB1A0778B900B087DB;
+			remoteInfo = PNChartSwift;
+		};
+		A1D468F71B640E040097358D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1D468EE1B640DFD0097358D /* PNChartSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 12E6A9CA1A0778B900B087DB;
+			remoteInfo = PNChartSwift;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -171,6 +192,7 @@
 		A1D4689D1B5ED35F0097358D /* shopDetailStaticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = shopDetailStaticViewController.swift; path = playUI/shopDetailStaticViewController.swift; sourceTree = "<group>"; };
 		A1D468DC1B60E8B80097358D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A1D468DF1B62C2F10097358D /* PlaylistStatisticTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaylistStatisticTableViewCell.swift; path = playUI/PlaylistStatisticTableViewCell.swift; sourceTree = "<group>"; };
+		A1D468EE1B640DFD0097358D /* PNChartSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PNChartSwift.xcodeproj; path = "PNChart-Swift/PNChartSwift.xcodeproj"; sourceTree = "<group>"; };
 		A1FB09371B5A3961001EAF27 /* iTunesGuide */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iTunesGuide; sourceTree = "<group>"; };
 		A1FB096B1B5A86DB001EAF27 /* shopDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = shopDetailViewController.swift; path = playUI/shopDetailViewController.swift; sourceTree = "<group>"; };
 		A1FB096D1B5A8FEC001EAF27 /* playScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = playScrollViewController.swift; path = playUI/playScrollViewController.swift; sourceTree = "<group>"; };
@@ -203,6 +225,7 @@
 		A15CD5CD1ACE496B0033AB57 = {
 			isa = PBXGroup;
 			children = (
+				A1D468EE1B640DFD0097358D /* PNChartSwift.xcodeproj */,
 				A1D468891B5C31C60097358D /* media */,
 				A1FB09371B5A3961001EAF27 /* iTunesGuide */,
 				A110706E1B579AEC001E3B84 /* video */,
@@ -405,6 +428,15 @@
 			name = cell;
 			sourceTree = "<group>";
 		};
+		A1D468EF1B640DFD0097358D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1D468F41B640DFD0097358D /* PNChartSwiftTests.xctest */,
+				A1D468F61B640DFD0097358D /* PNChartSwift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		D37B5825AF5CE62E6C8213B5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -449,6 +481,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A1D468F81B640E040097358D /* PBXTargetDependency */,
 			);
 			name = childFMWebkit;
 			productName = childFMWebkit;
@@ -508,6 +541,12 @@
 			mainGroup = A15CD5CD1ACE496B0033AB57;
 			productRefGroup = A15CD5D71ACE496B0033AB57 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A1D468EF1B640DFD0097358D /* Products */;
+					ProjectRef = A1D468EE1B640DFD0097358D /* PNChartSwift.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A15CD5D51ACE496B0033AB57 /* childFMWebkit */,
@@ -515,6 +554,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A1D468F41B640DFD0097358D /* PNChartSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PNChartSwiftTests.xctest;
+			remoteRef = A1D468F31B640DFD0097358D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A1D468F61B640DFD0097358D /* PNChartSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PNChartSwift.framework;
+			remoteRef = A1D468F51B640DFD0097358D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A15CD5D41ACE496B0033AB57 /* Resources */ = {
@@ -647,6 +703,11 @@
 			target = A15CD5D51ACE496B0033AB57 /* childFMWebkit */;
 			targetProxy = A15CD5EC1ACE496B0033AB57 /* PBXContainerItemProxy */;
 		};
+		A1D468F81B640E040097358D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PNChartSwift;
+			targetProxy = A1D468F71B640E040097358D /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -760,6 +821,7 @@
 					"COCOAPODS=1",
 				);
 				INFOPLIST_FILE = childFMWebkit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -781,6 +843,7 @@
 					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos/Pods",
 				);
 				INFOPLIST_FILE = childFMWebkit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

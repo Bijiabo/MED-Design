@@ -15,6 +15,7 @@ class playlistTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 
+        self.selectionStyle = UITableViewCellSelectionStyle.None
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

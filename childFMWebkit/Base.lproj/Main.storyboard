@@ -598,40 +598,33 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wsd-dH-mlH" id="0oH-A2-BI0">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jjh-H8-t8y">
-                                            <rect key="frame" x="260" y="46" width="80" height="120"/>
-                                            <color key="backgroundColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JfR-QA-wFQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="212.5"/>
+                                        </scrollView>
+                                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Vkd-MC-5df">
+                                            <rect key="frame" x="16" y="193" width="568" height="20"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="80" id="Rpl-Hd-0Cr"/>
-                                                <constraint firstAttribute="height" constant="120" id="Tvs-xV-CEK"/>
+                                                <constraint firstAttribute="height" constant="20" id="aRf-0h-n8o"/>
                                             </constraints>
-                                        </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7MU-Gb-FfI">
-                                            <rect key="frame" x="360" y="47" width="80" height="120"/>
-                                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="80" id="JCy-p7-moS"/>
-                                                <constraint firstAttribute="height" constant="120" id="sgx-vX-1pL"/>
-                                            </constraints>
-                                        </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5pq-VR-v7e">
-                                            <rect key="frame" x="160" y="47" width="80" height="120"/>
-                                            <color key="backgroundColor" red="0.4823529412" green="0.72549019609999998" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="120" id="NkW-5e-5OB"/>
-                                                <constraint firstAttribute="width" constant="80" id="cXn-ye-Why"/>
-                                            </constraints>
-                                        </imageView>
+                                            <color key="pageIndicatorTintColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                            <color key="currentPageIndicatorTintColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                        </pageControl>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="centerY" secondItem="7MU-Gb-FfI" secondAttribute="centerY" id="Ags-b5-oM0"/>
-                                        <constraint firstAttribute="centerY" secondItem="jjh-H8-t8y" secondAttribute="centerY" id="JdI-Qm-I2t"/>
-                                        <constraint firstItem="7MU-Gb-FfI" firstAttribute="leading" secondItem="jjh-H8-t8y" secondAttribute="trailing" constant="20" id="On8-sz-WBH"/>
-                                        <constraint firstAttribute="centerX" secondItem="jjh-H8-t8y" secondAttribute="centerX" id="Wl2-S2-EY2"/>
-                                        <constraint firstItem="jjh-H8-t8y" firstAttribute="leading" secondItem="5pq-VR-v7e" secondAttribute="trailing" constant="20" id="b57-XD-End"/>
-                                        <constraint firstAttribute="centerY" secondItem="5pq-VR-v7e" secondAttribute="centerY" id="suP-O2-FTm"/>
+                                        <constraint firstItem="JfR-QA-wFQ" firstAttribute="top" secondItem="0oH-A2-BI0" secondAttribute="top" id="N0p-GK-GZ5"/>
+                                        <constraint firstAttribute="trailing" secondItem="JfR-QA-wFQ" secondAttribute="trailing" id="OQu-di-5rv"/>
+                                        <constraint firstAttribute="bottom" secondItem="JfR-QA-wFQ" secondAttribute="bottom" id="Te2-dk-TLj"/>
+                                        <constraint firstItem="JfR-QA-wFQ" firstAttribute="leading" secondItem="0oH-A2-BI0" secondAttribute="leading" id="U3i-Cb-J0h"/>
+                                        <constraint firstAttribute="trailing" secondItem="Vkd-MC-5df" secondAttribute="trailing" constant="16" id="Yhm-J2-rjY"/>
+                                        <constraint firstItem="Vkd-MC-5df" firstAttribute="leading" secondItem="0oH-A2-BI0" secondAttribute="leading" constant="16" id="dkd-QQ-kvh"/>
+                                        <constraint firstAttribute="centerX" secondItem="Vkd-MC-5df" secondAttribute="centerX" id="gdM-cB-YWg"/>
+                                        <constraint firstAttribute="bottom" secondItem="Vkd-MC-5df" secondAttribute="bottom" id="siQ-9G-GKc"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="pageControl" destination="Vkd-MC-5df" id="gyq-9F-shs"/>
+                                    <outlet property="scrollView" destination="JfR-QA-wFQ" id="BOx-ZG-3yK"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="playlistCell" rowHeight="63" id="e0x-dr-8Xp" customClass="playlistTableViewCell" customModule="childFMWebkit" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>

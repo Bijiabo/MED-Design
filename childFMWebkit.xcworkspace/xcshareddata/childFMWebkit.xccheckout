@@ -12,6 +12,8 @@
 	<dict>
 		<key>08AE58717C4C9870BD072FDBE069A1F5E3B392F2</key>
 		<string>https://github.com/Bijiabo/MED-Design.git</string>
+		<key>54023E5A69A8ACBF4248AE90064E6E1B8A22CC88</key>
+		<string>https://github.com/kevinzhow/PNChart-Swift.git</string>
 		<key>5A37E4E31FA1EFAC4DCDD9AA665FC668803AAFFC</key>
 		<string>https://github.com/Bijiabo/JYLabsDesign.git</string>
 	</dict>
@@ -21,6 +23,8 @@
 	<dict>
 		<key>08AE58717C4C9870BD072FDBE069A1F5E3B392F2</key>
 		<string>..</string>
+		<key>54023E5A69A8ACBF4248AE90064E6E1B8A22CC88</key>
+		<string>../PNChart-Swift</string>
 		<key>5A37E4E31FA1EFAC4DCDD9AA665FC668803AAFFC</key>
 		<string>../..</string>
 	</dict>
@@ -47,6 +51,14 @@
 			<string>08AE58717C4C9870BD072FDBE069A1F5E3B392F2</string>
 			<key>IDESourceControlWCCName</key>
 			<string>childFMWebkit</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>54023E5A69A8ACBF4248AE90064E6E1B8A22CC88</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PNChart-Swift</string>
 		</dict>
 	</array>
 </dict>

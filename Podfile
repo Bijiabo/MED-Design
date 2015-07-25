@@ -1,6 +1,7 @@
 # Uncomment this line to define a global platform for your project
 # platform :ios, '8.0'
 pod "GCDWebServer", "~> 3.0"
+#pod 'PNChart'
 
 target 'childFMWebkit' do
 

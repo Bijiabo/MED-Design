@@ -34,7 +34,7 @@ class playlistTableViewController: UITableViewController , DemoModule
         let ugcBarButton : UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: Selector("link2UGC"))
         
         self.navigationItem.rightBarButtonItem = ugcBarButton
-
+        
     }
     
     func link2UGC ()
@@ -89,6 +89,8 @@ class playlistTableViewController: UITableViewController , DemoModule
         {
         case 0:
             let cell : PlaylistStatisticTableViewCell = tableView.dequeueReusableCellWithIdentifier("statisticCell", forIndexPath: indexPath) as! PlaylistStatisticTableViewCell
+            
+            cell.ViewWidth = self.view.frame.size.width
             
             return cell
             

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3E443DF9B63DF63B8A53083A"
+               BlueprintIdentifier = "DDBB68B5F06F62D515F8AE1B"
                BuildableName = "libPods-childFMWebkit.a"
                BlueprintName = "Pods-childFMWebkit"
                ReferencedContainer = "container:Pods.xcodeproj">
