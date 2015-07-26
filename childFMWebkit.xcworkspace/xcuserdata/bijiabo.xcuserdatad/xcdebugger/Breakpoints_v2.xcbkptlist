@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "childFMWebkit/controllers/cartoon/cartoonDetailViewController.swift"
-            timestampString = "459027513.385027"
+            timestampString = "459581600.64493"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "setPageNum()"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "childFMWebkit/controllers/cartoon/cartoonDetailViewController.swift"
-            timestampString = "459027513.385027"
+            timestampString = "459581600.64493"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "setPageNum()"
             landmarkType = "5">
          </BreakpointContent>
@@ -74,12 +74,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "childFMWebkit/playUI/playScrollViewController.swift"
-            timestampString = "459186302.735152"
+            timestampString = "459581600.64493"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
-            landmarkName = "initScrollView()"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "setPageNum()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -90,12 +90,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "childFMWebkit/playUI/playScrollViewController.swift"
-            timestampString = "459186302.735152"
+            timestampString = "459581600.64493"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "204"
-            endingLineNumber = "204"
-            landmarkName = "initScrollView()"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "setPageNum()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -106,12 +106,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "childFMWebkit/playUI/playScrollViewController.swift"
-            timestampString = "459186302.735152"
+            timestampString = "459581600.64493"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "194"
-            endingLineNumber = "194"
-            landmarkName = "initScrollView()"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "setPageNum()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -154,12 +154,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "childFMWebkit/AppDelegate.swift"
-            timestampString = "459456261.595924"
+            timestampString = "459581600.64493"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "764"
-            endingLineNumber = "764"
-            landmarkName = "locationManager(_:didRangeBeacons:inRegion:)"
+            startingLineNumber = "901"
+            endingLineNumber = "901"
+            landmarkName = "SendAreaChangeNotification(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -168,24 +168,15 @@
          <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
-            continueAfterRunningActions = "Yes"
-            filePath = "childFMWebkit/AppDelegate.swift"
-            timestampString = "459456261.595924"
+            continueAfterRunningActions = "No"
+            filePath = "childFMWebkit/mainViewController.swift"
+            timestampString = "459617419.397383"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "720"
-            endingLineNumber = "720"
-            landmarkName = "updateiBeaconListData(_:)"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "webServerStarted(_:)"
             landmarkType = "5">
-            <Actions>
-               <BreakpointActionProxy
-                  ActionExtensionID = "Xcode.BreakpointAction.Log">
-                  <ActionContent
-                     message = "run SendAreaChangeNotification ----------------------------------------------------------@NSDate()@"
-                     conveyanceType = "0">
-                  </ActionContent>
-               </BreakpointActionProxy>
-            </Actions>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -194,13 +185,29 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "childFMWebkit/AppDelegate.swift"
-            timestampString = "459456261.595924"
+            filePath = "childFMWebkit/mainViewController.swift"
+            timestampString = "459617460.942396"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "892"
-            endingLineNumber = "892"
-            landmarkName = "SendAreaChangeNotification(_:)"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "childFMWebkit/mainViewController.swift"
+            timestampString = "459617540.283448"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
+            landmarkName = "webView(_:didFinishNavigation:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

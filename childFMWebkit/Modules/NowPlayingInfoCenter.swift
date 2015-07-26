@@ -319,7 +319,7 @@ class NowPlayingInfoCenterController : NSObject, ViewManager {
         refreshPlayAgainCommandView(active: again)
     }
     
-    internal func refreshPlayAgainCommandView(#active : Bool) -> Void
+    internal func refreshPlayAgainCommandView(active active : Bool) -> Void
     {
         let commandCenter = MPRemoteCommandCenter.sharedCommandCenter()
         
@@ -338,13 +338,13 @@ class NowPlayingInfoCenterController : NSObject, ViewManager {
     
     //MARK:
     //MARK: 生成锁屏快照
-    private func _generateView (#imageName : String , title : String , description : String) -> UIView
+    private func _generateView (imageName imageName : String , title : String , description : String) -> UIView
     {
         //设定画框颜色
         let frameColor : UIColor = UIColor.whiteColor()
         
         //设定view尺寸和背景颜色
-        var view : UIView = UIView(frame: CGRectMake(0, 0, 600, 600))
+        let view : UIView = UIView(frame: CGRectMake(0, 0, 600, 600))
         view.backgroundColor = frameColor
         
         //设定照片
@@ -375,12 +375,12 @@ class NowPlayingInfoCenterController : NSObject, ViewManager {
         view.addSubview(bottomBackgroundView)
         
         //设定文字
-        var titleLabel : UILabel = UILabel(frame: CGRectMake(20, 486, 560, 60))
+        let titleLabel : UILabel = UILabel(frame: CGRectMake(20, 486, 560, 60))
         titleLabel.text = title
         titleLabel.font =  UIFont (name: "HelveticaNeue-UltraLight", size: 36)
         view.addSubview(titleLabel)
         
-        var descriptionLabel : UILabel = UILabel(frame: CGRectMake(20, 532, 560, 60))
+        let descriptionLabel : UILabel = UILabel(frame: CGRectMake(20, 532, 560, 60))
         descriptionLabel.text = description
         descriptionLabel.font =  UIFont (name: "HelveticaNeue-UltraLight", size: 28)
         descriptionLabel.textColor = UIColor(red:0.31, green:0.32, blue:0.32, alpha:1)
@@ -390,7 +390,7 @@ class NowPlayingInfoCenterController : NSObject, ViewManager {
     }
     
     //生成快照图片
-    private func _generateImage (#view : UIView) -> UIImage
+    private func _generateImage (view view : UIView) -> UIImage
     {
         UIGraphicsBeginImageContextWithOptions(CGSizeMake(600.0, 600.0), false, 1.0)
         

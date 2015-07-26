@@ -26,7 +26,7 @@ class cartoonListTableViewCell: UITableViewCell {
     var tip : Bool = false {
         didSet {
             
-            var tipLayer : CALayer = CALayer()
+            let tipLayer : CALayer = CALayer()
             
             tipLayer.frame = CGRectMake( 10, 17, 10, 10 )
             

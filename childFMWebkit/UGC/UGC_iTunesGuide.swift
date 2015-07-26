@@ -83,21 +83,27 @@ class UGC_iTunesGuideViewController: UIViewController , UIScrollViewDelegate , M
         
         //返回当前项目根目录NSURL对象
         let bundleURL : NSURL = NSBundle.mainBundle().resourceURL!
-        println("\(bundleURL)")
+        print("\(bundleURL)")
         //在基础URL上新增URL路径
         let imageDirectoryURL : NSURL = bundleURL.URLByAppendingPathComponent( imageDirectoryName )
         
         
         var error : NSError?
         //获取文件目录
-        let fileList = NSFileManager.defaultManager().contentsOfDirectoryAtURL(imageDirectoryURL, includingPropertiesForKeys: nil, options: nil, error: &error)
+        let fileList: [AnyObject]?
+        do {
+            fileList = try NSFileManager.defaultManager().contentsOfDirectoryAtURL(imageDirectoryURL, includingPropertiesForKeys: nil, options: [])
+        } catch var error1 as NSError {
+            error = error1
+            fileList = nil
+        }
         
         if error == nil{
             
             pages = fileList!.count / 3
             
         }else{
-            println("setPageNum error!!!")
+            print("setPageNum error!!!")
         }
         
         
@@ -150,7 +156,7 @@ class UGC_iTunesGuideViewController: UIViewController , UIScrollViewDelegate , M
             //imageView.backgroundColor = UIColor.blackColor()
             
             //得到图片的URL
-            var imageURL : NSURL = NSBundle.mainBundle().resourceURL!.URLByAppendingPathComponent("\(imageDirectoryName)/\(tempI)" + currentDeviceImageSubFix)
+            let imageURL : NSURL = NSBundle.mainBundle().resourceURL!.URLByAppendingPathComponent("\(imageDirectoryName)/\(tempI)" + currentDeviceImageSubFix)
             
             var isNotDir : ObjCBool = false
             
@@ -231,7 +237,7 @@ class UGC_iTunesGuideViewController: UIViewController , UIScrollViewDelegate , M
         //得到当前设备width或者height的最大值/2
         let greateerPixelDimension = UIScreen.mainScreen().bounds.size.width > UIScreen.mainScreen().bounds.size.height ? UIScreen.mainScreen().bounds.size.width :UIScreen.mainScreen().bounds.size.height * 2
         
-        println("当前设备大小:\(greateerPixelDimension)")
+        print("当前设备大小:\(greateerPixelDimension)")
         switch greateerPixelDimension {
             
         case 480:

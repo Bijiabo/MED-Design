@@ -45,15 +45,15 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
         webView.scrollView.delegate = self
         webView.scrollView.pagingEnabled = true
         
-        let baseURL: NSURL = NSURL(fileURLWithPath: NSBundle.mainBundle().bundlePath)!
+        let baseURL: NSURL = NSURL(fileURLWithPath: NSBundle.mainBundle().bundlePath)
         var localUrl : NSURL! = baseURL.URLByAppendingPathComponent("web/main.html")//NSURL(string:"/web/main.html")
         //println(url)
         var localReq = NSURLRequest(URL:localUrl)
         
-        let url : NSURL! = NSURL(string:  "http://127.0.0.1:8080/main.html")
+        let url : NSURL! = NSURL(string:  "http://localhost:8080/main.html")
         let req : NSURLRequest = NSURLRequest(URL: url)
         
-        webView?.loadRequest(req)
+        webView.loadRequest(req)
         
         self.view = webView
         webView.navigationDelegate = self
@@ -76,16 +76,16 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
     
     func webServerStarted(notification : NSNotification) -> Void
     {
-        println("webServerStarted func")
+        print("webServerStarted func")
         
-        let url : NSURL! = NSURL(string:  "http://127.0.0.1:8080/web/main.html")
+        let url : NSURL! = NSURL(string:  "http://localhost:8080/main.html")
         let req : NSURLRequest = NSURLRequest(URL: url)
         
         webView?.loadRequest(req)
     }
     
     func scrollViewDidScrollToTop(scrollView: UIScrollView) {
-        println("scrollView did scroll to top")
+        print("scrollView did scroll to top")
     }
     
     func scrollViewWillBeginDragging(scrollView: UIScrollView) {
@@ -147,11 +147,11 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
         //webView.scrollView.scrollEnabled = false
     }
     
-    func setCache(#key:String, value:AnyObject)->Void{
+    func setCache(key key:String, value:AnyObject)->Void{
         cache[key] = value
     }
     
-    func scrollToPage(#forIndex : Int)
+    func scrollToPage(forIndex forIndex : Int)
     {
         if let pageHeights : AnyObject = cache["pageHeightArray"]
         {
@@ -173,7 +173,7 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
     
     func loadModuleToNavigation (storyboardName : String , storyboardIdentifier : String)
     {
-        let vc : UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier(storyboardIdentifier) as! UIViewController
+        let vc : UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier(storyboardIdentifier) as UIViewController
 
         if let Vc : DemoModule = vc as? DemoModule
         {
@@ -189,7 +189,7 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
     func addNativeUI ()
     {
         //加载引导漫画scroll view
-        var CartoonDetailViewController : cartoonDetailViewController = self.storyboard?.instantiateViewControllerWithIdentifier("cartoonDetail") as! cartoonDetailViewController
+        let CartoonDetailViewController : cartoonDetailViewController = self.storyboard?.instantiateViewControllerWithIdentifier("cartoonDetail") as! cartoonDetailViewController
         CartoonDetailViewController.imageDirectoryPath = "cartoonImage/5"
         CartoonDetailViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)
         
@@ -204,7 +204,7 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
         
         //self.webView.scrollView.addSubview(CartoonNavigationBar)
         ///*
-        var CartoonTitle : UILabel = UILabel(frame: CGRectMake(0, 0, self.view.frame.size.width, 44.0))
+        let CartoonTitle : UILabel = UILabel(frame: CGRectMake(0, 0, self.view.frame.size.width, 44.0))
         CartoonTitle.textAlignment = NSTextAlignment.Center
         CartoonTitle.text = "不要哑巴英语"
         
@@ -214,7 +214,7 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
         //加载漫画列表按钮
         let CartoonListButtonSize : (width : CGFloat , height : CGFloat) = (width : 70 , height : 70)
         
-        var buttonForCartoonList : UIButton = UIButton(frame: CGRectMake(self.view.frame.size.width - 16.0 - CartoonListButtonSize.width , 30.0, CartoonListButtonSize.width, CartoonListButtonSize.height) )
+        let buttonForCartoonList : UIButton = UIButton(frame: CGRectMake(self.view.frame.size.width - 16.0 - CartoonListButtonSize.width , 30.0, CartoonListButtonSize.width, CartoonListButtonSize.height) )
         //buttonForCartoonList.setTitle("cartoonlist", forState: UIControlState.Normal)
         //buttonForCartoonList.backgroundColor = UIColor.blackColor()
         buttonForCartoonList.setImage(UIImage(named: "cartoonlist"), forState: UIControlState.Normal)
@@ -224,7 +224,7 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
         
         
         //加载成长年轮scroll view
-        var grownScrollView : GrownScrollViewController = self.storyboard?.instantiateViewControllerWithIdentifier("grownScrollView") as! GrownScrollViewController
+        let grownScrollView : GrownScrollViewController = self.storyboard?.instantiateViewControllerWithIdentifier("grownScrollView") as! GrownScrollViewController
         
         grownScrollView.view.frame = CGRectMake(0, self.view.frame.size.height, self.view.frame.size.width, self.view.frame.size.height)
         
@@ -237,11 +237,11 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
         self.webView.scrollView.addSubview(grownScrollView.view)
         
         //加载playUI
-        var playUIVC : UIViewController =  self.storyboard?.instantiateViewControllerWithIdentifier("playScrollViewController") as! UIViewController
+        let playUIVC : UIViewController =  self.storyboard!.instantiateViewControllerWithIdentifier("playScrollViewController") as UIViewController
         
         if let pageHeightArray : [Int] = getPageHeightArray()
         {
-            println( pageHeightArray )
+            print( pageHeightArray )
             
             playUIVC.view.frame = CGRectMake(0, CGFloat(pageHeightArray[2])  ,  self.view.frame.size.width , self.view.frame.size.height)
             
@@ -322,7 +322,7 @@ class webkitNotificationScriptMessageHandler: NSObject, WKScriptMessageHandler
                 vc.addNativeUI()
                 
             case "popNavigationItemAnimated":
-                println("")
+                print("")
                 
             case "endGuide":
                 //结束引导模块，页面滑入年轮主界面

@@ -24,7 +24,7 @@ class PlaylistStatisticTableViewCell: UITableViewCell , UIScrollViewDelegate
         super.awakeFromNib()
         // Initialization code
         
-        println(self.frame.size)
+        print(self.frame.size)
         
         InitScrollView()
         

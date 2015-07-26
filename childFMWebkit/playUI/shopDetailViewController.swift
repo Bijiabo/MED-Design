@@ -31,7 +31,7 @@ class shopDetailViewController: UIViewController , UIScrollViewDelegate
         let VideoURL : NSURL = NSBundle.mainBundle().resourceURL!.URLByAppendingPathComponent("video/lego_buy.mp4")
         PlayerViewController.player = AVPlayer(URL: VideoURL)
         
-        PlayerViewController.player.volume = 0.0
+        PlayerViewController.player!.volume = 0.0
         
         //PlayerViewController.player.play()
         
@@ -58,7 +58,7 @@ class shopDetailViewController: UIViewController , UIScrollViewDelegate
         
         scrollView.pagingEnabled = false
         
-        var shopDetailVC : shopDetailContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("shopDetailContentVC") as! shopDetailContentViewController
+        let shopDetailVC : shopDetailContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("shopDetailContentVC") as! shopDetailContentViewController
         
         shopDetailVC.view.frame = self.view.frame
         shopDetailVC.view.frame.origin.y = self.view.frame.size.height - 200

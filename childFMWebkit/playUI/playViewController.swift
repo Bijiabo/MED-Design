@@ -22,9 +22,9 @@ class playViewController: UIViewController , DemoModule , PlayUI
             let VideoURL : NSURL = NSBundle.mainBundle().resourceURL!.URLByAppendingPathComponent("video/\(VideoFileName)")
             PlayerViewController.player = AVPlayer(URL: VideoURL)
             
-            PlayerViewController.player.volume = 0.0
+            PlayerViewController.player!.volume = 0.0
             
-            PlayerViewController.player.play()
+            PlayerViewController.player!.play()
         }
     }
     
@@ -52,7 +52,7 @@ class playViewController: UIViewController , DemoModule , PlayUI
         let VideoURL : NSURL = NSBundle.mainBundle().resourceURL!.URLByAppendingPathComponent("video/\(VideoFileName)")
         PlayerViewController.player = AVPlayer(URL: VideoURL)
         
-        PlayerViewController.player.volume = 0.0
+        PlayerViewController.player!.volume = 0.0
         
         //video size is 640x360
         
@@ -61,7 +61,7 @@ class playViewController: UIViewController , DemoModule , PlayUI
         
         //PlayerViewController.view.layer.frame = CGRectMake(0 - (videoWidth - self.view.frame.size.width) / 2 + 100 , 0 , videoWidth, videoHeight)
         
-        PlayerViewController.player.play()
+        PlayerViewController.player!.play()
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("avplayerDidFinishPlay"), name: AVPlayerItemDidPlayToEndTimeNotification, object: nil)
         
@@ -70,7 +70,7 @@ class playViewController: UIViewController , DemoModule , PlayUI
     
     func AppDidBecomeActive (notification : NSNotification)
     {
-        PlayerViewController.player.play()
+        PlayerViewController.player!.play()
     }
 
     override func didReceiveMemoryWarning() {
@@ -83,15 +83,15 @@ class playViewController: UIViewController , DemoModule , PlayUI
         
         if PlayerViewController.player != nil
         {
-            PlayerViewController.player.play()
+            PlayerViewController.player!.play()
         }
     }
     
     func avplayerDidFinishPlay()
     {
-        PlayerViewController.player.seekToTime(CMTimeMake(0, 1000))
+        PlayerViewController.player!.seekToTime(CMTimeMake(0, 1000))
         
-        PlayerViewController.player.play()
+        PlayerViewController.player!.play()
     }
 
 
@@ -234,8 +234,8 @@ class playViewController: UIViewController , DemoModule , PlayUI
         
         
         
-        let types = UIUserNotificationType.Alert | UIUserNotificationType.Sound
-        let settings = UIUserNotificationSettings(forTypes: types, categories: NSSet(object: counterCategory) as Set<NSObject>)
+        let types: UIUserNotificationType = [UIUserNotificationType.Alert, UIUserNotificationType.Sound]
+        let settings = UIUserNotificationSettings(forTypes: types, categories: NSSet(object: counterCategory) as? Set<UIUserNotificationCategory>)
         UIApplication.sharedApplication().registerUserNotificationSettings(settings)
         
         
@@ -244,7 +244,7 @@ class playViewController: UIViewController , DemoModule , PlayUI
         notification.soundName = UILocalNotificationDefaultSoundName
         notification.fireDate = NSDate()
         notification.category = "COUNTER_CATEGORY"
-        notification.repeatInterval = NSCalendarUnit.CalendarUnitMinute
+        notification.repeatInterval = NSCalendarUnit.Minute
         
         
         UIApplication.sharedApplication().scheduleLocalNotification(notification)

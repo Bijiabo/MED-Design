@@ -29,24 +29,27 @@ class DPlayer : NSObject {
     
     let paths : NSArray = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
     let documentsDirectory : NSString = paths.objectAtIndex(0) as! NSString
-    var resourcePath : NSURL = NSURL(fileURLWithPath: documentsDirectory.stringByAppendingPathComponent("web/media/"))!
+    var resourcePath : NSURL = NSURL(fileURLWithPath: documentsDirectory.stringByAppendingPathComponent("web/media/"))
     
     if dev
     {
-      let baseURL: NSURL = NSURL(fileURLWithPath: NSBundle.mainBundle().bundlePath)!
+      let baseURL: NSURL = NSURL(fileURLWithPath: NSBundle.mainBundle().bundlePath)
       resourcePath = baseURL.URLByAppendingPathComponent("web/media/")
     }
     
     mediaResourceURL = resourcePath
     
-    AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, withOptions: AVAudioSessionCategoryOptions.DefaultToSpeaker, error: nil)
+    do {
+      try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, withOptions: AVAudioSessionCategoryOptions.DefaultToSpeaker)
+    } catch _ {
+    }
     
     NSNotificationCenter.defaultCenter().addObserver(self, selector: "handleInterruption:", name: AVAudioSessionInterruptionNotification, object: AVAudioSession.sharedInstance())
     
     NSNotificationCenter.defaultCenter().addObserver(self, selector: "handleMediaServicesReset", name: AVAudioSessionMediaServicesWereResetNotification, object: AVAudioSession.sharedInstance())
   }
   
-  func setPlayerResourceByName (#fileName:String) -> Void
+  func setPlayerResourceByName (fileName fileName:String) -> Void
   {
     NSNotificationCenter.defaultCenter().removeObserver(AVPlayerItemDidPlayToEndTimeNotification)
     
@@ -55,12 +58,12 @@ class DPlayer : NSObject {
     NSNotificationCenter.defaultCenter().addObserver(self, selector: "playerItemDidReachEnd", name: AVPlayerItemDidPlayToEndTimeNotification , object: player.currentItem)
   }
   
-  func setPlayerResourceList (#mode : String) -> Void
+  func setPlayerResourceList (mode mode : String) -> Void
   {
     NSNotificationCenter.defaultCenter().removeObserver(AVPlayerItemDidPlayToEndTimeNotification)
     
     playMode = mode
-    playIndex(index: 0)
+    playIndex(0)
     playTimes = 0
     
     player = AVPlayer(URL: mediaResourceURL.URLByAppendingPathComponent( playList[playMode]["playList"][0]["Url"].stringValue ))
@@ -79,7 +82,7 @@ class DPlayer : NSObject {
     {
       if playTimes < playList[playMode]["playList"][playIndex()]["PlayCount"].intValue - 1
       {
-        println("play Times add")
+        print("play Times add")
         
         playTimes += 1
       }
@@ -99,11 +102,11 @@ class DPlayer : NSObject {
       
       if playIndex() + 1 <= playList[playMode]["playList"].count - 1
       {
-        playIndexAdd(number: 1)
+        playIndexAdd(1)
       }
       else
       {
-        playIndex(index: 0)
+        playIndex(0)
       }
     }
     
@@ -143,9 +146,9 @@ class DPlayer : NSObject {
   {
     if let userInfo : NSDictionary = notification.userInfo
     {
-      var interruptionType : NSNumber = userInfo.objectForKey(AVAudioSessionInterruptionTypeKey) as! NSNumber
+      let interruptionType : NSNumber = userInfo.objectForKey(AVAudioSessionInterruptionTypeKey) as! NSNumber
 
-      var interruptionOption : NSNumber = userInfo.objectForKey(AVAudioSessionInterruptionOptionKey) as! NSNumber
+      let interruptionOption : NSNumber = userInfo.objectForKey(AVAudioSessionInterruptionOptionKey) as! NSNumber
 
       switch interruptionType.unsignedIntegerValue
       {

@@ -127,7 +127,7 @@ class cartoonListTableViewController: UITableViewController {
             
             let index : Int = tableView.indexPathForCell(cell)!.row % currentCartoonCount
             
-            var cartoonDetailVC : cartoonDetailViewController = segue.destinationViewController as! cartoonDetailViewController
+            let cartoonDetailVC : cartoonDetailViewController = segue.destinationViewController as! cartoonDetailViewController
             
             cartoonDetailVC.cartoonTitle = cell.title.text!
 

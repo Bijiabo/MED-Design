@@ -12,6 +12,7 @@
 		A110706F1B579AEC001E3B84 /* video in Resources */ = {isa = PBXBuildFile; fileRef = A110706E1B579AEC001E3B84 /* video */; };
 		A12E9A8A1AD69410009B2D60 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12E9A891AD69410009B2D60 /* SwiftyJSON.swift */; };
 		A12E9A8B1AD69410009B2D60 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12E9A891AD69410009B2D60 /* SwiftyJSON.swift */; };
+		A13B67AD1B65367100EED237 /* NativeMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13B67AC1B65367100EED237 /* NativeMainViewController.swift */; };
 		A15CD5DC1ACE496B0033AB57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15CD5DB1ACE496B0033AB57 /* AppDelegate.swift */; };
 		A15CD5DE1ACE496B0033AB57 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15CD5DD1ACE496B0033AB57 /* mainViewController.swift */; };
 		A15CD5E11ACE496B0033AB57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15CD5DF1ACE496B0033AB57 /* Main.storyboard */; };
@@ -129,6 +130,7 @@
 		A110706C1B5799BD001E3B84 /* playViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = playViewController.swift; path = playUI/playViewController.swift; sourceTree = "<group>"; };
 		A110706E1B579AEC001E3B84 /* video */ = {isa = PBXFileReference; lastKnownFileType = folder; path = video; sourceTree = "<group>"; };
 		A12E9A891AD69410009B2D60 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = public/SwiftyJSON.swift; sourceTree = "<group>"; };
+		A13B67AC1B65367100EED237 /* NativeMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NativeMainViewController.swift; path = controllers/NativeMainViewController.swift; sourceTree = "<group>"; };
 		A15CD5D61ACE496B0033AB57 /* childFMWebkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = childFMWebkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15CD5DA1ACE496B0033AB57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A15CD5DB1ACE496B0033AB57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -310,6 +312,7 @@
 				A1BA8B2F1B5547EF00F5A57F /* Cartoon */,
 				A1BA8B2D1B55461B00F5A57F /* Notification */,
 				A1B77F3A1B5675A100CE2E73 /* ScrollViewController.swift */,
+				A13B67AC1B65367100EED237 /* NativeMainViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -512,6 +515,7 @@
 		A15CD5CE1ACE496B0033AB57 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = JYLabs;
 				TargetAttributes = {
@@ -669,6 +673,7 @@
 				A1AC1A431ADA325400831D44 /* DPlayer.swift in Sources */,
 				A1A511231AD5149E00AD37B4 /* statusStorage.swift in Sources */,
 				A15CD5DC1ACE496B0033AB57 /* AppDelegate.swift in Sources */,
+				A13B67AD1B65367100EED237 /* NativeMainViewController.swift in Sources */,
 				A1B598931B53B7B100257DDB /* cartoonDetailViewController.swift in Sources */,
 				A1B598871B5265A300257DDB /* cartoonListTableViewController.swift in Sources */,
 				A1FB096C1B5A86DB001EAF27 /* shopDetailViewController.swift in Sources */,

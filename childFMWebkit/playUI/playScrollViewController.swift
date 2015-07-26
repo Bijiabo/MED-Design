@@ -117,21 +117,27 @@ class playScrollViewController: UIViewController , UIScrollViewDelegate , Module
         
         //返回当前项目根目录NSURL对象
         let bundleURL : NSURL = NSBundle.mainBundle().resourceURL!
-        println("\(bundleURL)")
+        print("\(bundleURL)")
         //在基础URL上新增URL路径
         let imageDirectoryURL : NSURL = bundleURL.URLByAppendingPathComponent( imageDirectoryName )
         
         
         var error : NSError?
         //获取文件目录
-        let fileList = NSFileManager.defaultManager().contentsOfDirectoryAtURL(imageDirectoryURL, includingPropertiesForKeys: nil, options: nil, error: &error)
+        let fileList: [AnyObject]?
+        do {
+            fileList = try NSFileManager.defaultManager().contentsOfDirectoryAtURL(imageDirectoryURL, includingPropertiesForKeys: nil, options: [])
+        } catch var error1 as NSError {
+            error = error1
+            fileList = nil
+        }
         
         if error == nil{
             
             pages = fileList!.count / 3
             
         }else{
-            println("setPageNum error!!!")
+            print("setPageNum error!!!")
         }
         
         
@@ -174,13 +180,13 @@ class playScrollViewController: UIViewController , UIScrollViewDelegate , Module
         
         for tempI in 0..<pages{
             
-            let playUIVC : UIViewController = self.storyboard?.instantiateViewControllerWithIdentifier("playUI") as! UIViewController
+            let playUIVC : UIViewController = self.storyboard!.instantiateViewControllerWithIdentifier("playUI") as! UIViewController
             
             playUIVC.view.frame = CGRectMake(self.view.frame.size.width * CGFloat(tempI) , 0, self.view.frame.size.width, self.view.frame.size.height)
             
             if let PlayUIvc : playViewController =  playUIVC as? playViewController
             {
-                var playUIVC : playViewController = playUIVC as! playViewController
+                let playUIVC : playViewController = playUIVC as! playViewController
                 
                 playUIVC.playPauseSwitchButton.setBackgroundImage(UIImage(named: "switchButton_left"), forState: UIControlState.Normal)
                 
@@ -282,7 +288,7 @@ class playScrollViewController: UIViewController , UIScrollViewDelegate , Module
         //得到当前设备width或者height的最大值/2
         let greateerPixelDimension = UIScreen.mainScreen().bounds.size.width > UIScreen.mainScreen().bounds.size.height ? UIScreen.mainScreen().bounds.size.width :UIScreen.mainScreen().bounds.size.height * 2
         
-        println("当前设备大小:\(greateerPixelDimension)")
+        print("当前设备大小:\(greateerPixelDimension)")
         switch greateerPixelDimension {
             
         case 480:

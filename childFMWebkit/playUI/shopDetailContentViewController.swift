@@ -44,7 +44,7 @@ class shopDetailContentViewController: UIViewController {
             NSForegroundColorAttributeName : UIColor(red:1, green:1, blue:1, alpha:0.7),
             NSFontAttributeName : font
         ]
-        ContentLabel.attributedText = NSAttributedString(string: contentString, attributes: attrs as [NSObject : AnyObject])
+        ContentLabel.attributedText = NSAttributedString(string: contentString, attributes: attrs as! [String : AnyObject])
     }
     
 

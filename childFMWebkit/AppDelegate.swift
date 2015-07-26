@@ -14,7 +14,7 @@ import AVKit
 import CoreLocation
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOperation , CLLocationManagerDelegate//, Operations , UIAlertViewDelegate ,
+class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOperation //, Operations , UIAlertViewDelegate ,
 {
     //MARK: configue iBeacon
     var LocationManager : CLLocationManager?
@@ -78,7 +78,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
     {
         
-        let baseURL: NSURL = NSURL(fileURLWithPath: NSBundle.mainBundle().bundlePath)!
+        let baseURL: NSURL = NSURL(fileURLWithPath: NSBundle.mainBundle().bundlePath)
         
         //webServer -----------------------
 
@@ -91,14 +91,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
         var isDir = ObjCBool(true)
         if !fileManager.fileExistsAtPath( documentWebPath, isDirectory: &isDir)
         {
-            //若document目录下存在web目录，创建
-            fileManager.createDirectoryAtPath(documentWebPath, withIntermediateDirectories: false, attributes: nil, error: nil)
+            do {
+                //若document目录下存在web目录，创建
+                try fileManager.createDirectoryAtPath(documentWebPath, withIntermediateDirectories: false, attributes: nil)
+            } catch _ {
+            }
         }
         
         let srcWebUrl : NSURL! = baseURL.URLByAppendingPathComponent("web")
         let srcWebPath : String = NSBundle.mainBundle().bundlePath.stringByAppendingPathComponent("web")
         
-        println(srcWebPath)
+        print(srcWebPath)
         
         webServer = GCDWebServer()
         
@@ -115,8 +118,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
         player.play()
         player.delegate = self
         
-        AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, error: nil)
-        AVAudioSession.sharedInstance().setActive(true, error: nil)
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+        } catch _ {
+        }
+        do {
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch _ {
+        }
         
         addPlayStatusObserver()
         
@@ -148,7 +157,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
             
             application.registerUserNotificationSettings(
                 UIUserNotificationSettings(
-                    forTypes: UIUserNotificationType.Alert | UIUserNotificationType.Sound,
+                    forTypes: [UIUserNotificationType.Alert, UIUserNotificationType.Sound],
                     categories: nil
                 )
             )
@@ -187,7 +196,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
         // Handle notification action *****************************************
         if notification.category == "COUNTER_CATEGORY" {
             
-            println( identifier )
+            print( identifier )
         }
         
         completionHandler()
@@ -203,7 +212,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
         {
             
         case "Main":
-            mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier(storyboardIdentifier) as! UIViewController
+            mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier(storyboardIdentifier) as UIViewController
             
             
         default:
@@ -359,12 +368,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
         //所有数据
         var data : [Dictionary<String,AnyObject>] = [Dictionary<String,AnyObject>]()
         
-        for (key:String,subJSON:JSON) in jsonData
+        for (key, subJSON): (String, JSON) in jsonData
         {
             var item : Dictionary<String,AnyObject> = Dictionary<String,AnyObject>()
             
             //[name:"起床", list:[ item0, item1, item2... ] ]
-            for (key_1:String,subJSON_1:JSON) in subJSON
+            for (key_1, subJSON_1): (String, JSON) in subJSON
             {
                 
                 if let value = subJSON_1.string//判断场景名,[起床,午后,玩耍,睡前]
@@ -376,7 +385,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
                     //继续遍历:对应场景的音乐
                     var scenelist : [Dictionary<String,AnyObject>] = [Dictionary<String,AnyObject>]()
                     
-                    for (key_2:String, subJSON_2:JSON) in subJSON_1
+                    for (key_2, subJSON_2): (String, JSON) in subJSON_1
                     {
                         scenelist.append(subJSON_2.dictionaryObject!)
                     }
@@ -704,7 +713,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
         
         if data[0]["area"] == AreaCache {return}
         
-        let RoomIndex : Int = find(Rooms, data[0]["area"]!)!
+        let RoomIndex : Int = Rooms.indexOf( data[0]["area"]! )!
         
         if player.playing
         {
@@ -751,7 +760,7 @@ extension AppDelegate: CLLocationManagerDelegate {
         //UIApplication.sharedApplication().scheduleLocalNotification(notification)
     }
     
-    func locationManager(manager: CLLocationManager!, didRangeBeacons beacons: [AnyObject]!, inRegion region: CLBeaconRegion!) {
+    func locationManager(manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], inRegion region: CLBeaconRegion) {
         //NSLog("didRangeBeacons");
         var message:String = ""
         
@@ -759,7 +768,7 @@ extension AppDelegate: CLLocationManagerDelegate {
             
             var data : [Dictionary<String , String>] = [Dictionary<String , String>]()
             
-            for beacon in (beacons as! [CLBeacon])
+            for beacon in (beacons as [CLBeacon])
             {
                 //println(region.identifier)
                 //println( beacon.rssi )
@@ -789,7 +798,7 @@ extension AppDelegate: CLLocationManagerDelegate {
                     }
                 default:
                     
-                    println(beacon.major)
+                    print(beacon.major)
                     
                     break
                 }
@@ -823,7 +832,7 @@ extension AppDelegate: CLLocationManagerDelegate {
         } else {
             message = "No beacons are nearby"
             
-            println("No beacons are nearby")
+            print("No beacons are nearby")
         }
         
         //NSLog("%@", message)
@@ -876,8 +885,8 @@ extension AppDelegate {
         
         
         
-        let types = UIUserNotificationType.Alert | UIUserNotificationType.Sound
-        let settings = UIUserNotificationSettings(forTypes: types, categories: NSSet(object: counterCategory) as Set<NSObject>)
+        let types: UIUserNotificationType = [UIUserNotificationType.Alert, UIUserNotificationType.Sound]
+        let settings = UIUserNotificationSettings(forTypes: types, categories: NSSet(object: counterCategory) as? Set<UIUserNotificationCategory>)
         UIApplication.sharedApplication().registerUserNotificationSettings(settings)
         
         

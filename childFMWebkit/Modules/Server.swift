@@ -190,8 +190,10 @@ class Server : NSObject , ModelManager ,StatusObserver
     func getDownloadList() -> [Dictionary<String,String>]
     {
         
-        let cacheRootPath : String = NSSearchPathForDirectoriesInDomains(.CachesDirectory, .UserDomainMask, true)[0] as! String
-        let cacheRootURL : NSURL = NSURL(fileURLWithPath: cacheRootPath)!.URLByAppendingPathComponent("media/audio")
+        let cacheRootPath : String = NSSearchPathForDirectoriesInDomains(.CachesDirectory, .UserDomainMask, true)[0] as String
+        var cacheRootURL : NSURL = NSURL(fileURLWithPath: cacheRootPath)
+        cacheRootURL = cacheRootURL.URLByAppendingPathComponent("media/audio")
+        
         
         var downloadList : [Dictionary<String,String>] = [Dictionary<String,String>]()
         

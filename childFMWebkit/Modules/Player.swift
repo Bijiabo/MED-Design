@@ -39,7 +39,7 @@ class Player : NSObject ,PlayerManager, AVAudioPlayerDelegate
             }
             else
             {
-                return _player.url
+                return _player.url!
             }
         }
     }
@@ -54,8 +54,14 @@ class Player : NSObject ,PlayerManager, AVAudioPlayerDelegate
         
         setSource(source)
 
-        AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, error: nil)
-        AVAudioSession.sharedInstance().setActive(true, error: nil)
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+        } catch _ {
+        }
+        do {
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch _ {
+        }
         
         _addObserver()//添加一个观察者
     }
@@ -87,9 +93,14 @@ class Player : NSObject ,PlayerManager, AVAudioPlayerDelegate
         {
             var error : NSError?
             
-            var playerData : NSData = NSData(contentsOfURL: source)!
+            let playerData : NSData = NSData(contentsOfURL: source)!
             
-            _player = AVAudioPlayer(data: playerData, error: &error)
+            do {
+                _player = try AVAudioPlayer(data: playerData)
+            } catch var error1 as NSError {
+                error = error1
+                _player = nil
+            }
                 //AVAudioPlayer(contentsOfURL: source, error: &error)
             if _player != nil
             {
@@ -106,7 +117,7 @@ class Player : NSObject ,PlayerManager, AVAudioPlayerDelegate
     
     //MARK:
     //MARK: avaudioPlayerDelegate
-    func audioPlayerDidFinishPlaying(player: AVAudioPlayer!, successfully flag: Bool) {
+    func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully flag: Bool) {
         delegate?.playerDidFinishPlaying()
     }
     
@@ -134,7 +145,7 @@ class Player : NSObject ,PlayerManager, AVAudioPlayerDelegate
         
         if interuptionType == AVAudioSessionInterruptionType.Began.rawValue
         {
-            println("began interuption")
+            print("began interuption")
             
             playingBeforeInteruption = _player.playing
             
@@ -151,10 +162,16 @@ class Player : NSObject ,PlayerManager, AVAudioPlayerDelegate
             })
             
             
-            AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, error: nil)
-            AVAudioSession.sharedInstance().setActive(true, error: nil)
+            do {
+                try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            } catch _ {
+            }
+            do {
+                try AVAudioSession.sharedInstance().setActive(true)
+            } catch _ {
+            }
             
-            println("end interuption")
+            print("end interuption")
             
         }
         
@@ -178,7 +195,7 @@ class Player : NSObject ,PlayerManager, AVAudioPlayerDelegate
     
     func audioSessionInterruptionTypeEnded (notification : NSNotification)
     {
-        println("audioSessionInterruptionTypeEnded")
+        print("audioSessionInterruptionTypeEnded")
     }
 
     

@@ -30,7 +30,7 @@ class mvpViewController: UIViewController ,WKNavigationDelegate {
     
     webView = WKWebView(frame: view.frame, configuration: configuration)
     
-    let baseURL: NSURL = NSURL(fileURLWithPath: NSBundle.mainBundle().bundlePath)!
+    let baseURL: NSURL = NSURL(fileURLWithPath: NSBundle.mainBundle().bundlePath)
     var requestUrl : NSURL! = baseURL.URLByAppendingPathComponent("web/html/playList.html")
 
     if !dev
@@ -70,7 +70,7 @@ class mvpViewController: UIViewController ,WKNavigationDelegate {
     //json
     let paths : NSArray = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
     let documentsDirectory : NSString = paths.objectAtIndex(0) as! NSString
-    var dataPath : NSURL = NSURL(fileURLWithPath: documentsDirectory.stringByAppendingPathComponent("web/data/playlist.json"))!
+    var dataPath : NSURL = NSURL(fileURLWithPath: documentsDirectory.stringByAppendingPathComponent("web/data/playlist.json"))
     /*
     if dev
     {
@@ -90,14 +90,14 @@ class mvpViewController: UIViewController ,WKNavigationDelegate {
   }
   
   func playIndexChanged(notification: NSNotification){
-    println("playIndexChanged")
+    print("playIndexChanged")
     
     let object = notification.object as! Dictionary<String,Int>
     let playIndex : Int = object["playIndex"]!
 
     ///*
     webView.evaluateJavaScript("playIndex(\(playIndex));", completionHandler: {(AnyObject, NSError) in
-      println("send playIndex change to view complete")
+      print("send playIndex change to view complete")
     })
     //*/
   }
@@ -126,7 +126,7 @@ class mvpNotificationScriptMessageHandler: NSObject, WKScriptMessageHandler
       switch action
       {
       case "changeMode":
-        println("changeMode...")
+        print("changeMode...")
         
         if let viewChangeMode = message.body["mode"] as? String
         {
@@ -138,7 +138,7 @@ class mvpNotificationScriptMessageHandler: NSObject, WKScriptMessageHandler
         
         
       case "switchPlayPause":
-        var play : Bool = true;
+        let play : Bool = true;
         play.boolValue
         /*
         if (appDelegate.player.player.rate>0 && appDelegate.player.player.currentItem != nil)
@@ -154,7 +154,7 @@ class mvpNotificationScriptMessageHandler: NSObject, WKScriptMessageHandler
         vc.webView!.evaluateJavaScript("setPlayState(\(String(stringInterpolationSegment: play.boolValue)));", completionHandler: nil)
         
       default:
-        println("")
+        print("")
       }
       
     }
@@ -172,10 +172,10 @@ class mvpNotificationScriptMessageHandler: NSObject, WKScriptMessageHandler
       switch receivedEvent.subtype
       {
       case UIEventSubtype.RemoteControlTogglePlayPause:
-          println("toggle play pr pause")
+          print("toggle play pr pause")
         
       case UIEventSubtype.RemoteControlPreviousTrack:
-        println("previous track")
+        print("previous track")
         
       default:
         break
