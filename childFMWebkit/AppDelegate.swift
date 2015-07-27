@@ -112,8 +112,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
         //init player
         let playerSource : NSURL = NSBundle.mainBundle().resourceURL!.URLByAppendingPathComponent("media/\(PlayerResources[0])")
         player = Player(source: playerSource)
-        player.play()
         player.delegate = self
+        play()
         
         AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, error: nil)
         AVAudioSession.sharedInstance().setActive(true, error: nil)
@@ -668,7 +668,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
         
         let playerSource : NSURL = NSBundle.mainBundle().resourceURL!.URLByAppendingPathComponent("media/\(PlayerResources[ActiveIndex])")
         player = Player(source: playerSource)
-        player.play()
+        play()
         player.delegate = self
         
         changeRoom(Rooms[ActiveIndex])
@@ -678,7 +678,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
     {
         let ActiveIndex : Int = notification.object as! Int
         
-        player.pause()
+        pause()
     }
     
     
