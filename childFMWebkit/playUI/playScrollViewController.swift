@@ -168,8 +168,6 @@ class playScrollViewController: UIViewController , UIScrollViewDelegate , Module
         
         self.scrollVIew1.backgroundColor = UIColor(red:0.42, green:0.46, blue:0.52, alpha:1)
         
-        //缩放系数
-        let scaleRate: CGFloat = 1
         //设置宽高
         scrollVIew1.contentSize = CGSize(width: devWidth*CGFloat(pages), height: devHeight)
         
@@ -180,11 +178,11 @@ class playScrollViewController: UIViewController , UIScrollViewDelegate , Module
         
         for tempI in 0..<pages{
             
-            let playUIVC : UIViewController = self.storyboard!.instantiateViewControllerWithIdentifier("playUI") as! UIViewController
+            let playUIVC : UIViewController = self.storyboard!.instantiateViewControllerWithIdentifier("playUI") as UIViewController
             
             playUIVC.view.frame = CGRectMake(self.view.frame.size.width * CGFloat(tempI) , 0, self.view.frame.size.width, self.view.frame.size.height)
             
-            if let PlayUIvc : playViewController =  playUIVC as? playViewController
+            if let _ : playViewController =  playUIVC as? playViewController
             {
                 let playUIVC : playViewController = playUIVC as! playViewController
                 

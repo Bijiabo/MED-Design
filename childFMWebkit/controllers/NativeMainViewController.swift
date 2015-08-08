@@ -70,7 +70,7 @@ class NativeMainViewController: UIViewController , NavigationProtocol , GrownVie
         self.scrollView.addSubview( CartoonDetailViewController.view )
         
         //加载漫画列表头部标题
-        var CartoonNavigationBar : UINavigationBar = UINavigationBar(frame: CGRectMake(0, 0, self.view.frame.size.width, 44.0))
+        let CartoonNavigationBar : UINavigationBar = UINavigationBar(frame: CGRectMake(0, 0, self.view.frame.size.width, 44.0))
         //        CartoonNavigationBar.alpha = 0.5
         //        var CartoonNavigationBarTitle : UIBarItem = UIBarItem()
         //        CartoonNavigationBarTitle.title = "不要哑巴英语"
@@ -117,14 +117,14 @@ class NativeMainViewController: UIViewController , NavigationProtocol , GrownVie
             
             playUIVC.view.frame = CGRectMake(0, self.view.frame.size.height * 2.0  ,  self.view.frame.size.width , self.view.frame.size.height)
             
-            if let playVC : DemoModule = playUIVC as? DemoModule
+            if let _ : DemoModule = playUIVC as? DemoModule
             {
                 var playUIvc : DemoModule = playUIVC as! DemoModule
                 
                 playUIvc.navigationDelegate = self
             }
             
-            if let playVC : PlayUI = playUIVC as? PlayUI
+            if let _ : PlayUI = playUIVC as? PlayUI
             {
                 var playUIvc : PlayUI = playUIVC as! PlayUI
                 
@@ -156,7 +156,7 @@ class NativeMainViewController: UIViewController , NavigationProtocol , GrownVie
     {
         let vc : UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier(storyboardIdentifier) as UIViewController
         
-        if let Vc : DemoModule = vc as? DemoModule
+        if let _ : DemoModule = vc as? DemoModule
         {
             var VC : DemoModule = vc as! DemoModule
             

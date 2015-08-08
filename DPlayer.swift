@@ -155,7 +155,7 @@ class DPlayer : NSObject {
       case Int(AVAudioSessionInterruptionType.Began.rawValue):
         break
       case Int(AVAudioSessionInterruptionType.Ended.rawValue):
-        if interruptionOption.unsignedIntegerValue == Int(AVAudioSessionInterruptionOptions.OptionShouldResume.rawValue)
+        if interruptionOption.unsignedIntegerValue == Int(AVAudioSessionInterruptionOptions.ShouldResume.rawValue)
         {
           self.player.play()
         }

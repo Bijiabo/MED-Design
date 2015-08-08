@@ -8,7 +8,7 @@
 
 import UIKit
 
-import PNChartSwift
+//import PNChartSwift
 
 class PlaylistStatisticTableViewCell: UITableViewCell , UIScrollViewDelegate
 {
@@ -84,6 +84,7 @@ class PlaylistStatisticTableViewCell: UITableViewCell , UIScrollViewDelegate
     {
         let chartFrame : CGRect = CGRectMake(0, 0, view.frame.size.width, view.frame.size.height - 20.0)
         
+        /*
         let barChart : PNBarChart = PNBarChart(frame: chartFrame )
         barChart.backgroundColor = UIColor.clearColor()
         
@@ -97,10 +98,12 @@ class PlaylistStatisticTableViewCell: UITableViewCell , UIScrollViewDelegate
         barChart.strokeChart()
         
         view.addSubview( barChart )
+        */
     }
     
     func AddLineChartToView(view : UIView)
     {
+        /*
         let chartFrame : CGRect = CGRectMake(10.0, 10.0, view.frame.size.width - 20.0, view.frame.size.height - 40.0)
         
         let lineChart : PNLineChart = PNLineChart(frame: chartFrame)
@@ -129,6 +132,7 @@ class PlaylistStatisticTableViewCell: UITableViewCell , UIScrollViewDelegate
         lineChart.strokeChart()
         
         view.addSubview( lineChart )
+        */
         
     }
     
