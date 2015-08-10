@@ -27,6 +27,10 @@ class NativeMainViewController: UIViewController , NavigationProtocol , GrownVie
         super.didReceiveMemoryWarning()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
     
     func initScrollView() {
         let scrollViewPageCount : Int = 3
@@ -169,5 +173,11 @@ class NativeMainViewController: UIViewController , NavigationProtocol , GrownVie
     func rotate(angle: Float)
     {
         //webView.evaluateJavaScript("window.mainUserInfo.rotate(-\(angle))", completionHandler: nil)
+    }
+    
+    //显示漫画列表
+    func showCartoonList ()
+    {
+        loadModuleToNavigation("Main", storyboardIdentifier: "cartoonList")
     }
 }

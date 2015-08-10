@@ -677,6 +677,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
         
         if data[0]["area"] == AreaCache {return}
         
+        if Rooms.indexOf( data[0]["area"]! ) == nil {return}
+        
         let RoomIndex : Int = Rooms.indexOf( data[0]["area"]! )!
         
         if player.playing

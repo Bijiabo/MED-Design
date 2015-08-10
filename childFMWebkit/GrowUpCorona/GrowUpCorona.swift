@@ -231,7 +231,7 @@ class GrowUpCorona : NSObject, UIScrollViewDelegate {
         for i in 0..<pageCount
         {
             let leadContainer : UIView = UIView(frame: sceneFrame)
-            
+            //leadContainer.backgroundColor = UIColor(red:0.13, green:0.6, blue:0.68, alpha:0.5)
             /*
             //添加标记序号
             let textLabel : UILabel = UILabel(frame: CGRectMake(10, 10, 30, 30))
@@ -243,6 +243,7 @@ class GrowUpCorona : NSObject, UIScrollViewDelegate {
             //添加场景容器
             let sceneContainer : UIView = UIView(frame: containerView.frame)
             sceneContainer.frame.origin.x = sceneWidth/2.0 - containerView.frame.size.width/2.0
+            sceneContainer.frame.origin.y = 0.0
             sceneContainer.frame.size.height = 100.0
             //sceneContainer.backgroundColor = UIColor(red:0.89, green:0.13, blue:0.07, alpha:0.3)
             leadContainer.addSubview(sceneContainer)

@@ -1069,6 +1069,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fuf-Qv-Hip" userLabel="topBackground">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="133"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="133" id="GZj-yg-rkB"/>
+                                </constraints>
+                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userInfo" translatesAutoresizingMaskIntoConstraints="NO" id="Zd4-s7-6YL">
                                 <rect key="frame" x="16" y="66" width="136" height="54"/>
                                 <constraints>
@@ -1077,7 +1084,10 @@
                                 </constraints>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceHorizontal="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ecl-RQ-NMX">
-                                <rect key="frame" x="0.0" y="458" width="600" height="142"/>
+                                <rect key="frame" x="0.0" y="400" width="600" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="TwF-H1-QSH"/>
+                                </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zw-WG-vxw">
                                 <rect key="frame" x="554" y="66" width="30" height="24"/>
@@ -1089,31 +1099,23 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BgW-SH-rWb">
-                                <rect key="frame" x="30" y="150" width="470" height="300"/>
-                                <color key="backgroundColor" red="0.88729745370370372" green="0.88729745370370372" blue="0.88729745370370372" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="aRp-Yl-8G0"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <constraints>
                             <constraint firstItem="Zd4-s7-6YL" firstAttribute="leading" secondItem="ViM-Uh-VuC" secondAttribute="leading" constant="16" id="34H-MK-M4s"/>
-                            <constraint firstItem="BgW-SH-rWb" firstAttribute="leading" secondItem="ViM-Uh-VuC" secondAttribute="leading" constant="30" id="6PL-2a-Q2k"/>
+                            <constraint firstItem="Fuf-Qv-Hip" firstAttribute="leading" secondItem="ViM-Uh-VuC" secondAttribute="leading" id="38e-TG-WL1"/>
                             <constraint firstItem="3zw-WG-vxw" firstAttribute="top" secondItem="eeV-81-QOC" secondAttribute="bottom" constant="46" id="DKc-0c-sAp"/>
                             <constraint firstAttribute="trailing" secondItem="3zw-WG-vxw" secondAttribute="trailing" constant="16" id="Gec-aQ-TIv"/>
                             <constraint firstItem="Zd4-s7-6YL" firstAttribute="top" secondItem="eeV-81-QOC" secondAttribute="bottom" constant="46" id="Klf-jZ-ThA"/>
+                            <constraint firstItem="Fuf-Qv-Hip" firstAttribute="top" secondItem="ViM-Uh-VuC" secondAttribute="top" id="OUQ-57-Xmq"/>
                             <constraint firstItem="tr4-J8-FxF" firstAttribute="top" secondItem="ecl-RQ-NMX" secondAttribute="bottom" id="QTm-KM-BFc"/>
                             <constraint firstItem="ecl-RQ-NMX" firstAttribute="leading" secondItem="ViM-Uh-VuC" secondAttribute="leading" id="Sdo-P9-ymu"/>
-                            <constraint firstItem="BgW-SH-rWb" firstAttribute="top" secondItem="eeV-81-QOC" secondAttribute="bottom" constant="130" id="XOg-cI-1OF"/>
-                            <constraint firstAttribute="trailing" secondItem="BgW-SH-rWb" secondAttribute="trailing" constant="100" id="gSc-W8-Fwy"/>
+                            <constraint firstAttribute="trailing" secondItem="Fuf-Qv-Hip" secondAttribute="trailing" id="fUB-Q9-FJ9"/>
                             <constraint firstAttribute="trailing" secondItem="ecl-RQ-NMX" secondAttribute="trailing" id="oP1-mL-l97"/>
-                            <constraint firstItem="ecl-RQ-NMX" firstAttribute="top" secondItem="BgW-SH-rWb" secondAttribute="bottom" constant="8" id="w6h-Kz-Ow2"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="BottomScrollView" destination="ecl-RQ-NMX" id="u4q-Hf-nKd"/>
-                        <outlet property="coronaContainerView" destination="BgW-SH-rWb" id="6qT-ji-LKN"/>
+                        <outlet property="topBackgroundView" destination="Fuf-Qv-Hip" id="unE-br-G8m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QEg-4f-Cbl" userLabel="First Responder" sceneMemberID="firstResponder"/>

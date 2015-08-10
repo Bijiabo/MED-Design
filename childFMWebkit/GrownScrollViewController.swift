@@ -11,8 +11,8 @@ import UIKit
 class GrownScrollViewController: UIViewController
 {
 
-    @IBOutlet var coronaContainerView: UIView!
     @IBOutlet var BottomScrollView: UIScrollView!
+    @IBOutlet var topBackgroundView: UIView!
 
     var growUpCorona : GrowUpCorona!
     let pageCount : Int = 12
@@ -26,32 +26,13 @@ class GrownScrollViewController: UIViewController
         InitBottomScrollView()
         
         //初始化成长年轮
-        /*
-        coronaContainerView.frame.size.height = 400.0
-//        coronaContainerView.clipsToBounds = true
-        
-        growUpCorona = GrowUpCorona(container: coronaContainerView)
-        growUpCorona.wallHeight = 200.0
-        growUpCorona.renderView()
-        */
-        
         let coronaView : UIView = UIView(frame: view.frame)
-        coronaView.frame.size.width = 250.0
-        coronaView.frame.size.height = 400.0
-        coronaView.frame.origin.x = 20.0
-        coronaView.frame.origin.y = 50.0
+        coronaView.frame.size.height = view.frame.size.height - topBackgroundView.frame.size.height - BottomScrollView.frame.size.height
+        coronaView.frame.origin.y = topBackgroundView.frame.size.height
         coronaView.clipsToBounds = true
         
         growUpCorona = GrowUpCorona(container: coronaView)
         growUpCorona.wallHeight = 200.0
-        growUpCorona.renderView()
-        growUpCorona.renderView()
-        growUpCorona.renderView()
-        growUpCorona.renderView()
-        growUpCorona.renderView()
-        growUpCorona.renderView()
-        growUpCorona.renderView()
-        growUpCorona.renderView()
         growUpCorona.renderView()
         
         view.addSubview(coronaView)
@@ -80,7 +61,7 @@ class GrownScrollViewController: UIViewController
     
     func InitBottomScrollView ()
     {
-        let height : CGFloat = self.view.frame.size.height - BottomScrollView.frame.origin.y
+        let height : CGFloat = BottomScrollView.frame.size.height
         
         BottomScrollView.contentSize = CGSizeMake( self.view.frame.size.width * 3.0, height)
         BottomScrollView.pagingEnabled = true
