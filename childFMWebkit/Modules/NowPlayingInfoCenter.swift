@@ -394,7 +394,7 @@ class NowPlayingInfoCenterController : NSObject, ViewManager {
     {
         UIGraphicsBeginImageContextWithOptions(CGSizeMake(600.0, 600.0), false, 1.0)
         
-        view.layer.renderInContext(UIGraphicsGetCurrentContext())
+        view.layer.renderInContext(UIGraphicsGetCurrentContext()!)
         
         let image : UIImage = UIGraphicsGetImageFromCurrentImageContext()
         

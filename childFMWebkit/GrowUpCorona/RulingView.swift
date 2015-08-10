@@ -13,7 +13,7 @@ class RulingView: UIView {
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     override func drawRect(rect: CGRect) {
-        let context:CGContextRef =  UIGraphicsGetCurrentContext();//获取画笔上下文
+        let context:CGContextRef =  UIGraphicsGetCurrentContext()!;//获取画笔上下文
         CGContextSetAllowsAntialiasing(context, true) //抗锯齿设置
         
         CGContextSetStrokeColorWithColor(context, UIColor.whiteColor().CGColor) //设置画笔颜色
