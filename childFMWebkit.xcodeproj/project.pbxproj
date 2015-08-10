@@ -13,6 +13,8 @@
 		A12E9A8A1AD69410009B2D60 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12E9A891AD69410009B2D60 /* SwiftyJSON.swift */; };
 		A12E9A8B1AD69410009B2D60 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12E9A891AD69410009B2D60 /* SwiftyJSON.swift */; };
 		A13B67AD1B65367100EED237 /* NativeMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13B67AC1B65367100EED237 /* NativeMainViewController.swift */; };
+		A143897C1B78EB870052D5AE /* GrowUpCorona.swift in Sources */ = {isa = PBXBuildFile; fileRef = A143897B1B78EB870052D5AE /* GrowUpCorona.swift */; };
+		A143897E1B78EBA60052D5AE /* RulingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A143897D1B78EBA60052D5AE /* RulingView.swift */; };
 		A15CD5DC1ACE496B0033AB57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15CD5DB1ACE496B0033AB57 /* AppDelegate.swift */; };
 		A15CD5DE1ACE496B0033AB57 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15CD5DD1ACE496B0033AB57 /* mainViewController.swift */; };
 		A15CD5E11ACE496B0033AB57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15CD5DF1ACE496B0033AB57 /* Main.storyboard */; };
@@ -56,7 +58,6 @@
 		A1BA8B2C1B55461400F5A57F /* notificationCenterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BA8B2B1B55461400F5A57F /* notificationCenterTableViewController.swift */; };
 		A1D468851B5BD9CF0097358D /* GrownScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D468841B5BD9CF0097358D /* GrownScrollViewController.swift */; };
 		A1D468871B5BDA920097358D /* GrownProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D468861B5BDA920097358D /* GrownProtocol.swift */; };
-		A1D468881B5BEDDB0097358D /* web in Resources */ = {isa = PBXBuildFile; fileRef = A15CD5FB1ACE4D4A0033AB57 /* web */; };
 		A1D4688A1B5C31C60097358D /* media in Resources */ = {isa = PBXBuildFile; fileRef = A1D468891B5C31C60097358D /* media */; };
 		A1D468901B5CE6960097358D /* GrownBottomTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D4688F1B5CE6960097358D /* GrownBottomTextViewController.swift */; };
 		A1D468921B5CE6B70097358D /* GrownBottomLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D468911B5CE6B70097358D /* GrownBottomLogViewController.swift */; };
@@ -110,6 +111,8 @@
 		A110706E1B579AEC001E3B84 /* video */ = {isa = PBXFileReference; lastKnownFileType = folder; path = video; sourceTree = "<group>"; };
 		A12E9A891AD69410009B2D60 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = public/SwiftyJSON.swift; sourceTree = "<group>"; };
 		A13B67AC1B65367100EED237 /* NativeMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NativeMainViewController.swift; path = controllers/NativeMainViewController.swift; sourceTree = "<group>"; };
+		A143897B1B78EB870052D5AE /* GrowUpCorona.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GrowUpCorona.swift; path = GrowUpCorona/GrowUpCorona.swift; sourceTree = "<group>"; };
+		A143897D1B78EBA60052D5AE /* RulingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RulingView.swift; path = GrowUpCorona/RulingView.swift; sourceTree = "<group>"; };
 		A15CD5D61ACE496B0033AB57 /* childFMWebkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = childFMWebkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15CD5DA1ACE496B0033AB57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A15CD5DB1ACE496B0033AB57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,7 +123,6 @@
 		A15CD5EB1ACE496B0033AB57 /* childFMWebkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = childFMWebkitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15CD5F01ACE496B0033AB57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A15CD5F11ACE496B0033AB57 /* childFMWebkitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = childFMWebkitTests.swift; sourceTree = "<group>"; };
-		A15CD5FB1ACE4D4A0033AB57 /* web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = web; sourceTree = "<group>"; };
 		A15CD5FF1ACEC6650033AB57 /* childFMWebkit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "childFMWebkit-Bridging-Header.h"; sourceTree = "<group>"; };
 		A15CD6001ACEC6660033AB57 /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
 		A18E8A8F1AEDD58900097234 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/../build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
@@ -202,6 +204,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A143897A1B78EB470052D5AE /* growUpCorona */ = {
+			isa = PBXGroup;
+			children = (
+				A143897B1B78EB870052D5AE /* GrowUpCorona.swift */,
+				A143897D1B78EBA60052D5AE /* RulingView.swift */,
+			);
+			name = growUpCorona;
+			sourceTree = "<group>";
+		};
 		A15CD5CD1ACE496B0033AB57 = {
 			isa = PBXGroup;
 			children = (
@@ -217,7 +228,6 @@
 				A1B598D81B543C9200257DDB /* Status.swift */,
 				A1B598941B53BA6500257DDB /* cartoonImage */,
 				A1A510F41AD4D5C100AD37B4 /* public */,
-				A15CD5FB1ACE4D4A0033AB57 /* web */,
 				A15CD5D81ACE496B0033AB57 /* childFMWebkit */,
 				A15CD5EE1ACE496B0033AB57 /* childFMWebkitTests */,
 				A15CD5D71ACE496B0033AB57 /* Products */,
@@ -238,6 +248,7 @@
 		A15CD5D81ACE496B0033AB57 /* childFMWebkit */ = {
 			isa = PBXGroup;
 			children = (
+				A143897A1B78EB470052D5AE /* growUpCorona */,
 				A1B598881B52685800257DDB /* cell */,
 				A1B598831B5262A800257DDB /* Protocols */,
 				A1A510EC1AD4511300AD37B4 /* Controllers */,
@@ -526,7 +537,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1D4688A1B5C31C60097358D /* media in Resources */,
-				A1D468881B5BEDDB0097358D /* web in Resources */,
 				A1FB09381B5A3961001EAF27 /* iTunesGuide in Resources */,
 				A110706F1B579AEC001E3B84 /* video in Resources */,
 				A1B598951B53BA6500257DDB /* cartoonImage in Resources */,
@@ -609,6 +619,7 @@
 				A1D468941B5CE6E20097358D /* GrownBottomStatisticsViewController.swift in Sources */,
 				A1BA8B281B54FEC900F5A57F /* UGCHomeViewController.swift in Sources */,
 				A1BA8B231B54F7C700F5A57F /* playlistTableViewController.swift in Sources */,
+				A143897C1B78EB870052D5AE /* GrowUpCorona.swift in Sources */,
 				A1B598811B525E1100257DDB /* GlobalNavigationController.swift in Sources */,
 				A15CD5DE1ACE496B0033AB57 /* mainViewController.swift in Sources */,
 				A1B77F411B567DC200CE2E73 /* UGC_3rdOnlineResourceViewController.swift in Sources */,
@@ -621,6 +632,7 @@
 				A1B598931B53B7B100257DDB /* cartoonDetailViewController.swift in Sources */,
 				A1B598871B5265A300257DDB /* cartoonListTableViewController.swift in Sources */,
 				A1FB096C1B5A86DB001EAF27 /* shopDetailViewController.swift in Sources */,
+				A143897E1B78EBA60052D5AE /* RulingView.swift in Sources */,
 				A110706D1B5799BD001E3B84 /* playViewController.swift in Sources */,
 				A12E9A8A1AD69410009B2D60 /* SwiftyJSON.swift in Sources */,
 				A1B77F3B1B5675A100CE2E73 /* ScrollViewController.swift in Sources */,

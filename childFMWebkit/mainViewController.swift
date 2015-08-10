@@ -27,41 +27,13 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
         
         self.title = ""
         
-        cache = ["pageHeightArray":[]]
-        
-        let handler = webkitNotificationScriptMessageHandler(viewController: self)
-        userContentController = WKUserContentController()
-        userContentController.addScriptMessageHandler(handler, name: "notification")
-        
-        configuration = WKWebViewConfiguration()
-        configuration.userContentController = userContentController
-        
-        
-        webView = WKWebView(frame: view.frame, configuration: configuration)
-        
-        webView.navigationDelegate = self
-        
-        //webView.scrollView.bounces = false
-        webView.scrollView.delegate = self
-        webView.scrollView.pagingEnabled = true
-        
-        let baseURL: NSURL = NSURL(fileURLWithPath: NSBundle.mainBundle().bundlePath)
-        var localUrl : NSURL! = baseURL.URLByAppendingPathComponent("web/main.html")//NSURL(string:"/web/main.html")
-        //println(url)
-        var localReq = NSURLRequest(URL:localUrl)
-        
-        let url : NSURL! = NSURL(string:  "http://localhost:8080/main.html")
-        let req : NSURLRequest = NSURLRequest(URL: url)
-        
-        webView.loadRequest(req)
-        
-        self.view = webView
-        webView.navigationDelegate = self
-        webView.scrollView.showsHorizontalScrollIndicator = false
-        webView.scrollView.showsVerticalScrollIndicator = false
-        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("webServerStarted:"), name: "webServerStarted", object: nil)
-        
+        _loadModules()
+    }
+    
+    private func _loadModules() {
+        loadModuleToNavigation("Main", storyboardIdentifier: "cartoonList")
+        loadModuleToNavigation("Main", storyboardIdentifier: "notificationList")
+        addNativeUI()
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -92,52 +64,8 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
         scrollBeginY = webView.scrollView.contentOffset.y
     }
     
-    /*
-    //MARK: 按照网页提供的pageHeightArray来搞定page垂直翻页
-    func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>)
-    {
-        
-        if let message: AnyObject = cache["pageHeightArray"]
-        {
-            if let pageHeightArray : AnyObject = message.body
-            {
-                if let pageYArray : NSArray = pageHeightArray["pageYArray"] as? NSArray
-                {
-                    
-                    if targetContentOffset.memory.y > scrollBeginY && pageBeginIndexCache < pageYArray.count-1
-                    {
-                        targetContentOffset.memory.y = CGFloat(pageYArray.objectAtIndex(pageBeginIndexCache + 1) as! NSNumber)
-                        pageBeginIndexCache += 1
-                    }
-                    else if targetContentOffset.memory.y < scrollBeginY && pageBeginIndexCache - 1 >= 0
-                    {
-                        let targetY : CGFloat = CGFloat(pageYArray.objectAtIndex(pageBeginIndexCache - 1) as! NSNumber)
-                        let screenHeight = webView.frame.size.height
-                        if abs(Int32(targetY-targetContentOffset.memory.y)) <= Int32(screenHeight)
-                        {
-                            targetContentOffset.memory.y = targetY
-                            pageBeginIndexCache -= 1
-                        }
-                    }
-                }
-            }
-   
-        }
-        
-    }
-    */
-    
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-        //scrollView减速停止
         let offsetY : CGFloat = scrollView.contentOffset.y
-        
-        /*
-        //若滚动到顶部，则为引导界面，禁止滚动。
-        if offsetY == 0.0
-        {
-            scrollView.scrollEnabled = false
-        }
-        */
     }
     
     func webView(webView: WKWebView, didFinishNavigation navigation: WKNavigation!) {
@@ -228,10 +156,6 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
         
         grownScrollView.view.frame = CGRectMake(0, self.view.frame.size.height, self.view.frame.size.width, self.view.frame.size.height)
         
-        grownScrollView.InitScrollView()
-
-        grownScrollView.grownView = self
-        
         self.addChildViewController(grownScrollView)
         
         self.webView.scrollView.addSubview(grownScrollView.view)
@@ -297,54 +221,3 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
     }
     
 }
-
-
-class webkitNotificationScriptMessageHandler: NSObject, WKScriptMessageHandler
-{
-    var vc : AnyObject!
-    
-    init(viewController : AnyObject) {
-        vc = viewController
-    }
-    
-    func userContentController(userContentController: WKUserContentController, didReceiveScriptMessage message: WKScriptMessage)
-    {
-        if let action = message.body["action"] as? String
-        {
-            switch action
-            {
-                
-            case "initMain":
-                //初始化主界面（wkwebview加载后激活）
-                
-                vc.setCache(key: "pageHeightArray", value: message)
-                
-                vc.addNativeUI()
-                
-            case "popNavigationItemAnimated":
-                print("")
-                
-            case "endGuide":
-                //结束引导模块，页面滑入年轮主界面
-                vc.webView!.scrollView.scrollEnabled = true
-                vc.scrollToPage(forIndex: 1)
-                
-            case "link2CartoonList":
-                //加赞漫画模块
-                vc.loadModuleToNavigation("Main", storyboardIdentifier: "cartoonList")
-                
-            case "loadNotificationList":
-                //加载通知列表
-                vc.loadModuleToNavigation("Main", storyboardIdentifier: "notificationList")
-                
-            default:
-                break
-            }
-        }
-        
-    }
-    
-    
-    
-}
-

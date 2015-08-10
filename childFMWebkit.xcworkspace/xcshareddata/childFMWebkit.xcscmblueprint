@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "08AE58717C4C9870BD072FDBE069A1F5E3B392F2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "08AE58717C4C9870BD072FDBE069A1F5E3B392F2" : 0,
+    "54023E5A69A8ACBF4248AE90064E6E1B8A22CC88" : 0,
+    "5A37E4E31FA1EFAC4DCDD9AA665FC668803AAFFC" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A2880025-D5DF-4807-AF6A-0EA19D13232D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "08AE58717C4C9870BD072FDBE069A1F5E3B392F2" : "childFMWebkit",
+    "54023E5A69A8ACBF4248AE90064E6E1B8A22CC88" : "childFMWebkit\/PNChart-Swift",
+    "5A37E4E31FA1EFAC4DCDD9AA665FC668803AAFFC" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "childFMWebkit",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 203,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "childFMWebkit.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Bijiabo\/MED-Design.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "08AE58717C4C9870BD072FDBE069A1F5E3B392F2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kevinzhow\/PNChart-Swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "54023E5A69A8ACBF4248AE90064E6E1B8A22CC88"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Bijiabo\/JYLabsDesign.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5A37E4E31FA1EFAC4DCDD9AA665FC668803AAFFC"
+    }
+  ]
+}

@@ -30,7 +30,7 @@ class NativeMainViewController: UIViewController , NavigationProtocol , GrownVie
     
     func initScrollView() {
         let scrollViewPageCount : Int = 3
-        
+        scrollView.backgroundColor = UIColor.blackColor()
         scrollView.showsVerticalScrollIndicator = false
         scrollView.showsHorizontalScrollIndicator = false
         scrollView.pagingEnabled = true
@@ -40,7 +40,9 @@ class NativeMainViewController: UIViewController , NavigationProtocol , GrownVie
         for pageIndex in 0..<scrollViewPageCount
         {
             let view : UIView = UIView(frame: CGRectMake(0, self.view.frame.size.height * CGFloat(pageIndex), self.view.frame.size.width, self.view.frame.size.height))
+            view.backgroundColor = UIColor.whiteColor()
             
+            /*
             switch pageIndex
             {
             case 0:
@@ -52,6 +54,7 @@ class NativeMainViewController: UIViewController , NavigationProtocol , GrownVie
             default:
                 break
             }
+            */
             
             scrollView.addSubview(view)
         }
@@ -98,12 +101,8 @@ class NativeMainViewController: UIViewController , NavigationProtocol , GrownVie
         
         //加载成长年轮scroll view
         let grownScrollView : GrownScrollViewController = self.storyboard?.instantiateViewControllerWithIdentifier("grownScrollView") as! GrownScrollViewController
-        
-        grownScrollView.view.frame = CGRectMake(0, self.view.frame.size.height, self.view.frame.size.width, self.view.frame.size.height)
-        
-        grownScrollView.InitScrollView()
-        
-        grownScrollView.grownView = self
+        grownScrollView.view.frame = view.frame
+        grownScrollView.view.frame.origin.y = view.frame.size.height
         
         self.addChildViewController(grownScrollView)
         

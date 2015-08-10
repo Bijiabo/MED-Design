@@ -8,24 +8,53 @@
 
 import UIKit
 
-class GrownScrollViewController: UIViewController , UIScrollViewDelegate
+class GrownScrollViewController: UIViewController
 {
 
-    @IBOutlet var scrollView: UIScrollView!
+    @IBOutlet var coronaContainerView: UIView!
     @IBOutlet var BottomScrollView: UIScrollView!
-    
+
+    var growUpCorona : GrowUpCorona!
     let pageCount : Int = 12
     let defaultPageIndex :Int = 10
-    
-    var grownView : GrownView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor.clearColor()
         
-        //InitScrollView()
         InitBottomScrollView()
+        
+        //初始化成长年轮
+        /*
+        coronaContainerView.frame.size.height = 400.0
+//        coronaContainerView.clipsToBounds = true
+        
+        growUpCorona = GrowUpCorona(container: coronaContainerView)
+        growUpCorona.wallHeight = 200.0
+        growUpCorona.renderView()
+        */
+        
+        let coronaView : UIView = UIView(frame: view.frame)
+        coronaView.frame.size.width = 250.0
+        coronaView.frame.size.height = 400.0
+        coronaView.frame.origin.x = 20.0
+        coronaView.frame.origin.y = 50.0
+        coronaView.clipsToBounds = true
+        
+        growUpCorona = GrowUpCorona(container: coronaView)
+        growUpCorona.wallHeight = 200.0
+        growUpCorona.renderView()
+        growUpCorona.renderView()
+        growUpCorona.renderView()
+        growUpCorona.renderView()
+        growUpCorona.renderView()
+        growUpCorona.renderView()
+        growUpCorona.renderView()
+        growUpCorona.renderView()
+        growUpCorona.renderView()
+        
+        view.addSubview(coronaView)
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,33 +72,6 @@ class GrownScrollViewController: UIViewController , UIScrollViewDelegate
     }
     */
     
-    func InitScrollView()
-    {
-        scrollView.pagingEnabled = true
-        scrollView.scrollEnabled = true
-        scrollView.delegate = self
-        scrollView.backgroundColor = UIColor.clearColor()
-        scrollView.alpha = 0.5
-        
-        scrollView.contentSize = CGSizeMake(self.view.frame.size.width * CGFloat(pageCount) , self.view.frame.size.height)
-
-        //MARK: debug switch
-        let debug : Bool = false
-        
-        if debug == true
-        {
-            for i in 0...pageCount
-            {
-                let view : UIView = UIView(frame: CGRectMake( CGFloat(i) * self.view.frame.size.width, 0, self.view.frame.size.width, self.view.frame.size.height))
-                
-                view.backgroundColor = i % 2 == 0 ? UIColor(red:0.36, green:0.55, blue:0.72, alpha:0.5) : UIColor(red:0, green:0, blue:0, alpha:0.3)
-                
-                scrollView.addSubview(view)
-            }
-        }
-        
-        scrollView.setContentOffset(CGPointMake(self.view.frame.size.width * CGFloat(defaultPageIndex), 0), animated: true)
-    }
     
     //MARK: 初始化下方scrollView
     var recordViewController : GrownBottomLogViewController!
@@ -135,19 +137,4 @@ class GrownScrollViewController: UIViewController , UIScrollViewDelegate
         BottomScrollView.setContentOffset( CGPointMake(self.view.frame.size.width, 0.0) , animated: false)
     }
     
-    //MARK: scrollView delegate
-    func scrollViewDidScroll(scrollView: UIScrollView) {
-        
-        let scrollPercent : CGFloat = scrollView.contentOffset.x / scrollView.contentSize.width
-        
-        //let pageIndex : Int = Int(scrollView.contentOffset.x / self.view.frame.size.width)
-
-        var angle : Float = 0.0
-        
-        angle =  Float( scrollView.contentOffset.x / self.view.frame.size.width * (360.0 / 12.0) )
-        
-        grownView?.rotate( angle )
-        
-    }
-
 }

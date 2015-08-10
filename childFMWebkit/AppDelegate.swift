@@ -31,8 +31,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
     
     var window: UIWindow?
     
-    var webServer : GCDWebServer!
-    
     var model : ModelManager!
     
     var player : PlayerManager!
@@ -77,40 +75,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
     {
-        
-        let baseURL: NSURL = NSURL(fileURLWithPath: NSBundle.mainBundle().bundlePath)
-        
-        //webServer -----------------------
-
-        //获取Documents目录路径
-        let paths : NSArray = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
-        let documentsDirectory : NSString = paths.objectAtIndex(0) as! NSString
-        let documentWebPath : String = documentsDirectory.stringByAppendingPathComponent("web")
-        
-        let fileManager : NSFileManager = NSFileManager.defaultManager()
-        var isDir = ObjCBool(true)
-        if !fileManager.fileExistsAtPath( documentWebPath, isDirectory: &isDir)
-        {
-            do {
-                //若document目录下存在web目录，创建
-                try fileManager.createDirectoryAtPath(documentWebPath, withIntermediateDirectories: false, attributes: nil)
-            } catch _ {
-            }
-        }
-        
-        let srcWebUrl : NSURL! = baseURL.URLByAppendingPathComponent("web")
-        let srcWebPath : String = NSBundle.mainBundle().bundlePath.stringByAppendingPathComponent("web")
-        
-        print(srcWebPath)
-        
-        webServer = GCDWebServer()
-        
-        webServer.addGETHandlerForBasePath("/", directoryPath: srcWebPath, indexFilename: nil, cacheAge: 3600, allowRangeRequests: true)
-        webServer.startWithPort(8080, bonjourName: "childFM")
-        
-        NSNotificationCenter.defaultCenter().postNotificationName("webServerStarted", object: nil)
-        
-        sleep(1)
         
         //init player
         let playerSource : NSURL = NSBundle.mainBundle().resourceURL!.URLByAppendingPathComponent("media/\(PlayerResources[0])")
