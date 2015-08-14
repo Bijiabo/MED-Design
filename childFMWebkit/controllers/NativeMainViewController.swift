@@ -77,7 +77,7 @@ class NativeMainViewController: UIViewController , NavigationProtocol , GrownVie
         self.scrollView.addSubview( CartoonDetailViewController.view )
         
         //加载漫画列表头部标题
-        let CartoonNavigationBar : UINavigationBar = UINavigationBar(frame: CGRectMake(0, 0, self.view.frame.size.width, 44.0))
+        //let CartoonNavigationBar : UINavigationBar = UINavigationBar(frame: CGRectMake(0, 0, self.view.frame.size.width, 44.0))
         //        CartoonNavigationBar.alpha = 0.5
         //        var CartoonNavigationBarTitle : UIBarItem = UIBarItem()
         //        CartoonNavigationBarTitle.title = "不要哑巴英语"
@@ -127,13 +127,13 @@ class NativeMainViewController: UIViewController , NavigationProtocol , GrownVie
                 playUIvc.navigationDelegate = self
             }
             
+            /*
             if let _ : PlayUI = playUIVC as? PlayUI
             {
-                var playUIvc : PlayUI = playUIVC as! PlayUI
-                
+                var playUIvc : PlayUI = playUIVC as! PlayUI  
                 //playUIvc.operation = self.operation
             }
-            
+            */
             
             self.addChildViewController( playUIVC )
             

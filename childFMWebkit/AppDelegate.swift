@@ -332,7 +332,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
         //所有数据
         var data : [Dictionary<String,AnyObject>] = [Dictionary<String,AnyObject>]()
         
-        for (key, subJSON): (String, JSON) in jsonData
+        for (_, subJSON): (String, JSON) in jsonData
         {
             var item : Dictionary<String,AnyObject> = Dictionary<String,AnyObject>()
             
@@ -349,7 +349,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
                     //继续遍历:对应场景的音乐
                     var scenelist : [Dictionary<String,AnyObject>] = [Dictionary<String,AnyObject>]()
                     
-                    for (key_2, subJSON_2): (String, JSON) in subJSON_1
+                    for (_, subJSON_2): (String, JSON) in subJSON_1
                     {
                         scenelist.append(subJSON_2.dictionaryObject!)
                     }
@@ -649,8 +649,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
     
     func PlayUIVC_Pause (notification : NSNotification)
     {
-        let ActiveIndex : Int = notification.object as! Int
-        
+        //let ActiveIndex : Int = notification.object as! Int
         player.pause()
     }
     
@@ -666,14 +665,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate , ModuleLader , PlayerOper
     
     func updateiBeaconListData (data : [Dictionary<String , String>])
     {
+        /*
         for item in data
         {
-            let area : String = item["area"]!
-            let rssi : String = item["RSSI"]!
-            
-            //NSLog("------")
+            //let area : String = item["area"]!
+            //let rssi : String = item["RSSI"]!
             //println("\(area) \(rssi)")
         }
+        */
         
         if data[0]["area"] == AreaCache {return}
         
@@ -728,7 +727,6 @@ extension AppDelegate: CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], inRegion region: CLBeaconRegion) {
         //NSLog("didRangeBeacons");
-        var message:String = ""
         
         if(beacons.count > 0) {
             
@@ -772,15 +770,12 @@ extension AppDelegate: CLLocationManagerDelegate {
                 switch beacon.proximity {
                 case CLProximity.Far:
                     dataItem["distance"] = "Far"
-                    message = "You are far away from the beacon"
                     
                 case CLProximity.Near:
                     dataItem["distance"] = "Near"
-                    message = "You are near the beacon"
                     
                 case CLProximity.Immediate:
                     dataItem["distance"] = "Immediate"
-                    message = "You are in the immediate proximity of the beacon"
                     
                 case CLProximity.Unknown:
                     return
@@ -796,8 +791,6 @@ extension AppDelegate: CLLocationManagerDelegate {
             
             
         } else {
-            message = "No beacons are nearby"
-            
             print("No beacons are nearby")
         }
         

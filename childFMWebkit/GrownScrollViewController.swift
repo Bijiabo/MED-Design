@@ -68,8 +68,6 @@ class GrownScrollViewController: UIViewController
         BottomScrollView.showsHorizontalScrollIndicator = false
         BottomScrollView.showsVerticalScrollIndicator = false
         
-        BottomScrollView.backgroundColor = UIColor(red:0.65, green:0.93, blue:0.52, alpha:0.4)
-        
         for i in 0..<3
         {
             let vc : UIView = UIView(frame: CGRectMake(self.view.frame.size.width * CGFloat(i), 0, self.view.frame.size.width, height))

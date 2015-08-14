@@ -30,7 +30,6 @@ class NotificationCenterViewController: UIViewController {
     func InitClassView ()
     {
         let ViewWidth : CGFloat = self.view.frame.size.width
-        let ViewHeight : CGFloat = self.view.frame.size.height
         
         let Label0 : UILabel = UILabel(frame: CGRectMake(0, 40.0, ViewWidth / 4.0, 40.0))
         Label0.textAlignment = NSTextAlignment.Center

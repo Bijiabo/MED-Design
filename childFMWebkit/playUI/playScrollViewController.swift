@@ -121,25 +121,17 @@ class playScrollViewController: UIViewController , UIScrollViewDelegate , Module
         //在基础URL上新增URL路径
         let imageDirectoryURL : NSURL = bundleURL.URLByAppendingPathComponent( imageDirectoryName )
         
-        
-        var error : NSError?
         //获取文件目录
         let fileList: [AnyObject]?
         do {
             fileList = try NSFileManager.defaultManager().contentsOfDirectoryAtURL(imageDirectoryURL, includingPropertiesForKeys: nil, options: [])
-        } catch var error1 as NSError {
-            error = error1
-            fileList = nil
-        }
-        
-        if error == nil{
             
             pages = fileList!.count / 3
+        } catch let error as NSError {
+            print(error)
             
-        }else{
-            print("setPageNum error!!!")
+            fileList = nil
         }
-        
         
     }
     //给定一个图片的格式,返回匹配设备大小

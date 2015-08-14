@@ -37,11 +37,6 @@ class UGC_3rdOnlineResourceViewController: UIViewController,WKNavigationDelegate
         //webView.scrollView.bounces = false
         webView.scrollView.delegate = self
         
-        let baseURL: NSURL = NSURL(fileURLWithPath: NSBundle.mainBundle().bundlePath)
-        var localUrl : NSURL! = baseURL.URLByAppendingPathComponent("web/main.html")//NSURL(string:"/web/main.html")
-        //println(url)
-        var localReq = NSURLRequest(URL:localUrl)
-        
         let url : NSURL! = NSURL(string:  "http://127.0.0.1:8080/UGC3rdOnlineResource.html")
         let req : NSURLRequest = NSURLRequest(URL: url)
         

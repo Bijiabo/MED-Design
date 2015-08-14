@@ -56,11 +56,6 @@ class playViewController: UIViewController , DemoModule , PlayUI
         
         //video size is 640x360
         
-        let videoHeight : CGFloat = PlayerViewController.view.frame.size.height
-        let videoWidth : CGFloat = videoHeight / 9 * 16 * 2
-        
-        //PlayerViewController.view.layer.frame = CGRectMake(0 - (videoWidth - self.view.frame.size.width) / 2 + 100 , 0 , videoWidth, videoHeight)
-        
         PlayerViewController.player!.play()
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("avplayerDidFinishPlay"), name: AVPlayerItemDidPlayToEndTimeNotification, object: nil)

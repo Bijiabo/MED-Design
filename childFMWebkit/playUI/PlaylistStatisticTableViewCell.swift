@@ -82,7 +82,7 @@ class PlaylistStatisticTableViewCell: UITableViewCell , UIScrollViewDelegate
     
     func AddBarChartToView(view : UIView)
     {
-        let chartFrame : CGRect = CGRectMake(0, 0, view.frame.size.width, view.frame.size.height - 20.0)
+        //let chartFrame : CGRect = CGRectMake(0, 0, view.frame.size.width, view.frame.size.height - 20.0)
         
         /*
         let barChart : PNBarChart = PNBarChart(frame: chartFrame )
@@ -138,7 +138,7 @@ class PlaylistStatisticTableViewCell: UITableViewCell , UIScrollViewDelegate
     
     func AddPineChartToView(view : UIView)
     {
-        let chartFrame : CGRect = CGRectMake(10.0, 10.0, view.frame.size.width - 20.0, view.frame.size.height - 40.0)
+        //let chartFrame : CGRect = CGRectMake(10.0, 10.0, view.frame.size.width - 20.0, view.frame.size.height - 40.0)
         
     }
 

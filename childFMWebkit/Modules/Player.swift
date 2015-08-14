@@ -91,14 +91,13 @@ class Player : NSObject ,PlayerManager, AVAudioPlayerDelegate
         
         if NSFileManager.defaultManager().fileExistsAtPath(source.relativePath!, isDirectory: &isNotDir)
         {
-            var error : NSError?
             
             let playerData : NSData = NSData(contentsOfURL: source)!
             
             do {
                 _player = try AVAudioPlayer(data: playerData)
-            } catch var error1 as NSError {
-                error = error1
+            } catch let error as NSError {
+                print(error)
                 _player = nil
             }
                 //AVAudioPlayer(contentsOfURL: source, error: &error)

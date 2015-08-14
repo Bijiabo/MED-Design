@@ -42,7 +42,7 @@ class mvpViewController: UIViewController ,WKNavigationDelegate {
       requestUrl = NSURL(string:  "http://10.0.0.206/DDT/html/playList.html")
     }
     
-    var localReq = NSURLRequest(URL:requestUrl)
+    let localReq = NSURLRequest(URL:requestUrl)
     
     webView?.loadRequest(localReq)
     
@@ -70,7 +70,7 @@ class mvpViewController: UIViewController ,WKNavigationDelegate {
     //json
     let paths : NSArray = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
     let documentsDirectory : NSString = paths.objectAtIndex(0) as! NSString
-    var dataPath : NSURL = NSURL(fileURLWithPath: documentsDirectory.stringByAppendingPathComponent("web/data/playlist.json"))
+    let dataPath : NSURL = NSURL(fileURLWithPath: documentsDirectory.stringByAppendingPathComponent("web/data/playlist.json"))
     /*
     if dev
     {
@@ -79,9 +79,9 @@ class mvpViewController: UIViewController ,WKNavigationDelegate {
     }
     */
     
-    var playlistNSData : NSData = NSData(contentsOfURL: dataPath)!
+    let playlistNSData : NSData = NSData(contentsOfURL: dataPath)!
     
-    var playlistJSONData : JSON = JSON(data: playlistNSData, options: NSJSONReadingOptions.MutableContainers, error: nil)
+    let playlistJSONData : JSON = JSON(data: playlistNSData, options: NSJSONReadingOptions.MutableContainers, error: nil)
     
 //    appDelegate.player.playList =  playlistJSONData
 //    appDelegate.player.setPlayerResourceList(mode: "normal")
@@ -128,7 +128,7 @@ class mvpNotificationScriptMessageHandler: NSObject, WKScriptMessageHandler
       case "changeMode":
         print("changeMode...")
         
-        if let viewChangeMode = message.body["mode"] as? String
+        if let _ = message.body["mode"] as? String
         {
 //          appDelegate.player.setPlayerResourceList(mode : viewChangeMode)
           

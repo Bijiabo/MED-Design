@@ -64,10 +64,6 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
         scrollBeginY = webView.scrollView.contentOffset.y
     }
     
-    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-        let offsetY : CGFloat = scrollView.contentOffset.y
-    }
-    
     func webView(webView: WKWebView, didFinishNavigation navigation: WKNavigation!) {
         //通知页面已加载完成，执行js->swift数据等。
         webView.evaluateJavaScript("didFinishNavigation()", completionHandler: nil)
@@ -103,7 +99,7 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
     {
         let vc : UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier(storyboardIdentifier) as UIViewController
 
-        if let Vc : DemoModule = vc as? DemoModule
+        if let _ : DemoModule = vc as? DemoModule
         {
             var VC : DemoModule = vc as! DemoModule
             
@@ -125,7 +121,7 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
         self.webView.scrollView.addSubview( CartoonDetailViewController.view )
         
         //加载漫画列表头部标题
-        var CartoonNavigationBar : UINavigationBar = UINavigationBar(frame: CGRectMake(0, 0, self.view.frame.size.width, 44.0))
+        //var CartoonNavigationBar : UINavigationBar = UINavigationBar(frame: CGRectMake(0, 0, self.view.frame.size.width, 44.0))
 //        CartoonNavigationBar.alpha = 0.5
 //        var CartoonNavigationBarTitle : UIBarItem = UIBarItem()
 //        CartoonNavigationBarTitle.title = "不要哑巴英语"
@@ -169,20 +165,12 @@ class mainViewController: UIViewController ,WKNavigationDelegate, UIScrollViewDe
             
             playUIVC.view.frame = CGRectMake(0, CGFloat(pageHeightArray[2])  ,  self.view.frame.size.width , self.view.frame.size.height)
             
-            if let playVC : DemoModule = playUIVC as? DemoModule
+            if let _ : DemoModule = playUIVC as? DemoModule
             {
                 var playUIvc : DemoModule = playUIVC as! DemoModule
                 
                 playUIvc.navigationDelegate = self
             }
-            
-            if let playVC : PlayUI = playUIVC as? PlayUI
-            {
-                var playUIvc : PlayUI = playUIVC as! PlayUI
-                
-                //playUIvc.operation = self.operation
-            }
-            
             
             self.addChildViewController( playUIVC )
             
