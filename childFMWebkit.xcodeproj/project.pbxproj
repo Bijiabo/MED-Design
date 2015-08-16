@@ -20,6 +20,25 @@
 		A15CD5E31ACE496B0033AB57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15CD5E21ACE496B0033AB57 /* Images.xcassets */; };
 		A15CD5E61ACE496B0033AB57 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A15CD5E41ACE496B0033AB57 /* LaunchScreen.xib */; };
 		A15CD5F21ACE496B0033AB57 /* childFMWebkitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15CD5F11ACE496B0033AB57 /* childFMWebkitTests.swift */; };
+		A179F8441B80795800B82695 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179F8431B80795800B82695 /* AppDelegate.swift */; };
+		A179F8491B80795800B82695 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A179F8471B80795800B82695 /* Main.storyboard */; };
+		A179F84B1B80795800B82695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A179F84A1B80795800B82695 /* Assets.xcassets */; };
+		A179F84E1B80795800B82695 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A179F84C1B80795800B82695 /* LaunchScreen.storyboard */; };
+		A179F8541B807B0300B82695 /* CartoonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179F8531B807B0300B82695 /* CartoonDetailViewController.swift */; };
+		A179F8561B807B9A00B82695 /* FullImageScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179F8551B807B9A00B82695 /* FullImageScrollViewController.swift */; };
+		A179F8571B807B9A00B82695 /* FullImageScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179F8551B807B9A00B82695 /* FullImageScrollViewController.swift */; };
+		A179F8581B807B9A00B82695 /* FullImageScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179F8551B807B9A00B82695 /* FullImageScrollViewController.swift */; };
+		A179F8591B80892600B82695 /* cartoonImage in Resources */ = {isa = PBXBuildFile; fileRef = A1B598941B53BA6500257DDB /* cartoonImage */; };
+		A179F8611B80907500B82695 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179F8601B80907500B82695 /* AppDelegate.swift */; };
+		A179F8631B80907500B82695 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179F8621B80907500B82695 /* ViewController.swift */; };
+		A179F8661B80907500B82695 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A179F8641B80907500B82695 /* Main.storyboard */; };
+		A179F8681B80907500B82695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A179F8671B80907500B82695 /* Assets.xcassets */; };
+		A179F86B1B80907500B82695 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A179F8691B80907500B82695 /* LaunchScreen.storyboard */; };
+		A179F8771B80908B00B82695 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179F8761B80908B00B82695 /* AppDelegate.swift */; };
+		A179F8791B80908B00B82695 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179F8781B80908B00B82695 /* ViewController.swift */; };
+		A179F87C1B80908B00B82695 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A179F87A1B80908B00B82695 /* Main.storyboard */; };
+		A179F87E1B80908B00B82695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A179F87D1B80908B00B82695 /* Assets.xcassets */; };
+		A179F8811B80908B00B82695 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A179F87F1B80908B00B82695 /* LaunchScreen.storyboard */; };
 		A1A510EE1AD4513E00AD37B4 /* mvpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A510ED1AD4513E00AD37B4 /* mvpViewController.swift */; };
 		A1A510F61AD4D5DB00AD37B4 /* json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A510F51AD4D5DB00AD37B4 /* json.swift */; };
 		A1A510F71AD4D5DB00AD37B4 /* json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A510F51AD4D5DB00AD37B4 /* json.swift */; };
@@ -121,6 +140,28 @@
 		A15CD5F11ACE496B0033AB57 /* childFMWebkitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = childFMWebkitTests.swift; sourceTree = "<group>"; };
 		A15CD5FF1ACEC6650033AB57 /* childFMWebkit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "childFMWebkit-Bridging-Header.h"; sourceTree = "<group>"; };
 		A15CD6001ACEC6660033AB57 /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		A179F8411B80795800B82695 /* MotherEncyclopedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotherEncyclopedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A179F8431B80795800B82695 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A179F8481B80795800B82695 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A179F84A1B80795800B82695 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A179F84D1B80795800B82695 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A179F84F1B80795800B82695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A179F8531B807B0300B82695 /* CartoonDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartoonDetailViewController.swift; sourceTree = "<group>"; };
+		A179F8551B807B9A00B82695 /* FullImageScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FullImageScrollViewController.swift; path = lib/FullImageScrollViewController.swift; sourceTree = SOURCE_ROOT; };
+		A179F85E1B80907500B82695 /* GrowUpDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrowUpDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A179F8601B80907500B82695 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A179F8621B80907500B82695 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A179F8651B80907500B82695 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A179F8671B80907500B82695 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A179F86A1B80907500B82695 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A179F86C1B80907500B82695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A179F8741B80908B00B82695 /* MagicEar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicEar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A179F8761B80908B00B82695 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A179F8781B80908B00B82695 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A179F87B1B80908B00B82695 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A179F87D1B80908B00B82695 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A179F8801B80908B00B82695 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A179F8821B80908B00B82695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1A510ED1AD4513E00AD37B4 /* mvpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = mvpViewController.swift; path = controllers/mvpViewController.swift; sourceTree = "<group>"; };
 		A1A510F51AD4D5DB00AD37B4 /* json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = json.swift; path = public/json.swift; sourceTree = "<group>"; };
 		A1A511221AD5149E00AD37B4 /* statusStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = statusStorage.swift; path = public/statusStorage.swift; sourceTree = "<group>"; };
@@ -187,6 +228,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A179F83E1B80795800B82695 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A179F85B1B80907500B82695 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A179F8711B80908B00B82695 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -216,6 +278,9 @@
 				A1A510F41AD4D5C100AD37B4 /* public */,
 				A15CD5D81ACE496B0033AB57 /* childFMWebkit */,
 				A15CD5EE1ACE496B0033AB57 /* childFMWebkitTests */,
+				A179F8421B80795800B82695 /* MotherEncyclopedia */,
+				A179F85F1B80907500B82695 /* GrowUpDaily */,
+				A179F8751B80908B00B82695 /* MagicEar */,
 				A15CD5D71ACE496B0033AB57 /* Products */,
 				D37B5825AF5CE62E6C8213B5 /* Pods */,
 				D82379EE91EAEAE91CBCBE39 /* Frameworks */,
@@ -227,6 +292,9 @@
 			children = (
 				A15CD5D61ACE496B0033AB57 /* childFMWebkit.app */,
 				A15CD5EB1ACE496B0033AB57 /* childFMWebkitTests.xctest */,
+				A179F8411B80795800B82695 /* MotherEncyclopedia.app */,
+				A179F85E1B80907500B82695 /* GrowUpDaily.app */,
+				A179F8741B80908B00B82695 /* MagicEar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -272,6 +340,46 @@
 				A15CD5F01ACE496B0033AB57 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A179F8421B80795800B82695 /* MotherEncyclopedia */ = {
+			isa = PBXGroup;
+			children = (
+				A179F8431B80795800B82695 /* AppDelegate.swift */,
+				A179F8471B80795800B82695 /* Main.storyboard */,
+				A179F84A1B80795800B82695 /* Assets.xcassets */,
+				A179F84C1B80795800B82695 /* LaunchScreen.storyboard */,
+				A179F84F1B80795800B82695 /* Info.plist */,
+				A179F8531B807B0300B82695 /* CartoonDetailViewController.swift */,
+				A179F8551B807B9A00B82695 /* FullImageScrollViewController.swift */,
+			);
+			path = MotherEncyclopedia;
+			sourceTree = "<group>";
+		};
+		A179F85F1B80907500B82695 /* GrowUpDaily */ = {
+			isa = PBXGroup;
+			children = (
+				A179F8601B80907500B82695 /* AppDelegate.swift */,
+				A179F8621B80907500B82695 /* ViewController.swift */,
+				A179F8641B80907500B82695 /* Main.storyboard */,
+				A179F8671B80907500B82695 /* Assets.xcassets */,
+				A179F8691B80907500B82695 /* LaunchScreen.storyboard */,
+				A179F86C1B80907500B82695 /* Info.plist */,
+			);
+			path = GrowUpDaily;
+			sourceTree = "<group>";
+		};
+		A179F8751B80908B00B82695 /* MagicEar */ = {
+			isa = PBXGroup;
+			children = (
+				A179F8761B80908B00B82695 /* AppDelegate.swift */,
+				A179F8781B80908B00B82695 /* ViewController.swift */,
+				A179F87A1B80908B00B82695 /* Main.storyboard */,
+				A179F87D1B80908B00B82695 /* Assets.xcassets */,
+				A179F87F1B80908B00B82695 /* LaunchScreen.storyboard */,
+				A179F8821B80908B00B82695 /* Info.plist */,
+			);
+			path = MagicEar;
 			sourceTree = "<group>";
 		};
 		A1A510EC1AD4511300AD37B4 /* Controllers */ = {
@@ -461,6 +569,57 @@
 			productReference = A15CD5EB1ACE496B0033AB57 /* childFMWebkitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A179F8401B80795800B82695 /* MotherEncyclopedia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A179F8521B80795800B82695 /* Build configuration list for PBXNativeTarget "MotherEncyclopedia" */;
+			buildPhases = (
+				A179F83D1B80795800B82695 /* Sources */,
+				A179F83E1B80795800B82695 /* Frameworks */,
+				A179F83F1B80795800B82695 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MotherEncyclopedia;
+			productName = MotherEncyclopedia;
+			productReference = A179F8411B80795800B82695 /* MotherEncyclopedia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A179F85D1B80907500B82695 /* GrowUpDaily */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A179F86D1B80907500B82695 /* Build configuration list for PBXNativeTarget "GrowUpDaily" */;
+			buildPhases = (
+				A179F85A1B80907500B82695 /* Sources */,
+				A179F85B1B80907500B82695 /* Frameworks */,
+				A179F85C1B80907500B82695 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrowUpDaily;
+			productName = GrowUpDaily;
+			productReference = A179F85E1B80907500B82695 /* GrowUpDaily.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A179F8731B80908B00B82695 /* MagicEar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A179F8831B80908B00B82695 /* Build configuration list for PBXNativeTarget "MagicEar" */;
+			buildPhases = (
+				A179F8701B80908B00B82695 /* Sources */,
+				A179F8711B80908B00B82695 /* Frameworks */,
+				A179F8721B80908B00B82695 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagicEar;
+			productName = MagicEar;
+			productReference = A179F8741B80908B00B82695 /* MagicEar.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -484,6 +643,15 @@
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = A15CD5D51ACE496B0033AB57;
 					};
+					A179F8401B80795800B82695 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					A179F85D1B80907500B82695 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					A179F8731B80908B00B82695 = {
+						CreatedOnToolsVersion = 7.0;
+					};
 				};
 			};
 			buildConfigurationList = A15CD5D11ACE496B0033AB57 /* Build configuration list for PBXProject "childFMWebkit" */;
@@ -501,6 +669,9 @@
 			targets = (
 				A15CD5D51ACE496B0033AB57 /* childFMWebkit */,
 				A15CD5EA1ACE496B0033AB57 /* childFMWebkitTests */,
+				A179F8401B80795800B82695 /* MotherEncyclopedia */,
+				A179F85D1B80907500B82695 /* GrowUpDaily */,
+				A179F8731B80908B00B82695 /* MagicEar */,
 			);
 		};
 /* End PBXProject section */
@@ -527,6 +698,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A179F83F1B80795800B82695 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A179F8591B80892600B82695 /* cartoonImage in Resources */,
+				A179F84E1B80795800B82695 /* LaunchScreen.storyboard in Resources */,
+				A179F84B1B80795800B82695 /* Assets.xcassets in Resources */,
+				A179F8491B80795800B82695 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A179F85C1B80907500B82695 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A179F86B1B80907500B82695 /* LaunchScreen.storyboard in Resources */,
+				A179F8681B80907500B82695 /* Assets.xcassets in Resources */,
+				A179F8661B80907500B82695 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A179F8721B80908B00B82695 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A179F8811B80908B00B82695 /* LaunchScreen.storyboard in Resources */,
+				A179F87E1B80908B00B82695 /* Assets.xcassets in Resources */,
+				A179F87C1B80908B00B82695 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -534,6 +736,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A179F8561B807B9A00B82695 /* FullImageScrollViewController.swift in Sources */,
 				A1BA8B1B1B54BE2100F5A57F /* IJReachability.swift in Sources */,
 				A1BA8B191B54BDCB00F5A57F /* Reachability.swift in Sources */,
 				A1B598D91B543C9200257DDB /* NowPlayingInfoCenter.swift in Sources */,
@@ -589,11 +792,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A179F8571B807B9A00B82695 /* FullImageScrollViewController.swift in Sources */,
 				A1A511241AD5149E00AD37B4 /* statusStorage.swift in Sources */,
 				A15CD5F21ACE496B0033AB57 /* childFMWebkitTests.swift in Sources */,
 				A1A510F71AD4D5DB00AD37B4 /* json.swift in Sources */,
 				A12E9A8B1AD69410009B2D60 /* SwiftyJSON.swift in Sources */,
 				A1AC1A441ADA325400831D44 /* DPlayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A179F83D1B80795800B82695 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A179F8581B807B9A00B82695 /* FullImageScrollViewController.swift in Sources */,
+				A179F8541B807B0300B82695 /* CartoonDetailViewController.swift in Sources */,
+				A179F8441B80795800B82695 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A179F85A1B80907500B82695 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A179F8631B80907500B82695 /* ViewController.swift in Sources */,
+				A179F8611B80907500B82695 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A179F8701B80908B00B82695 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A179F8791B80908B00B82695 /* ViewController.swift in Sources */,
+				A179F8771B80908B00B82695 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,6 +854,54 @@
 				A15CD5E51ACE496B0033AB57 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		A179F8471B80795800B82695 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A179F8481B80795800B82695 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A179F84C1B80795800B82695 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A179F84D1B80795800B82695 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A179F8641B80907500B82695 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A179F8651B80907500B82695 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A179F8691B80907500B82695 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A179F86A1B80907500B82695 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A179F87A1B80908B00B82695 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A179F87B1B80908B00B82695 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A179F87F1B80908B00B82695 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A179F8801B80908B00B82695 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -799,6 +1079,90 @@
 			};
 			name = Release;
 		};
+		A179F8501B80795800B82695 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = MotherEncyclopedia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JYLabs.MotherEncyclopedia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A179F8511B80795800B82695 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = MotherEncyclopedia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JYLabs.MotherEncyclopedia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A179F86E1B80907500B82695 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = GrowUpDaily/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JYLabs.GrowUpDaily;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A179F86F1B80907500B82695 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = GrowUpDaily/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JYLabs.GrowUpDaily;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A179F8841B80908B00B82695 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = MagicEar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JYLabs.MagicEar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A179F8851B80908B00B82695 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = MagicEar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JYLabs.MagicEar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -828,6 +1192,30 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		A179F8521B80795800B82695 /* Build configuration list for PBXNativeTarget "MotherEncyclopedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A179F8501B80795800B82695 /* Debug */,
+				A179F8511B80795800B82695 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A179F86D1B80907500B82695 /* Build configuration list for PBXNativeTarget "GrowUpDaily" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A179F86E1B80907500B82695 /* Debug */,
+				A179F86F1B80907500B82695 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A179F8831B80908B00B82695 /* Build configuration list for PBXNativeTarget "MagicEar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A179F8841B80908B00B82695 /* Debug */,
+				A179F8851B80908B00B82695 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

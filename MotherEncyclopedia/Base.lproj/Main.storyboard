@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JFn-7C-iG6">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+    </dependencies>
+    <scenes>
+        <!--Cartoon Detail View Controller-->
+        <scene sceneID="8j3-Fm-SHG">
+            <objects>
+                <viewController id="JFn-7C-iG6" customClass="CartoonDetailViewController" customModule="MotherEncyclopedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jsg-z3-VAy"/>
+                        <viewControllerLayoutGuide type="bottom" id="T9s-w8-NbX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sc9-Uj-5R6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q8b-W7-ZHv">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="q8b-W7-ZHv" firstAttribute="leading" secondItem="Sc9-Uj-5R6" secondAttribute="leading" id="Qcy-vY-wyM"/>
+                            <constraint firstItem="q8b-W7-ZHv" firstAttribute="top" secondItem="Sc9-Uj-5R6" secondAttribute="top" id="VpO-94-Qce"/>
+                            <constraint firstAttribute="trailing" secondItem="q8b-W7-ZHv" secondAttribute="trailing" id="Wsz-Pb-6NK"/>
+                            <constraint firstItem="T9s-w8-NbX" firstAttribute="top" secondItem="q8b-W7-ZHv" secondAttribute="bottom" id="upw-ea-jDp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="q8b-W7-ZHv" id="ldz-Qq-XvI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MjE-lT-Q9d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="352" y="219"/>
+        </scene>
+    </scenes>
+</document>
