@@ -15,7 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        window?.rootViewController? = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("grownScrollView") 
+        
         return true
     }
 
