@@ -12,7 +12,17 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    var player : PlayerManager!
+    
+    //演示用播放数据
+    let PlayerResources : [String] = [
+        "YouAreMySunShine.m4a", //玩耍
+        "irmujeho.4va.mp3", //午后
+        "rmei52zo.sjq.mp3", //睡前
+        "33nerci4.fz0.mp3" //起床
+    ]
+    var playing : Bool = false
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
@@ -21,6 +31,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.rootViewController? = navigationController
         
+        initPlayer()
+
         return true
     }
 

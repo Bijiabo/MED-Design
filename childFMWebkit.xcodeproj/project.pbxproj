@@ -49,6 +49,8 @@
 		A10F76FA1B83864400BB9A24 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B598CA1B543BC300257DDB /* Model.swift */; };
 		A10F76FB1B83866700BB9A24 /* StatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B598CD1B543BC300257DDB /* StatusManager.swift */; };
 		A10F76FC1B83868A00BB9A24 /* NavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BA8B1F1B54F63500F5A57F /* NavigationProtocol.swift */; };
+		A10F76FE1B83885C00BB9A24 /* AppPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F76FD1B83885C00BB9A24 /* AppPlayer.swift */; };
+		A10F76FF1B83885C00BB9A24 /* AppPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F76FD1B83885C00BB9A24 /* AppPlayer.swift */; };
 		A110706D1B5799BD001E3B84 /* playViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A110706C1B5799BD001E3B84 /* playViewController.swift */; };
 		A110706F1B579AEC001E3B84 /* video in Resources */ = {isa = PBXBuildFile; fileRef = A110706E1B579AEC001E3B84 /* video */; };
 		A12E9A8A1AD69410009B2D60 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12E9A891AD69410009B2D60 /* SwiftyJSON.swift */; };
@@ -65,7 +67,6 @@
 		A15CD5E61ACE496B0033AB57 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A15CD5E41ACE496B0033AB57 /* LaunchScreen.xib */; };
 		A15CD5F21ACE496B0033AB57 /* childFMWebkitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15CD5F11ACE496B0033AB57 /* childFMWebkitTests.swift */; };
 		A179F8441B80795800B82695 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179F8431B80795800B82695 /* AppDelegate.swift */; };
-		A179F84B1B80795800B82695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A179F84A1B80795800B82695 /* Assets.xcassets */; };
 		A179F84E1B80795800B82695 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A179F84C1B80795800B82695 /* LaunchScreen.storyboard */; };
 		A179F8541B807B0300B82695 /* CartoonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179F8531B807B0300B82695 /* CartoonDetailViewController.swift */; };
 		A179F8561B807B9A00B82695 /* FullImageScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179F8551B807B9A00B82695 /* FullImageScrollViewController.swift */; };
@@ -74,11 +75,9 @@
 		A179F8591B80892600B82695 /* cartoonImage in Resources */ = {isa = PBXBuildFile; fileRef = A1B598941B53BA6500257DDB /* cartoonImage */; };
 		A179F8611B80907500B82695 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179F8601B80907500B82695 /* AppDelegate.swift */; };
 		A179F8631B80907500B82695 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179F8621B80907500B82695 /* ViewController.swift */; };
-		A179F8681B80907500B82695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A179F8671B80907500B82695 /* Assets.xcassets */; };
 		A179F86B1B80907500B82695 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A179F8691B80907500B82695 /* LaunchScreen.storyboard */; };
 		A179F8771B80908B00B82695 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179F8761B80908B00B82695 /* AppDelegate.swift */; };
 		A179F8791B80908B00B82695 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179F8781B80908B00B82695 /* ViewController.swift */; };
-		A179F87E1B80908B00B82695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A179F87D1B80908B00B82695 /* Assets.xcassets */; };
 		A179F8811B80908B00B82695 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A179F87F1B80908B00B82695 /* LaunchScreen.storyboard */; };
 		A1A510EE1AD4513E00AD37B4 /* mvpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A510ED1AD4513E00AD37B4 /* mvpViewController.swift */; };
 		A1A510F61AD4D5DB00AD37B4 /* json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A510F51AD4D5DB00AD37B4 /* json.swift */; };
@@ -163,6 +162,7 @@
 
 /* Begin PBXFileReference section */
 		A10F76E81B83818C00BB9A24 /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		A10F76FD1B83885C00BB9A24 /* AppPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppPlayer.swift; sourceTree = "<group>"; };
 		A110706C1B5799BD001E3B84 /* playViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = playViewController.swift; path = playUI/playViewController.swift; sourceTree = "<group>"; };
 		A110706E1B579AEC001E3B84 /* video */ = {isa = PBXFileReference; lastKnownFileType = folder; path = video; sourceTree = "<group>"; };
 		A12E9A891AD69410009B2D60 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = public/SwiftyJSON.swift; sourceTree = "<group>"; };
@@ -298,6 +298,7 @@
 				A143897D1B78EBA60052D5AE /* RulingView.swift */,
 			);
 			name = growUpCorona;
+			path = ../childFMWebkit;
 			sourceTree = "<group>";
 		};
 		A15CD5CD1ACE496B0033AB57 = {
@@ -341,7 +342,6 @@
 		A15CD5D81ACE496B0033AB57 /* childFMWebkit */ = {
 			isa = PBXGroup;
 			children = (
-				A143897A1B78EB470052D5AE /* growUpCorona */,
 				A1B598881B52685800257DDB /* cell */,
 				A1B598831B5262A800257DDB /* Protocols */,
 				A1A510EC1AD4511300AD37B4 /* Controllers */,
@@ -384,6 +384,7 @@
 		A179F8421B80795800B82695 /* MotherEncyclopedia */ = {
 			isa = PBXGroup;
 			children = (
+				A1BA8B2F1B5547EF00F5A57F /* Cartoon */,
 				A179F8431B80795800B82695 /* AppDelegate.swift */,
 				A179F8471B80795800B82695 /* Main.storyboard */,
 				A179F84A1B80795800B82695 /* Assets.xcassets */,
@@ -398,6 +399,8 @@
 		A179F85F1B80907500B82695 /* GrowUpDaily */ = {
 			isa = PBXGroup;
 			children = (
+				A1D468831B5BD9B60097358D /* Grown */,
+				A143897A1B78EB470052D5AE /* growUpCorona */,
 				A179F8601B80907500B82695 /* AppDelegate.swift */,
 				A179F8621B80907500B82695 /* ViewController.swift */,
 				A179F8641B80907500B82695 /* Main.storyboard */,
@@ -411,12 +414,15 @@
 		A179F8751B80908B00B82695 /* MagicEar */ = {
 			isa = PBXGroup;
 			children = (
+				A1BA8B261B54FE9000F5A57F /* UGC */,
+				A1BA8B211B54F7A800F5A57F /* playUI */,
 				A179F8761B80908B00B82695 /* AppDelegate.swift */,
 				A179F8781B80908B00B82695 /* ViewController.swift */,
 				A179F87A1B80908B00B82695 /* Main.storyboard */,
 				A179F87D1B80908B00B82695 /* Assets.xcassets */,
 				A179F87F1B80908B00B82695 /* LaunchScreen.storyboard */,
 				A179F8821B80908B00B82695 /* Info.plist */,
+				A10F76FD1B83885C00BB9A24 /* AppPlayer.swift */,
 			);
 			path = MagicEar;
 			sourceTree = "<group>";
@@ -424,13 +430,9 @@
 		A1A510EC1AD4511300AD37B4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A1D468831B5BD9B60097358D /* Grown */,
-				A1BA8B261B54FE9000F5A57F /* UGC */,
-				A1BA8B211B54F7A800F5A57F /* playUI */,
 				A1BA8B2E1B5547E400F5A57F /* MVP */,
 				A15CD5DD1ACE496B0033AB57 /* mainViewController.swift */,
 				A1B598801B525E1100257DDB /* GlobalNavigationController.swift */,
-				A1BA8B2F1B5547EF00F5A57F /* Cartoon */,
 				A1BA8B2D1B55461B00F5A57F /* Notification */,
 				A1B77F3A1B5675A100CE2E73 /* ScrollViewController.swift */,
 				A13B67AC1B65367100EED237 /* NativeMainViewController.swift */,
@@ -485,6 +487,7 @@
 				A1D4689D1B5ED35F0097358D /* shopDetailStaticViewController.swift */,
 			);
 			name = playUI;
+			path = ../childFMWebkit;
 			sourceTree = "<group>";
 		};
 		A1BA8B261B54FE9000F5A57F /* UGC */ = {
@@ -495,6 +498,7 @@
 				A1B77F401B567DC200CE2E73 /* UGC_3rdOnlineResourceViewController.swift */,
 			);
 			name = UGC;
+			path = ../childFMWebkit;
 			sourceTree = "<group>";
 		};
 		A1BA8B2D1B55461B00F5A57F /* Notification */ = {
@@ -521,6 +525,7 @@
 				A1B598921B53B7B100257DDB /* cartoonDetailViewController.swift */,
 			);
 			name = Cartoon;
+			path = ../childFMWebkit;
 			sourceTree = "<group>";
 		};
 		A1D468831B5BD9B60097358D /* Grown */ = {
@@ -531,6 +536,7 @@
 				A1D468861B5BDA920097358D /* GrownProtocol.swift */,
 			);
 			name = Grown;
+			path = ../childFMWebkit;
 			sourceTree = "<group>";
 		};
 		A1D4688E1B5CE65C0097358D /* BottomModule */ = {
@@ -744,7 +750,6 @@
 				A10F76F21B83846C00BB9A24 /* Images.xcassets in Resources */,
 				A179F8591B80892600B82695 /* cartoonImage in Resources */,
 				A179F84E1B80795800B82695 /* LaunchScreen.storyboard in Resources */,
-				A179F84B1B80795800B82695 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -755,7 +760,6 @@
 				A14403A51B823D1500158C98 /* Images.xcassets in Resources */,
 				A14403A41B823D0600158C98 /* Main.storyboard in Resources */,
 				A179F86B1B80907500B82695 /* LaunchScreen.storyboard in Resources */,
-				A179F8681B80907500B82695 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -768,7 +772,6 @@
 				A10F76D81B837F4E00BB9A24 /* Main.storyboard in Resources */,
 				A10F76D71B837F4300BB9A24 /* Images.xcassets in Resources */,
 				A179F8811B80908B00B82695 /* LaunchScreen.storyboard in Resources */,
-				A179F87E1B80908B00B82695 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -781,6 +784,7 @@
 			files = (
 				A179F8561B807B9A00B82695 /* FullImageScrollViewController.swift in Sources */,
 				A1BA8B1B1B54BE2100F5A57F /* IJReachability.swift in Sources */,
+				A10F76FE1B83885C00BB9A24 /* AppPlayer.swift in Sources */,
 				A1BA8B191B54BDCB00F5A57F /* Reachability.swift in Sources */,
 				A1B598D91B543C9200257DDB /* NowPlayingInfoCenter.swift in Sources */,
 				A1D468961B5D1EF20097358D /* shopDetailContentViewController.swift in Sources */,
@@ -889,6 +893,7 @@
 				A10F76EC1B8381C700BB9A24 /* PlayerManager.swift in Sources */,
 				A10F76EB1B8381AF00BB9A24 /* Model.swift in Sources */,
 				A10F76E51B8380FC00BB9A24 /* StatusManager.swift in Sources */,
+				A10F76FF1B83885C00BB9A24 /* AppPlayer.swift in Sources */,
 				A10F76EA1B83818C00BB9A24 /* Module.swift in Sources */,
 				A10F76E11B8380E900BB9A24 /* Operation.swift in Sources */,
 				A10F76E21B8380E900BB9A24 /* Player.swift in Sources */,
