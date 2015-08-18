@@ -17,7 +17,10 @@ class playlistTableViewController: UITableViewController , DemoModule
         "All the Night",
         "The Nightingale",
         "Sweet Dream",
-        "Baby toys meet melody"
+        "Baby toys meet melody",
+        "New Found Glory",
+        "Nachtblut",
+        "Mono"
     ]
     
     override func viewDidLoad() {

@@ -654,7 +654,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="212.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JfR-QA-wFQ">
+                                        <scrollView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceHorizontal="YES" pagingEnabled="YES" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfR-QA-wFQ">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="212.5"/>
                                         </scrollView>
                                         <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Vkd-MC-5df">

@@ -66,11 +66,22 @@ class PlaylistStatisticTableViewCell: UITableViewCell , UIScrollViewDelegate
             switch i
             {
             case 0:
-                AddBarChartToView( View )
+                let imageView : UIImageView = UIImageView(frame: View.bounds)
+                imageView.image = UIImage(named: "rectChart")
+                imageView.contentMode = UIViewContentMode.ScaleToFill
+                View.addSubview(imageView)
+                //AddBarChartToView( View )
             case 1:
-                AddLineChartToView( View )
+                let imageView : UIImageView = UIImageView(frame: View.bounds)
+                imageView.image = UIImage(named: "pieChart-1")
+                imageView.contentMode = UIViewContentMode.ScaleToFill
+                View.addSubview(imageView)
+                //AddLineChartToView( View )
             default:
-                break
+                let imageView : UIImageView = UIImageView(frame: View.bounds)
+                imageView.image = UIImage(named: "lineChart")
+                imageView.contentMode = UIViewContentMode.ScaleToFill
+                View.addSubview(imageView)
             }
             
             

@@ -49,7 +49,6 @@
 		A10F76FA1B83864400BB9A24 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B598CA1B543BC300257DDB /* Model.swift */; };
 		A10F76FB1B83866700BB9A24 /* StatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B598CD1B543BC300257DDB /* StatusManager.swift */; };
 		A10F76FC1B83868A00BB9A24 /* NavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BA8B1F1B54F63500F5A57F /* NavigationProtocol.swift */; };
-		A10F76FE1B83885C00BB9A24 /* AppPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F76FD1B83885C00BB9A24 /* AppPlayer.swift */; };
 		A10F76FF1B83885C00BB9A24 /* AppPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F76FD1B83885C00BB9A24 /* AppPlayer.swift */; };
 		A110706D1B5799BD001E3B84 /* playViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A110706C1B5799BD001E3B84 /* playViewController.swift */; };
 		A110706F1B579AEC001E3B84 /* video in Resources */ = {isa = PBXBuildFile; fileRef = A110706E1B579AEC001E3B84 /* video */; };
@@ -784,7 +783,6 @@
 			files = (
 				A179F8561B807B9A00B82695 /* FullImageScrollViewController.swift in Sources */,
 				A1BA8B1B1B54BE2100F5A57F /* IJReachability.swift in Sources */,
-				A10F76FE1B83885C00BB9A24 /* AppPlayer.swift in Sources */,
 				A1BA8B191B54BDCB00F5A57F /* Reachability.swift in Sources */,
 				A1B598D91B543C9200257DDB /* NowPlayingInfoCenter.swift in Sources */,
 				A1D468961B5D1EF20097358D /* shopDetailContentViewController.swift in Sources */,
