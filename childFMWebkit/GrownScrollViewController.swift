@@ -36,6 +36,8 @@ class GrownScrollViewController: UIViewController
         growUpCorona.renderView()
         
         view.addSubview(coronaView)
+        
+        view.backgroundColor = UIColor.whiteColor()
     }
 
     override func didReceiveMemoryWarning() {
