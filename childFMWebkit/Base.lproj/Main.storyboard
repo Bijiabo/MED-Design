@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="35B-Z4-BAN">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -19,7 +18,7 @@
         <!--原生主界面-->
         <scene sceneID="SYG-q4-ehZ">
             <objects>
-                <viewController wantsFullScreenLayout="YES" automaticallyAdjustsScrollViewInsets="NO" id="FDz-7I-SI4" userLabel="原生主界面" customClass="NativeMainViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" automaticallyAdjustsScrollViewInsets="NO" id="FDz-7I-SI4" userLabel="原生主界面" customClass="NativeMainViewController" customModule="GrowUpDaily" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NbC-a9-2UW"/>
                         <viewControllerLayoutGuide type="bottom" id="YAE-WC-kmC"/>
@@ -58,7 +57,7 @@
         <!--主界面-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" userLabel="主界面" customClass="mainViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" userLabel="主界面" customClass="mainViewController" customModule="GrowUpDaily" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -107,13 +106,13 @@
         <!--漫画列表-->
         <scene sceneID="IeA-bd-7nt">
             <objects>
-                <tableViewController storyboardIdentifier="cartoonList" id="4L8-Nd-cBo" userLabel="漫画列表" customClass="cartoonListTableViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="cartoonList" id="4L8-Nd-cBo" userLabel="漫画列表" customClass="cartoonListTableViewController" customModule="GrowUpDaily" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3s7-ca-beW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="cartoonListCell" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cartoonListCell" id="hwQ-Qd-sVa" customClass="cartoonListTableViewCell" customModule="childFMWebkit" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="cartoonListCell" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cartoonListCell" id="hwQ-Qd-sVa" customClass="cartoonListTableViewCell" customModule="GrowUpDaily" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="22" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hwQ-Qd-sVa" id="Tx9-aq-ccV">
@@ -152,7 +151,7 @@
         <!--最小可用原型_HTML版本-->
         <scene sceneID="UXM-gR-p7w">
             <objects>
-                <viewController storyboardIdentifier="mini" id="oXD-zP-Bz3" userLabel="最小可用原型_HTML版本" customClass="mvpViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mini" id="oXD-zP-Bz3" userLabel="最小可用原型_HTML版本" customClass="mvpViewController" customModule="GrowUpDaily" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pZi-0T-ZWu"/>
                         <viewControllerLayoutGuide type="bottom" id="TGp-RP-NNH"/>
@@ -170,7 +169,7 @@
         <!--Global Navigation Controller-->
         <scene sceneID="uIW-vE-SUf">
             <objects>
-                <navigationController wantsFullScreenLayout="YES" extendedLayoutIncludesOpaqueBars="YES" id="35B-Z4-BAN" customClass="GlobalNavigationController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController wantsFullScreenLayout="YES" extendedLayoutIncludesOpaqueBars="YES" id="35B-Z4-BAN" customClass="GlobalNavigationController" customModule="GrowUpDaily" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4yG-EA-pU6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -187,7 +186,7 @@
         <!--漫画详情页面-->
         <scene sceneID="LZK-J1-ndE">
             <objects>
-                <viewController storyboardIdentifier="cartoonDetail" automaticallyAdjustsScrollViewInsets="NO" id="ej2-lM-TVy" userLabel="漫画详情页面" customClass="cartoonDetailViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="cartoonDetail" automaticallyAdjustsScrollViewInsets="NO" id="ej2-lM-TVy" userLabel="漫画详情页面" customClass="cartoonDetailViewController" customModule="GrowUpDaily" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9ie-xX-7Vn"/>
                         <viewControllerLayoutGuide type="bottom" id="B1v-Ea-KCi"/>
@@ -240,7 +239,7 @@
         <!--播放界面-->
         <scene sceneID="QjE-xK-vha">
             <objects>
-                <viewController storyboardIdentifier="playUI" id="b7X-16-tzD" userLabel="播放界面" customClass="playViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="playUI" id="b7X-16-tzD" userLabel="播放界面" customClass="playViewController" customModule="GrowUpDaily" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Yi7-02-zAA"/>
                         <viewControllerLayoutGuide type="bottom" id="VuF-LX-yiY"/>
@@ -437,7 +436,7 @@
         <!--Shop Detail Content View Controller-->
         <scene sceneID="SgS-kj-mJs">
             <objects>
-                <viewController storyboardIdentifier="shopDetailContentVC" id="vYw-Cl-pbm" customClass="shopDetailContentViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="shopDetailContentVC" id="vYw-Cl-pbm" customClass="shopDetailContentViewController" customModule="GrowUpDaily" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fAR-go-xdz"/>
                         <viewControllerLayoutGuide type="bottom" id="xdC-YQ-NXZ"/>
@@ -501,7 +500,7 @@
         <!--Shop Detail Static View Controller-->
         <scene sceneID="X26-2F-9Sh">
             <objects>
-                <viewController id="57d-q6-D3W" customClass="shopDetailStaticViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="57d-q6-D3W" customClass="shopDetailStaticViewController" customModule="GrowUpDaily" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZwJ-c2-8iD"/>
                         <viewControllerLayoutGuide type="bottom" id="TKA-bz-MMX"/>
@@ -519,7 +518,7 @@
         <!--商品展示界面-->
         <scene sceneID="niJ-PY-K6f">
             <objects>
-                <viewController id="0oe-No-yao" userLabel="商品展示界面" customClass="shopDetailViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0oe-No-yao" userLabel="商品展示界面" customClass="shopDetailViewController" customModule="GrowUpDaily" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KGs-Sg-NLx"/>
                         <viewControllerLayoutGuide type="bottom" id="OfK-8A-CFM"/>
@@ -589,7 +588,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="notificationListCell" id="Bqa-cL-hY5" customClass="notificationListTableViewCell" customModule="childFMWebkit" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="notificationListCell" id="Bqa-cL-hY5" customClass="notificationListTableViewCell" customModule="GrowUpDaily" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="22" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bqa-cL-hY5" id="UgN-5K-ir2">
@@ -642,13 +641,13 @@
         <!--场景下的播放列表-->
         <scene sceneID="Wpm-0h-neh">
             <objects>
-                <tableViewController storyboardIdentifier="playlistTableview" id="YOP-PW-dXG" userLabel="场景下的播放列表" customClass="playlistTableViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="playlistTableview" id="YOP-PW-dXG" userLabel="场景下的播放列表" customClass="playlistTableViewController" customModule="GrowUpDaily" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="63" sectionHeaderHeight="22" sectionFooterHeight="22" id="PuQ-gr-wc8">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="statisticCell" rowHeight="213" id="wsd-dH-mlH" customClass="PlaylistStatisticTableViewCell" customModule="childFMWebkit" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="statisticCell" rowHeight="213" id="wsd-dH-mlH" customClass="PlaylistStatisticTableViewCell" customModule="GrowUpDaily" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="22" width="600" height="213"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wsd-dH-mlH" id="0oH-A2-BI0">
@@ -683,7 +682,7 @@
                                     <outlet property="scrollView" destination="JfR-QA-wFQ" id="BOx-ZG-3yK"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="playlistCell" rowHeight="63" id="e0x-dr-8Xp" customClass="playlistTableViewCell" customModule="childFMWebkit" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="playlistCell" rowHeight="63" id="e0x-dr-8Xp" customClass="playlistTableViewCell" customModule="GrowUpDaily" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="235" width="600" height="63"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e0x-dr-8Xp" id="p7K-Wh-Hij">
@@ -741,7 +740,7 @@
         <!--UGC进入页面-->
         <scene sceneID="qpg-mh-FNI">
             <objects>
-                <viewController storyboardIdentifier="UGCHome" id="gkO-SV-0ta" userLabel="UGC进入页面" customClass="UGCHomeViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UGCHome" id="gkO-SV-0ta" userLabel="UGC进入页面" customClass="UGCHomeViewController" customModule="GrowUpDaily" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gqj-Dd-nL1"/>
                         <viewControllerLayoutGuide type="bottom" id="NO8-yp-nvW"/>
@@ -899,7 +898,7 @@
         <!--iTune上传教学页面-->
         <scene sceneID="cRF-E0-ExD">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="b06-UP-PQQ" userLabel="iTune上传教学页面" customClass="UGC_iTunesGuideViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="b06-UP-PQQ" userLabel="iTune上传教学页面" customClass="UGC_iTunesGuideViewController" customModule="GrowUpDaily" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ciB-xG-mv7"/>
                         <viewControllerLayoutGuide type="bottom" id="pvc-s0-JhL"/>
@@ -948,7 +947,7 @@
         <!--在线资源浏览器-->
         <scene sceneID="bcH-1q-VXu">
             <objects>
-                <viewController id="bbN-3a-ySS" userLabel="在线资源浏览器" customClass="UGC_3rdOnlineResourceViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bbN-3a-ySS" userLabel="在线资源浏览器" customClass="UGC_3rdOnlineResourceViewController" customModule="GrowUpDaily" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="s99-Jf-xSH"/>
                         <viewControllerLayoutGuide type="bottom" id="8k7-3L-OKQ"/>
@@ -971,10 +970,10 @@
             </objects>
             <point key="canvasLocation" x="3788" y="2561"/>
         </scene>
-        <!--漫画详情页面-->
+        <!--播放界面容器-->
         <scene sceneID="8fx-lQ-KX1">
             <objects>
-                <viewController storyboardIdentifier="playScrollViewController" automaticallyAdjustsScrollViewInsets="NO" id="EcB-5A-e4m" userLabel="漫画详情页面" customClass="playScrollViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="playScrollViewController" automaticallyAdjustsScrollViewInsets="NO" id="EcB-5A-e4m" userLabel="播放界面容器" customClass="playScrollViewController" customModule="GrowUpDaily" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kJR-Ub-aOO"/>
                         <viewControllerLayoutGuide type="bottom" id="ntM-Qw-HwD"/>
@@ -1060,7 +1059,7 @@
         <!--成长年轮主界面-->
         <scene sceneID="Lmp-Pd-Wiz">
             <objects>
-                <viewController storyboardIdentifier="grownScrollView" id="Z8c-LP-JnY" userLabel="成长年轮主界面" customClass="GrownScrollViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="grownScrollView" id="Z8c-LP-JnY" userLabel="成长年轮主界面" customClass="GrownScrollViewController" customModule="GrowUpDaily" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eeV-81-QOC"/>
                         <viewControllerLayoutGuide type="bottom" id="tr4-J8-FxF"/>
@@ -1125,7 +1124,7 @@
         <!--消息中心scroll view-->
         <scene sceneID="xcR-GV-6TM">
             <objects>
-                <viewController id="xvW-sJ-9Cs" userLabel="消息中心scroll view" customClass="NotificationCenterViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xvW-sJ-9Cs" userLabel="消息中心scroll view" customClass="NotificationCenterViewController" customModule="GrowUpDaily" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ET0-Fz-FgB"/>
                         <viewControllerLayoutGuide type="bottom" id="lfG-5l-BS9"/>
@@ -1202,7 +1201,7 @@
         <!--成长年轮下方文字-->
         <scene sceneID="nio-S6-GIG">
             <objects>
-                <viewController storyboardIdentifier="GrownBottomTextVC" id="cx1-73-lOQ" userLabel="成长年轮下方文字" customClass="GrownBottomTextViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GrownBottomTextVC" id="cx1-73-lOQ" userLabel="成长年轮下方文字" customClass="GrownBottomTextViewController" customModule="GrowUpDaily" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LqX-tz-02K"/>
                         <viewControllerLayoutGuide type="bottom" id="NVs-Uz-ytJ"/>
@@ -1237,7 +1236,7 @@
         <!--成长年轮下方记录按钮组-->
         <scene sceneID="EEb-SD-9aN">
             <objects>
-                <viewController storyboardIdentifier="GrownBottomRecordVC" id="mq3-0H-VLK" userLabel="成长年轮下方记录按钮组" customClass="GrownBottomLogViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GrownBottomRecordVC" id="mq3-0H-VLK" userLabel="成长年轮下方记录按钮组" customClass="GrownBottomLogViewController" customModule="GrowUpDaily" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IFM-4L-6Vu"/>
                         <viewControllerLayoutGuide type="bottom" id="3Bb-TL-obp"/>
@@ -1295,7 +1294,7 @@
         <!--成长年轮下方统计-->
         <scene sceneID="4rV-6m-Rhb">
             <objects>
-                <viewController storyboardIdentifier="GrownBottomStatisticsVC" id="5Cp-hF-9gV" userLabel="成长年轮下方统计" customClass="GrownBottomStatisticsViewController" customModule="childFMWebkit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GrownBottomStatisticsVC" id="5Cp-hF-9gV" userLabel="成长年轮下方统计" customClass="GrownBottomStatisticsViewController" customModule="GrowUpDaily" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mX8-6r-yib"/>
                         <viewControllerLayoutGuide type="bottom" id="23e-r0-v4o"/>

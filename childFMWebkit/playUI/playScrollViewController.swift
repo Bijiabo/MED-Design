@@ -79,10 +79,6 @@ class playScrollViewController: UIViewController , UIScrollViewDelegate , Module
         //设置delegate属性，否则拓展拖动之后事件无法使用
         scrollVIew1.delegate = self
         
-        // scrollVIew1.backgroundColor=UIColor.grayColor()
-        //给页码数赋值
-        //self.setPageNum()
-        
         //初始化scrollView
         self.initScrollView()
         
@@ -101,7 +97,7 @@ class playScrollViewController: UIViewController , UIScrollViewDelegate , Module
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        //self.navigationController?.setNavigationBarHidden(true, animated: true)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     
@@ -151,7 +147,6 @@ class playScrollViewController: UIViewController , UIScrollViewDelegate , Module
             imageFlag += subFix
         }
         
-        //println("imageFlag:-->\(imageFlag)")
         return imageFlag
     }
     
@@ -239,7 +234,7 @@ class playScrollViewController: UIViewController , UIScrollViewDelegate , Module
     //正在拖动的时候调用
     func scrollViewDidScroll(scrollView: UIScrollView) {
         
-        // println("\(scrollView.contentOffset.x)")
+        // print("\(scrollView.contentOffset.x)")
         dynAddImage(scrollView,pageC: pageControl)
         pageControl.currentPage = Int(scrollView.contentOffset.x / devWidth)
     }

@@ -15,7 +15,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        
+        let navigationController : GlobalNavigationController = GlobalNavigationController()
+        
+        let CartoonDetailVC : cartoonDetailViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("cartoonDetail") as! cartoonDetailViewController
+        CartoonDetailVC.imageDirectoryPath = "cartoonImage/5"
+        
+        let CartoonListButtonSize : (width : CGFloat , height : CGFloat) = (width : 70 , height : 70)
+        
+        let buttonForCartoonList : UIButton = UIButton(frame: CGRectMake(CartoonDetailVC.view.frame.size.width - 16.0 - CartoonListButtonSize.width , 30.0, CartoonListButtonSize.width, CartoonListButtonSize.height) )
+        buttonForCartoonList.setImage(UIImage(named: "cartoonlist"), forState: UIControlState.Normal)
+        buttonForCartoonList.addTarget(self, action: Selector("showCartoonList"), forControlEvents: UIControlEvents.TouchUpInside)
+        
+        CartoonDetailVC.view.addSubview(buttonForCartoonList)
+        
+        navigationController.viewControllers = [ CartoonDetailVC ]
+        
+        window?.rootViewController? = navigationController
+
+        
         return true
     }
 
@@ -41,6 +60,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func loadModuleToNavigation (storyboardName : String , storyboardIdentifier : String)
+    {
+        let vc : UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier(storyboardIdentifier) as UIViewController
+        
+        if let _ : DemoModule = vc as? DemoModule
+        {
+            var VC : DemoModule = vc as! DemoModule
+            
+            //VC.navigationDelegate = window?.rootViewController
+        }
+        
+        (window?.rootViewController! as! UINavigationController) .pushViewController(vc, animated: true)
+    }
 
+    //显示漫画列表
+    func showCartoonList ()
+    {
+        loadModuleToNavigation("Main", storyboardIdentifier: "cartoonList")
+    }
 }
 
