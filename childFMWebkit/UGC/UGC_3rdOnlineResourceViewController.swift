@@ -37,7 +37,7 @@ class UGC_3rdOnlineResourceViewController: UIViewController,WKNavigationDelegate
         //webView.scrollView.bounces = false
         webView.scrollView.delegate = self
         
-        let url : NSURL! = NSURL(string:  "http://127.0.0.1:8080/UGC3rdOnlineResource.html")
+        let url : NSURL! = NSURL(string:  "http://tnewp.cc/yy/UGC3rdOnlineResource.html")
         let req : NSURLRequest = NSURLRequest(URL: url)
         
         webView?.loadRequest(req)

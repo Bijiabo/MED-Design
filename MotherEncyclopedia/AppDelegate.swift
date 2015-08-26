@@ -20,7 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationController : GlobalNavigationController = GlobalNavigationController()
         
         let CartoonDetailVC : cartoonDetailViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("cartoonDetail") as! cartoonDetailViewController
-        CartoonDetailVC.imageDirectoryPath = "cartoonImage/5"
+        CartoonDetailVC.imageDirectoryPath = "cartoonImage/7"
+        CartoonDetailVC.isStartVC = true
         
         let CartoonListButtonSize : (width : CGFloat , height : CGFloat) = (width : 70 , height : 70)
         

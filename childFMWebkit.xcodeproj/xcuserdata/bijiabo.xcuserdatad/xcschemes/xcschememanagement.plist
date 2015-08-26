@@ -24,6 +24,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>picture-book.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -48,6 +53,11 @@
 			<true/>
 		</dict>
 		<key>A179F8731B80908B00B82695</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A1A9511F1B88E14A004ADA27</key>
 		<dict>
 			<key>primary</key>
 			<true/>

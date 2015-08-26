@@ -83,6 +83,19 @@
 		A1A510F71AD4D5DB00AD37B4 /* json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A510F51AD4D5DB00AD37B4 /* json.swift */; };
 		A1A511231AD5149E00AD37B4 /* statusStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A511221AD5149E00AD37B4 /* statusStorage.swift */; };
 		A1A511241AD5149E00AD37B4 /* statusStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A511221AD5149E00AD37B4 /* statusStorage.swift */; };
+		A1A951181B88D350004ADA27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1A951171B88D350004ADA27 /* Assets.xcassets */; };
+		A1A951191B88D3B8004ADA27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A179F84A1B80795800B82695 /* Assets.xcassets */; };
+		A1A9511A1B88D3C0004ADA27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A179F8671B80907500B82695 /* Assets.xcassets */; };
+		A1A9511B1B88D3CC004ADA27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A179F87D1B80908B00B82695 /* Assets.xcassets */; };
+		A1A951231B88E14A004ADA27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A951221B88E14A004ADA27 /* AppDelegate.swift */; };
+		A1A951281B88E14A004ADA27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1A951261B88E14A004ADA27 /* Main.storyboard */; };
+		A1A9512A1B88E14A004ADA27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1A951291B88E14A004ADA27 /* Assets.xcassets */; };
+		A1A9512D1B88E14A004ADA27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1A9512B1B88E14A004ADA27 /* LaunchScreen.storyboard */; };
+		A1A951331B88E49F004ADA27 /* PictureBookListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A951321B88E49F004ADA27 /* PictureBookListTableViewController.swift */; };
+		A1A951351B88E5E7004ADA27 /* PictureBookListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A951341B88E5E7004ADA27 /* PictureBookListTableViewCell.swift */; };
+		A1A951371B88E85E004ADA27 /* PictureBookOneListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A951361B88E85E004ADA27 /* PictureBookOneListTableViewController.swift */; };
+		A1A951391B88E986004ADA27 /* coverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A951381B88E986004ADA27 /* coverTableViewCell.swift */; };
+		A1A9513B1B897EB4004ADA27 /* PictureBookDetailScrollViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A9513A1B897EB4004ADA27 /* PictureBookDetailScrollViewTableViewCell.swift */; };
 		A1AC1A431ADA325400831D44 /* DPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AC1A421ADA325400831D44 /* DPlayer.swift */; };
 		A1AC1A441ADA325400831D44 /* DPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AC1A421ADA325400831D44 /* DPlayer.swift */; };
 		A1B598811B525E1100257DDB /* GlobalNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B598801B525E1100257DDB /* GlobalNavigationController.swift */; };
@@ -205,6 +218,18 @@
 		A1A510ED1AD4513E00AD37B4 /* mvpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = mvpViewController.swift; path = controllers/mvpViewController.swift; sourceTree = "<group>"; };
 		A1A510F51AD4D5DB00AD37B4 /* json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = json.swift; path = public/json.swift; sourceTree = "<group>"; };
 		A1A511221AD5149E00AD37B4 /* statusStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = statusStorage.swift; path = public/statusStorage.swift; sourceTree = "<group>"; };
+		A1A951171B88D350004ADA27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1A951201B88E14A004ADA27 /* picture-book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "picture-book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1A951221B88E14A004ADA27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1A951271B88E14A004ADA27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1A951291B88E14A004ADA27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1A9512C1B88E14A004ADA27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1A9512E1B88E14A004ADA27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1A951321B88E49F004ADA27 /* PictureBookListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureBookListTableViewController.swift; sourceTree = "<group>"; };
+		A1A951341B88E5E7004ADA27 /* PictureBookListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureBookListTableViewCell.swift; sourceTree = "<group>"; };
+		A1A951361B88E85E004ADA27 /* PictureBookOneListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureBookOneListTableViewController.swift; sourceTree = "<group>"; };
+		A1A951381B88E986004ADA27 /* coverTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = coverTableViewCell.swift; sourceTree = "<group>"; };
+		A1A9513A1B897EB4004ADA27 /* PictureBookDetailScrollViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureBookDetailScrollViewTableViewCell.swift; sourceTree = "<group>"; };
 		A1AC1A421ADA325400831D44 /* DPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DPlayer.swift; sourceTree = "<group>"; };
 		A1B598801B525E1100257DDB /* GlobalNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalNavigationController.swift; path = controllers/GlobalNavigationController.swift; sourceTree = "<group>"; };
 		A1B598861B5265A300257DDB /* cartoonListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = cartoonListTableViewController.swift; path = controllers/cartoonListTableViewController.swift; sourceTree = "<group>"; };
@@ -287,6 +312,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1A9511D1B88E14A004ADA27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -320,6 +352,7 @@
 				A179F8421B80795800B82695 /* MotherEncyclopedia */,
 				A179F85F1B80907500B82695 /* GrowUpDaily */,
 				A179F8751B80908B00B82695 /* MagicEar */,
+				A1A951211B88E14A004ADA27 /* picture-book */,
 				A15CD5D71ACE496B0033AB57 /* Products */,
 				D37B5825AF5CE62E6C8213B5 /* Pods */,
 				D82379EE91EAEAE91CBCBE39 /* Frameworks */,
@@ -334,6 +367,7 @@
 				A179F8411B80795800B82695 /* MotherEncyclopedia.app */,
 				A179F85E1B80907500B82695 /* GrowUpDaily.app */,
 				A179F8741B80908B00B82695 /* MagicEar.app */,
+				A1A951201B88E14A004ADA27 /* picture-book.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -341,6 +375,7 @@
 		A15CD5D81ACE496B0033AB57 /* childFMWebkit */ = {
 			isa = PBXGroup;
 			children = (
+				A1A951171B88D350004ADA27 /* Assets.xcassets */,
 				A1B598881B52685800257DDB /* cell */,
 				A1B598831B5262A800257DDB /* Protocols */,
 				A1A510EC1AD4511300AD37B4 /* Controllers */,
@@ -448,6 +483,23 @@
 				A1AC1A421ADA325400831D44 /* DPlayer.swift */,
 			);
 			name = public;
+			sourceTree = "<group>";
+		};
+		A1A951211B88E14A004ADA27 /* picture-book */ = {
+			isa = PBXGroup;
+			children = (
+				A1A951221B88E14A004ADA27 /* AppDelegate.swift */,
+				A1A951261B88E14A004ADA27 /* Main.storyboard */,
+				A1A951291B88E14A004ADA27 /* Assets.xcassets */,
+				A1A9512B1B88E14A004ADA27 /* LaunchScreen.storyboard */,
+				A1A9512E1B88E14A004ADA27 /* Info.plist */,
+				A1A951321B88E49F004ADA27 /* PictureBookListTableViewController.swift */,
+				A1A951341B88E5E7004ADA27 /* PictureBookListTableViewCell.swift */,
+				A1A951361B88E85E004ADA27 /* PictureBookOneListTableViewController.swift */,
+				A1A951381B88E986004ADA27 /* coverTableViewCell.swift */,
+				A1A9513A1B897EB4004ADA27 /* PictureBookDetailScrollViewTableViewCell.swift */,
+			);
+			path = "picture-book";
 			sourceTree = "<group>";
 		};
 		A1B598831B5262A800257DDB /* Protocols */ = {
@@ -663,6 +715,23 @@
 			productReference = A179F8741B80908B00B82695 /* MagicEar.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A1A9511F1B88E14A004ADA27 /* picture-book */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1A9512F1B88E14A004ADA27 /* Build configuration list for PBXNativeTarget "picture-book" */;
+			buildPhases = (
+				A1A9511C1B88E14A004ADA27 /* Sources */,
+				A1A9511D1B88E14A004ADA27 /* Frameworks */,
+				A1A9511E1B88E14A004ADA27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "picture-book";
+			productName = "picture-book";
+			productReference = A1A951201B88E14A004ADA27 /* picture-book.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -695,6 +764,9 @@
 					A179F8731B80908B00B82695 = {
 						CreatedOnToolsVersion = 7.0;
 					};
+					A1A9511F1B88E14A004ADA27 = {
+						CreatedOnToolsVersion = 7.0;
+					};
 				};
 			};
 			buildConfigurationList = A15CD5D11ACE496B0033AB57 /* Build configuration list for PBXProject "childFMWebkit" */;
@@ -715,6 +787,7 @@
 				A179F8401B80795800B82695 /* MotherEncyclopedia */,
 				A179F85D1B80907500B82695 /* GrowUpDaily */,
 				A179F8731B80908B00B82695 /* MagicEar */,
+				A1A9511F1B88E14A004ADA27 /* picture-book */,
 			);
 		};
 /* End PBXProject section */
@@ -724,6 +797,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1A951181B88D350004ADA27 /* Assets.xcassets in Resources */,
 				A1D4688A1B5C31C60097358D /* media in Resources */,
 				A1FB09381B5A3961001EAF27 /* iTunesGuide in Resources */,
 				A110706F1B579AEC001E3B84 /* video in Resources */,
@@ -745,6 +819,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1A951191B88D3B8004ADA27 /* Assets.xcassets in Resources */,
 				A10F76F81B8384F900BB9A24 /* Main.storyboard in Resources */,
 				A10F76F21B83846C00BB9A24 /* Images.xcassets in Resources */,
 				A179F8591B80892600B82695 /* cartoonImage in Resources */,
@@ -756,6 +831,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1A9511A1B88D3C0004ADA27 /* Assets.xcassets in Resources */,
 				A14403A51B823D1500158C98 /* Images.xcassets in Resources */,
 				A14403A41B823D0600158C98 /* Main.storyboard in Resources */,
 				A179F86B1B80907500B82695 /* LaunchScreen.storyboard in Resources */,
@@ -766,11 +842,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1A9511B1B88D3CC004ADA27 /* Assets.xcassets in Resources */,
 				A10F76F01B83829F00BB9A24 /* video in Resources */,
 				A10F76EF1B8381FE00BB9A24 /* media in Resources */,
 				A10F76D81B837F4E00BB9A24 /* Main.storyboard in Resources */,
 				A10F76D71B837F4300BB9A24 /* Images.xcassets in Resources */,
 				A179F8811B80908B00B82695 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1A9511E1B88E14A004ADA27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1A9512D1B88E14A004ADA27 /* LaunchScreen.storyboard in Resources */,
+				A1A9512A1B88E14A004ADA27 /* Assets.xcassets in Resources */,
+				A1A951281B88E14A004ADA27 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -910,6 +997,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1A9511C1B88E14A004ADA27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1A951231B88E14A004ADA27 /* AppDelegate.swift in Sources */,
+				A1A951391B88E986004ADA27 /* coverTableViewCell.swift in Sources */,
+				A1A951331B88E49F004ADA27 /* PictureBookListTableViewController.swift in Sources */,
+				A1A951371B88E85E004ADA27 /* PictureBookOneListTableViewController.swift in Sources */,
+				A1A9513B1B897EB4004ADA27 /* PictureBookDetailScrollViewTableViewCell.swift in Sources */,
+				A1A951351B88E5E7004ADA27 /* PictureBookListTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -981,6 +1081,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				A179F8801B80908B00B82695 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A1A951261B88E14A004ADA27 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1A951271B88E14A004ADA27 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A1A9512B1B88E14A004ADA27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1A9512C1B88E14A004ADA27 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1167,7 +1283,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = MotherEncyclopedia/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JYLabs.MotherEncyclopedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1181,7 +1297,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = MotherEncyclopedia/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JYLabs.MotherEncyclopedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1195,7 +1311,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = GrowUpDaily/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JYLabs.GrowUpDaily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1209,7 +1325,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = GrowUpDaily/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JYLabs.GrowUpDaily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1223,7 +1339,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = MagicEar/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JYLabs.MagicEar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1237,9 +1353,37 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = MagicEar/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JYLabs.MagicEar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A1A951301B88E14A004ADA27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "picture-book/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JYLabs.picture-book";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A1A951311B88E14A004ADA27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "picture-book/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JYLabs.picture-book";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -1300,6 +1444,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		A1A9512F1B88E14A004ADA27 /* Build configuration list for PBXNativeTarget "picture-book" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1A951301B88E14A004ADA27 /* Debug */,
+				A1A951311B88E14A004ADA27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

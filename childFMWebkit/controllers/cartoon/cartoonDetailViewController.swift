@@ -25,6 +25,8 @@ class cartoonDetailViewController: UIViewController , UIScrollViewDelegate , Mod
 {
     var cartoonTitle : String = ""
     
+    var isStartVC : Bool = false
+    
     var moduleLoader : ModuleLader?
     
     var imageDirectoryPath : String = "cartoonImage"
@@ -74,7 +76,9 @@ class cartoonDetailViewController: UIViewController , UIScrollViewDelegate , Mod
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        //self.navigationController?.setNavigationBarHidden(true, animated: true)
+        if isStartVC {
+            self.navigationController?.setNavigationBarHidden(true, animated: true)
+        }
     }
     
     

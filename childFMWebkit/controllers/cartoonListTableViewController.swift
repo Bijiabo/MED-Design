@@ -11,6 +11,7 @@ import UIKit
 class cartoonListTableViewController: UITableViewController {
 
     var data : [String] = [
+        "英语早教启蒙有用么？",
         "磨耳朵要不要抠单词?",
         "英语启蒙早有什么用？",
         "不要送孩子去英语班",
@@ -18,7 +19,8 @@ class cartoonListTableViewController: UITableViewController {
         "宝宝能叫妈妈啦",
         "孩子开始说话了",
         "宝宝对我叫他有反应了",
-        "宝宝刚出生，我该做点什么"
+        "宝宝刚出生，我该做点什么",
+        "不要送孩子去英语班"
     ]
     
     override func viewDidLoad() {
@@ -123,7 +125,7 @@ class cartoonListTableViewController: UITableViewController {
         if let cell : cartoonListTableViewCell = sender as? cartoonListTableViewCell
         {
             //目前漫画数量，用余数来循环显示
-            let currentCartoonCount : Int = 5
+            let currentCartoonCount : Int = 7
             
             let index : Int = tableView.indexPathForCell(cell)!.row % currentCartoonCount
             

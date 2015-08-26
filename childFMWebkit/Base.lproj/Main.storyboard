@@ -740,7 +740,7 @@
         <!--UGC进入页面-->
         <scene sceneID="qpg-mh-FNI">
             <objects>
-                <viewController storyboardIdentifier="UGCHome" id="gkO-SV-0ta" userLabel="UGC进入页面" customClass="UGCHomeViewController" customModule="GrowUpDaily" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UGCHome0" id="gkO-SV-0ta" userLabel="UGC进入页面" customClass="UGCHomeViewController" customModule="GrowUpDaily" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gqj-Dd-nL1"/>
                         <viewControllerLayoutGuide type="bottom" id="NO8-yp-nvW"/>
@@ -799,7 +799,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fzg-pp-RP0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2704" y="2391"/>
+            <point key="canvasLocation" x="2730" y="1612"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="2Re-qN-cz3">
+            <objects>
+                <tableViewController storyboardIdentifier="UGCHome" id="aT5-bA-OM6" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="5Ez-Fd-FnX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="drp-W1-kBR">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="drp-W1-kBR" id="MYe-ZO-3KC">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aT5-bA-OM6" id="LuU-C5-DXQ"/>
+                            <outlet property="delegate" destination="aT5-bA-OM6" id="vgk-UZ-AYR"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KP2-tl-Kv2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2726" y="2287"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vNZ-U6-gg2">

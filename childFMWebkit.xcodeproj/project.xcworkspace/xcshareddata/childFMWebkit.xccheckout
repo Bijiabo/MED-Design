@@ -7,34 +7,34 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>AB67BE37-8E2E-4B90-AD4F-BCB35C5D53BC</string>
 	<key>IDESourceControlProjectName</key>
-	<string>childFMWebkit</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>5A37E4E31FA1EFAC4DCDD9AA665FC668803AAFFC</key>
-		<string>https://github.com/Bijiabo/JYLabsDesign.git</string>
+		<key>08AE58717C4C9870BD072FDBE069A1F5E3B392F2</key>
+		<string>https://github.com/Bijiabo/MED-Design.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>childFM/iOS/childFMWebkit/childFMWebkit.xcodeproj</string>
+	<string>childFMWebkit.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>5A37E4E31FA1EFAC4DCDD9AA665FC668803AAFFC</key>
-		<string>../../../../..</string>
+		<key>08AE58717C4C9870BD072FDBE069A1F5E3B392F2</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/Bijiabo/JYLabsDesign.git</string>
+	<string>https://github.com/Bijiabo/MED-Design.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>5A37E4E31FA1EFAC4DCDD9AA665FC668803AAFFC</string>
+	<string>08AE58717C4C9870BD072FDBE069A1F5E3B392F2</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>5A37E4E31FA1EFAC4DCDD9AA665FC668803AAFFC</string>
+			<string>08AE58717C4C9870BD072FDBE069A1F5E3B392F2</string>
 			<key>IDESourceControlWCCName</key>
-			<string>childFM</string>
+			<string>MED-Design</string>
 		</dict>
 	</array>
 </dict>

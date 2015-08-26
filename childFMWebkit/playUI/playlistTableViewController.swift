@@ -43,7 +43,7 @@ class playlistTableViewController: UITableViewController , DemoModule
     func link2UGC ()
     {
         //navigationDelegate?.loadModuleToNavigation("Main", storyboardIdentifier: "UGCHome")
-        let UGCHomeVC : UIViewController = self.storyboard?.instantiateViewControllerWithIdentifier("UGCHome") as UIViewController!
+        let UGCHomeVC : UIViewController = self.storyboard?.instantiateViewControllerWithIdentifier("UGCHome0") as UIViewController!
         
         self.navigationController?.pushViewController(UGCHomeVC, animated: true)
     }
