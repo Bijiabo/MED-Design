@@ -47,6 +47,12 @@ class OnlineResourceBrowserViewController: UIViewController , UIWebViewDelegate 
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        
+        if webView.request?.URL?.absoluteString == localNavigationURL.absoluteString {
+            _removeBackButton()
+        } else {
+            _addBackButton()
+        }
     }
     
     override func viewWillDisappear(animated: Bool) {
