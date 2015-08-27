@@ -184,5 +184,6 @@ class DJVisualViewController: UIViewController , UITableViewDataSource , UITable
     @IBAction func tapCloseButton(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
+    
 
 }

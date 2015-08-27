@@ -9,6 +9,7 @@ var generateNavigationHtml = function (data) {
 
   for (var i= 0,len=data.length; i<len; i++) {
     siteIconTemplate.find(".site-name").text(data[i].name);
+    siteIconTemplate.find(".site-icon img").attr("src", "images/" + data[i].image);
     siteIconTemplate.find("a").attr("href",data[i].url);
 
     htmlString += siteIconTemplate.html();
@@ -17,6 +18,23 @@ var generateNavigationHtml = function (data) {
   htmlString += siteIconAddTemplate.html();
 
   return htmlString;
+};
+
+var addIconItem = function() {
+  var siteIconTemplate = $('<div><div class="site-item col-xs-4">' +   $("#navigation-container .site-item").html() + '</div></div>' );
+
+  $("#navigation-container .site-item-add").before(siteIconTemplate.html());
+};
+
+var showShadow = function () {
+  if ($('#shadow').length === 0) {
+    $('body').append('<div id="shadow" style="display: none;"></div>');
+  }
+  $('#shadow').fadeIn();
+};
+
+var hideShadow = function () {
+  $('#shadow').fadeOut();
 };
 
 $(function () {

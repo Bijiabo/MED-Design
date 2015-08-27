@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OnlineResourceBrowserViewController: UIViewController , UIWebViewDelegate , DownloadView {
+class OnlineResourceBrowserViewController: UIViewController , UIWebViewDelegate , DownloadView , UITextFieldDelegate {
 
     @IBOutlet var webView: UIWebView!
     @IBOutlet var addressBar: UIView!
@@ -34,6 +34,7 @@ class OnlineResourceBrowserViewController: UIViewController , UIWebViewDelegate 
         webView.delegate = self
         webView.loadRequest(NSURLRequest(URL: localNavigationURL))
         addressTextField.text = webView.request?.URL?.absoluteString
+        addressTextField.delegate = self
         
         _initAddressBar()
         
@@ -144,22 +145,34 @@ class OnlineResourceBrowserViewController: UIViewController , UIWebViewDelegate 
     func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         addressTextField.text = request.URL?.absoluteString
         
-        if request.URL?.absoluteString != localNavigationURL.absoluteString {
+        if request.URL?.absoluteString != localNavigationURL.absoluteString && NSString(string: request.URL!.absoluteString).containsString("http://addnewone") == false {
             _addBackButton()
         } else {
             _removeBackButton()
         }
+        
+        if NSString(string: request.URL!.absoluteString).containsString("http://addnewone") {
+            addressTextField.becomeFirstResponder()
+            
+            webView.stringByEvaluatingJavaScriptFromString("addIconItem()")
+        }
+        
         
         return true
     }
     
     func webViewDidFinishLoad(webView: UIWebView) {
         let webSiteTitle : String? = webView.stringByEvaluatingJavaScriptFromString("document.title")
+        addressTextField.resignFirstResponder()
         addressTextField.text = webSiteTitle
         
         let songTitle : String = webView.stringByEvaluatingJavaScriptFromString("$('.playerbody h3').text()")!
         
         print(songTitle)
+        
+        if NSString(string: webView.request!.URL!.absoluteString).containsString("music.baidu.com") == true {
+            webView.stringByEvaluatingJavaScriptFromString("$('.material').remove()")
+        }
         
         optimizeWebkitMemory()
     }
@@ -252,4 +265,36 @@ class OnlineResourceBrowserViewController: UIViewController , UIWebViewDelegate 
         uploadDownloadingCountToView()
     }
 
+    @IBAction func beginEditAddressTextField(sender: AnyObject) {
+        webView.stringByEvaluatingJavaScriptFromString("showShadow()")
+        
+        addressTextField.text = webView.request?.URL?.absoluteString == localNavigationURL.absoluteString ? "" : webView.request?.URL?.absoluteString
+    }
+    
+    @IBAction func didEndOnExitAddressTexrField(sender: AnyObject) {
+        if addressTextField.text == webView.request?.URL?.absoluteString {
+            addressTextField.text = webView.stringByEvaluatingJavaScriptFromString("document.title")
+        }
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        addressTextField.resignFirstResponder()
+        webView.stringByEvaluatingJavaScriptFromString("hideShadow()")
+
+        if textField.text == nil || textField.text?.isEmpty == true {return true}
+        
+        var requestURLString : String = textField.text!
+        
+        if NSString(string: requestURLString).containsString("http://") == false && NSString(string: requestURLString).containsString("https://") == false {
+            requestURLString = "http://" + requestURLString
+            webView.loadRequest(NSURLRequest(URL: NSURL(string: requestURLString)!))
+        }
+        
+        return true
+    }
+    
+    @IBAction func refreshWebView(sender: AnyObject) {
+        addressTextField.resignFirstResponder()
+        webView.reload()
+    }
 }

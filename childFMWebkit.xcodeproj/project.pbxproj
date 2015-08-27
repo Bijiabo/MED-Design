@@ -78,6 +78,16 @@
 		A179F8771B80908B00B82695 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179F8761B80908B00B82695 /* AppDelegate.swift */; };
 		A179F8791B80908B00B82695 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179F8781B80908B00B82695 /* ViewController.swift */; };
 		A179F8811B80908B00B82695 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A179F87F1B80908B00B82695 /* LaunchScreen.storyboard */; };
+		A17CC7541B8F613B0074150D /* iTunesUploadTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CC7531B8F613B0074150D /* iTunesUploadTableViewController.swift */; };
+		A17CC7551B8F613B0074150D /* iTunesUploadTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CC7531B8F613B0074150D /* iTunesUploadTableViewController.swift */; };
+		A17CC7571B8F61510074150D /* iPodMusicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CC7561B8F61510074150D /* iPodMusicTableViewController.swift */; };
+		A17CC7581B8F61510074150D /* iPodMusicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CC7561B8F61510074150D /* iPodMusicTableViewController.swift */; };
+		A17CC75A1B8F61700074150D /* netFriendShareTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CC7591B8F61700074150D /* netFriendShareTableViewController.swift */; };
+		A17CC75B1B8F61700074150D /* netFriendShareTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CC7591B8F61700074150D /* netFriendShareTableViewController.swift */; };
+		A17CC75D1B8F77840074150D /* DownloadListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CC75C1B8F77840074150D /* DownloadListTableViewController.swift */; };
+		A17CC75E1B8F77840074150D /* DownloadListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CC75C1B8F77840074150D /* DownloadListTableViewController.swift */; };
+		A17CC7611B8F793E0074150D /* DownloadListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CC7601B8F793E0074150D /* DownloadListTableViewCell.swift */; };
+		A17CC7621B8F793E0074150D /* DownloadListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CC7601B8F793E0074150D /* DownloadListTableViewCell.swift */; };
 		A1876D9C1B8EFC22000FEC26 /* OnlineResourceBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1876D9B1B8EFC22000FEC26 /* OnlineResourceBrowserViewController.swift */; };
 		A1876D9D1B8EFC22000FEC26 /* OnlineResourceBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1876D9B1B8EFC22000FEC26 /* OnlineResourceBrowserViewController.swift */; };
 		A1876D9F1B8EFFD1000FEC26 /* UGCTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1876D9E1B8EFFD1000FEC26 /* UGCTabbarViewController.swift */; };
@@ -228,6 +238,11 @@
 		A179F87D1B80908B00B82695 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A179F8801B80908B00B82695 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A179F8821B80908B00B82695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A17CC7531B8F613B0074150D /* iTunesUploadTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iTunesUploadTableViewController.swift; path = UGC/iTunesUploadTableViewController.swift; sourceTree = "<group>"; };
+		A17CC7561B8F61510074150D /* iPodMusicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iPodMusicTableViewController.swift; path = UGC/iPodMusicTableViewController.swift; sourceTree = "<group>"; };
+		A17CC7591B8F61700074150D /* netFriendShareTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = netFriendShareTableViewController.swift; sourceTree = "<group>"; };
+		A17CC75C1B8F77840074150D /* DownloadListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DownloadListTableViewController.swift; path = UGC/DownloadListTableViewController.swift; sourceTree = "<group>"; };
+		A17CC7601B8F793E0074150D /* DownloadListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DownloadListTableViewCell.swift; path = UGC/Cell/DownloadListTableViewCell.swift; sourceTree = "<group>"; };
 		A1876D9B1B8EFC22000FEC26 /* OnlineResourceBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnlineResourceBrowserViewController.swift; path = UGC/OnlineResourceBrowserViewController.swift; sourceTree = "<group>"; };
 		A1876D9E1B8EFFD1000FEC26 /* UGCTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UGCTabbarViewController.swift; path = UGC/UGCTabbarViewController.swift; sourceTree = "<group>"; };
 		A1876DA11B8F045F000FEC26 /* MiiNSURLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiiNSURLProtocol.swift; sourceTree = "<group>"; };
@@ -487,11 +502,24 @@
 			path = MagicEar;
 			sourceTree = "<group>";
 		};
+		A17CC75F1B8F79260074150D /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				A17CC7601B8F793E0074150D /* DownloadListTableViewCell.swift */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
 		A1876D9A1B8EFBC6000FEC26 /* UGC-ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A17CC75F1B8F79260074150D /* cell */,
 				A1876D9B1B8EFC22000FEC26 /* OnlineResourceBrowserViewController.swift */,
 				A1876D9E1B8EFFD1000FEC26 /* UGCTabbarViewController.swift */,
+				A17CC7531B8F613B0074150D /* iTunesUploadTableViewController.swift */,
+				A17CC7561B8F61510074150D /* iPodMusicTableViewController.swift */,
+				A17CC7591B8F61700074150D /* netFriendShareTableViewController.swift */,
+				A17CC75C1B8F77840074150D /* DownloadListTableViewController.swift */,
 			);
 			name = "UGC-ViewControllers";
 			sourceTree = "<group>";
@@ -907,6 +935,7 @@
 				A18A81721B8EEDB9005BCC63 /* DJVisualViewController.swift in Sources */,
 				A179F8561B807B9A00B82695 /* FullImageScrollViewController.swift in Sources */,
 				A1BA8B1B1B54BE2100F5A57F /* IJReachability.swift in Sources */,
+				A17CC7571B8F61510074150D /* iPodMusicTableViewController.swift in Sources */,
 				A1BA8B191B54BDCB00F5A57F /* Reachability.swift in Sources */,
 				A1B598D91B543C9200257DDB /* NowPlayingInfoCenter.swift in Sources */,
 				A1D468961B5D1EF20097358D /* shopDetailContentViewController.swift in Sources */,
@@ -929,9 +958,11 @@
 				A1B598D21B543BC300257DDB /* ViewManager.swift in Sources */,
 				A1D4689C1B5ECE840097358D /* NotificationCenterViewController.swift in Sources */,
 				A1D468941B5CE6E20097358D /* GrownBottomStatisticsViewController.swift in Sources */,
+				A17CC75D1B8F77840074150D /* DownloadListTableViewController.swift in Sources */,
 				A1BA8B281B54FEC900F5A57F /* UGCHomeViewController.swift in Sources */,
 				A1BA8B231B54F7C700F5A57F /* playlistTableViewController.swift in Sources */,
 				A143897C1B78EB870052D5AE /* GrowUpCorona.swift in Sources */,
+				A17CC7541B8F613B0074150D /* iTunesUploadTableViewController.swift in Sources */,
 				A1B598811B525E1100257DDB /* GlobalNavigationController.swift in Sources */,
 				A15CD5DE1ACE496B0033AB57 /* mainViewController.swift in Sources */,
 				A1B77F411B567DC200CE2E73 /* UGC_3rdOnlineResourceViewController.swift in Sources */,
@@ -939,6 +970,7 @@
 				A1B5988A1B5268D000257DDB /* cartoonListTableViewCell.swift in Sources */,
 				A1AC1A431ADA325400831D44 /* DPlayer.swift in Sources */,
 				A1A511231AD5149E00AD37B4 /* statusStorage.swift in Sources */,
+				A17CC75A1B8F61700074150D /* netFriendShareTableViewController.swift in Sources */,
 				A15CD5DC1ACE496B0033AB57 /* AppDelegate.swift in Sources */,
 				A1876DA51B8F047C000FEC26 /* MiiDownloader.swift in Sources */,
 				A13B67AD1B65367100EED237 /* NativeMainViewController.swift in Sources */,
@@ -949,6 +981,7 @@
 				A10F76E91B83818C00BB9A24 /* Module.swift in Sources */,
 				A143897E1B78EBA60052D5AE /* RulingView.swift in Sources */,
 				A110706D1B5799BD001E3B84 /* playViewController.swift in Sources */,
+				A17CC7611B8F793E0074150D /* DownloadListTableViewCell.swift in Sources */,
 				A1876D9C1B8EFC22000FEC26 /* OnlineResourceBrowserViewController.swift in Sources */,
 				A12E9A8A1AD69410009B2D60 /* SwiftyJSON.swift in Sources */,
 				A1B77F3B1B5675A100CE2E73 /* ScrollViewController.swift in Sources */,
@@ -1021,6 +1054,7 @@
 				A1876DA91B8F04BA000FEC26 /* DownloadView.swift in Sources */,
 				A10F76EC1B8381C700BB9A24 /* PlayerManager.swift in Sources */,
 				A1876D9D1B8EFC22000FEC26 /* OnlineResourceBrowserViewController.swift in Sources */,
+				A17CC75B1B8F61700074150D /* netFriendShareTableViewController.swift in Sources */,
 				A10F76EB1B8381AF00BB9A24 /* Model.swift in Sources */,
 				A10F76E51B8380FC00BB9A24 /* StatusManager.swift in Sources */,
 				A10F76FF1B83885C00BB9A24 /* AppPlayer.swift in Sources */,
@@ -1035,11 +1069,15 @@
 				A1876DA31B8F045F000FEC26 /* MiiNSURLProtocol.swift in Sources */,
 				A10F76DA1B8380D200BB9A24 /* playlistTableViewController.swift in Sources */,
 				A10F76DB1B8380D200BB9A24 /* playViewController.swift in Sources */,
+				A17CC7621B8F793E0074150D /* DownloadListTableViewCell.swift in Sources */,
+				A17CC7581B8F61510074150D /* iPodMusicTableViewController.swift in Sources */,
 				A10F76DC1B8380D200BB9A24 /* shopDetailViewController.swift in Sources */,
 				A10F76DD1B8380D200BB9A24 /* playScrollViewController.swift in Sources */,
 				A10F76DE1B8380D200BB9A24 /* playUIProtocol.swift in Sources */,
 				A10F76DF1B8380D200BB9A24 /* shopDetailContentViewController.swift in Sources */,
+				A17CC75E1B8F77840074150D /* DownloadListTableViewController.swift in Sources */,
 				A10F76E01B8380D200BB9A24 /* shopDetailStaticViewController.swift in Sources */,
+				A17CC7551B8F613B0074150D /* iTunesUploadTableViewController.swift in Sources */,
 				A179F8791B80908B00B82695 /* ViewController.swift in Sources */,
 				A179F8771B80908B00B82695 /* AppDelegate.swift in Sources */,
 			);

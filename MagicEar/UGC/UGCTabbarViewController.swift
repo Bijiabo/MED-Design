@@ -21,6 +21,18 @@ class UGCTabbarViewController: UITabBarController {
         
         let customCloseBarButtonItem = UIBarButtonItem(customView: closeButton)
         navigationItem.leftBarButtonItem = customCloseBarButtonItem
+        
+        let downloadButton : UIButton = UIButton(frame: CGRectMake(0.0, 0.0, 18.0, 18.0))
+        downloadButton.setBackgroundImage(UIImage(named: "download"), forState: UIControlState.Normal)
+        downloadButton.addTarget(self, action: Selector("pushDownloadListVC"), forControlEvents: UIControlEvents.TouchUpInside)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: downloadButton)
+        
+    }
+    
+    func pushDownloadListVC(){
+        let downloadListVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("downloadList")
+        
+        navigationController?.pushViewController(downloadListVC, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
