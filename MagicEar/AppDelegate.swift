@@ -12,7 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
+    var downloader : MiiDownloader!
     var player : PlayerManager!
     
     //演示用播放数据
@@ -26,6 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
+        downloader = MiiDownloader()
+        NSURLProtocol.registerClass(MiiNSURLProtocol )
+        optimizeWebkitMemory()
+        
         let navigationController : GlobalNavigationController = GlobalNavigationController()
         navigationController.viewControllers = [ UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("playScrollViewController") ]
         
@@ -58,6 +62,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    
+    func optimizeWebkitMemory() {
+        let cacheSizeMemory : Int = 4*1024*1024; // 4MB
+        let cacheSizeDisk : Int = 32*1024*1024; // 32MB
+        let sharedCache : NSURLCache = NSURLCache(memoryCapacity: cacheSizeMemory, diskCapacity: cacheSizeDisk, diskPath: "nsurlcache")
+        NSURLCache.setSharedURLCache(sharedCache)
+    }
 
 }
 

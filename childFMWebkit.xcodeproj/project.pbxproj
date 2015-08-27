@@ -78,6 +78,19 @@
 		A179F8771B80908B00B82695 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179F8761B80908B00B82695 /* AppDelegate.swift */; };
 		A179F8791B80908B00B82695 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179F8781B80908B00B82695 /* ViewController.swift */; };
 		A179F8811B80908B00B82695 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A179F87F1B80908B00B82695 /* LaunchScreen.storyboard */; };
+		A1876D9C1B8EFC22000FEC26 /* OnlineResourceBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1876D9B1B8EFC22000FEC26 /* OnlineResourceBrowserViewController.swift */; };
+		A1876D9D1B8EFC22000FEC26 /* OnlineResourceBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1876D9B1B8EFC22000FEC26 /* OnlineResourceBrowserViewController.swift */; };
+		A1876D9F1B8EFFD1000FEC26 /* UGCTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1876D9E1B8EFFD1000FEC26 /* UGCTabbarViewController.swift */; };
+		A1876DA01B8EFFD1000FEC26 /* UGCTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1876D9E1B8EFFD1000FEC26 /* UGCTabbarViewController.swift */; };
+		A1876DA21B8F045F000FEC26 /* MiiNSURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1876DA11B8F045F000FEC26 /* MiiNSURLProtocol.swift */; };
+		A1876DA31B8F045F000FEC26 /* MiiNSURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1876DA11B8F045F000FEC26 /* MiiNSURLProtocol.swift */; };
+		A1876DA51B8F047C000FEC26 /* MiiDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1876DA41B8F047C000FEC26 /* MiiDownloader.swift */; };
+		A1876DA61B8F047C000FEC26 /* MiiDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1876DA41B8F047C000FEC26 /* MiiDownloader.swift */; };
+		A1876DA81B8F04BA000FEC26 /* DownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1876DA71B8F04BA000FEC26 /* DownloadView.swift */; };
+		A1876DA91B8F04BA000FEC26 /* DownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1876DA71B8F04BA000FEC26 /* DownloadView.swift */; };
+		A1876DCE1B8F3527000FEC26 /* OnlineResourceNavigationWebSite in Resources */ = {isa = PBXBuildFile; fileRef = A1876DCD1B8F3527000FEC26 /* OnlineResourceNavigationWebSite */; };
+		A18A81721B8EEDB9005BCC63 /* DJVisualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18A81711B8EEDB9005BCC63 /* DJVisualViewController.swift */; };
+		A18A81731B8EEDB9005BCC63 /* DJVisualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18A81711B8EEDB9005BCC63 /* DJVisualViewController.swift */; };
 		A1A510EE1AD4513E00AD37B4 /* mvpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A510ED1AD4513E00AD37B4 /* mvpViewController.swift */; };
 		A1A510F61AD4D5DB00AD37B4 /* json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A510F51AD4D5DB00AD37B4 /* json.swift */; };
 		A1A510F71AD4D5DB00AD37B4 /* json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A510F51AD4D5DB00AD37B4 /* json.swift */; };
@@ -215,6 +228,13 @@
 		A179F87D1B80908B00B82695 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A179F8801B80908B00B82695 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A179F8821B80908B00B82695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1876D9B1B8EFC22000FEC26 /* OnlineResourceBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnlineResourceBrowserViewController.swift; path = UGC/OnlineResourceBrowserViewController.swift; sourceTree = "<group>"; };
+		A1876D9E1B8EFFD1000FEC26 /* UGCTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UGCTabbarViewController.swift; path = UGC/UGCTabbarViewController.swift; sourceTree = "<group>"; };
+		A1876DA11B8F045F000FEC26 /* MiiNSURLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiiNSURLProtocol.swift; sourceTree = "<group>"; };
+		A1876DA41B8F047C000FEC26 /* MiiDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiiDownloader.swift; sourceTree = "<group>"; };
+		A1876DA71B8F04BA000FEC26 /* DownloadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadView.swift; sourceTree = "<group>"; };
+		A1876DCD1B8F3527000FEC26 /* OnlineResourceNavigationWebSite */ = {isa = PBXFileReference; lastKnownFileType = folder; path = OnlineResourceNavigationWebSite; sourceTree = "<group>"; };
+		A18A81711B8EEDB9005BCC63 /* DJVisualViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DJVisualViewController.swift; sourceTree = "<group>"; };
 		A1A510ED1AD4513E00AD37B4 /* mvpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = mvpViewController.swift; path = controllers/mvpViewController.swift; sourceTree = "<group>"; };
 		A1A510F51AD4D5DB00AD37B4 /* json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = json.swift; path = public/json.swift; sourceTree = "<group>"; };
 		A1A511221AD5149E00AD37B4 /* statusStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = statusStorage.swift; path = public/statusStorage.swift; sourceTree = "<group>"; };
@@ -335,6 +355,7 @@
 		A15CD5CD1ACE496B0033AB57 = {
 			isa = PBXGroup;
 			children = (
+				A1876DCD1B8F3527000FEC26 /* OnlineResourceNavigationWebSite */,
 				A1D468891B5C31C60097358D /* media */,
 				A1FB09371B5A3961001EAF27 /* iTunesGuide */,
 				A110706E1B579AEC001E3B84 /* video */,
@@ -448,6 +469,7 @@
 		A179F8751B80908B00B82695 /* MagicEar */ = {
 			isa = PBXGroup;
 			children = (
+				A1876D9A1B8EFBC6000FEC26 /* UGC-ViewControllers */,
 				A1BA8B261B54FE9000F5A57F /* UGC */,
 				A1BA8B211B54F7A800F5A57F /* playUI */,
 				A179F8761B80908B00B82695 /* AppDelegate.swift */,
@@ -457,8 +479,21 @@
 				A179F87F1B80908B00B82695 /* LaunchScreen.storyboard */,
 				A179F8821B80908B00B82695 /* Info.plist */,
 				A10F76FD1B83885C00BB9A24 /* AppPlayer.swift */,
+				A18A81711B8EEDB9005BCC63 /* DJVisualViewController.swift */,
+				A1876DA11B8F045F000FEC26 /* MiiNSURLProtocol.swift */,
+				A1876DA41B8F047C000FEC26 /* MiiDownloader.swift */,
+				A1876DA71B8F04BA000FEC26 /* DownloadView.swift */,
 			);
 			path = MagicEar;
+			sourceTree = "<group>";
+		};
+		A1876D9A1B8EFBC6000FEC26 /* UGC-ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A1876D9B1B8EFC22000FEC26 /* OnlineResourceBrowserViewController.swift */,
+				A1876D9E1B8EFFD1000FEC26 /* UGCTabbarViewController.swift */,
+			);
+			name = "UGC-ViewControllers";
 			sourceTree = "<group>";
 		};
 		A1A510EC1AD4511300AD37B4 /* Controllers */ = {
@@ -842,6 +877,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1876DCE1B8F3527000FEC26 /* OnlineResourceNavigationWebSite in Resources */,
 				A1A9511B1B88D3CC004ADA27 /* Assets.xcassets in Resources */,
 				A10F76F01B83829F00BB9A24 /* video in Resources */,
 				A10F76EF1B8381FE00BB9A24 /* media in Resources */,
@@ -868,6 +904,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A18A81721B8EEDB9005BCC63 /* DJVisualViewController.swift in Sources */,
 				A179F8561B807B9A00B82695 /* FullImageScrollViewController.swift in Sources */,
 				A1BA8B1B1B54BE2100F5A57F /* IJReachability.swift in Sources */,
 				A1BA8B191B54BDCB00F5A57F /* Reachability.swift in Sources */,
@@ -903,19 +940,24 @@
 				A1AC1A431ADA325400831D44 /* DPlayer.swift in Sources */,
 				A1A511231AD5149E00AD37B4 /* statusStorage.swift in Sources */,
 				A15CD5DC1ACE496B0033AB57 /* AppDelegate.swift in Sources */,
+				A1876DA51B8F047C000FEC26 /* MiiDownloader.swift in Sources */,
 				A13B67AD1B65367100EED237 /* NativeMainViewController.swift in Sources */,
 				A1B598931B53B7B100257DDB /* cartoonDetailViewController.swift in Sources */,
+				A1876DA81B8F04BA000FEC26 /* DownloadView.swift in Sources */,
 				A1B598871B5265A300257DDB /* cartoonListTableViewController.swift in Sources */,
 				A1FB096C1B5A86DB001EAF27 /* shopDetailViewController.swift in Sources */,
 				A10F76E91B83818C00BB9A24 /* Module.swift in Sources */,
 				A143897E1B78EBA60052D5AE /* RulingView.swift in Sources */,
 				A110706D1B5799BD001E3B84 /* playViewController.swift in Sources */,
+				A1876D9C1B8EFC22000FEC26 /* OnlineResourceBrowserViewController.swift in Sources */,
 				A12E9A8A1AD69410009B2D60 /* SwiftyJSON.swift in Sources */,
 				A1B77F3B1B5675A100CE2E73 /* ScrollViewController.swift in Sources */,
 				A1D468E01B62C2F10097358D /* PlaylistStatisticTableViewCell.swift in Sources */,
+				A1876DA21B8F045F000FEC26 /* MiiNSURLProtocol.swift in Sources */,
 				A1A510EE1AD4513E00AD37B4 /* mvpViewController.swift in Sources */,
 				A1FB096E1B5A8FEC001EAF27 /* playScrollViewController.swift in Sources */,
 				A1A510F61AD4D5DB00AD37B4 /* json.swift in Sources */,
+				A1876D9F1B8EFFD1000FEC26 /* UGCTabbarViewController.swift in Sources */,
 				A1BA8B201B54F63500F5A57F /* NavigationProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -973,18 +1015,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				A10F76F11B8383F900BB9A24 /* GlobalNavigationController.swift in Sources */,
+				A1876DA01B8EFFD1000FEC26 /* UGCTabbarViewController.swift in Sources */,
 				A10F76EE1B8381DA00BB9A24 /* playlistTableViewCell.swift in Sources */,
 				A10F76ED1B8381D300BB9A24 /* NavigationProtocol.swift in Sources */,
+				A1876DA91B8F04BA000FEC26 /* DownloadView.swift in Sources */,
 				A10F76EC1B8381C700BB9A24 /* PlayerManager.swift in Sources */,
+				A1876D9D1B8EFC22000FEC26 /* OnlineResourceBrowserViewController.swift in Sources */,
 				A10F76EB1B8381AF00BB9A24 /* Model.swift in Sources */,
 				A10F76E51B8380FC00BB9A24 /* StatusManager.swift in Sources */,
 				A10F76FF1B83885C00BB9A24 /* AppPlayer.swift in Sources */,
+				A1876DA61B8F047C000FEC26 /* MiiDownloader.swift in Sources */,
 				A10F76EA1B83818C00BB9A24 /* Module.swift in Sources */,
 				A10F76E11B8380E900BB9A24 /* Operation.swift in Sources */,
+				A18A81731B8EEDB9005BCC63 /* DJVisualViewController.swift in Sources */,
 				A10F76E21B8380E900BB9A24 /* Player.swift in Sources */,
 				A10F76E31B8380E900BB9A24 /* Server.swift in Sources */,
 				A10F76E41B8380E900BB9A24 /* Status.swift in Sources */,
 				A10F76D91B8380D200BB9A24 /* PlaylistStatisticTableViewCell.swift in Sources */,
+				A1876DA31B8F045F000FEC26 /* MiiNSURLProtocol.swift in Sources */,
 				A10F76DA1B8380D200BB9A24 /* playlistTableViewController.swift in Sources */,
 				A10F76DB1B8380D200BB9A24 /* playViewController.swift in Sources */,
 				A10F76DC1B8380D200BB9A24 /* shopDetailViewController.swift in Sources */,
@@ -1452,6 +1500,7 @@
 				A1A951311B88E14A004ADA27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
