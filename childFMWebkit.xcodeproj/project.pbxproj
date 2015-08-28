@@ -76,7 +76,6 @@
 		A179F8631B80907500B82695 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179F8621B80907500B82695 /* ViewController.swift */; };
 		A179F86B1B80907500B82695 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A179F8691B80907500B82695 /* LaunchScreen.storyboard */; };
 		A179F8771B80908B00B82695 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179F8761B80908B00B82695 /* AppDelegate.swift */; };
-		A179F8791B80908B00B82695 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A179F8781B80908B00B82695 /* ViewController.swift */; };
 		A179F8811B80908B00B82695 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A179F87F1B80908B00B82695 /* LaunchScreen.storyboard */; };
 		A17CC7541B8F613B0074150D /* iTunesUploadTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CC7531B8F613B0074150D /* iTunesUploadTableViewController.swift */; };
 		A17CC7551B8F613B0074150D /* iTunesUploadTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CC7531B8F613B0074150D /* iTunesUploadTableViewController.swift */; };
@@ -233,7 +232,6 @@
 		A179F86C1B80907500B82695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A179F8741B80908B00B82695 /* MagicEar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicEar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A179F8761B80908B00B82695 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A179F8781B80908B00B82695 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A179F87B1B80908B00B82695 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A179F87D1B80908B00B82695 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A179F8801B80908B00B82695 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -488,7 +486,6 @@
 				A1BA8B261B54FE9000F5A57F /* UGC */,
 				A1BA8B211B54F7A800F5A57F /* playUI */,
 				A179F8761B80908B00B82695 /* AppDelegate.swift */,
-				A179F8781B80908B00B82695 /* ViewController.swift */,
 				A179F87A1B80908B00B82695 /* Main.storyboard */,
 				A179F87D1B80908B00B82695 /* Assets.xcassets */,
 				A179F87F1B80908B00B82695 /* LaunchScreen.storyboard */,
@@ -1078,7 +1075,6 @@
 				A17CC75E1B8F77840074150D /* DownloadListTableViewController.swift in Sources */,
 				A10F76E01B8380D200BB9A24 /* shopDetailStaticViewController.swift in Sources */,
 				A17CC7551B8F613B0074150D /* iTunesUploadTableViewController.swift in Sources */,
-				A179F8791B80908B00B82695 /* ViewController.swift in Sources */,
 				A179F8771B80908B00B82695 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
