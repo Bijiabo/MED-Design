@@ -87,6 +87,11 @@
 		A17CC75E1B8F77840074150D /* DownloadListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CC75C1B8F77840074150D /* DownloadListTableViewController.swift */; };
 		A17CC7611B8F793E0074150D /* DownloadListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CC7601B8F793E0074150D /* DownloadListTableViewCell.swift */; };
 		A17CC7621B8F793E0074150D /* DownloadListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CC7601B8F793E0074150D /* DownloadListTableViewCell.swift */; };
+		A17CC7641B905DC80074150D /* MiiOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CC7631B905DC80074150D /* MiiOperation.swift */; };
+		A17CC7671B905E740074150D /* MiiPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CC7661B905E740074150D /* MiiPlayer.swift */; };
+		A17CC7691B905E930074150D /* MiiServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CC7681B905E930074150D /* MiiServer.swift */; };
+		A17CC76B1B9060620074150D /* data in Resources */ = {isa = PBXBuildFile; fileRef = A17CC76A1B9060620074150D /* data */; };
+		A17CC76C1B9060D30074150D /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12E9A891AD69410009B2D60 /* SwiftyJSON.swift */; };
 		A1876D9C1B8EFC22000FEC26 /* OnlineResourceBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1876D9B1B8EFC22000FEC26 /* OnlineResourceBrowserViewController.swift */; };
 		A1876D9D1B8EFC22000FEC26 /* OnlineResourceBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1876D9B1B8EFC22000FEC26 /* OnlineResourceBrowserViewController.swift */; };
 		A1876D9F1B8EFFD1000FEC26 /* UGCTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1876D9E1B8EFFD1000FEC26 /* UGCTabbarViewController.swift */; };
@@ -241,6 +246,10 @@
 		A17CC7591B8F61700074150D /* netFriendShareTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = netFriendShareTableViewController.swift; sourceTree = "<group>"; };
 		A17CC75C1B8F77840074150D /* DownloadListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DownloadListTableViewController.swift; path = UGC/DownloadListTableViewController.swift; sourceTree = "<group>"; };
 		A17CC7601B8F793E0074150D /* DownloadListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DownloadListTableViewCell.swift; path = UGC/Cell/DownloadListTableViewCell.swift; sourceTree = "<group>"; };
+		A17CC7631B905DC80074150D /* MiiOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiiOperation.swift; sourceTree = "<group>"; };
+		A17CC7661B905E740074150D /* MiiPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiiPlayer.swift; sourceTree = "<group>"; };
+		A17CC7681B905E930074150D /* MiiServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiiServer.swift; sourceTree = "<group>"; };
+		A17CC76A1B9060620074150D /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = "<group>"; };
 		A1876D9B1B8EFC22000FEC26 /* OnlineResourceBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnlineResourceBrowserViewController.swift; path = UGC/OnlineResourceBrowserViewController.swift; sourceTree = "<group>"; };
 		A1876D9E1B8EFFD1000FEC26 /* UGCTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UGCTabbarViewController.swift; path = UGC/UGCTabbarViewController.swift; sourceTree = "<group>"; };
 		A1876DA11B8F045F000FEC26 /* MiiNSURLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiiNSURLProtocol.swift; sourceTree = "<group>"; };
@@ -368,6 +377,7 @@
 		A15CD5CD1ACE496B0033AB57 = {
 			isa = PBXGroup;
 			children = (
+				A17CC76A1B9060620074150D /* data */,
 				A1876DCD1B8F3527000FEC26 /* OnlineResourceNavigationWebSite */,
 				A1D468891B5C31C60097358D /* media */,
 				A1FB09371B5A3961001EAF27 /* iTunesGuide */,
@@ -482,6 +492,7 @@
 		A179F8751B80908B00B82695 /* MagicEar */ = {
 			isa = PBXGroup;
 			children = (
+				A17CC7651B905E0F0074150D /* CoreComponent */,
 				A1876D9A1B8EFBC6000FEC26 /* UGC-ViewControllers */,
 				A1BA8B261B54FE9000F5A57F /* UGC */,
 				A1BA8B211B54F7A800F5A57F /* playUI */,
@@ -505,6 +516,16 @@
 				A17CC7601B8F793E0074150D /* DownloadListTableViewCell.swift */,
 			);
 			name = cell;
+			sourceTree = "<group>";
+		};
+		A17CC7651B905E0F0074150D /* CoreComponent */ = {
+			isa = PBXGroup;
+			children = (
+				A17CC7631B905DC80074150D /* MiiOperation.swift */,
+				A17CC7661B905E740074150D /* MiiPlayer.swift */,
+				A17CC7681B905E930074150D /* MiiServer.swift */,
+			);
+			name = CoreComponent;
 			sourceTree = "<group>";
 		};
 		A1876D9A1B8EFBC6000FEC26 /* UGC-ViewControllers */ = {
@@ -902,6 +923,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A17CC76B1B9060620074150D /* data in Resources */,
 				A1876DCE1B8F3527000FEC26 /* OnlineResourceNavigationWebSite in Resources */,
 				A1A9511B1B88D3CC004ADA27 /* Assets.xcassets in Resources */,
 				A10F76F01B83829F00BB9A24 /* video in Resources */,
@@ -1044,7 +1066,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A17CC76C1B9060D30074150D /* SwiftyJSON.swift in Sources */,
 				A10F76F11B8383F900BB9A24 /* GlobalNavigationController.swift in Sources */,
+				A17CC7691B905E930074150D /* MiiServer.swift in Sources */,
 				A1876DA01B8EFFD1000FEC26 /* UGCTabbarViewController.swift in Sources */,
 				A10F76EE1B8381DA00BB9A24 /* playlistTableViewCell.swift in Sources */,
 				A10F76ED1B8381D300BB9A24 /* NavigationProtocol.swift in Sources */,
@@ -1052,9 +1076,11 @@
 				A10F76EC1B8381C700BB9A24 /* PlayerManager.swift in Sources */,
 				A1876D9D1B8EFC22000FEC26 /* OnlineResourceBrowserViewController.swift in Sources */,
 				A17CC75B1B8F61700074150D /* netFriendShareTableViewController.swift in Sources */,
+				A17CC7641B905DC80074150D /* MiiOperation.swift in Sources */,
 				A10F76EB1B8381AF00BB9A24 /* Model.swift in Sources */,
 				A10F76E51B8380FC00BB9A24 /* StatusManager.swift in Sources */,
 				A10F76FF1B83885C00BB9A24 /* AppPlayer.swift in Sources */,
+				A17CC7671B905E740074150D /* MiiPlayer.swift in Sources */,
 				A1876DA61B8F047C000FEC26 /* MiiDownloader.swift in Sources */,
 				A10F76EA1B83818C00BB9A24 /* Module.swift in Sources */,
 				A10F76E11B8380E900BB9A24 /* Operation.swift in Sources */,

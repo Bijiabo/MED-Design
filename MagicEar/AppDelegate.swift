@@ -13,7 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var downloader : MiiDownloader!
-    var player : PlayerManager!
+    var MiiOperator : MiiOperation!
+    var player : PlayerManager! //MARK: delete
     
     //演示用播放数据
     let PlayerResources : [String] = [
@@ -30,12 +31,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         NSURLProtocol.registerClass(MiiNSURLProtocol )
         optimizeWebkitMemory()
         
+        //init operator
+        MiiOperator = MiiOperation()
+        MiiOperator.player = MiiPlayer()
+        MiiOperator.server = MiiServer()
+        
         let navigationController : GlobalNavigationController = GlobalNavigationController()
         navigationController.viewControllers = [ UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("playScrollViewController") ]
         
         window?.rootViewController? = navigationController
         
-        initPlayer()
+        //initPlayer()
 
         return true
     }
