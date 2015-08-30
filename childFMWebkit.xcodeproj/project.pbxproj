@@ -503,9 +503,6 @@
 				A179F8821B80908B00B82695 /* Info.plist */,
 				A10F76FD1B83885C00BB9A24 /* AppPlayer.swift */,
 				A18A81711B8EEDB9005BCC63 /* DJVisualViewController.swift */,
-				A1876DA11B8F045F000FEC26 /* MiiNSURLProtocol.swift */,
-				A1876DA41B8F047C000FEC26 /* MiiDownloader.swift */,
-				A1876DA71B8F04BA000FEC26 /* DownloadView.swift */,
 			);
 			path = MagicEar;
 			sourceTree = "<group>";
@@ -521,6 +518,9 @@
 		A17CC7651B905E0F0074150D /* CoreComponent */ = {
 			isa = PBXGroup;
 			children = (
+				A1876DA11B8F045F000FEC26 /* MiiNSURLProtocol.swift */,
+				A1876DA41B8F047C000FEC26 /* MiiDownloader.swift */,
+				A1876DA71B8F04BA000FEC26 /* DownloadView.swift */,
 				A17CC7631B905DC80074150D /* MiiOperation.swift */,
 				A17CC7661B905E740074150D /* MiiPlayer.swift */,
 				A17CC7681B905E930074150D /* MiiServer.swift */,
