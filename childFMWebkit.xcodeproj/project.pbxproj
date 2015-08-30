@@ -92,6 +92,8 @@
 		A17CC7691B905E930074150D /* MiiServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CC7681B905E930074150D /* MiiServer.swift */; };
 		A17CC76B1B9060620074150D /* data in Resources */ = {isa = PBXBuildFile; fileRef = A17CC76A1B9060620074150D /* data */; };
 		A17CC76C1B9060D30074150D /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12E9A891AD69410009B2D60 /* SwiftyJSON.swift */; };
+		A17CC76E1B92DCE90074150D /* MiiRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CC76D1B92DCE90074150D /* MiiRegex.swift */; };
+		A17CC76F1B92DCE90074150D /* MiiRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CC76D1B92DCE90074150D /* MiiRegex.swift */; };
 		A1876D9C1B8EFC22000FEC26 /* OnlineResourceBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1876D9B1B8EFC22000FEC26 /* OnlineResourceBrowserViewController.swift */; };
 		A1876D9D1B8EFC22000FEC26 /* OnlineResourceBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1876D9B1B8EFC22000FEC26 /* OnlineResourceBrowserViewController.swift */; };
 		A1876D9F1B8EFFD1000FEC26 /* UGCTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1876D9E1B8EFFD1000FEC26 /* UGCTabbarViewController.swift */; };
@@ -250,6 +252,7 @@
 		A17CC7661B905E740074150D /* MiiPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiiPlayer.swift; sourceTree = "<group>"; };
 		A17CC7681B905E930074150D /* MiiServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiiServer.swift; sourceTree = "<group>"; };
 		A17CC76A1B9060620074150D /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = "<group>"; };
+		A17CC76D1B92DCE90074150D /* MiiRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiiRegex.swift; sourceTree = "<group>"; };
 		A1876D9B1B8EFC22000FEC26 /* OnlineResourceBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnlineResourceBrowserViewController.swift; path = UGC/OnlineResourceBrowserViewController.swift; sourceTree = "<group>"; };
 		A1876D9E1B8EFFD1000FEC26 /* UGCTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UGCTabbarViewController.swift; path = UGC/UGCTabbarViewController.swift; sourceTree = "<group>"; };
 		A1876DA11B8F045F000FEC26 /* MiiNSURLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiiNSURLProtocol.swift; sourceTree = "<group>"; };
@@ -524,6 +527,7 @@
 				A17CC7631B905DC80074150D /* MiiOperation.swift */,
 				A17CC7661B905E740074150D /* MiiPlayer.swift */,
 				A17CC7681B905E930074150D /* MiiServer.swift */,
+				A17CC76D1B92DCE90074150D /* MiiRegex.swift */,
 			);
 			name = CoreComponent;
 			sourceTree = "<group>";
@@ -979,6 +983,7 @@
 				A1D468941B5CE6E20097358D /* GrownBottomStatisticsViewController.swift in Sources */,
 				A17CC75D1B8F77840074150D /* DownloadListTableViewController.swift in Sources */,
 				A1BA8B281B54FEC900F5A57F /* UGCHomeViewController.swift in Sources */,
+				A17CC76E1B92DCE90074150D /* MiiRegex.swift in Sources */,
 				A1BA8B231B54F7C700F5A57F /* playlistTableViewController.swift in Sources */,
 				A143897C1B78EB870052D5AE /* GrowUpCorona.swift in Sources */,
 				A17CC7541B8F613B0074150D /* iTunesUploadTableViewController.swift in Sources */,
@@ -1093,6 +1098,7 @@
 				A10F76DA1B8380D200BB9A24 /* playlistTableViewController.swift in Sources */,
 				A10F76DB1B8380D200BB9A24 /* playViewController.swift in Sources */,
 				A17CC7621B8F793E0074150D /* DownloadListTableViewCell.swift in Sources */,
+				A17CC76F1B92DCE90074150D /* MiiRegex.swift in Sources */,
 				A17CC7581B8F61510074150D /* iPodMusicTableViewController.swift in Sources */,
 				A10F76DC1B8380D200BB9A24 /* shopDetailViewController.swift in Sources */,
 				A10F76DD1B8380D200BB9A24 /* playScrollViewController.swift in Sources */,

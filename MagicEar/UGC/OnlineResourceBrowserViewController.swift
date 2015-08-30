@@ -14,6 +14,7 @@ class OnlineResourceBrowserViewController: UIViewController , UIWebViewDelegate 
     @IBOutlet var addressBar: UIView!
     @IBOutlet var addressTextField: UITextField!
     
+    var audioTitle : String? = String() //音频名称缓存
     var audioFileURL : NSURL = NSURL()
     let tipViewTag : Int = 1024
     var URLList : Array<NSURL> = Array<NSURL>()
@@ -82,9 +83,58 @@ class OnlineResourceBrowserViewController: UIViewController , UIWebViewDelegate 
     }
 
     func newAudioFileRequest(notification : NSNotification) {
-        audioFileURL = notification.object as! NSURL
+        //收到通知后触发，有新的音频文件请求，此时应当获取歌曲名称，并给用户显示下载提示
+        
+        audioFileURL = notification.object as! NSURL //获取并缓存下载链接
+        
+        _getAudioTitle()
         
         _addTipView()
+    }
+    
+    private func _getAudioTitle () {
+        /*
+        *  获取音频名称
+        */
+        
+        //各音乐网站正则表达式＋获取标题的执行语句
+        let siteStatements : Dictionary<String, Dictionary<String ,String >> = [
+            "douban" : [
+                "Regex" : "http(s)*://(\\w+\\.)*douban\\.fm(.)*",
+                "javascriptStatement" : "$('.playerbody h2.title').text()"
+            ],
+            "jing" : [
+                "Regex" : "http(s)*://(\\w+\\.)*jing\\.fm(.)*",
+                "javascriptStatement" : "$('.plyrCtt .tit').text()"
+            ],
+            "baidu" : [
+                "Regex" : "http(s)*://music\\.baidu\\.com(.)*",
+                "javascriptStatement" : "$('#player .info .title').text()"
+            ],
+            "octo" : [
+                "Regex" : "http(s)*://octo\\.fm(.)*",
+                "javascriptStatement" : "$('.radio-name').text()"
+            ]
+        ]
+        
+        for (siteName , siteStatement) in siteStatements {
+            if webView.request!.URL!.absoluteString =~ siteStatement["Regex"]! {
+                print("is \(siteName)")
+                
+                let javascriptStatement : String = siteStatement["javascriptStatement"]!
+                
+                webView.performSelectorOnMainThread(Selector("stringByEvaluatingJavaScriptFromString:"), withObject: "var audioTitle = \(javascriptStatement);", waitUntilDone: false)
+                
+                self.performSelector(Selector("_refreshAudioTitle"), withObject: nil, afterDelay: 0.2)
+                
+                break
+            }
+        }
+    }
+    
+    func _refreshAudioTitle () {
+        audioTitle = webView.stringByEvaluatingJavaScriptFromString( "audioTitle" )
+        
     }
     
     private func _addTipView () {
